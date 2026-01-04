@@ -1,7 +1,7 @@
 {
     "name": "Cyber Blog-ul lui Novac",
     "short_name": "Cyber Blog-ul lui Novac",
-    "start_url": "http://localhost:1313/blog/",
+    "start_url": "https://novaclearnscyber.github.io/blog/",
     "theme_color": "#434648",
     "background_color": "#ffffff",
     "display": "standalone",

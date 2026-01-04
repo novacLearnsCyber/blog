@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/</loc>
     <lastmod>2026-01-04T12:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/test-1/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/posts/test-1/</loc>
     <lastmod>2026-01-04T12:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/posts/</loc>
     <lastmod>2026-01-04T12:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/a.md/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/posts/a.md/</loc>
     <lastmod>2026-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/tags/</loc>
   </url>
 </urlset>

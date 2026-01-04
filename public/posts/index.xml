@@ -2,28 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Cyber Blog-ul lui Novac</title>
-    <link>http://localhost:1313/blog/posts/</link>
+    <link>https://novaclearnscyber.github.io/blog/posts/</link>
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 04 Jan 2026 12:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 12:00:00 +0300</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Numele Postării Tale</title>
-      <link>http://localhost:1313/blog/posts/test-1/</link>
+      <link>https://novaclearnscyber.github.io/blog/posts/test-1/</link>
       <pubDate>Sun, 04 Jan 2026 12:00:00 +0300</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/test-1/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/posts/test-1/</guid>
       
-      <description></description>
+      <description>&lt;p&gt;lalala lalala lalala
+a
+asdadsad
+dasdoiqw&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Numele Posa</title>
-      <link>http://localhost:1313/blog/posts/a.md/</link>
+      <link>https://novaclearnscyber.github.io/blog/posts/a.md/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/a.md/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/posts/a.md/</guid>
       
       <description></description>
       
