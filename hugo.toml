@@ -6,8 +6,9 @@ theme = "github.com/hugo-sid/hugo-blog-awesome"
 [module]
   [[module.imports]]
     path = "github.com/hugo-sid/hugo-blog-awesome"
+    baseURL = 'https://novaclearnscyber.github.io/blog/'
 
   [[module.mounts]]
-    # ATENȚIE: Înlocuiește calea de mai jos cu folderul tău REAL din Obsidian
-    source = 'C:\Users\k\Desktop\kepano-obsidian-main\blog' 
-    target = 'content'
+    source = 'blog' 
+    target = 'content/posts'
+    baseURL = 'https://novaclearnscyber.github.io/blog/'
