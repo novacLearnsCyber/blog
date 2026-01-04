@@ -1,4 +1,5 @@
 baseURL = 'https://novaclearnscyber.github.io/blog/'
+canonifyURLs = true
 languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"

@@ -15,4 +15,4 @@ poze cu pula mea :
 
 
 
-![](../static/imibagpula.png)
+![](static/imibagpula.png)
