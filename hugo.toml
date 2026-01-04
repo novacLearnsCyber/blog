@@ -1,4 +1,4 @@
-baseURL = 'https://novaclearnscyber.github.io/' # Aici vei pune link-ul tău de GitHub mai târziu
+baseURL = 'https://novaclearnscyber.github.io/blog/'
 languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"
@@ -9,5 +9,5 @@ theme = "github.com/hugo-sid/hugo-blog-awesome"
 
   [[module.mounts]]
     # ATENȚIE: Înlocuiește calea de mai jos cu folderul tău REAL din Obsidian
-    source = '"C:\Users\k\Desktop\kepano-obsidian-main\blog"' 
+    source = 'C:\Users\k\Desktop\kepano-obsidian-main\blog' 
     target = 'content'
