@@ -11,4 +11,8 @@ tags:
 ---
 acesta cred ca este un test final 
 
-poze cu pula mea :![](../static/imibagpula.png)
+poze cu pula mea :
+
+
+
+![](../static/imibagpula.png)
