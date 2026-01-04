@@ -13,4 +13,4 @@ acesta cred ca este un test final
 
 poze cu pula mea :
 
-![](../public/imibagpula.png)
+![](/imibagpula.png)
