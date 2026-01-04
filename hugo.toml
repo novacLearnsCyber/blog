@@ -3,7 +3,7 @@ languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"
 
-canonifyURLs = true
+canonifyURLs = false
 relativeURLs = true
 
 [module]
