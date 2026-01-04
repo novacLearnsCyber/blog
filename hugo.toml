@@ -3,9 +3,8 @@ languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"
 
-# Această setare transformă link-urile relative în link-uri absolute
-# Ajută foarte mult la afișarea imaginilor pe GitHub Pages
 canonifyURLs = true
+relativeURLs = true
 
 [module]
   [[module.imports]]
