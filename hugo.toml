@@ -15,7 +15,3 @@ canonifyURLs = true
     source = 'blog'
     target = 'content/posts'
 
-  # Adăugăm și folderul static în mounts pentru siguranță
-  [[module.mounts]]
-    source = 'static'
-    target = 'static'

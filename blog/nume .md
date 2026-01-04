@@ -13,6 +13,4 @@ acesta cred ca este un test final
 
 poze cu pula mea :
 
-
-
-![](static/imibagpula.png)
+![](../public/imibagpula.png)
