@@ -1,4 +1,4 @@
-baseURL = 'https://novaclearnscyber.github.io/blog/'
+baseURL = "https://novaclearnscyber.github.io/blog/"
 languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"
