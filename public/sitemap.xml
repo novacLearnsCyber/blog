@@ -2,23 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://novaclearnscyber.github.io/blog/</loc>
-    <lastmod>2026-01-04T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/posts/test-1-1/</loc>
-    <lastmod>2026-01-04T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/posts/test-1/</loc>
-    <lastmod>2026-01-04T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/posts/</loc>
-    <lastmod>2026-01-04T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/posts/a.md/</loc>
-    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://novaclearnscyber.github.io/blog/categories/</loc>
   </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/</loc>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/cyberstuff/</loc>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/journal/</loc>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/note/</loc>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/posts/</loc>
+  </url><url>
     <loc>https://novaclearnscyber.github.io/blog/tags/</loc>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/posts/2026-01-04-%C7%80-1349/</loc>
   </url>
 </urlset>
