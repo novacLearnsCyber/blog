@@ -14,7 +14,7 @@ relativeURLs = false
 
   # Mapăm folderul tău 'blog' (cel din rădăcina proiectului) către content
   [[module.mounts]]
-    source = 'blog'
+    source = '/blog-ul-meu/blog'
     target = 'content'
 
   # Adăugăm mounts-urile esențiale pentru a nu pierde CSS-ul temei

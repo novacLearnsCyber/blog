@@ -6,61 +6,41 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 04 Jan 2026 17:33:23 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 18:30:21 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>paote tre sa iti dau ceva</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/crazu-stuff/</link>
-      <pubDate>Sun, 04 Jan 2026 17:33:23 +0000</pubDate>
+      <title>mouseMeuArePene</title>
+      <link>https://novaclearnscyber.github.io/blog/mousemeuarepene/</link>
+      <pubDate>Sun, 04 Jan 2026 18:30:21 +0000</pubDate>
       
-      <guid>https://novaclearnscyber.github.io/blog/posts/crazu-stuff/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/mousemeuarepene/</guid>
       
-      <description>&lt;p&gt;innebunesc &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260104192653.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>{{name}}</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/templates/template-cyber/</link>
-      <pubDate>Sun, 04 Jan 2026 12:46:25 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/templates/template-cyber/</guid>
-      
-      <description>&lt;p&gt;[]&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://novaclearnscyber.github.io/blog/posts/2026-01-04-%C7%80-1407/</link>
-      <pubDate>Sun, 04 Jan 2026 12:16:25 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/2026-01-04-%C7%80-1407/</guid>
-      
-      <description></description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260104203020.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>n8n</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/n8n/</link>
+      <link>https://novaclearnscyber.github.io/blog/n8n/</link>
       <pubDate>Sat, 03 Jan 2026 08:55:29 +0000</pubDate>
       
-      <guid>https://novaclearnscyber.github.io/blog/posts/n8n/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/n8n/</guid>
       
       <description>&lt;p&gt;def n8n: open-source software used to automation&lt;br&gt;
 version 0.211.0 through 1.120.3 contains a RCE vuln , exploaited it can enable attackes to exectue system level commands&lt;/p&gt;
 &lt;p&gt;Tehnical Background :&lt;br&gt;
 i gonna be very short here the full information can be found on the link&lt;/p&gt;
-&lt;p&gt;cause of some pourly designed exprssion evaluator , we can bypass and juggle with the escalation tehcnics to reach executing system commands via  &lt;code&gt;child_process&lt;/code&gt;&lt;/p&gt;</description>
+&lt;p&gt;cause of some pourly designed exprssion evaluator , we can bypass and juggle with the escalation tehcnics to reach executing system commands via  &lt;code&gt;child_process&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;labalabalaba , multa laba peste tot&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260105111629.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>PEP n Stuff</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/pep-n-stuff/</link>
+      <link>https://novaclearnscyber.github.io/blog/pep-n-stuff/</link>
       <pubDate>Mon, 29 Dec 2025 18:33:07 +0000</pubDate>
       
-      <guid>https://novaclearnscyber.github.io/blog/posts/pep-n-stuff/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/pep-n-stuff/</guid>
       
       <description>&lt;p&gt;deci reprezinta un punct care este in line cu linia de date ,&lt;br&gt;
 se afla in dta point PEP&lt;br&gt;
