@@ -1,28 +1,29 @@
-baseURL = "https://novadearnscyber.github.io/blog/"
+baseURL = "https://novaclearnscyber.github.io/blog/"
 languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"
 
-# Rezolvă problemele de căi pe GitHub Pages
-canonifyURLs = false
-relativeURLs = true
+# SETĂRI CORECTE PENTRU GITHUB PAGES
+# Activăm canonifyURLs pentru a genera căi absolute corecte
+canonifyURLs = true
+relativeURLs = false
 
 [module]
   [[module.imports]]
     path = "github.com/hugo-sid/hugo-blog-awesome"
 
-  # Mapăm folderul tău de postări (care se numește 'blog') direct la 'content'
+  # Mapăm folderul tău 'blog' (cel din rădăcina proiectului) către content
   [[module.mounts]]
     source = 'blog'
     target = 'content'
 
-  # Mount-uri necesare pentru ca tema să funcționeze corect
+  # Adăugăm mounts-urile esențiale pentru a nu pierde CSS-ul temei
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
   [[module.mounts]]
     source = 'assets'
     target = 'assets'
   [[module.mounts]]
     source = 'layouts'
     target = 'layouts'
-  [[module.mounts]]
-    source = 'static'
-    target = 'static'
