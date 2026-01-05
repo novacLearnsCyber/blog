@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public  # FOARTE IMPORTANT: Hugo pune fișierele aici
+          path: ./public  # ACEASTA ESTE REPARAREA PENTRU EROAREA TA
   deploy:
     needs: build
     runs-on: ubuntu-latest
