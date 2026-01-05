@@ -3,10 +3,10 @@ languageCode = 'ro-ro'
 title = 'Cyber Blog-ul lui Novac'
 theme = "github.com/hugo-sid/hugo-blog-awesome"
 
-# SETĂRI DE BAZĂ PENTRU GITHUB PAGES
-# Dezactivăm canonify și activăm relative pentru a opri dublarea folderului /blog/
-canonifyURLs = false
-relativeURLs = true
+# SETĂRI CORECTE PENTRU GITHUB PAGES
+# Activăm canonifyURLs pentru a genera căi absolute corecte
+canonifyURLs = true
+relativeURLs = false
 
 [module]
   [[module.imports]]
@@ -14,7 +14,7 @@ relativeURLs = true
 
   # Mapăm folderul tău 'blog' (cel din rădăcina proiectului) către content
   [[module.mounts]]
-    source = 'blog'
+    source = 'blog-ul-meu/blog'
     target = 'content'
 
   # Adăugăm mounts-urile esențiale pentru a nu pierde CSS-ul temei
