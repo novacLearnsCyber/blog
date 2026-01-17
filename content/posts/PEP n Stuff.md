@@ -11,8 +11,8 @@ amuca: true
 link:
   - cevaLinkde test
 title: PEP n Stuff
-date: 2025-12-29T18:33:07.528Z
-lastmod: 2025-12-29T18:50:03.098Z
+date: 2026-01-15T20:06:27.091Z
+lastmod: 2026-01-15T20:02:43.000Z
 ---
 deci reprezinta un punct care este in line cu linia de date ,\
 se afla in dta point PEP\

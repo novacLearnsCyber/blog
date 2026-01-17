@@ -10,8 +10,8 @@ amuca: false
 link:
   - https://tryhackme.com/room/n8ncve202568613
 title: n8n
-date: 2026-01-03T08:55:29.377Z
-lastmod: 2026-01-05T09:16:31.272Z
+date: 2026-01-15T20:06:27.072Z
+lastmod: 2026-01-15T20:02:43.000Z
 ---
 def n8n: open-source software used to automation\
 version 0.211.0 through 1.120.3 contains a RCE vuln , exploaited it can enable attackes to exectue system level commands
