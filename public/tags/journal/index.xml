@@ -6,28 +6,32 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Fri, 09 Jan 2026 21:39:06 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jan 2026 05:21:40 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tesst linux</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/tesst-linux/</link>
-      <pubDate>Fri, 09 Jan 2026 21:39:06 +0000</pubDate>
+      <title>2026-01-18 ǀ 07꞉21</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/2026-01-18-%C7%80-0721/</link>
+      <pubDate>Sun, 18 Jan 2026 05:21:40 +0000</pubDate>
       
-      <guid>https://novaclearnscyber.github.io/blog/posts/tesst-linux/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/posts/2026-01-18-%C7%80-0721/</guid>
       
-      <description>&lt;p&gt;aceste este un test linux&lt;/p&gt;</description>
+      <description></description>
       
     </item>
     
     <item>
-      <title>PEP n Stuff</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/pep-n-stuff/</link>
-      <pubDate>Mon, 29 Dec 2025 18:33:07 +0000</pubDate>
+      <title>padelify</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
+      <pubDate>Sun, 18 Jan 2026 05:20:59 +0000</pubDate>
       
-      <guid>https://novaclearnscyber.github.io/blog/posts/pep-n-stuff/</guid>
+      <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
       
-      <description>&lt;p&gt;deci reprezinta un punct care este in line cu linia de date ,&lt;br&gt;
-se afla in dta point PEP&lt;br&gt;
-restu componentelor care lacatuiesc PDP sunt policy engine si policy administratror , ele se afla in control plane , policy engine face decizia, si adminu o transmite parca&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;reconing&#34;&gt;reconing&lt;/h3&gt;
+&lt;p&gt;First thinks first , its time to look for information&lt;/p&gt;
+&lt;p&gt;I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;lets try to bypass it , using the flag &lt;code&gt;-a&lt;/code&gt; bypass it pretty simple&lt;br&gt;
+for noobies (like me ) the -a flag uses a diferent user agent than the default gobuster agent ,&lt;br&gt;
+a user agent is a string of character that make the request to the site&lt;/p&gt;</description>
       
     </item>
     
