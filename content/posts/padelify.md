@@ -13,7 +13,7 @@ dificultate: 3
 amuca: true
 link:
   - https://tryhackme.com/room/padelify
-lastmod: 2026-01-18T05:20:59.972Z
+lastmod: 2026-01-17T21:40:05.907Z
 ---
 ### reconing
 
