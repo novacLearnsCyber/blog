@@ -6,7 +6,30 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 18 Jan 2026 20:42:31 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jan 2026 20:25:42 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attacktive Directory</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</link>
+      <pubDate>Wed, 21 Jan 2026 20:25:42 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</guid>
+      
+      <description>&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;p&gt;just follow the packets instalation guide&lt;br&gt;
+note : for the &lt;code&gt;pip3 install -r /opt/impacketrequiments.txt&lt;/code&gt; i used&lt;br&gt;
+&lt;code&gt;python3 -m venv .venv source .venv/bin/activate python3 -m pip install -r requirements.txt&lt;/code&gt;&lt;br&gt;
+because otherwise would&amp;rsquo;t work , i found out that on stackoverflow  , link: &lt;a href=&#34;https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana&#34;&gt;https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;task-3-welcome-to-attacktive-directory&#34;&gt;task 3 welcome to attacktive directory&lt;/h3&gt;
+&lt;p&gt;i runned an nmap scan with a lot of flag , quick description&lt;br&gt;
+-A for os detection&lt;br&gt;
+-p- to scan port 1 to 65535&lt;br&gt;
+-T5 for aggresive template (read more in the man page)&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260119055946.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+-Pn for pingless way&lt;br&gt;
+note thsi scan will take a while&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Farewell</title>
       <link>https://novaclearnscyber.github.io/blog/posts/farewell/</link>
@@ -32,7 +55,7 @@ apart from that we can find an interesting banner at the top of the site with so
     <item>
       <title>padelify</title>
       <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
-      <pubDate>Sun, 18 Jan 2026 05:20:59 +0000</pubDate>
+      <pubDate>Sat, 17 Jan 2026 21:40:05 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
       
