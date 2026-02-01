@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Net Sec Challenge | Cyber Blog-ul lui Novac</title>
-<meta property="og:title" content="Net Sec Challenge | Cyber Blog-ul lui Novac" />
-<meta name="twitter:title" content="Net Sec Challenge | Cyber Blog-ul lui Novac" />
-<meta itemprop="name" content="Net Sec Challenge | Cyber Blog-ul lui Novac" />
-<meta name="application-name" content="Net Sec Challenge | Cyber Blog-ul lui Novac" />
+<title itemprop="name">ReversingElf | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="ReversingElf | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="ReversingElf | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="ReversingElf | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="ReversingElf | Cyber Blog-ul lui Novac" />
 <meta property="og:site_name" content="" />
 
 <meta name="description" content="">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/" title="" />
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/reversing-elf/" title="" />
 
 
 
@@ -29,9 +29,9 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2026-01-24T16:22:18Z />
-    <meta property="article:published_time" content=2026-01-24T16:22:18Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/" />
+    <meta property="og:article:published_time" content=2026-02-01T13:13:09Z />
+    <meta property="article:published_time" content=2026-02-01T13:13:09Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/reversing-elf/" />
 
     
 
@@ -41,16 +41,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Net Sec Challenge",
+        "headline": "ReversingElf",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2026-01-24",
+        "datePublished": "2026-02-01",
         "description": "",
-        "wordCount":  337 ,
+        "wordCount":  465 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2026-01-24",
+        "dateModified": "2026-02-01",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -66,18 +66,24 @@
 <meta name="generator" content="Hugo 0.154.2">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/">
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/reversing-elf/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
-  <meta property="og:title" content="Net Sec Challenge">
-  <meta property="og:description" content="Introduction “Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only nmap, telnet, and hydra.”
-cool aparently we can solve it only using those tools , lets try this way
-Challenge Questions Q1 : What is the highest port number being open less than 10,000?
-just run
-nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
+  <meta property="og:title" content="ReversingElf">
+  <meta property="og:description" content="This will be my first indo binary exploatation
+lets begin
+Crackme1 just add the exec permision and run the file
+Crackme2 when we try to run the program they ask for a password , intesting
+lets run Strings to see the human readeble caracthers
+ok cool we got the password being “super_secret_password”
+now lets just run with the password
+Crackme3 in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it
+the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them
+and decoding the second liine we get the flag
+**">
   <meta property="og:locale" content="ro_ro">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:modified_time" content="2026-01-24T16:22:18+00:00">
+    <meta property="article:modified_time" content="2026-02-01T13:13:09+00:00">
     <meta property="article:tag" content="Note">
     <meta property="article:tag" content="Journal">
     <meta property="article:tag" content="CyberStuff">
@@ -86,17 +92,23 @@ nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Net Sec Challenge">
-  <meta name="twitter:description" content="Introduction “Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only nmap, telnet, and hydra.”
-cool aparently we can solve it only using those tools , lets try this way
-Challenge Questions Q1 : What is the highest port number being open less than 10,000?
-just run
-nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
+  <meta name="twitter:title" content="ReversingElf">
+  <meta name="twitter:description" content="This will be my first indo binary exploatation
+lets begin
+Crackme1 just add the exec permision and run the file
+Crackme2 when we try to run the program they ask for a password , intesting
+lets run Strings to see the human readeble caracthers
+ok cool we got the password being “super_secret_password”
+now lets just run with the password
+Crackme3 in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it
+the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them
+and decoding the second liine we get the flag
+**">
 
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/">
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/reversing-elf/">
     <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -170,57 +182,97 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">Net Sec Challenge</h1>
+                <h1 class="header-title">ReversingElf</h1>
                 
                 
                 
                 <div class="post-meta">
-                    <time datetime="2026-01-24T16:22:18&#43;00:00" itemprop="datePublished"> Jan 24, 2026 </time>
+                    <time datetime="2026-02-01T13:13:09&#43;00:00" itemprop="datePublished"> Feb 1, 2026 </time>
                 </div>
                 
             </header>
             
             <div class="page-content">
-                <h1 id="introduction">Introduction</h1>
-<p>&ldquo;Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only <code>nmap</code>, <code>telnet</code>, and <code>hydra</code>.&rdquo;<br>
-cool aparently we can solve it only using those tools , lets try this way</p>
-<h3 id="challenge-questions">Challenge Questions</h3>
-<p>Q1 : What is the highest port number being open less than 10,000?<br>
-just run<br>
-<code>nmap -p 0-10000 $IP   </code><br>
--p mean betwen the port 0 and 10000</p>
-<p>Q2 : There is an open port outside the common 1000 ports; it is above 10,000. What is it?<br>
-i runnned<br>
-<code>nmap -p 10000-20000 $ip</code><br>
-i estimated that the port woul be under 20000</p>
-<p>Q3:How many TCP ports are open?<br>
-just add the ports from the last 2 question</p>
-<p>Q4:What is the flag hidden in the HTTP server header?<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124094724.png" alt=""><br>
-for this one go into the dev tools in firefox into the network tab and into the response header</p>
-<p>Q5 :What is the flag hidden in the SSH server header?<br>
-let try to ssh connect first<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124095701.png" alt="">ok intereting message about , &ldquo;store now , decrypt later attacks &quot;</p>
-<p>lets use <code>nmap -sV </code><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124101156.png" alt=""><br>
-and we get the flag ,<br>
-the flag -sV , acording to the help page is for identifying the version and header of every serice</p>
-<p>Q6 : We have an FTP server listening on a nonstandard port. What is the version of the FTP server?</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124103218.png" alt=""><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124103258.png" alt=""><br>
-i just scanned for verions o fthe ports for ports over 10000 and found the version of the ftp server</p>
-<p>Q7: for this one we need to run a hydra scan over those username , and i chose rockyou.txt<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124111326.png" alt=""><br>
-after some time of waithig i got the passwords being being nadrea for quinn and jordan for eddie</p>
-<p>now lets login on the ftp server</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124111816.png" alt=""><br>
-i loged in as quinn and get the flag</p>
-<p>Last question :<br>
-when we get to the site we get the following</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124110330.png" alt=""></p>
-<p>so i thought lets run a silent screen , and is that simple<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260124111919.png" alt=""><br>
-and that was all</p>
+                <p>This will be my first indo binary exploatation<br>
+lets begin</p>
+<h3 id="crackme1">Crackme1</h3>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png" alt=""><br>
+just add the exec permision and run the file</p>
+<h3 id="crackme2">Crackme2</h3>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png" alt=""><br>
+when we try to run the program they ask for a password , intesting<br>
+lets run Strings to see the human readeble caracthers<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png" alt=""><br>
+ok cool we got the password being &ldquo;super_secret_password&rdquo;<br>
+now lets just run with the password<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png" alt=""></p>
+<h3 id="crackme3">Crackme3</h3>
+<p>in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png" alt=""><br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png" alt=""><br>
+the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them<br>
+and decoding the second liine we get the flag<br>
+**<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png" alt=""></p>
+<h3 id="crackme4">crackme4</h3>
+<p>i loaded into ghridra again and founded this interesting function that is performing some kind of xor operation<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131162814.png" alt=""></p>
+<p>i cheanged to cutter for a lil bit of diversity<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131165843.png" alt=""><br>
+the aboce image may look intimidating but is more simple tahn u think<br>
+- firstly &lsquo;ood &lsquo;argument &rsquo; &lsquo;<br>
+used for to operate the program as we want and to change it<br>
+- the <code>'db &lt;memory address&gt;</code> &lsquo;used for puting a breakpoint there , the momory addes is of the function get_pwd<br>
+- dc - to continue<br>
+- px @rdi to show in hex the addres of the furst argument we passed, then we get the password</p>
+<h3 id="crackme5">crackme5</h3>
+<p>for this one i returned to ghildra</p>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131173225.png" alt=""><br>
+i noticed that all that local variable are all condesed into local_38 , then local_58(user input) is compared to local_38 using strcmp ,so i come with the idea to decode all those local variable from hex to asci and i got the password</p>
+<p>list of var:<br>
+local_38 = 0x4f<br>
+local_37 = 0x66<br>
+local_36 = 100<br>
+local_35 = 0x6c<br>
+local_34 = 0x44<br>
+local_33 = 0x53<br>
+local_32 = 0x41<br>
+local_31 = 0x7c<br>
+local_30 = 0x33<br>
+local_2f = 0x74<br>
+local_2e = 0x58<br>
+local_2d = 0x62<br>
+local_2c = 0x33<br>
+local_2b = 0x32<br>
+local_2a = 0x7e<br>
+local_29 = 0x58<br>
+local_28 = 0x33<br>
+local_27 = 0x74<br>
+local_26 = 0x58<br>
+local_25 = 0x40<br>
+local_24 = 0x73<br>
+local_23 = 0x58<br>
+local_22 = 0x60<br>
+local_21 = 0x34<br>
+local_20 = 0x74<br>
+local_1f = 0x58<br>
+local_1e = 0x74<br>
+local_1d = 0x7a</p>
+<p>password:<br>
+<code>OfdlDSA|3tXb32~X3tX@sX</code>4tXtz</p>
+<h3 id="crackme6">Crackme6</h3>
+<p>i founded this function called my secure test<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201064826.png" alt=""><br>
+if we take every condition and examine the character it comapres to we can determine the character being :<br>
+&lsquo;1337_pwd&rsquo;</p>
+<h3 id="crackme7">Crackme7</h3>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201075821.png" alt=""><br>
+for the next one once again i exxamined it in ghidra , look intro the main function and found this else if statement , then i right click on that value and chose to decimal and god the decimal value<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201080008.png" alt=""><br>
+plug it into the program and i got the flag</p>
+<h3 id="crackme8">crackme8</h3>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201081212.png" alt=""><br>
+samething as level 7 , just go in ghidra , if statement , right click and chose decimal and u got it is that simple<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201081307.png" alt=""></p>
 
             </div>
         </article></main>
