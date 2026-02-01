@@ -6,7 +6,37 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 27 Jan 2026 12:12:53 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Feb 2026 13:13:09 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ReversingElf</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
+      <pubDate>Sun, 01 Feb 2026 13:13:09 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</guid>
+      
+      <description>&lt;p&gt;This will be my first indo binary exploatation&lt;br&gt;
+lets begin&lt;/p&gt;
+&lt;h3 id=&#34;crackme1&#34;&gt;Crackme1&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+just add the exec permision and run the file&lt;/p&gt;
+&lt;h3 id=&#34;crackme2&#34;&gt;Crackme2&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+when we try to run the program they ask for a password , intesting&lt;br&gt;
+lets run Strings to see the human readeble caracthers&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok cool we got the password being &amp;ldquo;super_secret_password&amp;rdquo;&lt;br&gt;
+now lets just run with the password&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;crackme3&#34;&gt;Crackme3&lt;/h3&gt;
+&lt;p&gt;in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them&lt;br&gt;
+and decoding the second liine we get the flag&lt;br&gt;
+**&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Prioritise</title>
       <link>https://novaclearnscyber.github.io/blog/posts/prioritise/</link>
