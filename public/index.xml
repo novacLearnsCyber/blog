@@ -6,11 +6,97 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 18 Jan 2026 05:20:59 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jan 2026 12:12:53 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prioritise</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/prioritise/</link>
+      <pubDate>Tue, 27 Jan 2026 12:12:53 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/prioritise/</guid>
+      
+      <description>&lt;p&gt;Description:&lt;br&gt;
+&amp;ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&amp;hellip;?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;i checked the website and add a new task on the to do list &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets check a basic sql injection&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special in the begining&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i created a new event in the tasklist and intercept it via burpsuite to look for something special&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the request seams normal&lt;br&gt;
+i want tot try to modify the conent-length field may be we can buffer overflow this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Net Sec Challenge</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</link>
+      <pubDate>Sat, 24 Jan 2026 16:22:18 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</guid>
+      
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&amp;ldquo;Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only &lt;code&gt;nmap&lt;/code&gt;, &lt;code&gt;telnet&lt;/code&gt;, and &lt;code&gt;hydra&lt;/code&gt;.&amp;rdquo;&lt;br&gt;
+cool aparently we can solve it only using those tools , lets try this way&lt;/p&gt;
+&lt;h3 id=&#34;challenge-questions&#34;&gt;Challenge Questions&lt;/h3&gt;
+&lt;p&gt;Q1 : What is the highest port number being open less than 10,000?&lt;br&gt;
+just run&lt;br&gt;
+&lt;code&gt;nmap -p 0-10000 $IP   &lt;/code&gt;&lt;br&gt;
+-p mean betwen the port 0 and 10000&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Attacktive Directory</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</link>
+      <pubDate>Wed, 21 Jan 2026 20:25:42 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</guid>
+      
+      <description>&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;p&gt;just follow the packets instalation guide&lt;br&gt;
+note : for the &lt;code&gt;pip3 install -r /opt/impacketrequiments.txt&lt;/code&gt; i used&lt;br&gt;
+&lt;code&gt;python3 -m venv .venv source .venv/bin/activate python3 -m pip install -r requirements.txt&lt;/code&gt;&lt;br&gt;
+because otherwise would&amp;rsquo;t work , i found out that on stackoverflow  , link: &lt;a href=&#34;https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana&#34;&gt;https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;task-3-welcome-to-attacktive-directory&#34;&gt;task 3 welcome to attacktive directory&lt;/h3&gt;
+&lt;p&gt;i runned an nmap scan with a lot of flag , quick description&lt;br&gt;
+-A for os detection&lt;br&gt;
+-p- to scan port 1 to 65535&lt;br&gt;
+-T5 for aggresive template (read more in the man page)&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260119055946.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+-Pn for pingless way&lt;br&gt;
+note thsi scan will take a while&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Farewell</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/farewell/</link>
+      <pubDate>Sun, 18 Jan 2026 20:42:31 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/farewell/</guid>
+      
+      <description>&lt;h1 id=&#34;reconing&#34;&gt;Reconing&lt;/h1&gt;
+&lt;p&gt;Lets start with the basiscs to see what ports are open&lt;br&gt;
+lets scna the ports with nmap and sS flag for&lt;br&gt;
+-sS means Half-Open scan , is a scan quite fast and silent scan which scans for TCP SYN&lt;br&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Transmission&#34;&gt;https://en.wikipedia.org/wiki/Transmission&lt;/a&gt;_Control_Protocol&lt;br&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/SYN&#34;&gt;https://en.wikipedia.org/wiki/SYN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118094415.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+very basiscs ports open , ssh and https , lets check the site&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118094453.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing interesting here just a basic login page&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+apart from that we can find an interesting banner at the top of the site with some active users , maybe we can try some of the mfor the username&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>padelify</title>
       <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
-      <pubDate>Sun, 18 Jan 2026 05:20:59 +0000</pubDate>
+      <pubDate>Sat, 17 Jan 2026 21:40:05 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
       
