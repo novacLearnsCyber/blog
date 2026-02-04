@@ -6,7 +6,32 @@
     <description>Recent content in CyberStuff on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 01 Feb 2026 13:13:09 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Feb 2026 22:35:10 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wonderland</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/wonderland/</link>
+      <pubDate>Sun, 01 Feb 2026 22:35:10 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/wonderland/</guid>
+      
+      <description>&lt;p&gt;basic nmap scan :&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201121152.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+basic ports opened&lt;br&gt;
+then i did a gobuster scan&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201121842.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+interesting , subdomain &amp;lsquo;/r&amp;rsquo; , that give me the idea to try every letter in the word rabbit , as a subdomain and founde this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201122133.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+interesting&lt;br&gt;
+i wanna try another gobuster scan with this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201122215.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing interesting&lt;br&gt;
+i decided to inspect the page and founded this not shown&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201122341.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+looks like a password for ssh lets try it&lt;br&gt;
+alice:HowDothTheLittleCrocodileImproveHisShiningTail&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>ReversingElf</title>
       <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
@@ -88,7 +113,7 @@ just run&lt;br&gt;
       <description>&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
 &lt;p&gt;just follow the packets instalation guide&lt;br&gt;
 note : for the &lt;code&gt;pip3 install -r /opt/impacketrequiments.txt&lt;/code&gt; i used&lt;br&gt;
-&lt;code&gt; python3 -m venv .venv source .venv/bin/activate python3 -m pip install -r requirements.txt &lt;/code&gt;&lt;br&gt;
+&lt;code&gt;python3 -m venv .venv source .venv/bin/activate python3 -m pip install -r requirements.txt&lt;/code&gt;&lt;br&gt;
 because otherwise would&amp;rsquo;t work , i found out that on stackoverflow  , link: &lt;a href=&#34;https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana&#34;&gt;https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;task-3-welcome-to-attacktive-directory&#34;&gt;task 3 welcome to attacktive directory&lt;/h3&gt;
 &lt;p&gt;i runned an nmap scan with a lot of flag , quick description&lt;br&gt;
