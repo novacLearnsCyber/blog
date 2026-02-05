@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-  <head><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -130,7 +130,8 @@ just some picture aperead on the screen , i think this whole site is just some r
     
 </head>
 
-  <body>
+
+<body>
     <nav>
     <div class="logo">
         <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
@@ -143,19 +144,45 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
-    <ul class="menu">
-        
-    </ul>
+    
 </nav>
+
+    <style>
+        :root {
+            --banner-height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --banner-height: 200px;
+                 
+            }
+        }
+
+        .custom-banner {
+            width: 100%;
+            height: var(--banner-height);
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+
     
-    
-    <div class="custom-banner" style="width: 100%; height: 450px; overflow: hidden; position: relative;">
-      <div style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
     </div>
     
 
     <div id="content">
-    
+        
 <div class="wrapper post">
     <main class="page-content" aria-label="Content">
         <article>
@@ -286,5 +313,6 @@ and bamm we are root and we can read the final flag in /root/key-3-of-3.txt , co
         
     </small>
 </footer>
-  </body>
+</body>
+
 </html>

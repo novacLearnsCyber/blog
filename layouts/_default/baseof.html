@@ -6,28 +6,25 @@
     {{ partial "header.html" . }}
 
     <style>
-        :root {
-            --banner-height: {
+        .custom-banner {
+            width: 100%;
+
+            height: {
                     {
                     .Site.Params.banner_height | default "300px"
                 }
             }
 
             ;
+            overflow: hidden;
+            position: relative;
         }
 
         @media (max-width: 768px) {
-            :root {
-                --banner-height: 200px;
-                /* Smaller height for mobile */
+            .custom-banner {
+                height: 200px !important;
+                /* Force smaller height on mobile */
             }
-        }
-
-        .custom-banner {
-            width: 100%;
-            height: var(--banner-height);
-            overflow: hidden;
-            position: relative;
         }
     </style>
 
