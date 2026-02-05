@@ -3,7 +3,7 @@
     .custom-post-list {
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px 20px;
+        padding: 0 20px 20px 20px;
         text-align: center;
         min-height: 60vh;
         /* Ensure it takes up some space */
@@ -29,13 +29,55 @@
         text-decoration: none;
     }
 
+    /* ASCII Art Styling */
+    .ascii-container {
+        text-align: center;
+        margin: 2rem 0 3rem 0;
+        /* Spacing above and below */
+        overflow-x: hidden;
+        /* Hide scrollbar if slightly too wide, usually fine on desktop */
+    }
+
+    .ascii-art {
+        display: inline-block;
+        text-align: left;
+        font-family: monospace;
+        line-height: 1.2;
+        white-space: pre;
+        font-size: 10px;
+        /* Smaller font to fit likely */
+        color: inherit;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .custom-post-link {
             font-size: 1.1rem;
         }
+
+        .ascii-art {
+            font-size: 6px;
+            /* shrinking for mobile */
+        }
+    }
+
+    @media (min-width: 769px) {
+        .ascii-art {
+            font-size: 12px;
+        }
     }
 </style>
+
+<div class="ascii-container">
+    <pre class="ascii-art">
+   _____                          .__  __                              
+  /     \ ___.__. __  _  _________|__|/  |_  ____  __ ________  ______ 
+ /  \ /  &lt;   |  | \ \/ \/ /\_  __ \  \   __\/ __ \|  |  \____ \/  ___/ 
+/    Y    \___  |  \     /  |  | \/  ||  | \  ___/|  |  /  |_&gt; &gt;___ \  
+\____|__  / ____|   \/\_/   |__|  |__||__|  \___  &gt;____/|   __/____  &gt; 
+        \/\/                                    \/      |__|       \/  
+</pre>
+</div>
 
 <div class="custom-post-list">
     {{/* Range over ALL posts in the 'posts' section, bypassing pagination */}}
