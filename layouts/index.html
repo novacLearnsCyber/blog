@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="recent-posts">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    {{ range $paginator.Pages }}
+    <div class="post-entry">
+        <h2>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <div class="post-meta">
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+        </div>
+        <div class="post-summary">
+            {{ .Summary }}
+        </div>
+        <a class="read-more" href="{{ .Permalink }}">Read more...</a>
+        <hr />
+    </div>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}
