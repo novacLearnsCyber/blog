@@ -148,28 +148,25 @@ stroke-linejoin="round" class="feather feather-home">
 </nav>
 
     <style>
-        :root {
-            --banner-height: {
+        .custom-banner {
+            width: 100%;
+
+            height: {
                     {
                     .Site.Params.banner_height | default "300px"
                 }
             }
 
             ;
+            overflow: hidden;
+            position: relative;
         }
 
         @media (max-width: 768px) {
-            :root {
-                --banner-height: 200px;
+            .custom-banner {
+                height: 200px !important;
                  
             }
-        }
-
-        .custom-banner {
-            width: 100%;
-            height: var(--banner-height);
-            overflow: hidden;
-            position: relative;
         }
     </style>
 
