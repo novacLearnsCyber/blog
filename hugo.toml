@@ -12,10 +12,15 @@ relativeURLs = false
   [[module.imports]]
     path = "github.com/hugo-sid/hugo-blog-awesome"
 
-  # Mapăm folderul tău 'blog' (cel din rădăcina proiectului) către content
+  # Mount standard content directory (REQUIRED when defining custom mounts)
   [[module.mounts]]
-    source = '/blog-ul-meu/blog'
+    source = 'content'
     target = 'content'
+
+  # Map 'blog' folder to 'content/posts' so files appear as posts
+  [[module.mounts]]
+    source = 'blog'
+    target = 'content/posts'
 
   # Adăugăm mounts-urile esențiale pentru a nu pierde CSS-ul temei
   [[module.mounts]]

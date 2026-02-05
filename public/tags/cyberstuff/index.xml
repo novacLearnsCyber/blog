@@ -6,7 +6,25 @@
     <description>Recent content in CyberStuff on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Thu, 05 Feb 2026 12:59:21 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Feb 2026 13:24:38 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>padelify</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
+      <pubDate>Thu, 05 Feb 2026 13:24:38 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
+      
+      <description>&lt;h3 id=&#34;reconing&#34;&gt;reconing&lt;/h3&gt;
+&lt;p&gt;First thinks first , its time to look for information&lt;br&gt;
+a&lt;br&gt;
+I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;lets try to bypass it , using the flag &lt;code&gt;-a&lt;/code&gt; bypass it pretty simple&lt;br&gt;
+for noobies (like me ) the -a flag uses a diferent user agent than the default gobuster agent ,&lt;br&gt;
+a user agent is a string of character that make the request to the site&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>MrRobot</title>
       <link>https://novaclearnscyber.github.io/blog/posts/mrrobot/</link>
@@ -208,23 +226,6 @@ very basiscs ports open , ssh and https , lets check the site&lt;/p&gt;
 nothing interesting here just a basic login page&lt;br&gt;
 &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 apart from that we can find an interesting banner at the top of the site with some active users , maybe we can try some of the mfor the username&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>padelify</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
-      <pubDate>Sun, 18 Jan 2026 05:20:59 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
-      
-      <description>&lt;h3 id=&#34;reconing&#34;&gt;reconing&lt;/h3&gt;
-&lt;p&gt;First thinks first , its time to look for information&lt;/p&gt;
-&lt;p&gt;I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;lets try to bypass it , using the flag &lt;code&gt;-a&lt;/code&gt; bypass it pretty simple&lt;br&gt;
-for noobies (like me ) the -a flag uses a diferent user agent than the default gobuster agent ,&lt;br&gt;
-a user agent is a string of character that make the request to the site&lt;/p&gt;</description>
       
     </item>
     
