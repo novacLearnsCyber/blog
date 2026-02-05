@@ -13,12 +13,12 @@ dificultate: 3
 amuca: true
 link:
   - https://tryhackme.com/room/padelify
-lastmod: 2026-01-18T05:20:59.972Z
+lastmod: 2026-02-05T13:24:38.808Z
 ---
 ### reconing
 
-First thinks first , its time to look for information
-
+First thinks first , its time to look for information\
+a\
 I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png)
 
