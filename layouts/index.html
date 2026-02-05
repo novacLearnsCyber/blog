@@ -29,6 +29,28 @@
         text-decoration: none;
     }
 
+    /* Homepage Banner */
+    .homepage-banner {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .homepage-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media (max-width: 768px) {
+        .homepage-banner {
+            height: 200px;
+        }
+    }
+
     /* ASCII Art Styling */
     .ascii-container {
         text-align: center;
@@ -70,6 +92,10 @@
         }
     }
 </style>
+
+<div class="homepage-banner">
+    <img src="{{ " siteBackcopy.png" | absURL }}" alt="Site Banner">
+</div>
 
 <div class="ascii-container">
     <pre class="ascii-art">
