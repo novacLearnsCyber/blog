@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Cyber Blog-ul lui Novac</title>
-<meta property="og:title" content="Posts | Cyber Blog-ul lui Novac" />
-<meta name="twitter:title" content="Posts | Cyber Blog-ul lui Novac" />
-<meta itemprop="name" content="Posts | Cyber Blog-ul lui Novac" />
-<meta name="application-name" content="Posts | Cyber Blog-ul lui Novac" />
+<title itemprop="name">Compiled | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="Compiled | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="Compiled | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="Compiled | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="Compiled | Cyber Blog-ul lui Novac" />
 <meta property="og:site_name" content="" />
 
 <meta name="description" content="">
@@ -18,20 +18,12 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/" title="" />
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/compiled/" title="" />
 
 
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="https://novaclearnscyber.github.io/blog/posts/" />
-    <link rel="last" href="https://novaclearnscyber.github.io/blog/posts/" />
-    
     
     
     
@@ -39,7 +31,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-02-04T14:13:44Z />
     <meta property="article:published_time" content=2026-02-04T14:13:44Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/" />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/compiled/" />
 
     
 
@@ -49,14 +41,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Compiled",
         "author": {
         "@type": "Person",
         "name": ""
         },
         "datePublished": "2026-02-04",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  263 ,
         "mainEntityOfPage": "True",
         "dateModified": "2026-02-04",
         "image": {
@@ -74,24 +66,39 @@
 <meta name="generator" content="Hugo 0.152.2">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/">
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/compiled/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="Compiled">
+  <meta property="og:description" content="ok so lets download the boinary and test it
+it asks for a password ,lets open it in ghidra
+the main function in ghidra show a entangled string of if checks
+the function __isoc99_scanf seems wierd lets read the man page
+`The format string consists of a sequence of directives which` `describe how to process the sequence of input characters. If` `processing of a directive fails, no further input is read, and` `scanf() returns. A &#34;failure&#34; can be either of the following:` `input failure, meaning that input characters were unavailable, or` `matching failure, meaning that the input was inappropriate (see` `below)` `A directive is one of the following:` `• A sequence of white-space characters (space, tab, newline,` `etc.; see isspace(3)). This directive matches any amount` `of white space, including none, in the input.` `• An ordinary character (i.e., one other than white space or` `&#39;%&#39;). This character must exactly match the next` `character of input.` `• A conversion specification, which commences with a &#39;%&#39;` `(percent) character. A sequence of characters from the` `input is converted according to this specification, and` `the result is placed in the corresponding pointer` `argument. If the next item of input does not match the` `conversion specification, the conversion fails—this is a` `matching failure.` ok interesting , so according to the man page and the program , everthing before the DoYouEven string will be stored in the variable local_28 and the variable local_28 has to have the value _init for us to get the password so lets try the password
+DoYouEven_init">
   <meta property="og:locale" content="ro_ro">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-02-04T14:13:44+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:title" content="Compiled">
+  <meta name="twitter:description" content="ok so lets download the boinary and test it
+it asks for a password ,lets open it in ghidra
+the main function in ghidra show a entangled string of if checks
+the function __isoc99_scanf seems wierd lets read the man page
+`The format string consists of a sequence of directives which` `describe how to process the sequence of input characters. If` `processing of a directive fails, no further input is read, and` `scanf() returns. A &#34;failure&#34; can be either of the following:` `input failure, meaning that input characters were unavailable, or` `matching failure, meaning that the input was inappropriate (see` `below)` `A directive is one of the following:` `• A sequence of white-space characters (space, tab, newline,` `etc.; see isspace(3)). This directive matches any amount` `of white space, including none, in the input.` `• An ordinary character (i.e., one other than white space or` `&#39;%&#39;). This character must exactly match the next` `character of input.` `• A conversion specification, which commences with a &#39;%&#39;` `(percent) character. A sequence of characters from the` `input is converted according to this specification, and` `the result is placed in the corresponding pointer` `argument. If the next item of input does not match the` `conversion specification, the conversion fails—this is a` `matching failure.` ok interesting , so according to the man page and the program , everthing before the DoYouEven string will be stored in the variable local_28 and the variable local_28 has to have the value _init for us to get the password so lets try the password
+DoYouEven_init">
 
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/">
-    <link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="alternate" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
-    <link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="feed" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/compiled/">
     <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -160,159 +167,62 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2026</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">Compiled</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-02-04T14:13:44&#43;00:00" itemprop="datePublished"> Feb 4, 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>ok so lets download the boinary and test it<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204090420.png" alt=""><br>
+it asks for a password ,lets open it in ghidra<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204090453.png" alt=""><br>
+the main function in ghidra show a entangled string of if checks</p>
+<p>the function <code>__isoc99_scanf</code> seems wierd lets read the man page</p>
+<pre tabindex="0"><code>   `The format string consists of a sequence of directives which` 
+   `describe how to process the sequence of input characters. If` 
+   `processing of a directive fails, no further input is read, and` 
+   `scanf() returns. A &#34;failure&#34; can be either of the following:` 
+   `input failure, meaning that input characters were unavailable, or` 
+   `matching failure, meaning that the input was inappropriate (see` 
+   `below)`
 
-        
+   `A directive is one of the following:`
 
-        
+   `•      A sequence of white-space characters (space, tab, newline,`
+          `etc.; see isspace(3)).  This directive matches any amount`
+          `of white space, including none, in the input.`
 
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/compiled/">Compiled</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-02-04T14:13:44Z">
-        4 Feb 2026
-        
-    </time>
-</article>
+   `•      An ordinary character (i.e., one other than white space or`
+          `&#39;%&#39;).  This character must exactly match the next`
+          `character of input.`
 
+   `•      A conversion specification, which commences with a &#39;%&#39;`
+          `(percent) character.  A sequence of characters from the`
+          `input is converted according to this specification, and`
+          `the result is placed in the corresponding pointer`
+          `argument.  If the next item of input does not match the`
+          `conversion specification, the conversion fails—this is a`
+          `matching failure.`
+</code></pre><p>ok interesting , so according to the man page and the program , everthing before the DoYouEven string will be stored in the variable local_28  and the variable local_28 has to have the value <code>_init</code> for us to get the password  so lets try the password<br>
+DoYouEven_init</p>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204091300.png" alt=""><br>
+and it works very cool and simple ctf</p>
 
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/wonderland/">wonderland</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-02-01T22:35:10Z">
-        1 Feb 2026
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/reversing-elf/">ReversingElf</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-02-01T13:13:09Z">
-        1 Feb 2026
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/prioritise/">Prioritise</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-01-27T12:12:53Z">
-        27 Jan 2026
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/">Net Sec Challenge</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-01-24T16:22:18Z">
-        24 Jan 2026
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/attacktive-directory/">Attacktive Directory</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-01-21T20:25:42Z">
-        21 Jan 2026
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/farewell/">Farewell</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-01-18T20:42:31Z">
-        18 Jan 2026
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="https://novaclearnscyber.github.io/blog/posts/padelify/">padelify</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2026-01-17T21:40:05Z">
-        17 Jan 2026
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

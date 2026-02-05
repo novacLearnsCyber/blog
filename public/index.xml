@@ -6,7 +6,50 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 01 Feb 2026 22:35:10 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Feb 2026 14:13:44 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compiled</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/compiled/</link>
+      <pubDate>Wed, 04 Feb 2026 14:13:44 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/compiled/</guid>
+      
+      <description>&lt;p&gt;ok so lets download the boinary and test it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204090420.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+it asks for a password ,lets open it in ghidra&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204090453.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the main function in ghidra show a entangled string of if checks&lt;/p&gt;
+&lt;p&gt;the function &lt;code&gt;__isoc99_scanf&lt;/code&gt; seems wierd lets read the man page&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   `The format string consists of a sequence of directives which` 
+   `describe how to process the sequence of input characters. If` 
+   `processing of a directive fails, no further input is read, and` 
+   `scanf() returns. A &amp;#34;failure&amp;#34; can be either of the following:` 
+   `input failure, meaning that input characters were unavailable, or` 
+   `matching failure, meaning that the input was inappropriate (see` 
+   `below)`
+
+   `A directive is one of the following:`
+
+   `•      A sequence of white-space characters (space, tab, newline,`
+          `etc.; see isspace(3)).  This directive matches any amount`
+          `of white space, including none, in the input.`
+
+   `•      An ordinary character (i.e., one other than white space or`
+          `&amp;#39;%&amp;#39;).  This character must exactly match the next`
+          `character of input.`
+
+   `•      A conversion specification, which commences with a &amp;#39;%&amp;#39;`
+          `(percent) character.  A sequence of characters from the`
+          `input is converted according to this specification, and`
+          `the result is placed in the corresponding pointer`
+          `argument.  If the next item of input does not match the`
+          `conversion specification, the conversion fails—this is a`
+          `matching failure.`
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ok interesting , so according to the man page and the program , everthing before the DoYouEven string will be stored in the variable local_28  and the variable local_28 has to have the value &lt;code&gt;_init&lt;/code&gt; for us to get the password  so lets try the password&lt;br&gt;
+DoYouEven_init&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>wonderland</title>
       <link>https://novaclearnscyber.github.io/blog/posts/wonderland/</link>
