@@ -1,0 +1,16 @@
+<nav>
+    <div class="logo">
+        <a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Title }}">
+            {{ partial "svgs/home.svg" (dict "height" 25 "width" 25) . }}
+        </a>
+    </div>
+    <ul class="menu">
+        {{ range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}">
+                {{ .Name }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>
