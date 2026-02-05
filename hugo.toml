@@ -40,5 +40,5 @@ paginate = 9999
   # Custom Banner Image
   # Place the image in 'static/images/' and reference it here
   # banner = "images/my-banner.jpg"
-  banner = "siteback copy.png"
+  banner = "sitebackcopy.png"
   banner_height = "450px"
