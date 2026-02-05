@@ -1,13 +1,48 @@
 {{ define "main" }}
-<div class="recent-posts">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    {{ range $paginator.Pages }}
-    <div class="post-entry">
-        <h2>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </h2>
+<style>
+    .custom-post-list {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        text-align: center;
+        min-height: 60vh;
+        /* Ensure it takes up some space */
+    }
+
+    .custom-post-entry {
+        margin-bottom: 2rem;
+    }
+
+    .custom-post-link {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        /* Inherit theme color (likely white/light in dark mode) */
+        position: relative;
+        padding-bottom: 5px;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .custom-post-link:hover {
+        opacity: 0.7;
+        text-decoration: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .custom-post-link {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<div class="custom-post-list">
+    {{/* Range over ALL posts in the 'posts' section, bypassing pagination */}}
+    {{ range where .Site.RegularPages "Section" "posts" }}
+    <div class="custom-post-entry">
+        <a href="{{ .Permalink }}" class="custom-post-link">{{ .Title }}</a>
     </div>
     {{ end }}
-    {{ template "_internal/pagination.html" . }}
 </div>
 {{ end }}
