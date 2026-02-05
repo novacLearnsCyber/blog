@@ -156,6 +156,28 @@ stroke-linejoin="round" class="feather feather-home">
     }
 
      
+    .homepage-banner {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .homepage-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media (max-width: 768px) {
+        .homepage-banner {
+            height: 200px;
+        }
+    }
+
+     
     .ascii-container {
         text-align: center;
         margin: 2rem 0 3rem 0;
@@ -196,6 +218,10 @@ stroke-linejoin="round" class="feather feather-home">
         }
     }
 </style>
+
+<div class="homepage-banner">
+    <img src="https://novaclearnscyber.github.io/blog/%20siteBackcopy.png" alt="Site Banner">
+</div>
 
 <div class="ascii-container">
     <pre class="ascii-art">
