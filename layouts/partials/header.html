@@ -4,6 +4,7 @@
             {{ partial "svgs/home.svg" (dict "height" 25 "width" 25) . }}
         </a>
     </div>
+    {{ if .Site.Menus.main }}
     <ul class="menu">
         {{ range .Site.Menus.main }}
         <li>
@@ -13,4 +14,5 @@
         </li>
         {{ end }}
     </ul>
+    {{ end }}
 </nav>
