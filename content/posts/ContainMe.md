@@ -4,7 +4,7 @@ tags:
   - note
   - journal
   - cyberStuff
-title: 2026-02-15 ǀ 13꞉03
+title: ContainMe
 draft: false
 date:
 subiect:
@@ -12,7 +12,7 @@ dificultate: 1
 amuca: true
 link:
   - https://tryhackme.com/room/containme1
-lastmod: 2026-02-24T07:48:42.729Z
+lastmod: 2026-02-24T07:58:13.461Z
 ---
 first scan , the host seemed down i hard to use `-Pn` flag for ignoring the host scaning , and we have some pretty interesting ports opened\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260215132824.png)\
