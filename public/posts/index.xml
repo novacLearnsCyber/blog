@@ -6,37 +6,11 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 24 Feb 2026 07:18:09 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2026-02-15 ǀ 13꞉03</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/containme/</link>
-      <pubDate>Tue, 24 Feb 2026 07:18:09 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/containme/</guid>
-      
-      <description>&lt;p&gt;first scan , the host seemed down i hard to use &lt;code&gt;-Pn&lt;/code&gt; flag for ignoring the host scaning , and we have some pretty interesting ports opened&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215132824.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-after another longer scan i found that there are actualy 2 more ports opened&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215134544.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215134533.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-lets check the http page and run a gobuster subdomain scan&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215134817.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-ok some from the web interface we can see that the server is using apche2 ,we may exploit this later&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215140821.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-the gobuster enumeration is finished and we find some interesting subodmains lets acces them&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215141111.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-accesing incex.php and looking inside the source code we can see this comment , the first clue&lt;br&gt;
-this is obiously hinting at parametrizezing (excuse my english) the path of the file with &lt;code&gt;?path=&lt;/code&gt;so lets try this &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215141447.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-and bamm we have acces to the file system&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215141655.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-and we also can execute commands by using &lt;code&gt;?path=;&lt;/code&gt; cool&lt;/p&gt;</description>
-      
-    </item>
-    
+    <lastBuildDate>Thu, 05 Feb 2026 13:24:38 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>padelify</title>
       <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
-      <pubDate>Sun, 15 Feb 2026 18:21:45 +0000</pubDate>
+      <pubDate>Thu, 05 Feb 2026 13:24:38 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
       
@@ -54,7 +28,7 @@ a user agent is a string of character that make the request to the site&lt;/p&gt
     <item>
       <title>MrRobot</title>
       <link>https://novaclearnscyber.github.io/blog/posts/mrrobot/</link>
-      <pubDate>Thu, 05 Feb 2026 13:13:14 +0000</pubDate>
+      <pubDate>Thu, 05 Feb 2026 12:59:21 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/mrrobot/</guid>
       
@@ -72,9 +46,39 @@ just some picture aperead on the screen , i think this whole site is just some r
     </item>
     
     <item>
+      <title>ReversingElf</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
+      <pubDate>Thu, 05 Feb 2026 12:57:09 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</guid>
+      
+      <description>&lt;p&gt;This will be my first indo binary exploatation&lt;br&gt;
+lets begin&lt;/p&gt;
+&lt;h3 id=&#34;crackme1&#34;&gt;Crackme1&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+just add the exec permision and run the file&lt;/p&gt;
+&lt;h3 id=&#34;crackme2&#34;&gt;Crackme2&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+when we try to run the program they ask for a password , intesting&lt;br&gt;
+lets run Strings to see the human readeble caracthers&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok cool we got the password being &amp;ldquo;super_secret_password&amp;rdquo;&lt;br&gt;
+now lets just run with the password&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;crackme3&#34;&gt;Crackme3&lt;/h3&gt;
+&lt;p&gt;in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them&lt;br&gt;
+and decoding the second liine we get the flag&lt;br&gt;
+**&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Compiled</title>
       <link>https://novaclearnscyber.github.io/blog/posts/compiled/</link>
-      <pubDate>Wed, 04 Feb 2026 14:13:44 +0000</pubDate>
+      <pubDate>Thu, 05 Feb 2026 06:50:48 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/compiled/</guid>
       
@@ -115,9 +119,32 @@ DoYouEven_init&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Prioritise</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/prioritise/</link>
+      <pubDate>Thu, 05 Feb 2026 06:50:48 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/prioritise/</guid>
+      
+      <description>&lt;p&gt;Description:&lt;br&gt;
+&amp;ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&amp;hellip;?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;i checked the website and add a new task on the to do list &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets check a basic sql injection&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special in the begining&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i created a new event in the tasklist and intercept it via burpsuite to look for something special&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the request seams normal&lt;br&gt;
+i want tot try to modify the conent-length field may be we can buffer overflow this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>wonderland</title>
       <link>https://novaclearnscyber.github.io/blog/posts/wonderland/</link>
-      <pubDate>Sun, 01 Feb 2026 22:35:10 +0000</pubDate>
+      <pubDate>Thu, 05 Feb 2026 06:50:48 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/wonderland/</guid>
       
@@ -140,80 +167,9 @@ alice:HowDothTheLittleCrocodileImproveHisShiningTail&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>ReversingElf</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
-      <pubDate>Sun, 01 Feb 2026 13:13:09 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</guid>
-      
-      <description>&lt;p&gt;This will be my first indo binary exploatation&lt;br&gt;
-lets begin&lt;/p&gt;
-&lt;h3 id=&#34;crackme1&#34;&gt;Crackme1&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-just add the exec permision and run the file&lt;/p&gt;
-&lt;h3 id=&#34;crackme2&#34;&gt;Crackme2&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-when we try to run the program they ask for a password , intesting&lt;br&gt;
-lets run Strings to see the human readeble caracthers&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-ok cool we got the password being &amp;ldquo;super_secret_password&amp;rdquo;&lt;br&gt;
-now lets just run with the password&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;crackme3&#34;&gt;Crackme3&lt;/h3&gt;
-&lt;p&gt;in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them&lt;br&gt;
-and decoding the second liine we get the flag&lt;br&gt;
-**&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Prioritise</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/prioritise/</link>
-      <pubDate>Tue, 27 Jan 2026 12:12:53 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/prioritise/</guid>
-      
-      <description>&lt;p&gt;Description:&lt;br&gt;
-&amp;ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&amp;hellip;?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;i checked the website and add a new task on the to do list &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-lets check a basic sql injection&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-nothing special in the begining&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-i created a new event in the tasklist and intercept it via burpsuite to look for something special&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-the request seams normal&lt;br&gt;
-i want tot try to modify the conent-length field may be we can buffer overflow this&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-nothing special&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Net Sec Challenge</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</link>
-      <pubDate>Sat, 24 Jan 2026 16:22:18 +0000</pubDate>
-      
-      <guid>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</guid>
-      
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;&amp;ldquo;Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only &lt;code&gt;nmap&lt;/code&gt;, &lt;code&gt;telnet&lt;/code&gt;, and &lt;code&gt;hydra&lt;/code&gt;.&amp;rdquo;&lt;br&gt;
-cool aparently we can solve it only using those tools , lets try this way&lt;/p&gt;
-&lt;h3 id=&#34;challenge-questions&#34;&gt;Challenge Questions&lt;/h3&gt;
-&lt;p&gt;Q1 : What is the highest port number being open less than 10,000?&lt;br&gt;
-just run&lt;br&gt;
-&lt;code&gt;nmap -p 0-10000 $IP   &lt;/code&gt;&lt;br&gt;
--p mean betwen the port 0 and 10000&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>Attacktive Directory</title>
       <link>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</link>
-      <pubDate>Wed, 21 Jan 2026 20:25:42 +0000</pubDate>
+      <pubDate>Mon, 26 Jan 2026 13:42:37 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</guid>
       
@@ -234,9 +190,27 @@ note thsi scan will take a while&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Net Sec Challenge</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</link>
+      <pubDate>Mon, 26 Jan 2026 13:41:43 +0000</pubDate>
+      
+      <guid>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</guid>
+      
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&amp;ldquo;Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only &lt;code&gt;nmap&lt;/code&gt;, &lt;code&gt;telnet&lt;/code&gt;, and &lt;code&gt;hydra&lt;/code&gt;.&amp;rdquo;&lt;br&gt;
+cool aparently we can solve it only using those tools , lets try this way&lt;/p&gt;
+&lt;h3 id=&#34;challenge-questions&#34;&gt;Challenge Questions&lt;/h3&gt;
+&lt;p&gt;Q1 : What is the highest port number being open less than 10,000?&lt;br&gt;
+just run&lt;br&gt;
+&lt;code&gt;nmap -p 0-10000 $IP   &lt;/code&gt;&lt;br&gt;
+-p mean betwen the port 0 and 10000&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Farewell</title>
       <link>https://novaclearnscyber.github.io/blog/posts/farewell/</link>
-      <pubDate>Sun, 18 Jan 2026 20:42:31 +0000</pubDate>
+      <pubDate>Wed, 21 Jan 2026 12:49:33 +0000</pubDate>
       
       <guid>https://novaclearnscyber.github.io/blog/posts/farewell/</guid>
       

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default " en" }}">
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                /* Force smaller height on mobile */
+            }
+        }
+    </style>
+
+    {{ if .Site.Params.banner }}
+    <div class="custom-banner">
+        <div
+            style="background-image: url('{{ .Site.Params.banner | absURL }}'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    {{ end }}
+
+    <div id="content">
+        {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

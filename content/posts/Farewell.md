@@ -15,7 +15,7 @@ dificultate: 3
 amuca: true
 link:
   - https://tryhackme.com/room/farewell
-lastmod: 2026-01-18T20:42:31.907Z
+lastmod: 2026-01-21T12:49:33.957Z
 ---
 # Reconing
 
