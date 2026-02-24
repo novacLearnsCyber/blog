@@ -14,7 +14,7 @@ dificultate: 3
 amuca: false
 link:
   - https://tryhackme.com/room/attacktivedirectory
-lastmod: 2026-01-26T13:42:37.226Z
+lastmod: 2026-01-21T20:25:42.686Z
 ---
 ### Setup
 

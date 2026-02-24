@@ -14,7 +14,7 @@ dificultate: 1
 amuca: true
 link:
   - https://tryhackme.com/room/compiled
-lastmod: 2026-02-05T06:50:48.429Z
+lastmod: 2026-02-04T14:13:44.647Z
 ---
 ok so lets download the boinary and test it\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260204090420.png)\

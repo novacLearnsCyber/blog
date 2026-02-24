@@ -13,7 +13,7 @@ dificultate: 1
 amuca: false
 link:
   - https://tryhackme.com/room/reverselfiles
-lastmod: 2026-02-05T12:57:09.370Z
+lastmod: 2026-02-01T13:13:09.038Z
 ---
 This will be my first indo binary exploatation\
 lets begin

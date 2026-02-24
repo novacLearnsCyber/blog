@@ -13,7 +13,7 @@ dificultate: 3
 amuca: true
 link:
   - https://tryhackme.com/room/netsecchallenge
-lastmod: 2026-01-26T13:41:43.842Z
+lastmod: 2026-01-24T16:22:18.560Z
 ---
 # Introduction
 
