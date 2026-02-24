@@ -36,6 +36,7 @@ relativeURLs = false
     source = 'layouts'
     target = 'layouts'
 
+
 [params]
   # Custom Banner Image
   # Place the image in 'static/images/' and reference it here
