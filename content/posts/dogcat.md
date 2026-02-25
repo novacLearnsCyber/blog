@@ -6,9 +6,10 @@ subiect:
 dificultate: 4
 amuca: true
 link:
+  - https://tryhackme.com/room/dogcat
 tags:
   - cyberStuff
-lastmod: 2026-02-24T13:20:51.591Z
+lastmod: 2026-02-24T13:21:05.995Z
 ---
 scaning :\
 nothing interesting just ssh and http
