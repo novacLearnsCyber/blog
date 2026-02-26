@@ -6,7 +6,27 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 24 Feb 2026 07:58:13 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Feb 2026 19:44:45 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>anonymous</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/anonymous/</link>
+      <pubDate>Wed, 25 Feb 2026 19:44:45 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/anonymous/</guid>
+      
+      <description>&lt;p&gt;To answer the first two questions just basic nmap scan&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225133840.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then lets enumerate the SMB service&lt;br&gt;
+note: smb ( server message block) is a communication protocol used to share files , printers , serial ports and miscellaneous commmunication&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225134257.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok interesting lets verify that smb files&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225134958.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i dowloaded those two files and check them but nothing to interesting&lt;br&gt;
+lets check ftp now&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225135546.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i entered the ftp server and enumerate it ( i logged in with anonymous credentials , that means nothing , ok cool ) , then i found a scripts folder and get it contents&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>ContainMe</title>
       <link>https://novaclearnscyber.github.io/blog/posts/containme/</link>
