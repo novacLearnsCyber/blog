@@ -6,7 +6,64 @@
     <description>Recent content in Note on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Thu, 26 Feb 2026 09:00:43 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2026 13:14:04 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>decryptify</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/decryptify/</link>
+      <pubDate>Mon, 02 Mar 2026 13:14:04 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/decryptify/</guid>
+      
+      <description>&lt;p&gt;scaning&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301051138.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i did a double scan , cause is seamed a lil bit weird to have a simgle port opened , and i was right , lets search about this waste service&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301052258.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i accesed the website via 1337&lt;br&gt;
+nothing interesting , lets run gobuster&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053244.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok lets verify the js&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053303.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok interesting&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok lets beatufy if to understand something&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053352.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function b(c, d) {
+    const e = a();
+    return b = function(f, g) {
+        f = f - 0x165;
+        let h = e[f];
+        return h;
+    }, b(c, d);
+}
+const j = b;
+
+function a() {
+    const k = [&amp;#39;16OTYqOr&amp;#39;, &amp;#39;861cPVRNJ&amp;#39;, &amp;#39;474AnPRwy&amp;#39;, &amp;#39;H7gY2tJ9wQzD4rS1&amp;#39;, &amp;#39;5228dijopu&amp;#39;, &amp;#39;29131EDUYqd&amp;#39;, &amp;#39;8756315tjjUKB&amp;#39;, &amp;#39;1232020YOKSiQ&amp;#39;, &amp;#39;7042671GTNtXE&amp;#39;, &amp;#39;1593688UqvBWv&amp;#39;, &amp;#39;90209ggCpyY&amp;#39;];
+    a = function() {
+        return k;
+    };
+    return a();
+}(function(d, e) {
+    const i = b,
+        f = d();
+    while (!![]) {
+        try {
+            const g = parseInt(i(0x16b)) / 0x1 + -parseInt(i(0x16f)) / 0x2 + parseInt(i(0x167)) / 0x3 * (parseInt(i(0x16a)) / 0x4) + parseInt(i(0x16c)) / 0x5 + parseInt(i(0x168)) / 0x6 * (parseInt(i(0x165)) / 0x7) + -parseInt(i(0x166)) / 0x8 * (parseInt(i(0x16e)) / 0x9) + parseInt(i(0x16d)) / 0xa;
+            if (g === e) break;
+            else f[&amp;#39;push&amp;#39;](f[&amp;#39;shift&amp;#39;]());
+        } catch (h) {
+            f[&amp;#39;push&amp;#39;](f[&amp;#39;shift&amp;#39;]());
+        }
+    }
+}(a, 0xe43f0));
+const c = j(0x169); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ok interesiting , the majority of the code is obfuscated , lets insert j(0x169) inside the browser console so see if we get something&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301054615.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok cool this may be the password for the api panel&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301054648.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and it is , cool now we are login at the panel at $IP/api.php&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>blog</title>
       <link>https://novaclearnscyber.github.io/blog/posts/blog/</link>
