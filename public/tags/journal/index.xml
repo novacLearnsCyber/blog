@@ -6,7 +6,31 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Wed, 25 Feb 2026 19:44:45 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 09:00:43 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/blog/</link>
+      <pubDate>Thu, 26 Feb 2026 09:00:43 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/blog/</guid>
+      
+      <description>&lt;p&gt;ok soo recon&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226022933.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+basic ports opened&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226022954.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+a lot of interesting subdomains , even robots.txt is available&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226023052.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226023129.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+0 , interesting&lt;br&gt;
+also there is an smb server opened, i checked it but nothing interesting there&lt;/p&gt;
+&lt;p&gt;i had to restart the machine because some of the subodmain werent available , cool&lt;br&gt;
+/wp-admin/&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226025028.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+login page at wp-admin , cool&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226025322.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i runed wpscan and found some interesting usernames to try on the login page&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>anonymous</title>
       <link>https://novaclearnscyber.github.io/blog/posts/anonymous/</link>
