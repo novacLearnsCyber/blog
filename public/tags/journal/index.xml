@@ -6,7 +6,176 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Mon, 02 Mar 2026 13:14:04 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2026 13:34:06 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>red</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/red/</link>
+      <pubDate>Mon, 02 Mar 2026 13:34:06 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/red/</guid>
+      
+      <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/redisl33t&#34;&gt;https://tryhackme.com/room/redisl33t&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;note for the end: on the final script used for the privillege escalation , the script has to be modified as shown below , right at the end of the script :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;environ_p = (c_char_p * len(environ))()
+environ_p[:] = environ
+
+print(&amp;#39;[+] Calling execve()&amp;#39;)
+
+libc.execve(b&amp;#39;/home/red/.git/pkexec&amp;#39;, c_char_p(None), environ_p)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;desc :&lt;img src=&#34;https://share.note.sx/files/h5/h5x35x2i9crzu2i43h39.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/u8/u8e1pbubq8duwanykz4u.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+scanned the ip with the following command&lt;br&gt;
+`sudo nmap -v &amp;ndash;min-rate 10000 $IP -p-&lt;/p&gt;
+&lt;p&gt;just cause it short , and it guves us ssh and http open , cool&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ollie</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/ollie/</link>
+      <pubDate>Mon, 02 Mar 2026 13:27:59 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/ollie/</guid>
+      
+      <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/ollie&#34;&gt;https://tryhackme.com/room/ollie&lt;/a&gt;&lt;br&gt;
+desc:&lt;img src=&#34;https://share.note.sx/files/ql/ql8lw920aq696buvxt3t.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;lets run port scan&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/3q/3qkcil8pdxsz86gz744g.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;pretty clasic but also something interesting is open , the waste service&lt;br&gt;
+lets google it&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/sv/svbq80ilbuki4am8eyri.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok ok interesting&lt;/p&gt;
+&lt;p&gt;lets check also the web server&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/yn/ynua0c37ckvu3b235a0e.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+a simple login page , that i allready find an exploit for , looking in the button of the page&lt;br&gt;
+&lt;a href=&#34;https://www.exploit-db.com/exploits/50963&#34;&gt;https://www.exploit-db.com/exploits/50963&lt;/a&gt;&lt;br&gt;
+the exploit&lt;/p&gt;
+&lt;p&gt;i runned it and it requires an user and a password&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/jp/jpf96pwpb6ubapj82fr9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;i connect to the waste service via nc then i obtained a password and an username&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/cb/cbzg4u4mpa8isoeskfe0.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i used the m to login in to the site&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/oj/ojwyy5d2c5jc7wjrkbup.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>new hire old artifact</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/</link>
+      <pubDate>Mon, 02 Mar 2026 13:26:40 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/</guid>
+      
+      <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/newhireoldartifacts&#34;&gt;https://tryhackme.com/room/newhireoldartifacts&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/xi/xih320ga97wkl1qv6ogl.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+this time we have an splunk interface and we have to work to find the thread&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://share.note.sx/files/mm/mmxcsx07nwrqiu4ogj4c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://share.note.sx/files/cj/cjvjulv54sg5zc9t82pu.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets look a lil bit at the data summary&lt;br&gt;
+good , single host&lt;br&gt;
+i changed the data a lil bit in the filter section , cause in the desc it says december 2021&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/1q/1qaz6z7eg5g5eob73uil.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;for the fist task i search with the following string&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/lj/ljpdmpood16m84xt88d0.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and here we have the binary name&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/fk/fk4rvk9kr8vyg0kczmli.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+also the company&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/cs/cs2ss1qabpgdv4qqo2kp.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the nest task speficy that is the same folder as the first binary , so lets search using that&lt;br&gt;
+C:\Users\FINANC~1\AppData\Local\Temp\\
+&lt;img src=&#34;https://share.note.sx/files/c7/c7pvuhkktqgrfiqtkyzd.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+here , note that i har to seearch with other location cause the location previosly added was a hoax&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>infinity shell</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/infinity-shell/</link>
+      <pubDate>Mon, 02 Mar 2026 13:25:26 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/infinity-shell/</guid>
+      
+      <description>&lt;p&gt;Desc:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/ta/ta792pnk6xnx58ymbjk6.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+at a first examinatijon of the machine i didnt find anything special&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/0o/0oj96uciq1wmm34zpkau.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;i decided to investigate /var/log for any logs from the web app&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/j9/j925dgp7698k1zt8cfjt.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;i examined every file from the logs in apache2 and the only 2 that show something interesting are error.log.1 and especially other_vhost_access.log.1&lt;/p&gt;
+&lt;p&gt;whopp something interesting&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/nf/nfevnkucovfk0mhd0300.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;nahhh nothing good&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/73/73fmw7fhdz9vy9zfylbi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;some interesting query here&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/xs/xs0x20nj9h6isd8cmn9a.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets decode them , i think is base 64&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/1m/1mt8hniytzgn8nfdtgdc.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok ok that is nice&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>brains</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/brains/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:00 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/brains/</guid>
+      
+      <description>&lt;p&gt;link :&lt;a href=&#34;https://tryhackme.com/room/brains&#34;&gt;https://tryhackme.com/room/brains&lt;/a&gt;&lt;br&gt;
+desc:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/2i/2i55bxz32r71ios4690k.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;accesing the ip through a browser we get the followeing&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/yt/ytgkf02melnmlrptcqfy.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+mhmm interesting , lets run a port scan&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://share.note.sx/files/oh/ohy92b87tuny0fsrxnhe.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing really interesting , just ssh and http&lt;/p&gt;
+&lt;p&gt;i runned a sobdomain enumeration to see any interesting subdomains&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/pg/pgy4lurbucpr117oql2t.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/65/650iwhhq8co0pufxsr93.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and we did find something&lt;br&gt;
+lets check everyone of them&lt;/p&gt;
+&lt;p&gt;yeah every one of them give the same result , i decided do to another portscan , maybe i will find something new&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/fn/fnvb7257ptm7oub30ryk.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and sure we did&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/z4/z4h7jidr0d0fayvgri4i.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+there is something interesting&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Evil-GPT v2</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/</link>
+      <pubDate>Mon, 02 Mar 2026 13:23:16 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/</guid>
+      
+      <description>&lt;p&gt;yeah so this is the continuation of evil gpt&lt;br&gt;
+DESC:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/8f/8f8962doo5lxz37vfv46.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+this time we can acces the AI trough http in browser , so we know for sure a htttp port in open&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/5i/5i5lm0iu441i0qghclig.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+know we can talk to the model like to the real chat gpt&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/z2/z23yv7xtc4i1choh94aa.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+here i tried some trick , liltle to no result as we can see&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/fe/fe2hbkmjwoodlr47boqs.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+yeak so i find the trick . I told the ai to say random stuff and dont stop , and eventually it droped the flag pretty easy , this was actually how the real chat gpt was hacked some time before revealing some non public information&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/8i/8ircwhzwz87ndibh1gvg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Evil-GPT</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/evil-gpt/</link>
+      <pubDate>Mon, 02 Mar 2026 13:20:57 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/evil-gpt/</guid>
+      
+      <description>&lt;p&gt;so this is the first ctf i goona post ,&lt;/p&gt;
+&lt;p&gt;Desc :&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/gc/gcrqcw7n0vgbzkj1aik7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;when we connect with netcat we got the small following promt &lt;img src=&#34;https://share.note.sx/files/68/68qnlx0susg9b3d52r2b.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i tried to put some command in but it dosent respond to anything except exit , for the moment&lt;/p&gt;
+&lt;p&gt;i input &amp;ldquo;flag &amp;quot; and got the following output&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/15/15va3qtq0gobxfir3w83.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;ok idk why but when i typed again ls i got the following&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/6q/6qwgjkjmlm6infuek9vr.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;in the listing is a interesting py script name evilai.py , i gonna try to execute it&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>decryptify</title>
       <link>https://novaclearnscyber.github.io/blog/posts/decryptify/</link>
