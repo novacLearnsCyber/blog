@@ -6,7 +6,36 @@
     <description>Recent content in CyberStuff on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Mon, 02 Mar 2026 13:34:06 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Mar 2026 19:56:51 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ultratech</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/ultratech/</link>
+      <pubDate>Tue, 03 Mar 2026 19:56:51 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/ultratech/</guid>
+      
+      <description>&lt;p&gt;scaning:&lt;br&gt;
+this nmap scan gives us all we need for the first page &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;so the first page is done .&lt;br&gt;
+i also runned a feq gobuster scans and found a few interesting domains ,&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+one of them being /js which quiet interesting  , and inside it the api.js file , what grabbed my attention was ping line&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;robots.txt gives a map&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;trying some parameter checking here&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i tried to do some reverse shell script but it didnt worked&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+so i just lister the password file&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+inside it i found 2 passwords hasheh and both of them where on crackstatio&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>red</title>
       <link>https://novaclearnscyber.github.io/blog/posts/red/</link>
