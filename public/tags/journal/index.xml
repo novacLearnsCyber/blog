@@ -6,7 +6,34 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Mon, 02 Mar 2026 13:34:06 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Mar 2026 13:19:01 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Include</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/include/</link>
+      <pubDate>Fri, 06 Mar 2026 13:19:01 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/include/</guid>
+      
+      <description>&lt;p&gt;basic scanning in the begining&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+a lot of ports opened , after trying to connect to each of them i found this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+logging in as guest we get the following dashboard&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;first-flag&#34;&gt;First flag&lt;/h3&gt;
+&lt;p&gt;in the profile section i tried to modify some parameters and it works , and just like that we can modify the isAdmin parameter to be true&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+as admin we can view the api dashboard which gives us some interesting information about the structure of the site and how it manages requests&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+in the admin settings tab we can modify the banner image&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+this may look like a Local File Intrusion vulnerabily&lt;br&gt;
+if we input the two addresses from the api dashboard into admin settings we get two base64 encoded responses&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png&#34; alt=&#34;&#34;&gt; &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+when we decode those using cyber chef we get the following (for getAllAdmins):&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>red</title>
       <link>https://novaclearnscyber.github.io/blog/posts/red/</link>
@@ -26,34 +53,6 @@ libc.execve(b&amp;#39;/home/red/.git/pkexec&amp;#39;, c_char_p(None), environ_p)
 scanned the ip with the following command&lt;br&gt;
 `sudo nmap -v &amp;ndash;min-rate 10000 $IP -p-&lt;/p&gt;
 &lt;p&gt;just cause it short , and it guves us ssh and http open , cool&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>ollie</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/ollie/</link>
-      <pubDate>Mon, 02 Mar 2026 13:27:59 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/ollie/</guid>
-      
-      <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/ollie&#34;&gt;https://tryhackme.com/room/ollie&lt;/a&gt;&lt;br&gt;
-desc:&lt;img src=&#34;https://share.note.sx/files/ql/ql8lw920aq696buvxt3t.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;lets run port scan&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/3q/3qkcil8pdxsz86gz744g.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;pretty clasic but also something interesting is open , the waste service&lt;br&gt;
-lets google it&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/sv/svbq80ilbuki4am8eyri.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-ok ok interesting&lt;/p&gt;
-&lt;p&gt;lets check also the web server&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/yn/ynua0c37ckvu3b235a0e.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-a simple login page , that i allready find an exploit for , looking in the button of the page&lt;br&gt;
-&lt;a href=&#34;https://www.exploit-db.com/exploits/50963&#34;&gt;https://www.exploit-db.com/exploits/50963&lt;/a&gt;&lt;br&gt;
-the exploit&lt;/p&gt;
-&lt;p&gt;i runned it and it requires an user and a password&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/jp/jpf96pwpb6ubapj82fr9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;i connect to the waste service via nc then i obtained a password and an username&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/cb/cbzg4u4mpa8isoeskfe0.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-i used the m to login in to the site&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/oj/ojwyy5d2c5jc7wjrkbup.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     

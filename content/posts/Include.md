@@ -11,7 +11,7 @@ subiect:
 dificultate: 1
 amuca: false
 link:
-lastmod: 2026-03-06T13:19:01.068Z
+lastmod: 2026-03-06T13:20:13.169Z
 ---
 basic scanning in the begining\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png)\
@@ -35,7 +35,7 @@ if we input the two addresses from the api dashboard into admin settings we get 
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png) ![](/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png)\
 when we decode those using cyber chef we get the following (for getAllAdmins):
 
-![](/images/blog-ul-meu/static/Pasted%20image%2020260304094310.png)\
+![](/images/blog-ul-meu/static/Pasted%20image%2020260306082011.png)\
 the other addres is not that interesting , using the credential we got we can log in intro SysMon
 
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260304094655.png)\
