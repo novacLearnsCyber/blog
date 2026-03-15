@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">TryHack3M Subscribe | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-03-11T16:31:04Z />
+    <meta property="article:published_time" content=2026-03-11T16:31:04Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "TryHack3M Subscribe",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-03-11",
+        "description": "",
+        "wordCount":  533 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-03-11",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.152.2">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="TryHack3M Subscribe">
+  <meta property="og:description" content="Part 1 - Exploitation scanning , some interesting ports opened
+accesing the http via burpsuite and inspecting the site map we see the following
+lets look a lil bit at the js folder , that invite function seems interesting
+ok so i copy pasted the function and pasted it into a code beautifier and get this:
+the original function :
+so the function basicaly sais that if our hostname is not capture3milliobsubcribers.thm we cant log in , so lets modify that is /etc/hostnames
+ok cool now lets modify in inspect that field to redirect us to the domain specified in the function
+ok cool so now just input anything into the invide code field and we should get the invite code
+and boom">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-03-11T16:31:04+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHack3M Subscribe">
+  <meta name="twitter:description" content="Part 1 - Exploitation scanning , some interesting ports opened
+accesing the http via burpsuite and inspecting the site map we see the following
+lets look a lil bit at the js folder , that invite function seems interesting
+ok so i copy pasted the function and pasted it into a code beautifier and get this:
+the original function :
+so the function basicaly sais that if our hostname is not capture3milliobsubcribers.thm we cant log in , so lets modify that is /etc/hostnames
+ok cool now lets modify in inspect that field to redirect us to the domain specified in the function
+ok cool so now just input anything into the invide code field and we should get the invite code
+and boom">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/">
+    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+    
+</head>
+
+
+<body>
+    <nav>
+    <div class="logo">
+        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+    </div>
+    
+</nav>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/static/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">TryHack3M Subscribe</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-03-11T16:31:04&#43;00:00" itemprop="datePublished"> Mar 11, 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h3 id="part-1---exploitation">Part 1 - Exploitation</h3>
+<p>scanning , some interesting ports opened<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310074500.png" alt=""></p>
+<p>accesing the http via burpsuite and inspecting the site map we see the following<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084231.png" alt=""><br>
+lets look a lil bit at the js folder , that invite function seems interesting<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084344.png" alt=""><br>
+ok so i copy pasted the function and pasted it into a code beautifier and get this:<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084551.png" alt=""><br>
+the original function :<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084610.png" alt=""><br>
+so the function basicaly sais that if our hostname is not capture3milliobsubcribers.thm we cant log in , so lets modify that is /etc/hostnames<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309085351.png" alt=""><br>
+ok cool now lets modify in inspect that field to redirect us to the domain specified in the function<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075144.png" alt=""><br>
+ok cool so now just input anything into the invide code field and we should get the invite code<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075617.png" alt=""><br>
+and boom</p>
+<p>now if we input the invite code into the required field we get a username and pass<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075703.png" alt=""><br>
+when we log in we get the following dashboard<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310055526.png" alt=""><br>
+ok cool . when we inspect this in burpsuite we see an interesting field called isVIP . and we can change its value , cool<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310062337.png" alt=""><br>
+accesing the second challenge with the VIP tag we see the following<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310062811.png" alt=""><br>
+for whatever reason when we try to acces the machine with the vip on by bursuie , it dosent worked , so i modify it from inspect to start the machine<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310063110.png" alt=""><br>
+and we got the machine on , then we can use burpsuite again and modify the command field to get the config file , also set the isVIP true always<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310063805.png" alt=""><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310063922.png" alt=""><br>
+and boom we get the token<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310064005.png" alt=""><br>
+but what can we do with this token?</p>
+<p>When visiting the URL, I was redirected to <a href="http://admin1337special.hackme.thm:40009/public/html/">http://admin1337special.hackme.thm:40009/public/html/</a> with a status code of 403 (Unauthorized). I attempted to add a cookie SECURE_TOKEN=ACC#SS_TO_ADM1N_*****, but it didn’t work. I started fuzzing directories within /public/html and got this results:</p>
+<pre tabindex="0"><code>i also update /etc/host with admin1337special.hackme.thm like this 
+</code></pre><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310082040.png" alt=""><br>
+and fuzz<br>
+<img src="blog-ul-meu/static/Pasted%20image%2020260310071002.png" alt=""><br>
+and fortunatly gobuster saved me and showed me the login page<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310070954.png" alt=""><br>
+after we input the token it asks from us for a username and pass<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310071020.png" alt=""><br>
+lets run sql map on this , to do that go into burpsuite , intercept the site , and press in the yellow area i highlighted , press save<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310072348.png" alt=""><br>
+then run sqlmap like this , where savedSite is the file we saved<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310072501.png" alt=""><br>
+and boom pass<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310072653.png" alt=""><br>
+now we are admin<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310072803.png" alt=""><br>
+if we change the action to sing up<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310073210.png" alt=""><br>
+then we reconect to the original site , that being :http://hackme.thm/ we get the final flag, boom</p>
+<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310073343.png" alt=""></p>
+<h3 id="part-2---detection">Part 2 - Detection</h3>
+<h4 id="q1">Q1</h4>
+<p>log in at http://IP:8000 and u should see this interface<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311121016.png" alt=""><br>
+click on Search and Reporting in the right menu<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311121231.png" alt=""><br>
+if we insert * and select all time see the exact number of logs</p>
+<h5 id="q2">Q2</h5>
+<p>if we inspect the source ips and select the address with the most visits we can see tool we asked for<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311121722.png" alt=""><br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311121911.png" alt=""></p>
+<h4 id="q3">Q3</h4>
+<p>if we press the tool we see the amount of events<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311122055.png" alt=""></p>
+<h4 id="q4">Q4</h4>
+<p>The ip addres from all the sqlmap events</p>
+<h4 id="q5">Q5</h4>
+<p>select the attacker ip and the number will be shown<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311122901.png" alt=""></p>
+<h3 id="q6">Q6</h3>
+<p>extend one of the sqlMaps events using the arrow from the left side of the event , in there you will see a long value inside being the table that the attacker used<br>
+<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260311122639.png" alt=""></p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

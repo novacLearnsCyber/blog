@@ -6,7 +6,34 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Fri, 06 Mar 2026 13:20:13 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Mar 2026 16:31:04 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHack3M Subscribe</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/</link>
+      <pubDate>Wed, 11 Mar 2026 16:31:04 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/</guid>
+      
+      <description>&lt;h3 id=&#34;part-1---exploitation&#34;&gt;Part 1 - Exploitation&lt;/h3&gt;
+&lt;p&gt;scanning , some interesting ports opened&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310074500.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;accesing the http via burpsuite and inspecting the site map we see the following&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084231.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets look a lil bit at the js folder , that invite function seems interesting&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084344.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok so i copy pasted the function and pasted it into a code beautifier and get this:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084551.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the original function :&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084610.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+so the function basicaly sais that if our hostname is not capture3milliobsubcribers.thm we cant log in , so lets modify that is /etc/hostnames&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309085351.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok cool now lets modify in inspect that field to redirect us to the domain specified in the function&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075144.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ok cool so now just input anything into the invide code field and we should get the invite code&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075617.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and boom&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Include</title>
       <link>https://novaclearnscyber.github.io/blog/posts/include/</link>
