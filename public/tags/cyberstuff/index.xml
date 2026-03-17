@@ -6,7 +6,73 @@
     <description>Recent content in CyberStuff on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Wed, 11 Mar 2026 16:31:04 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2026 08:45:13 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>olympus</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/olympus/</link>
+      <pubDate>Tue, 17 Mar 2026 08:45:13 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/olympus/</guid>
+      
+      <description>&lt;p&gt;1 minute room they say&lt;/p&gt;
+&lt;p&gt;first scan&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Found an interesting directory when enumerating&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+let&amp;rsquo;s access it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+Interesting login form here , we may use sqlmap on this&lt;br&gt;
+i am new to sqlmap so i am going to use &amp;ndash;wizard option&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+enter the url when prompted and let it do its job&lt;/p&gt;
+&lt;p&gt;we find the current database being Olympus&lt;br&gt;
+enumerating Olympus using :&lt;/p&gt;
+&lt;p&gt;we see there are 6 tables inside it, dump them all&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png&#34; alt=&#34;&#34;&gt;use :&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Biohazard</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/biohazard/</link>
+      <pubDate>Sun, 15 Mar 2026 08:16:04 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/biohazard/</guid>
+      
+      <description>&lt;p&gt;For the first part just run nmap and accces the http server&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313092553.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i gonna run a gobuster scan and play with the http server in parallel&lt;/p&gt;
+&lt;p&gt;inspecting the /mainsionmain page we get the following subdomain&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093051.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+in there we get the following string&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093132.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets plug it into cyber chef&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093210.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+cool we have a /teaRoom/&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093241.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+but lets see what happens if w epress YES&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093316.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and we have a flag&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093352.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+carazy zombie in teaRoom&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093426.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+and we find a LockPick flag cool&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093509.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+lets Yes&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093532.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+damn that crazy like a gobuster scan&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093639.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+the barroom asks us for the lockpick room lets see what happens&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093723.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+nothing special , lets READ it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093746.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+also pplug it into cyber chef&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093818.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+cool and we have a music sheet flag&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313094015.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+when we input the music note into the piano field we get here , lets press YES&lt;br&gt;
+pressing yes gives us another flag&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>TryHack3M Subscribe</title>
       <link>https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/</link>

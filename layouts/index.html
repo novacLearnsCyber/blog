@@ -54,10 +54,8 @@
     /* ASCII Art Styling */
     .ascii-container {
         text-align: center;
-        margin: 2rem 0 3rem 0;
-        /* Spacing above and below */
+        margin: 2rem 0 1.5rem 0;
         overflow-x: hidden;
-        /* Hide scrollbar if slightly too wide, usually fine on desktop */
         background: transparent;
     }
 
@@ -68,10 +66,20 @@
         line-height: 1.2;
         white-space: pre;
         font-size: 10px;
-        /* Smaller font to fit likely */
         color: inherit;
         background: transparent;
         border: none;
+    }
+
+    /* Intro text paragraph */
+    .intro-text {
+        max-width: 700px;
+        margin: 0 auto 3rem auto;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.7;
+        opacity: 0.85;
+        padding: 0 20px;
     }
 
     /* Responsive adjustments */
@@ -82,7 +90,10 @@
 
         .ascii-art {
             font-size: 6px;
-            /* shrinking for mobile */
+        }
+
+        .intro-text {
+            font-size: 0.9rem;
         }
     }
 
@@ -107,6 +118,11 @@
         \/\/                                    \/      |__|       \/  
 </pre>
 </div>
+
+<p class="intro-text">
+    <!-- ✏️ Edit this text to whatever you want to say -->
+    Welcome. I write about cybersecurity, hacking techniques, and whatever else catches my eye. Dive in.
+</p>
 
 <div class="custom-post-list">
     {{/* Range over ALL posts in the 'posts' section, bypassing pagination */}}
