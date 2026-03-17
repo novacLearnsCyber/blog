@@ -134,20 +134,8 @@
 </div>
 
 <div class="intro-strip">
-    <pre class="intro-strip-ascii">
-  .--.      .--.
- /    \    /    \
-|  ()  |  |  ()  |
- \    /    \    /
-  `--'      `--'
-  /  \      /  \
- / /\ \    / /\ \
-/_/  \_\  /_/  \_\
-    </pre>
-    <p class="intro-strip-text">
-        <!-- ✏️ Edit this text to whatever you want to say -->
-        Welcome. I write about cybersecurity, hacking techniques, and whatever else catches my eye. Dive in.
-    </p>
+    {{ partial "intro-ascii.html" . }}
+    {{ partial "intro-text.html" . }}
 </div>
 
 <div class="ascii-container">
