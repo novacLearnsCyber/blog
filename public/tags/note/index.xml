@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Note on Cyber Blog-ul lui Novac</title>
-    <link>https://novaclearnscyber.github.io/blog/tags/note/</link>
+    <link>http://localhost:1313/tags/note/</link>
     <description>Recent content in Note on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 17 Mar 2026 08:45:13 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2026 08:45:13 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/note/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>olympus</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/olympus/</link>
+      <link>http://localhost:1313/posts/olympus/</link>
       <pubDate>Tue, 17 Mar 2026 08:45:13 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/olympus/</guid>
+      <guid>http://localhost:1313/posts/olympus/</guid>
       
       <description>&lt;p&gt;1 minute room they say&lt;/p&gt;
 &lt;p&gt;first scan&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Found an interesting directory when enumerating&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 let&amp;rsquo;s access it&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 Interesting login form here , we may use sqlmap on this&lt;br&gt;
 i am new to sqlmap so i am going to use &amp;ndash;wizard option&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 enter the url when prompted and let it do its job&lt;/p&gt;
 &lt;p&gt;we find the current database being Olympus&lt;br&gt;
 enumerating Olympus using :&lt;/p&gt;
 &lt;p&gt;we see there are 6 tables inside it, dump them all&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png&#34; alt=&#34;&#34;&gt;use :&lt;/p&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png&#34; alt=&#34;&#34;&gt;use :&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Biohazard</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/biohazard/</link>
+      <link>http://localhost:1313/posts/biohazard/</link>
       <pubDate>Sun, 15 Mar 2026 08:16:04 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/biohazard/</guid>
+      <guid>http://localhost:1313/posts/biohazard/</guid>
       
       <description>&lt;p&gt;For the first part just run nmap and accces the http server&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313092553.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313092553.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i gonna run a gobuster scan and play with the http server in parallel&lt;/p&gt;
 &lt;p&gt;inspecting the /mainsionmain page we get the following subdomain&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093051.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093051.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 in there we get the following string&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093132.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093132.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 lets plug it into cyber chef&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093210.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093210.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 cool we have a /teaRoom/&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093241.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093241.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 but lets see what happens if w epress YES&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093316.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093316.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 and we have a flag&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093352.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093352.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 carazy zombie in teaRoom&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093426.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093426.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 and we find a LockPick flag cool&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093509.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093509.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 lets Yes&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093532.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093532.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 damn that crazy like a gobuster scan&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093639.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093639.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the barroom asks us for the lockpick room lets see what happens&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093723.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093723.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 nothing special , lets READ it&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093746.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093746.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 also pplug it into cyber chef&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093818.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313093818.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 cool and we have a music sheet flag&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260313094015.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260313094015.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 when we input the music note into the piano field we get here , lets press YES&lt;br&gt;
 pressing yes gives us another flag&lt;/p&gt;</description>
       
@@ -75,63 +75,63 @@ pressing yes gives us another flag&lt;/p&gt;</description>
     
     <item>
       <title>TryHack3M Subscribe</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/</link>
+      <link>http://localhost:1313/posts/tryhack3m-subscribe/</link>
       <pubDate>Wed, 11 Mar 2026 16:31:04 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/</guid>
+      <guid>http://localhost:1313/posts/tryhack3m-subscribe/</guid>
       
       <description>&lt;h3 id=&#34;part-1---exploitation&#34;&gt;Part 1 - Exploitation&lt;/h3&gt;
 &lt;p&gt;scanning , some interesting ports opened&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310074500.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260310074500.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;accesing the http via burpsuite and inspecting the site map we see the following&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084231.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260309084231.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 lets look a lil bit at the js folder , that invite function seems interesting&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084344.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260309084344.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok so i copy pasted the function and pasted it into a code beautifier and get this:&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084551.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260309084551.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the original function :&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309084610.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260309084610.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 so the function basicaly sais that if our hostname is not capture3milliobsubcribers.thm we cant log in , so lets modify that is /etc/hostnames&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260309085351.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260309085351.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok cool now lets modify in inspect that field to redirect us to the domain specified in the function&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075144.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260310075144.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok cool so now just input anything into the invide code field and we should get the invite code&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260310075617.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260310075617.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 and boom&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Include</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/include/</link>
+      <link>http://localhost:1313/posts/include/</link>
       <pubDate>Fri, 06 Mar 2026 13:20:13 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/include/</guid>
+      <guid>http://localhost:1313/posts/include/</guid>
       
       <description>&lt;p&gt;basic scanning in the begining&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 a lot of ports opened , after trying to connect to each of them i found this&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 logging in as guest we get the following dashboard&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;first-flag&#34;&gt;First flag&lt;/h3&gt;
 &lt;p&gt;in the profile section i tried to modify some parameters and it works , and just like that we can modify the isAdmin parameter to be true&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 as admin we can view the api dashboard which gives us some interesting information about the structure of the site and how it manages requests&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 in the admin settings tab we can modify the banner image&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 this may look like a Local File Intrusion vulnerabily&lt;br&gt;
 if we input the two addresses from the api dashboard into admin settings we get two base64 encoded responses&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png&#34; alt=&#34;&#34;&gt; &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png&#34; alt=&#34;&#34;&gt; &lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 when we decode those using cyber chef we get the following (for getAllAdmins):&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>red</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/red/</link>
+      <link>http://localhost:1313/posts/red/</link>
       <pubDate>Mon, 02 Mar 2026 13:34:06 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/red/</guid>
+      <guid>http://localhost:1313/posts/red/</guid>
       
       <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/redisl33t&#34;&gt;https://tryhackme.com/room/redisl33t&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;note for the end: on the final script used for the privillege escalation , the script has to be modified as shown below , right at the end of the script :&lt;/p&gt;
@@ -151,9 +151,9 @@ scanned the ip with the following command&lt;br&gt;
     
     <item>
       <title>new hire old artifact</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/</link>
+      <link>http://localhost:1313/posts/new-hire-old-artifact/</link>
       <pubDate>Mon, 02 Mar 2026 13:26:40 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/</guid>
+      <guid>http://localhost:1313/posts/new-hire-old-artifact/</guid>
       
       <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/newhireoldartifacts&#34;&gt;https://tryhackme.com/room/newhireoldartifacts&lt;/a&gt;&lt;br&gt;
 &lt;img src=&#34;https://share.note.sx/files/xi/xih320ga97wkl1qv6ogl.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
@@ -179,9 +179,9 @@ here , note that i har to seearch with other location cause the location previos
     
     <item>
       <title>infinity shell</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/infinity-shell/</link>
+      <link>http://localhost:1313/posts/infinity-shell/</link>
       <pubDate>Mon, 02 Mar 2026 13:25:26 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/infinity-shell/</guid>
+      <guid>http://localhost:1313/posts/infinity-shell/</guid>
       
       <description>&lt;p&gt;Desc:&lt;br&gt;
 &lt;img src=&#34;https://share.note.sx/files/ta/ta792pnk6xnx58ymbjk6.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
@@ -204,9 +204,9 @@ ok ok that is nice&lt;/p&gt;</description>
     
     <item>
       <title>brains</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/brains/</link>
+      <link>http://localhost:1313/posts/brains/</link>
       <pubDate>Mon, 02 Mar 2026 13:24:00 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/brains/</guid>
+      <guid>http://localhost:1313/posts/brains/</guid>
       
       <description>&lt;p&gt;link :&lt;a href=&#34;https://tryhackme.com/room/brains&#34;&gt;https://tryhackme.com/room/brains&lt;/a&gt;&lt;br&gt;
 desc:&lt;br&gt;
@@ -231,9 +231,9 @@ there is something interesting&lt;/p&gt;</description>
     
     <item>
       <title>Evil-GPT v2</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/</link>
+      <link>http://localhost:1313/posts/evil-gpt-v2/</link>
       <pubDate>Mon, 02 Mar 2026 13:23:16 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/</guid>
+      <guid>http://localhost:1313/posts/evil-gpt-v2/</guid>
       
       <description>&lt;p&gt;yeah so this is the continuation of evil gpt&lt;br&gt;
 DESC:&lt;br&gt;
@@ -251,9 +251,9 @@ yeak so i find the trick . I told the ai to say random stuff and dont stop , and
     
     <item>
       <title>Evil-GPT</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/evil-gpt/</link>
+      <link>http://localhost:1313/posts/evil-gpt/</link>
       <pubDate>Mon, 02 Mar 2026 13:20:57 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/evil-gpt/</guid>
+      <guid>http://localhost:1313/posts/evil-gpt/</guid>
       
       <description>&lt;p&gt;so this is the first ctf i goona post ,&lt;/p&gt;
 &lt;p&gt;Desc :&lt;br&gt;
@@ -270,23 +270,23 @@ i tried to put some command in but it dosent respond to anything except exit , f
     
     <item>
       <title>decryptify</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/decryptify/</link>
+      <link>http://localhost:1313/posts/decryptify/</link>
       <pubDate>Mon, 02 Mar 2026 13:14:04 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/decryptify/</guid>
+      <guid>http://localhost:1313/posts/decryptify/</guid>
       
       <description>&lt;p&gt;scaning&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301051138.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301051138.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i did a double scan , cause is seamed a lil bit weird to have a simgle port opened , and i was right , lets search about this waste service&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301052258.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301052258.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i accesed the website via 1337&lt;br&gt;
 nothing interesting , lets run gobuster&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053244.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301053244.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok lets verify the js&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053303.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301053303.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok interesting&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301053315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok lets beatufy if to understand something&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301053352.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301053352.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function b(c, d) {
     const e = a();
     return b = function(f, g) {
@@ -318,93 +318,93 @@ function a() {
 }(a, 0xe43f0));
 const c = j(0x169); 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ok interesiting , the majority of the code is obfuscated , lets insert j(0x169) inside the browser console so see if we get something&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301054615.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301054615.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok cool this may be the password for the api panel&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260301054648.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260301054648.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 and it is , cool now we are login at the panel at $IP/api.php&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/blog/</link>
+      <link>http://localhost:1313/posts/blog/</link>
       <pubDate>Thu, 26 Feb 2026 09:00:43 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/blog/</guid>
+      <guid>http://localhost:1313/posts/blog/</guid>
       
       <description>&lt;p&gt;ok soo recon&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226022933.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260226022933.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 basic ports opened&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226022954.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260226022954.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 a lot of interesting subdomains , even robots.txt is available&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226023052.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226023129.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260226023052.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260226023129.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 0 , interesting&lt;br&gt;
 also there is an smb server opened, i checked it but nothing interesting there&lt;/p&gt;
 &lt;p&gt;i had to restart the machine because some of the subodmain werent available , cool&lt;br&gt;
 /wp-admin/&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226025028.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260226025028.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 login page at wp-admin , cool&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260226025322.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260226025322.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i runed wpscan and found some interesting usernames to try on the login page&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>anonymous</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/anonymous/</link>
+      <link>http://localhost:1313/posts/anonymous/</link>
       <pubDate>Wed, 25 Feb 2026 19:44:45 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/anonymous/</guid>
+      <guid>http://localhost:1313/posts/anonymous/</guid>
       
       <description>&lt;p&gt;To answer the first two questions just basic nmap scan&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225133840.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260225133840.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;then lets enumerate the SMB service&lt;br&gt;
 note: smb ( server message block) is a communication protocol used to share files , printers , serial ports and miscellaneous commmunication&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225134257.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260225134257.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok interesting lets verify that smb files&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225134958.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260225134958.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i dowloaded those two files and check them but nothing to interesting&lt;br&gt;
 lets check ftp now&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225135546.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260225135546.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i entered the ftp server and enumerate it ( i logged in with anonymous credentials , that means nothing , ok cool ) , then i found a scripts folder and get it contents&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>ContainMe</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/containme/</link>
+      <link>http://localhost:1313/posts/containme/</link>
       <pubDate>Tue, 24 Feb 2026 07:58:13 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/containme/</guid>
+      <guid>http://localhost:1313/posts/containme/</guid>
       
       <description>&lt;p&gt;first scan , the host seemed down i hard to use &lt;code&gt;-Pn&lt;/code&gt; flag for ignoring the host scaning , and we have some pretty interesting ports opened&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215132824.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215132824.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 after another longer scan i found that there are actualy 2 more ports opened&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215134544.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215134533.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215134544.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215134533.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 lets check the http page and run a gobuster subdomain scan&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215134817.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215134817.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok some from the web interface we can see that the server is using apche2 ,we may exploit this later&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215140821.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215140821.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the gobuster enumeration is finished and we find some interesting subodmains lets acces them&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215141111.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215141111.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 accesing incex.php and looking inside the source code we can see this comment , the first clue&lt;br&gt;
-this is obiously hinting at parametrizezing (excuse my english) the path of the file with &lt;code&gt;?path=&lt;/code&gt;so lets try this &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215141447.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+this is obiously hinting at parametrizezing (excuse my english) the path of the file with &lt;code&gt;?path=&lt;/code&gt;so lets try this &lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215141447.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 and bamm we have acces to the file system&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260215141655.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260215141655.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 and we also can execute commands by using &lt;code&gt;?path=;&lt;/code&gt; cool&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>padelify</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/padelify/</link>
+      <link>http://localhost:1313/posts/padelify/</link>
       <pubDate>Sun, 15 Feb 2026 18:21:45 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/padelify/</guid>
+      <guid>http://localhost:1313/posts/padelify/</guid>
       
       <description>&lt;h3 id=&#34;reconing&#34;&gt;reconing&lt;/h3&gt;
 &lt;p&gt;First thinks first , its time to look for information&lt;br&gt;
 a&lt;br&gt;
 I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;lets try to bypass it , using the flag &lt;code&gt;-a&lt;/code&gt; bypass it pretty simple&lt;br&gt;
 for noobies (like me ) the -a flag uses a diferent user agent than the default gobuster agent ,&lt;br&gt;
 a user agent is a string of character that make the request to the site&lt;/p&gt;</description>
@@ -413,33 +413,33 @@ a user agent is a string of character that make the request to the site&lt;/p&gt
     
     <item>
       <title>MrRobot</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/mrrobot/</link>
+      <link>http://localhost:1313/posts/mrrobot/</link>
       <pubDate>Thu, 05 Feb 2026 13:13:14 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/mrrobot/</guid>
+      <guid>http://localhost:1313/posts/mrrobot/</guid>
       
-      <description>&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260205055009.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260205055009.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the first nmap scan shows that all 1000 ports on the host are in ignored status&lt;br&gt;
 after a google search i found out that using -sN ( connect scan) can bypass this easly&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260205055956.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260205055956.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 basic ports open , lets try to visit the web site&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260205060021.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260205060021.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 after a very cool animation this is what we see&lt;br&gt;
 i tried prepare and a cool cinematic roll up , nothing to interesting in ther elets try question&lt;br&gt;
-i&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260205060331.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+i&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260205060331.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 just some picture aperead on the screen , i think this whole site is just some random promotional things from the tv series&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Compiled</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/compiled/</link>
+      <link>http://localhost:1313/posts/compiled/</link>
       <pubDate>Wed, 04 Feb 2026 14:13:44 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/compiled/</guid>
+      <guid>http://localhost:1313/posts/compiled/</guid>
       
       <description>&lt;p&gt;ok so lets download the boinary and test it&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204090420.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260204090420.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 it asks for a password ,lets open it in ghidra&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260204090453.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260204090453.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the main function in ghidra show a entangled string of if checks&lt;/p&gt;
 &lt;p&gt;the function &lt;code&gt;__isoc99_scanf&lt;/code&gt; seems wierd lets read the man page&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;   `The format string consists of a sequence of directives which` 
@@ -474,23 +474,23 @@ DoYouEven_init&lt;/p&gt;</description>
     
     <item>
       <title>wonderland</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/wonderland/</link>
+      <link>http://localhost:1313/posts/wonderland/</link>
       <pubDate>Sun, 01 Feb 2026 22:35:10 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/wonderland/</guid>
+      <guid>http://localhost:1313/posts/wonderland/</guid>
       
       <description>&lt;p&gt;basic nmap scan :&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201121152.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260201121152.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 basic ports opened&lt;br&gt;
 then i did a gobuster scan&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201121842.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260201121842.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 interesting , subdomain &amp;lsquo;/r&amp;rsquo; , that give me the idea to try every letter in the word rabbit , as a subdomain and founde this&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201122133.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260201122133.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 interesting&lt;br&gt;
 i wanna try another gobuster scan with this&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201122215.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260201122215.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 nothing interesting&lt;br&gt;
 i decided to inspect the page and founded this not shown&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201122341.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260201122341.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 looks like a password for ssh lets try it&lt;br&gt;
 alice:HowDothTheLittleCrocodileImproveHisShiningTail&lt;/p&gt;</description>
       
@@ -498,60 +498,60 @@ alice:HowDothTheLittleCrocodileImproveHisShiningTail&lt;/p&gt;</description>
     
     <item>
       <title>ReversingElf</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
+      <link>http://localhost:1313/posts/reversing-elf/</link>
       <pubDate>Sun, 01 Feb 2026 13:13:09 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</guid>
+      <guid>http://localhost:1313/posts/reversing-elf/</guid>
       
       <description>&lt;p&gt;This will be my first indo binary exploatation&lt;br&gt;
 lets begin&lt;/p&gt;
 &lt;h3 id=&#34;crackme1&#34;&gt;Crackme1&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 just add the exec permision and run the file&lt;/p&gt;
 &lt;h3 id=&#34;crackme2&#34;&gt;Crackme2&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 when we try to run the program they ask for a password , intesting&lt;br&gt;
 lets run Strings to see the human readeble caracthers&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 ok cool we got the password being &amp;ldquo;super_secret_password&amp;rdquo;&lt;br&gt;
 now lets just run with the password&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;crackme3&#34;&gt;Crackme3&lt;/h3&gt;
 &lt;p&gt;in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them&lt;br&gt;
 and decoding the second liine we get the flag&lt;br&gt;
-**&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+**&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Prioritise</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/prioritise/</link>
+      <link>http://localhost:1313/posts/prioritise/</link>
       <pubDate>Tue, 27 Jan 2026 12:12:53 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/prioritise/</guid>
+      <guid>http://localhost:1313/posts/prioritise/</guid>
       
       <description>&lt;p&gt;Description:&lt;br&gt;
 &amp;ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&amp;hellip;?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;i checked the website and add a new task on the to do list &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;i checked the website and add a new task on the to do list &lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 lets check a basic sql injection&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 nothing special in the begining&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 i created a new event in the tasklist and intercept it via burpsuite to look for something special&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 the request seams normal&lt;br&gt;
 i want tot try to modify the conent-length field may be we can buffer overflow this&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 nothing special&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Net Sec Challenge</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</link>
+      <link>http://localhost:1313/posts/net-sec-challenge/</link>
       <pubDate>Sat, 24 Jan 2026 16:22:18 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/</guid>
+      <guid>http://localhost:1313/posts/net-sec-challenge/</guid>
       
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;&amp;ldquo;Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only &lt;code&gt;nmap&lt;/code&gt;, &lt;code&gt;telnet&lt;/code&gt;, and &lt;code&gt;hydra&lt;/code&gt;.&amp;rdquo;&lt;br&gt;
@@ -566,9 +566,9 @@ just run&lt;br&gt;
     
     <item>
       <title>Attacktive Directory</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</link>
+      <link>http://localhost:1313/posts/attacktive-directory/</link>
       <pubDate>Wed, 21 Jan 2026 20:25:42 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/attacktive-directory/</guid>
+      <guid>http://localhost:1313/posts/attacktive-directory/</guid>
       
       <description>&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
 &lt;p&gt;just follow the packets instalation guide&lt;br&gt;
@@ -580,7 +580,7 @@ because otherwise would&amp;rsquo;t work , i found out that on stackoverflow  , 
 -A for os detection&lt;br&gt;
 -p- to scan port 1 to 65535&lt;br&gt;
 -T5 for aggresive template (read more in the man page)&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260119055946.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260119055946.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 -Pn for pingless way&lt;br&gt;
 note thsi scan will take a while&lt;/p&gt;</description>
       
@@ -588,9 +588,9 @@ note thsi scan will take a while&lt;/p&gt;</description>
     
     <item>
       <title>Farewell</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/farewell/</link>
+      <link>http://localhost:1313/posts/farewell/</link>
       <pubDate>Sun, 18 Jan 2026 20:42:31 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/farewell/</guid>
+      <guid>http://localhost:1313/posts/farewell/</guid>
       
       <description>&lt;h1 id=&#34;reconing&#34;&gt;Reconing&lt;/h1&gt;
 &lt;p&gt;Lets start with the basiscs to see what ports are open&lt;br&gt;
@@ -598,11 +598,11 @@ lets scna the ports with nmap and sS flag for&lt;br&gt;
 -sS means Half-Open scan , is a scan quite fast and silent scan which scans for TCP SYN&lt;br&gt;
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Transmission&#34;&gt;https://en.wikipedia.org/wiki/Transmission&lt;/a&gt;_Control_Protocol&lt;br&gt;
 &lt;a href=&#34;https://en.wikipedia.org/wiki/SYN&#34;&gt;https://en.wikipedia.org/wiki/SYN&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118094415.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260118094415.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 very basiscs ports open , ssh and https , lets check the site&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118094453.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260118094453.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 nothing interesting here just a basic login page&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/blog-ul-meu/static/Pasted%20image%2020260118145315.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 apart from that we can find an interesting banner at the top of the site with some active users , maybe we can try some of the mfor the username&lt;/p&gt;</description>
       
     </item>
