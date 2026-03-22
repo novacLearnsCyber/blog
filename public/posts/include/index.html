@@ -106,15 +106,15 @@ when we decode those using cyber chef we get the following (for getAllAdmins):">
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/include/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -127,14 +127,14 @@ when we decode those using cyber chef we get the following (for getAllAdmins):">
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -152,6 +152,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -204,52 +214,52 @@ stroke-linejoin="round" class="feather feather-home">
             
             <div class="page-content">
                 <p>basic scanning in the begining<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png" alt=""><br>
 a lot of ports opened , after trying to connect to each of them i found this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png" alt=""><br>
 logging in as guest we get the following dashboard<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png" alt=""></p>
 <hr>
 <h3 id="first-flag">First flag</h3>
 <p>in the profile section i tried to modify some parameters and it works , and just like that we can modify the isAdmin parameter to be true<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png" alt=""><br>
 as admin we can view the api dashboard which gives us some interesting information about the structure of the site and how it manages requests<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png" alt=""><br>
 in the admin settings tab we can modify the banner image<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png" alt=""><br>
 this may look like a Local File Intrusion vulnerabily<br>
 if we input the two addresses from the api dashboard into admin settings we get two base64 encoded responses<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png" alt=""> <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png" alt=""> <img src="/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png" alt=""><br>
 when we decode those using cyber chef we get the following (for getAllAdmins):</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306082011.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260306082011.png" alt=""><br>
 the other addres is not that interesting , using the credential we got we can log in intro SysMon</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304094655.png" alt=""><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304094806.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260304094655.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304094806.png" alt=""><br>
 i tried both of them and just administrator one worked whatever<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260304165548.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304165548.png" alt=""><br>
 and we got the first flag cool</p>
 <hr>
 <h3 id="second-flag">Second Flag</h3>
 <p>viewing the site shouce code we see the following , what profile image may look again like a good vulnerabilty to exploit<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306052826.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306052826.png" alt=""><br>
 i did a directory traversal inside the url for /etc/passwd and i got the following<br>
 payload</p>
 <pre tabindex="0"><code>profile.php?img=....//....//....//....//....//....//....//....//....//....//....//....//....//....//....//etc/passwd
-</code></pre><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053007.png" alt=""><br>
+</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053007.png" alt=""><br>
 we see 2 users<br>
 charles and joshua<br>
 lets put them into a .txt file<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053233.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053233.png" alt=""><br>
 now lets just bruteforce using hydra for the ssh<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053512.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053512.png" alt=""><br>
 command:</p>
 <pre tabindex="0"><code>hydra -L user.txt -P &lt;pathOfWordlist&gt; ssh://&lt;IPofMachine&gt;
-</code></pre><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053951.png" alt=""><br>
+</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053951.png" alt=""><br>
 thanks devs for hydra -R cause i abandoned the process first time trying to copy the screenshot</p>
 <p>and after a long bruteforce we get the passwords<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306061403.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306061403.png" alt=""><br>
 and boom we are in , just cat the flag from the path given to us<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306061535.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306061535.png" alt=""></p>
 
             </div>
         </article></main>

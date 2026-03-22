@@ -110,15 +110,15 @@ and decoding the second liine we get the flag
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/reversing-elf/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -131,14 +131,14 @@ and decoding the second liine we get the flag
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -156,6 +156,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -210,28 +220,28 @@ stroke-linejoin="round" class="feather feather-home">
                 <p>This will be my first indo binary exploatation<br>
 lets begin</p>
 <h3 id="crackme1">Crackme1</h3>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png" alt=""><br>
 just add the exec permision and run the file</p>
 <h3 id="crackme2">Crackme2</h3>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png" alt=""><br>
 when we try to run the program they ask for a password , intesting<br>
 lets run Strings to see the human readeble caracthers<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png" alt=""><br>
 ok cool we got the password being &ldquo;super_secret_password&rdquo;<br>
 now lets just run with the password<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png" alt=""></p>
 <h3 id="crackme3">Crackme3</h3>
 <p>in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png" alt=""><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png" alt=""><br>
 the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them<br>
 and decoding the second liine we get the flag<br>
-**<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png" alt=""></p>
+**<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png" alt=""></p>
 <h3 id="crackme4">crackme4</h3>
 <p>i loaded into ghridra again and founded this interesting function that is performing some kind of xor operation<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131162814.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131162814.png" alt=""></p>
 <p>i cheanged to cutter for a lil bit of diversity<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131165843.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260131165843.png" alt=""><br>
 the aboce image may look intimidating but is more simple tahn u think<br>
 - firstly &lsquo;ood &lsquo;argument &rsquo; &lsquo;<br>
 used for to operate the program as we want and to change it<br>
@@ -240,7 +250,7 @@ used for to operate the program as we want and to change it<br>
 - px @rdi to show in hex the addres of the furst argument we passed, then we get the password</p>
 <h3 id="crackme5">crackme5</h3>
 <p>for this one i returned to ghildra</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131173225.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260131173225.png" alt=""><br>
 i noticed that all that local variable are all condesed into local_38 , then local_58(user input) is compared to local_38 using strcmp ,so i come with the idea to decode all those local variable from hex to asci and i got the password</p>
 <p>list of var:<br>
 local_38 = 0x4f<br>
@@ -275,18 +285,18 @@ local_1d = 0x7a</p>
 <code>OfdlDSA|3tXb32~X3tX@sX</code>4tXtz</p>
 <h3 id="crackme6">Crackme6</h3>
 <p>i founded this function called my secure test<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201064826.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260201064826.png" alt=""><br>
 if we take every condition and examine the character it comapres to we can determine the character being :<br>
 &lsquo;1337_pwd&rsquo;</p>
 <h3 id="crackme7">Crackme7</h3>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201075821.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260201075821.png" alt=""><br>
 for the next one once again i exxamined it in ghidra , look intro the main function and found this else if statement , then i right click on that value and chose to decimal and god the decimal value<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201080008.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260201080008.png" alt=""><br>
 plug it into the program and i got the flag</p>
 <h3 id="crackme8">crackme8</h3>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201081212.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260201081212.png" alt=""><br>
 samething as level 7 , just go in ghidra , if statement , right click and chose decimal and u got it is that simple<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260201081307.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260201081307.png" alt=""></p>
 
             </div>
         </article></main>

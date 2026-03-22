@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: wonderland
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - web

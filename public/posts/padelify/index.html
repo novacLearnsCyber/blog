@@ -100,15 +100,15 @@ a user agent is a string of character that make the request to the site">
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/padelify/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -121,14 +121,14 @@ a user agent is a string of character that make the request to the site">
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -146,6 +146,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -201,21 +211,21 @@ stroke-linejoin="round" class="feather feather-home">
 <p>First thinks first , its time to look for information<br>
 a<br>
 I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png" alt=""></p>
 <p>lets try to bypass it , using the flag <code>-a</code> bypass it pretty simple<br>
 for noobies (like me ) the -a flag uses a diferent user agent than the default gobuster agent ,<br>
 a user agent is a string of character that make the request to the site</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117112836.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117112836.png" alt=""><br>
 i gonna try another list this one is to short i think</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117113229.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117113229.png" alt=""><br>
 better this way , firefart is such a goated name<br>
 lets try to accces config</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117113720.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117113720.png" alt=""><br>
 and the WAF is blocking it again cool</p>
 <p>lets try to acces the log file<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117113943.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117113943.png" alt=""><br>
 ok cool it works<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117114001.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117114001.png" alt=""><br>
 and we have this cool error message here that explain us that xss (cross site scripting) attems may be possible , and also that the HttpOnly flag is not set</p>
 <h3 id="how-we-gonna-try-to-break-it">how we gonna try to break it</h3>
 <p>A WAF can be passed a few ways , one of them is using a 64bit encoded string and the functions :<br>
@@ -230,34 +240,34 @@ and we have this cool error message here that explain us that xss (cross site sc
 </code></pre><p>this will go straight to the app and be execute<br>
 in the password field just enter something random</p>
 <p>and bam bam bam we got something<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117121034.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117121034.png" alt=""></p>
 <p>now we just change our cookie with that string :<br>
 &lsquo;/PHPSESSID=pgulj9vf9eckvcpetht9ma6cmf&rsquo;</p>
 <p>now we just go and change the cookie (press F12 and go to the storage section than cookies)</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117124301.png" alt=""></p>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117124301.png" alt=""></p>
 <p>and we have the first flag :<br>
 <strong>Flag:</strong> THM{Logged_1n_Moderat0r}</p>
 <h3 id="second-flag">Second Flag</h3>
 <pre tabindex="0"><code>note : if u see a different ip is because i had to restart the challenege 
 </code></pre><p>i click on Live button in the right upper corner of the previos panel and i got the following<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162139.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162139.png" alt=""><br>
 and if we look at the URL we may something interesting , the page=match.php , lets try to exploitat in a directory traversal way<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162216.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162216.png" alt=""><br>
 and the waf is blocking us again ,<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162422.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162422.png" alt=""></p>
 <p>lets maybe try to encode the character &ldquo;/&rdquo;</p>
 <p>i encoded <code>/</code> with the character ..%2F which is URL encoding</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162541.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162541.png" alt=""><br>
 this is something interesting</p>
 <p>lets try to read the config file with this vulnerability<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117163601.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117163601.png" alt=""><br>
 note: dont forget to encode &lsquo;.&rsquo; to  %2E or else will not work<br>
 cool very cool we get it<br>
 we may see some information in the app.conf about the admin info<br>
 <code>admin_info = &quot;bL}8,S9W1o44&quot;</code><br>
 lets try to log in with this</p>
 <p>and with the username ; admin and the password from above we succed to log in<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260117163937.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117163937.png" alt=""><br>
 <strong>Flag:</strong> THM{Logged_1n_Adm1n001}<br>
 very cool chalange thank u THM</p>
 

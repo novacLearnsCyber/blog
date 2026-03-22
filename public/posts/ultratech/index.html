@@ -106,15 +106,15 @@ inside it i found 2 passwords hasheh and both of them where on crackstatio">
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/ultratech/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -127,14 +127,14 @@ inside it i found 2 passwords hasheh and both of them where on crackstatio">
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -152,6 +152,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -204,42 +214,42 @@ stroke-linejoin="round" class="feather feather-home">
             
             <div class="page-content">
                 <p>scaning:<br>
-this nmap scan gives us all we need for the first page <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png" alt=""><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png" alt=""></p>
+this nmap scan gives us all we need for the first page <img src="/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png" alt=""></p>
 <p>so the first page is done .<br>
 i also runned a feq gobuster scans and found a few interesting domains ,<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png" alt=""><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png" alt=""><br>
 one of them being /js which quiet interesting  , and inside it the api.js file , what grabbed my attention was ping line<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png" alt=""></p>
 <p>robots.txt gives a map<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png" alt=""></p>
 <p>trying some parameter checking here<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png" alt=""></p>
 <p>here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png" alt=""><br>
 i tried to do some reverse shell script but it didnt worked<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png" alt=""><br>
 so i just lister the password file<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png" alt=""><br>
 inside it i found 2 passwords hasheh and both of them where on crackstatio</p>
 <pre tabindex="0"><code>���(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Name or service not known
-</code></pre><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103535.png" alt=""><br>
+</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260303103535.png" alt=""><br>
 mrsheafy<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303104008.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303104008.png" alt=""><br>
 n100906<br>
 then i just ssh with the first username and pass<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105519.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303105519.png" alt=""><br>
 inside i tried to list some SUID or sudo but didnt find anything interesting<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105512.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303105512.png" alt=""><br>
 but when i id i saw a have some docker permisions on , ok that cool<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105912.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303105912.png" alt=""><br>
 so i search on GTFO.bins a priv esec using docker and found this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303110133.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303110133.png" alt=""><br>
 run it and boom root acces , room done<br>
 <img src="blog-ul-meu/static/Pasted%20image%2020260303110124.png" alt=""><br>
 just cat the ssh as in the question<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303110159.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260303110159.png" alt=""></p>
 
             </div>
         </article></main>

@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: blog
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 1

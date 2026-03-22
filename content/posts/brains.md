@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: brains
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 1

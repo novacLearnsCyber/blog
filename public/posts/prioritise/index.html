@@ -104,15 +104,15 @@ nothing special">
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/prioritise/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -125,14 +125,14 @@ nothing special">
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -150,6 +150,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -203,29 +213,29 @@ stroke-linejoin="round" class="feather feather-home">
             <div class="page-content">
                 <p>Description:<br>
 &ldquo;We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though&hellip;?&rdquo;</p>
-<p>i checked the website and add a new task on the to do list <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png" alt=""><br>
+<p>i checked the website and add a new task on the to do list <img src="/images/blog-ul-meu/static/Pasted%20image%2020260126120647.png" alt=""><br>
 lets check a basic sql injection<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260126120808.png" alt=""><br>
 nothing special in the begining<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127055947.png" alt=""><br>
 i created a new event in the tasklist and intercept it via burpsuite to look for something special<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127060055.png" alt=""><br>
 the request seams normal<br>
 i want tot try to modify the conent-length field may be we can buffer overflow this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127060232.png" alt=""><br>
 nothing special</p>
 <p>OK SOMETHING SPECIAL HAPPENS WHEN we try to change the order parameter ,<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060600.png" alt=""><br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060609.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127060600.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127060609.png" alt=""><br>
 we can modify the order parameter as we want</p>
 <p>I setted the value of order to:<br>
 <code>  title%20DESC%20--  </code><br>
 and get the following<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127060725.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127060725.png" alt=""><br>
 ok cool i think we encounter a order by sql injection :<br>
 <a href="https://portswigger.net/support/sql-injection-in-the-query-structure">https://portswigger.net/support/sql-injection-in-the-query-structure</a></p>
 <p>to check bbeter for a msql injection i tried the following payload :<code> http://10.64.190.116/?order=(CASE%20WHEN%20(1=1)%20THEN%20title%20ELSE%20date%20END);%20--</code></p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127063021.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260127063021.png" alt=""><br>
 Since the application is vulnerable to boolean-based blind SQL injection, we can manually extract some initial information needed for the flag.</p>
 <p>For the next four sections, we will be using the payloads from this awesome repo: <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md">https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md</a></p>
 <p>since i dont know how to write python for and now , and i dont have time to invest in this rn i found this scipt in this write up :<br>
@@ -302,7 +312,7 @@ for action in actions:
     
 </code></pre><p>since it fells quite like cheating to do this i gonna try to explain the best i can what does the scirpt<br>
 ok so for what i get after reading the sciprt in few time , it kinda brute forces the name of the table of the flag , being &ldquo;secret_flag&rdquo; after that it bruteforces the name of the column being &ldquo;flag_value&rdquo; and the in display it .<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260127071247.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260127071247.png" alt=""><br>
 and hooray we find the flag</p>
 
             </div>

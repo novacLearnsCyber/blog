@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Evil-GPT
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 1

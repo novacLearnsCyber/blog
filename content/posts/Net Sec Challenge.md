@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Net Sec Challenge
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - network

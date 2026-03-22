@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: MrRobot
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 3

@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Evil-GPT v2
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 1

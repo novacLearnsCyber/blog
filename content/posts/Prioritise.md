@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Prioritise
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - sql

@@ -45,17 +45,17 @@
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/">
-    <link href="https://novaclearnscyber.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
-    <link href="https://novaclearnscyber.github.io/blog/index.xml" rel="feed" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
+    <link href="/blog/index.xml" rel="feed" type="application/rss+xml" title="Cyber Blog-ul lui Novac">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -68,14 +68,14 @@
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -93,6 +93,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -130,35 +140,6 @@ stroke-linejoin="round" class="feather feather-home">
     <div id="content">
         
 <style>
-    .custom-post-list {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px 20px 20px;
-        text-align: center;
-        min-height: 60vh;
-         
-    }
-
-    .custom-post-entry {
-        margin-bottom: 0.8rem;
-    }
-
-    .custom-post-link {
-        font-size: 1.3rem;
-        font-weight: 600;
-        text-decoration: none;
-        color: inherit;
-         
-        position: relative;
-        padding-bottom: 2px;
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .custom-post-link:hover {
-        opacity: 0.7;
-        text-decoration: none;
-    }
-
      
     .homepage-banner {
         width: 100%;
@@ -176,9 +157,7 @@ stroke-linejoin="round" class="feather feather-home">
     }
 
     @media (max-width: 768px) {
-        .homepage-banner {
-            height: 200px;
-        }
+        .homepage-banner { height: 180px; }
     }
 
      
@@ -192,6 +171,7 @@ stroke-linejoin="round" class="feather feather-home">
         box-sizing: border-box;
         border-top: 1px solid rgba(255,255,255,0.08);
         border-bottom: 1px solid rgba(255,255,255,0.08);
+        overflow-x: hidden;
     }
 
     .intro-strip-ascii {
@@ -218,7 +198,6 @@ stroke-linejoin="round" class="feather feather-home">
         padding: 0;
     }
 
-     
     @keyframes blink {
         0%, 100% { opacity: 1; }
         50%       { opacity: 0; }
@@ -251,35 +230,202 @@ stroke-linejoin="round" class="feather feather-home">
     }
 
      
-    @media (max-width: 768px) {
-        .custom-post-link {
-            font-size: 1.1rem;
-        }
+    .home-section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.5rem 2rem;
+    }
 
+    .home-section-title {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.45;
+        margin-bottom: 1rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .cats-grid-home {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .cat-card-home {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.3rem 1.2rem;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.07);
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.2s, border-color 0.22s, transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cat-card-home::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        width: 3px;
+        background: linear-gradient(180deg, #d98ad4, #8a6ed4);
+        border-radius: 3px 0 0 3px;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+    }
+
+    .cat-card-home:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(209,130,203,0.35);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cat-card-home:hover::before { opacity: 1; }
+
+    .cat-card-top-home {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cat-card-icon-home { font-size: 1.5rem; line-height: 1; }
+
+    .cat-card-count-home {
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.15rem 0.5rem;
+        border-radius: 20px;
+        background: rgba(209,130,203,0.12);
+        color: #d98ad4;
+        border: 1px solid rgba(209,130,203,0.2);
+    }
+
+    .cat-card-name-home {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+
+    .cat-card-sub-home {
+        font-size: 0.78rem;
+        opacity: 0.4;
+    }
+
+     
+    .recent-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .recent-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1rem;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.18s, border-color 0.18s, transform 0.15s;
+        gap: 0.5rem;
+    }
+
+    .recent-card:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(209,130,203,0.3);
+        transform: translateX(3px);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .recent-card-title {
+        font-size: 0.95rem;
+        font-weight: 500;
+        flex: 1;
+    }
+
+    .recent-card-right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    .diff-badge-sm {
+        font-size: 0.65rem;
+        font-weight: 700;
+        padding: 0.1rem 0.4rem;
+        border-radius: 20px;
+        text-transform: uppercase;
+    }
+
+    .diff-1 { background: rgba(72,199,116,0.18); color: #48c774; border: 1px solid rgba(72,199,116,0.3); }
+    .diff-2 { background: rgba(255,221,87,0.15); color: #f0d060; border: 1px solid rgba(255,221,87,0.3); }
+    .diff-3 { background: rgba(255,99,88,0.15);  color: #ff6358; border: 1px solid rgba(255,99,88,0.3); }
+    .diff-4 { background: rgba(160,80,240,0.15); color: #b06cfc; border: 1px solid rgba(160,80,240,0.3); }
+
+    .recent-card-arrow { opacity: 0.3; font-size: 0.8rem; }
+    .recent-card:hover .recent-card-arrow { opacity: 0.9; }
+
+    .view-all-link {
+        display: inline-block;
+        font-size: 0.82rem;
+        color: #d98ad4;
+        text-decoration: none;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+        margin-top: 0.2rem;
+    }
+
+    .view-all-link:hover { opacity: 1; }
+
+     
+    @media (max-width: 768px) {
         .intro-strip {
             flex-direction: column;
-            padding: 1.2rem 1.2rem;
-            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+            gap: 0.8rem;
         }
-
         .intro-strip-ascii {
-            font-size: 7px;
+            font-size: 5.5px;
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
         }
-
-        .ascii-art {
-            font-size: 6px;
+        .intro-strip-text {
+            font-size: 0.75rem;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            word-break: break-word;
+            width: 100%;
+            text-align: left;
         }
+        .ascii-container { overflow-x: auto; }
+        .ascii-art { font-size: 5px; }
+        .cats-grid-home { grid-template-columns: 1fr 1fr; }
+        .recent-grid { grid-template-columns: 1fr; }
+        .home-section { padding: 0 1rem 2rem; }
     }
 
     @media (min-width: 769px) {
-        .ascii-art {
-            font-size: 12px;
-        }
+        .ascii-art { font-size: 12px; }
     }
 </style>
 
 <div class="homepage-banner">
-    <img src="https://novaclearnscyber.github.io/blog/siteBackcopy.png" alt="Site Banner">
+    <img src="/siteBackcopy.png" alt="Site Banner">
 </div>
 
 <div class="intro-strip">
@@ -336,118 +482,156 @@ at the moment. Dive in.
 <div class="ascii-container">
     <pre class="ascii-art">
    _____                          .__  __                              
-  /     \ ___.__. __  _  _________|__|/  |_  ____  __ ________  ______ 
+  /     \___.__. __  _  _________|__|/  |_  ____  __ ________  ______ 
  /  \ /  &lt;   |  | \ \/ \/ /\_  __ \  \   __\/ __ \|  |  \____ \/  ___/ 
-/    Y    \___  |  \     /  |  | \/  ||  | \  ___/|  |  /  |_&gt; &gt;___ \  
-\____|__  / ____|   \/\_/   |__|  |__||__|  \___  &gt;____/|   __/____  &gt; 
-        \/\/                                    \/      |__|       \/  
-</pre>
+/    Y    \___  |  \     /  |  | \/  ||  | \  ___/|  |  /  |_> >___ \  
+\____|__  / ____|   \/\_/   |__|  |__||__|  \___  >____/|   __/____  > 
+        \/\/                                    \/      |__|       \/  </pre>
 </div>
 
-<div class="custom-post-list">
-    
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/olympus/" class="custom-post-link">olympus</a>
+
+<div class="home-section">
+    <p class="home-section-title">📂 Browse by Category</p>
+    <div class="cats-grid-home">
+        
+        
+        
+        <a href="https://novaclearnscyber.github.io/blog/categories/tryhackme/" class="cat-card-home">
+            <div class="cat-card-top-home">
+                <span class="cat-card-icon-home">🔐</span>
+                <span class="cat-card-count-home">25 writeups</span>
+            </div>
+            <div class="cat-card-name-home">TryHackMe</div>
+            <div class="cat-card-sub-home">Writeups for TryHackMe rooms</div>
+        </a>
+        
     </div>
+
     
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/biohazard/" class="custom-post-link">Biohazard</a>
+    <p class="home-section-title">🕐 Recent Writeups</p>
+    <div class="recent-grid">
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/olympus/" class="recent-card">
+            <span class="recent-card-title">olympus</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/biohazard/" class="recent-card">
+            <span class="recent-card-title">Biohazard</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/" class="recent-card">
+            <span class="recent-card-title">TryHack3M Subscribe</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/include/" class="recent-card">
+            <span class="recent-card-title">Include</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/ultratech/" class="recent-card">
+            <span class="recent-card-title">ultratech</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-3">
+                    Hard
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/red/" class="recent-card">
+            <span class="recent-card-title">red</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/" class="recent-card">
+            <span class="recent-card-title">new hire old artifact</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/infinity-shell/" class="recent-card">
+            <span class="recent-card-title">infinity shell</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
+        <a href="https://novaclearnscyber.github.io/blog/posts/brains/" class="recent-card">
+            <span class="recent-card-title">brains</span>
+            <span class="recent-card-right">
+                
+                <span class="diff-badge-sm diff-1">
+                    Easy
+                    
+                </span>
+                
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        
     </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/tryhack3m-subscribe/" class="custom-post-link">TryHack3M Subscribe</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/include/" class="custom-post-link">Include</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/ultratech/" class="custom-post-link">ultratech</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/red/" class="custom-post-link">red</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/" class="custom-post-link">new hire old artifact</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/infinity-shell/" class="custom-post-link">infinity shell</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/brains/" class="custom-post-link">brains</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/" class="custom-post-link">Evil-GPT v2</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/evil-gpt/" class="custom-post-link">Evil-GPT</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/decryptify/" class="custom-post-link">decryptify</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/blog/" class="custom-post-link">blog</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/anonymous/" class="custom-post-link">anonymous</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/dogcat/" class="custom-post-link">dogcat</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/containme/" class="custom-post-link">ContainMe</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/padelify/" class="custom-post-link">padelify</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/mrrobot/" class="custom-post-link">MrRobot</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/compiled/" class="custom-post-link">Compiled</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/wonderland/" class="custom-post-link">wonderland</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/reversing-elf/" class="custom-post-link">ReversingElf</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/prioritise/" class="custom-post-link">Prioritise</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/" class="custom-post-link">Net Sec Challenge</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/attacktive-directory/" class="custom-post-link">Attacktive Directory</a>
-    </div>
-    
-    <div class="custom-post-entry">
-        <a href="https://novaclearnscyber.github.io/blog/posts/farewell/" class="custom-post-link">Farewell</a>
-    </div>
-    
+    <a href="/categories/tryhackme/" class="view-all-link">→ View all writeups</a>
 </div>
+
 
     </div>
     <footer class="footer">

@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Farewell
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - waf 

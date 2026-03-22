@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: padelify
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - web

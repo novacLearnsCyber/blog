@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: new hire old artifact
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 1

@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Biohazard
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 1

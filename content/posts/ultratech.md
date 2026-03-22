@@ -1,6 +1,8 @@
 ---
 title: ultratech
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 3

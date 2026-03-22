@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Attacktive Directory
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - windows

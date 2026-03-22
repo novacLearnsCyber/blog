@@ -1,0 +1,144 @@
+{{ define "main" }}
+<style>
+    /* ===== CATEGORIES LISTING ===== */
+    .cats-page {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+    }
+
+    .cats-header {
+        margin-bottom: 2rem;
+    }
+
+    .cats-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 0.4rem;
+        letter-spacing: -0.5px;
+    }
+
+    .cats-header p {
+        opacity: 0.5;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .cats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .cat-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 1.5rem 1.4rem;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.08);
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.2s, border-color 0.22s, transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cat-card::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        width: 3px;
+        background: linear-gradient(180deg, #d98ad4, #8a6ed4);
+        border-radius: 3px 0 0 3px;
+        opacity: 0.6;
+        transition: opacity 0.2s;
+    }
+
+    .cat-card:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(209,130,203,0.35);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cat-card:hover::before { opacity: 1; }
+
+    .cat-card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cat-card-icon {
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+
+    .cat-card-count {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 0.2rem 0.6rem;
+        border-radius: 20px;
+        background: rgba(209,130,203,0.12);
+        color: #d98ad4;
+        border: 1px solid rgba(209,130,203,0.2);
+    }
+
+    .cat-card-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+    }
+
+    .cat-card-desc {
+        font-size: 0.82rem;
+        opacity: 0.45;
+        line-height: 1.5;
+    }
+
+    .cat-card-arrow {
+        font-size: 0.8rem;
+        opacity: 0.3;
+        margin-top: auto;
+        transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .cat-card:hover .cat-card-arrow {
+        opacity: 0.8;
+        transform: translateX(4px);
+    }
+
+    @media (max-width: 600px) {
+        .cats-grid { grid-template-columns: 1fr; }
+        .cats-header h1 { font-size: 1.5rem; }
+    }
+</style>
+
+<div class="cats-page">
+    <div class="cats-header">
+        <h1>Categories</h1>
+        <p>Browse writeups by platform</p>
+    </div>
+
+    <div class="cats-grid">
+        {{ range .Data.Terms.Alphabetical }}
+        {{ $term := . }}
+        {{ $termPage := $term.Page }}
+        <a href="{{ $termPage.Permalink }}" class="cat-card">
+            <div class="cat-card-top">
+                <span class="cat-card-icon">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
+                <span class="cat-card-count">{{ $term.Count }} writeups</span>
+            </div>
+            <div class="cat-card-name">{{ $termPage.Title | title }}</div>
+            <div class="cat-card-desc">{{ with $termPage.Description }}{{ . }}{{ else }}Writeups for {{ $termPage.Title | title }}{{ end }}</div>
+            <div class="cat-card-arrow">→ Browse all</div>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

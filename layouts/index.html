@@ -1,35 +1,6 @@
 {{ define "main" }}
 <style>
-    .custom-post-list {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px 20px 20px;
-        text-align: center;
-        min-height: 60vh;
-        /* Ensure it takes up some space */
-    }
-
-    .custom-post-entry {
-        margin-bottom: 0.8rem;
-    }
-
-    .custom-post-link {
-        font-size: 1.3rem;
-        font-weight: 600;
-        text-decoration: none;
-        color: inherit;
-        /* Inherit theme color (likely white/light in dark mode) */
-        position: relative;
-        padding-bottom: 2px;
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .custom-post-link:hover {
-        opacity: 0.7;
-        text-decoration: none;
-    }
-
-    /* Homepage Banner */
+    /* ===== HOMEPAGE BANNER ===== */
     .homepage-banner {
         width: 100%;
         height: 450px;
@@ -46,12 +17,10 @@
     }
 
     @media (max-width: 768px) {
-        .homepage-banner {
-            height: 180px;
-        }
+        .homepage-banner { height: 180px; }
     }
 
-    /* Full-width intro strip */
+    /* ===== INTRO STRIP ===== */
     .intro-strip {
         width: 100%;
         display: flex;
@@ -89,7 +58,6 @@
         padding: 0;
     }
 
-    /* Blinking cursor */
     @keyframes blink {
         0%, 100% { opacity: 1; }
         50%       { opacity: 0; }
@@ -101,7 +69,7 @@
         font-family: monospace;
     }
 
-    /* Mywrites ASCII Art */
+    /* ===== MYWRITES ASCII ===== */
     .ascii-container {
         text-align: center;
         margin: 0 0 2rem 0;
@@ -121,26 +89,181 @@
         border: none;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-        .custom-post-link {
-            font-size: 1.1rem;
-        }
+    /* ===== CATEGORY GRID ===== */
+    .home-section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.5rem 2rem;
+    }
 
+    .home-section-title {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.45;
+        margin-bottom: 1rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .cats-grid-home {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .cat-card-home {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.3rem 1.2rem;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.07);
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.2s, border-color 0.22s, transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cat-card-home::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        width: 3px;
+        background: linear-gradient(180deg, #d98ad4, #8a6ed4);
+        border-radius: 3px 0 0 3px;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+    }
+
+    .cat-card-home:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(209,130,203,0.35);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cat-card-home:hover::before { opacity: 1; }
+
+    .cat-card-top-home {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cat-card-icon-home { font-size: 1.5rem; line-height: 1; }
+
+    .cat-card-count-home {
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.15rem 0.5rem;
+        border-radius: 20px;
+        background: rgba(209,130,203,0.12);
+        color: #d98ad4;
+        border: 1px solid rgba(209,130,203,0.2);
+    }
+
+    .cat-card-name-home {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+
+    .cat-card-sub-home {
+        font-size: 0.78rem;
+        opacity: 0.4;
+    }
+
+    /* ===== RECENT WRITEUPS ===== */
+    .recent-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .recent-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1rem;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.18s, border-color 0.18s, transform 0.15s;
+        gap: 0.5rem;
+    }
+
+    .recent-card:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(209,130,203,0.3);
+        transform: translateX(3px);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .recent-card-title {
+        font-size: 0.95rem;
+        font-weight: 500;
+        flex: 1;
+    }
+
+    .recent-card-right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    .diff-badge-sm {
+        font-size: 0.65rem;
+        font-weight: 700;
+        padding: 0.1rem 0.4rem;
+        border-radius: 20px;
+        text-transform: uppercase;
+    }
+
+    .diff-1 { background: rgba(72,199,116,0.18); color: #48c774; border: 1px solid rgba(72,199,116,0.3); }
+    .diff-2 { background: rgba(255,221,87,0.15); color: #f0d060; border: 1px solid rgba(255,221,87,0.3); }
+    .diff-3 { background: rgba(255,99,88,0.15);  color: #ff6358; border: 1px solid rgba(255,99,88,0.3); }
+    .diff-4 { background: rgba(160,80,240,0.15); color: #b06cfc; border: 1px solid rgba(160,80,240,0.3); }
+
+    .recent-card-arrow { opacity: 0.3; font-size: 0.8rem; }
+    .recent-card:hover .recent-card-arrow { opacity: 0.9; }
+
+    .view-all-link {
+        display: inline-block;
+        font-size: 0.82rem;
+        color: #d98ad4;
+        text-decoration: none;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+        margin-top: 0.2rem;
+    }
+
+    .view-all-link:hover { opacity: 1; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
         .intro-strip {
             flex-direction: column;
             align-items: center;
             padding: 1rem;
             gap: 0.8rem;
         }
-
         .intro-strip-ascii {
             font-size: 5.5px;
             max-width: 100%;
             width: 100%;
             text-align: center;
         }
-
         .intro-strip-text {
             font-size: 0.75rem;
             line-height: 1.7;
@@ -149,20 +272,15 @@
             width: 100%;
             text-align: left;
         }
-
-        .ascii-container {
-            overflow-x: auto;
-        }
-
-        .ascii-art {
-            font-size: 5px;
-        }
+        .ascii-container { overflow-x: auto; }
+        .ascii-art { font-size: 5px; }
+        .cats-grid-home { grid-template-columns: 1fr 1fr; }
+        .recent-grid { grid-template-columns: 1fr; }
+        .home-section { padding: 0 1rem 2rem; }
     }
 
     @media (min-width: 769px) {
-        .ascii-art {
-            font-size: 12px;
-        }
+        .ascii-art { font-size: 12px; }
     }
 </style>
 
@@ -178,20 +296,53 @@
 <div class="ascii-container">
     <pre class="ascii-art">
    _____                          .__  __                              
-  /     \ ___.__. __  _  _________|__|/  |_  ____  __ ________  ______ 
- /  \ /  &lt;   |  | \ \/ \/ /\_  __ \  \   __\/ __ \|  |  \____ \/  ___/ 
-/    Y    \___  |  \     /  |  | \/  ||  | \  ___/|  |  /  |_&gt; &gt;___ \  
-\____|__  / ____|   \/\_/   |__|  |__||__|  \___  &gt;____/|   __/____  &gt; 
-        \/\/                                    \/      |__|       \/  
-</pre>
+  /     \___.__. __  _  _________|__|/  |_  ____  __ ________  ______ 
+ /  \ /  <   |  | \ \/ \/ /\_  __ \  \   __\/ __ \|  |  \____ \/  ___/ 
+/    Y    \___  |  \     /  |  | \/  ||  | \  ___/|  |  /  |_> >___ \  
+\____|__  / ____|   \/\_/   |__|  |__||__|  \___  >____/|   __/____  > 
+        \/\/                                    \/      |__|       \/  </pre>
 </div>
 
-<div class="custom-post-list">
-    {{/* Range over ALL posts in the 'posts' section, bypassing pagination */}}
-    {{ range where .Site.RegularPages "Section" "posts" }}
-    <div class="custom-post-entry">
-        <a href="{{ .Permalink }}" class="custom-post-link">{{ .Title }}</a>
+{{/* ===== CATEGORIES GRID ===== */}}
+<div class="home-section">
+    <p class="home-section-title">📂 Browse by Category</p>
+    <div class="cats-grid-home">
+        {{ range .Site.Taxonomies.categories.ByCount }}
+        {{ $term := . }}
+        {{ $termPage := $term.Page }}
+        <a href="{{ $termPage.Permalink }}" class="cat-card-home">
+            <div class="cat-card-top-home">
+                <span class="cat-card-icon-home">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
+                <span class="cat-card-count-home">{{ $term.Count }} writeups</span>
+            </div>
+            <div class="cat-card-name-home">{{ $termPage.Title | title }}</div>
+            <div class="cat-card-sub-home">{{ with $termPage.Description }}{{ . }}{{ else }}Writeups for {{ $termPage.Title | title }}{{ end }}</div>
+        </a>
+        {{ end }}
     </div>
-    {{ end }}
+
+    {{/* ===== RECENT WRITEUPS ===== */}}
+    <p class="home-section-title">🕐 Recent Writeups</p>
+    <div class="recent-grid">
+        {{ range first 9 (where .Site.RegularPages "Section" "posts") }}
+        <a href="{{ .Permalink }}" class="recent-card">
+            <span class="recent-card-title">{{ .Title }}</span>
+            <span class="recent-card-right">
+                {{ with .Params.dificultate }}
+                <span class="diff-badge-sm diff-{{ . }}">
+                    {{ if eq . 1 }}Easy
+                    {{ else if eq . 2 }}Med
+                    {{ else if eq . 3 }}Hard
+                    {{ else if eq . 4 }}Insane
+                    {{ end }}
+                </span>
+                {{ end }}
+                <span class="recent-card-arrow">→</span>
+            </span>
+        </a>
+        {{ end }}
+    </div>
+    <a href="{{ "/categories/tryhackme/" | relURL }}" class="view-all-link">→ View all writeups</a>
 </div>
+
 {{ end }}

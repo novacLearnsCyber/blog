@@ -1,6 +1,8 @@
 ---
 title: dogcat
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
 dificultate: 4

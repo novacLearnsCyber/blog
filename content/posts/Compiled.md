@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: Compiled
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - arhitecture 

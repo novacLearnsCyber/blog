@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://novaclearnscyber.github.io/blog/categories/</loc>
+    <lastmod>2026-03-17T08:45:13+00:00</lastmod>
+  </url><url>
     <loc>https://novaclearnscyber.github.io/blog/</loc>
     <lastmod>2026-03-17T08:45:13+00:00</lastmod>
   </url><url>
@@ -21,6 +24,9 @@
     <lastmod>2026-03-17T08:45:13+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/tags/</loc>
+    <lastmod>2026-03-17T08:45:13+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/categories/tryhackme/</loc>
     <lastmod>2026-03-17T08:45:13+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/posts/biohazard/</loc>
@@ -95,6 +101,8 @@
     <loc>https://novaclearnscyber.github.io/blog/posts/farewell/</loc>
     <lastmod>2026-01-18T20:42:31+00:00</lastmod>
   </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/categories/</loc>
+    <loc>https://novaclearnscyber.github.io/blog/false/</loc>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/true/</loc>
   </url>
 </urlset>

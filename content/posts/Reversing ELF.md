@@ -6,6 +6,8 @@ tags:
   - cyberStuff
 title: ReversingElf
 draft: false
+categories:
+  - tryhackme
 date:
 subiect:
   - exploatation

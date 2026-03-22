@@ -110,15 +110,15 @@ use :">
     
 
     <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/olympus/">
-    <link href="https://novaclearnscyber.github.io/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
-    <link href="https://novaclearnscyber.github.io/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="https://novaclearnscyber.github.io/blog/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://novaclearnscyber.github.io/blog/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://novaclearnscyber.github.io/blog/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://novaclearnscyber.github.io/blog/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
 
 
 
@@ -131,14 +131,14 @@ use :">
     <meta name="color-scheme" content="light dark">
 
     
-    <link rel="icon" type="image/svg+xml" href="https://novaclearnscyber.github.io/blog/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
 
     
     
     
       
-<link rel="icon" type="image/png" href="https://novaclearnscyber.github.io/blog/favicon.png">
-<link rel="shortcut icon" href="https://novaclearnscyber.github.io/blog/favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
     
 </head>
 
@@ -156,6 +156,16 @@ stroke-linejoin="round" class="feather feather-home">
 </svg>
         </a>
     </div>
+    
+    <ul class="menu">
+        
+        <li>
+            <a href="/blog/categories/">
+                Categories
+            </a>
+        </li>
+        
+    </ul>
     
 </nav>
 
@@ -209,39 +219,39 @@ stroke-linejoin="round" class="feather feather-home">
             <div class="page-content">
                 <p>1 minute room they say</p>
 <p>first scan<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png" alt=""></p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png" alt=""></p>
 <p>Found an interesting directory when enumerating<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png" alt=""><br>
 let&rsquo;s access it<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png" alt=""><br>
 Interesting login form here , we may use sqlmap on this<br>
 i am new to sqlmap so i am going to use &ndash;wizard option<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png" alt=""><br>
 enter the url when prompted and let it do its job</p>
 <p>we find the current database being Olympus<br>
 enumerating Olympus using :</p>
 <p>we see there are 6 tables inside it, dump them all<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png" alt="">use :</p>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png" alt="">use :</p>
 <pre tabindex="0"><code>sqlmap -r sqlREQ --batch --dump-all -D olympus 
 </code></pre><p>this way we get both the user table witch seems interesting<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316085702.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316085702.png" alt=""><br>
 first flag</p>
-<p><img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316085804.png" alt=""><br>
+<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260316085804.png" alt=""><br>
 and we got some intering hashes<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316092550.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316092550.png" alt=""><br>
 i copy pasted the Prometheus hash into a file and run john on it, it going to take some time<br>
 and after a long waiting time we get the Prometheus pass being summertime, lets log in<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316093332.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316093332.png" alt=""><br>
 after logging in and going to the add post tab inside the post menu in the right menu we see this form , this may look like a xss injection<br>
 yes this dosent work<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260316094314.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316094314.png" alt=""><br>
 let&rsquo;s look inside the users , we may observe that all the users have a chat.olympus.thm email address, this may be another subdomain , let&rsquo;s access it</p>
 <p>first of all we need to add the domain to the /etc/host using <code>sudo nano /etc/hosts</code> like this :<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317030002.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317030002.png" alt=""><br>
 now let&rsquo;s access the web page<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317030057.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317030057.png" alt=""><br>
 cool we can login us Prometheus<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317030139.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317030139.png" alt=""><br>
 ok interesting looks like a chat app , running inside home.php , we may use a php reverse shell here<br>
 rev shell that i used</p>
 <pre tabindex="0"><code>&lt;?php
@@ -434,42 +444,42 @@ function printit ($string) {
 
 ?&gt;
 </code></pre><p>is important to save this rev shell script as a .php file<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317032929.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317032929.png" alt=""><br>
 now that we upload a shell we have to acces it somehow , for this lets run another sqlmap command</p>
 <pre tabindex="0"><code>sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*&amp;submit=&#34; --dbs --random-agent -v 3 --batch -D olympus --dump --fresh-querie
 </code></pre><p>this command will return a table that should look like that<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317034333.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317034333.png" alt=""><br>
 now if we start a listener with</p>
 <pre tabindex="0"><code>rlwrap nc -lnvp 79 
 </code></pre><p>and access<br>
 <code>http://chat.olympus.thm/uploads/&lt;YOUR_HASH&gt;.php</code><br>
 we should receive a rev shell<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317034551.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317034551.png" alt=""><br>
 and boom RCE<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317034708.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317034708.png" alt=""><br>
 we can upgrade the shell like this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317035108.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317035108.png" alt=""><br>
 lets enumerate some SUID with</p>
 <pre tabindex="0"><code>find / -perm -g=s -o -perm -4000 ! -type l -maxdepth 3 -exec ls -ld {} \; 2&gt;/dev/null
 </code></pre><p>before that we cand find naother flag in zeus home<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317035311.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317035311.png" alt=""><br>
 the SUID returned us an interesting binary at : /usr/bin/cputils that copies file from one location to another , knowing that we can switch the location of our ssh keys with the zeus account ,first of all we need to create a ssh key on our machine like this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043327.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043327.png" alt=""><br>
 now we need to copy on our working directory like this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043621.png" alt=""><br>
-then we need to cat our pub key like this <img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043805.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043621.png" alt=""><br>
+then we need to cat our pub key like this <img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043805.png" alt=""><br>
 then run cputils like this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043857.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043857.png" alt=""><br>
 and now connect to zeus using ssh and the key<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043922.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043922.png" alt=""><br>
 and we are zeus<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044116.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044116.png" alt=""><br>
 after enumerating some files we find this<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044257.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044257.png" alt=""><br>
 wierd php file lets cat it<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044328.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044328.png" alt=""><br>
 SUID FOUNDDDD !!!!!!!<br>
-<img src="https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044411.png" alt=""><br>
+<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044411.png" alt=""><br>
 and we found the last flag using</p>
 <pre tabindex="0"><code>grep -irl &#39;flag{&#39;
 </code></pre>
