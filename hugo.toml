@@ -45,7 +45,7 @@ relativeURLs = false
   # Custom Banner Image
   # Place the image in 'static/images/' and reference it here
   # banner = "images/my-banner.jpg"
-  banner = "static/siteBackcopy.png"
+  banner = "siteBackcopy.png"
   banner_height = "450px"
 
 [menu]

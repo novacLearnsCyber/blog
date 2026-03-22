@@ -284,9 +284,6 @@
     }
 </style>
 
-<div class="homepage-banner">
-    <img src="/siteBackcopy.png" alt="Site Banner">
-</div>
 
 <div class="intro-strip">
     {{ partial "intro-ascii.html" . }}
@@ -342,7 +339,7 @@
         </a>
         {{ end }}
     </div>
-    <a href="{{ "/categories/tryhackme/" | relURL }}" class="view-all-link">→ View all writeups</a>
+    <a href="{{ "categories/tryhackme/" | relURL }}" class="view-all-link">→ View all writeups</a>
 </div>
 
 {{ end }}
