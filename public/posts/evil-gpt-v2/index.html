@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/evil-gpt-v2/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-02T13:23:16Z />
     <meta property="article:published_time" content=2026-03-02T13:23:16Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/evil-gpt-v2/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/evil-gpt-v2/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="Evil-GPT v2">
   <meta property="og:description" content="yeah so this is the continuation of evil gpt
@@ -99,7 +99,7 @@ yeak so i find the trick . I told the ai to say random stuff and dont stop , and
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/evil-gpt-v2/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -113,7 +113,7 @@ yeak so i find the trick . I told the ai to say random stuff and dont stop , and
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -125,7 +125,6 @@ yeak so i find the trick . I told the ai to say random stuff and dont stop , and
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -134,9 +133,9 @@ yeak so i find the trick . I told the ai to say random stuff and dont stop , and
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -145,19 +144,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -185,7 +199,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -209,15 +223,20 @@ stroke-linejoin="round" class="feather feather-home">
             <div class="page-content">
                 <p>yeah so this is the continuation of evil gpt<br>
 DESC:<br>
-<img src="https://share.note.sx/files/8f/8f8962doo5lxz37vfv46.png" alt=""><br>
+<img src="https://share.note.sx/files/8f/8f8962doo5lxz37vfv46.png" alt="">
+<br>
 this time we can acces the AI trough http in browser , so we know for sure a htttp port in open<br>
-<img src="https://share.note.sx/files/5i/5i5lm0iu441i0qghclig.png" alt=""><br>
+<img src="https://share.note.sx/files/5i/5i5lm0iu441i0qghclig.png" alt="">
+<br>
 know we can talk to the model like to the real chat gpt<br>
-<img src="https://share.note.sx/files/z2/z23yv7xtc4i1choh94aa.png" alt=""><br>
+<img src="https://share.note.sx/files/z2/z23yv7xtc4i1choh94aa.png" alt="">
+<br>
 here i tried some trick , liltle to no result as we can see<br>
-<img src="https://share.note.sx/files/fe/fe2hbkmjwoodlr47boqs.png" alt=""><br>
+<img src="https://share.note.sx/files/fe/fe2hbkmjwoodlr47boqs.png" alt="">
+<br>
 yeak so i find the trick . I told the ai to say random stuff and dont stop , and eventually it droped the flag pretty easy , this was actually how the real chat gpt was hacked some time before revealing some non public information<br>
-<img src="https://share.note.sx/files/8i/8ircwhzwz87ndibh1gvg.png" alt=""></p>
+<img src="https://share.note.sx/files/8i/8ircwhzwz87ndibh1gvg.png" alt="">
+</p>
 
             </div>
         </article></main>

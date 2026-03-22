@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/biohazard/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/biohazard/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-15T08:16:04Z />
     <meta property="article:published_time" content=2026-03-15T08:16:04Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/biohazard/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/biohazard/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/biohazard/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/biohazard/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="Biohazard">
   <meta property="og:description" content="For the first part just run nmap and accces the http server
@@ -123,7 +123,7 @@ pressing yes gives us another flag">
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/biohazard/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/biohazard/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -137,7 +137,7 @@ pressing yes gives us another flag">
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -149,7 +149,6 @@ pressing yes gives us another flag">
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -158,9 +157,9 @@ pressing yes gives us another flag">
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -169,19 +168,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -209,7 +223,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -232,42 +246,59 @@ stroke-linejoin="round" class="feather feather-home">
             
             <div class="page-content">
                 <p>For the first part just run nmap and accces the http server<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313092553.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313092553.png" alt="">
+<br>
 i gonna run a gobuster scan and play with the http server in parallel</p>
 <p>inspecting the /mainsionmain page we get the following subdomain<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093051.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093051.png" alt="">
+<br>
 in there we get the following string<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093132.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093132.png" alt="">
+<br>
 lets plug it into cyber chef<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093210.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093210.png" alt="">
+<br>
 cool we have a /teaRoom/<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093241.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093241.png" alt="">
+<br>
 but lets see what happens if w epress YES<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093316.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093316.png" alt="">
+<br>
 and we have a flag<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093352.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093352.png" alt="">
+<br>
 carazy zombie in teaRoom<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093426.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093426.png" alt="">
+<br>
 and we find a LockPick flag cool<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093509.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093509.png" alt="">
+<br>
 lets Yes<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093532.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093532.png" alt="">
+<br>
 damn that crazy like a gobuster scan<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093639.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093639.png" alt="">
+<br>
 the barroom asks us for the lockpick room lets see what happens<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093723.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093723.png" alt="">
+<br>
 nothing special , lets READ it<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093746.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093746.png" alt="">
+<br>
 also pplug it into cyber chef<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313093818.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313093818.png" alt="">
+<br>
 cool and we have a music sheet flag<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313094015.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313094015.png" alt="">
+<br>
 when we input the music note into the piano field we get here , lets press YES<br>
 pressing yes gives us another flag</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260313094215.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313094215.png" alt="">
+<br>
 visiting the diningRoom2F gives us this ,again cyber chef<br>
 decrypting the string with rot13 gives us  a page for the blue gem<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313094530.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313094530.png" alt="">
+<br>
 and like that we get the blue gem</p>
 <p>ngl this part of the ctf is so boring , i am not gonna continue to document it , just a simple series of small puzzles ,just use cyberchef and the map to solve it</p>
 <p>in the ending you should get a FTP user and pass in this format after combining and decoding the 4th creates</p>
@@ -275,7 +306,8 @@ and like that we get the blue gem</p>
 </code></pre><p>FTP user: hunter, FTP pass: you_cant_hide_forever</p>
 <h3 id="the-guard-house">The guard house</h3>
 <p>connect to the ftp server and download all the files<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260313101737.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260313101737.png" alt="">
+</p>
 <p>after dowloading the files u will get three keys ,important.txt and helmet_key.txt.gpg</p>
 <p>use steghide for key 1 , exiftool for key 2 and binwalk for key 3 , its not that hard , i will let you find the command flags for this</p>
 <p>all those three keys combined will give u a long base string that u will ass the password for the helmet file</p>
@@ -284,7 +316,8 @@ and like that we get the blue gem</p>
 </code></pre><p>and the folder specified in one if the questions is inside the inportant.txt</p>
 <h3 id="the-revisit">the revisit</h3>
 <p>to get the ssh creds go to IP/studyRoom and enter the helmet flag<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260315033544.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260315033544.png" alt="">
+<br>
 an archive will be downloaded and u can extract it with</p>
 <pre tabindex="0"><code>tar -xgf &lt;FILE_NAME&gt;
 </code></pre><p>inside and there will be an eacgle_medal.txt with a shh username</p>
@@ -295,12 +328,15 @@ MO disk 1 : string decoded with Vigenere enc and key albert</p>
 <p>the start team leader can be found also in the hidden closet , just read the text</p>
 <h3 id="underground-laboratory">Underground laboratory</h3>
 <p>after login in with the ssh cred we can see a hidden folder and inside a chris.txt file<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260315040713.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260315040713.png" alt="">
+<br>
 just like that the answer the first 2 questions</p>
 <p>the login pass for the traitor we got from the previos task</p>
 <p>using that pass we cand su into weasker<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260315041428.png" alt=""><br>
-after that we can just sudo su and get into root  , cool ,then bam we get the ultimate form and the root flag <img src="/images/blog-ul-meu/static/Pasted%20image%2020260315041555.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260315041428.png" alt="">
+<br>
+after that we can just sudo su and get into root  , cool ,then bam we get the ultimate form and the root flag <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260315041555.png" alt="">
+<br>
 decent room , quiet boring ,</p>
 
             </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/padelify/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/padelify/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-02-15T18:21:45Z />
     <meta property="article:published_time" content=2026-02-15T18:21:45Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/padelify/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/padelify/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/padelify/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/padelify/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="padelify">
   <meta property="og:description" content="reconing First thinks first , its time to look for information
@@ -99,7 +99,7 @@ a user agent is a string of character that make the request to the site">
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/padelify/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/padelify/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -113,7 +113,7 @@ a user agent is a string of character that make the request to the site">
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -125,7 +125,6 @@ a user agent is a string of character that make the request to the site">
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -134,9 +133,9 @@ a user agent is a string of character that make the request to the site">
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -145,19 +144,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -185,7 +199,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -211,21 +225,27 @@ stroke-linejoin="round" class="feather feather-home">
 <p>First thinks first , its time to look for information<br>
 a<br>
 I tried running a gobuster scan with a common wordlists for discovery but nothing returned , surely a WAF( web aplication firewall )is blocking the acces<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117111458.png" alt="">
+</p>
 <p>lets try to bypass it , using the flag <code>-a</code> bypass it pretty simple<br>
 for noobies (like me ) the -a flag uses a diferent user agent than the default gobuster agent ,<br>
 a user agent is a string of character that make the request to the site</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117112836.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117112836.png" alt="">
+<br>
 i gonna try another list this one is to short i think</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117113229.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117113229.png" alt="">
+<br>
 better this way , firefart is such a goated name<br>
 lets try to accces config</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117113720.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117113720.png" alt="">
+<br>
 and the WAF is blocking it again cool</p>
 <p>lets try to acces the log file<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117113943.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117113943.png" alt="">
+<br>
 ok cool it works<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117114001.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117114001.png" alt="">
+<br>
 and we have this cool error message here that explain us that xss (cross site scripting) attems may be possible , and also that the HttpOnly flag is not set</p>
 <h3 id="how-we-gonna-try-to-break-it">how we gonna try to break it</h3>
 <p>A WAF can be passed a few ways , one of them is using a 64bit encoded string and the functions :<br>
@@ -240,34 +260,42 @@ and we have this cool error message here that explain us that xss (cross site sc
 </code></pre><p>this will go straight to the app and be execute<br>
 in the password field just enter something random</p>
 <p>and bam bam bam we got something<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117121034.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117121034.png" alt="">
+</p>
 <p>now we just change our cookie with that string :<br>
 &lsquo;/PHPSESSID=pgulj9vf9eckvcpetht9ma6cmf&rsquo;</p>
 <p>now we just go and change the cookie (press F12 and go to the storage section than cookies)</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117124301.png" alt=""></p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117124301.png" alt="">
+</p>
 <p>and we have the first flag :<br>
 <strong>Flag:</strong> THM{Logged_1n_Moderat0r}</p>
 <h3 id="second-flag">Second Flag</h3>
 <pre tabindex="0"><code>note : if u see a different ip is because i had to restart the challenege 
 </code></pre><p>i click on Live button in the right upper corner of the previos panel and i got the following<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162139.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162139.png" alt="">
+<br>
 and if we look at the URL we may something interesting , the page=match.php , lets try to exploitat in a directory traversal way<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162216.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162216.png" alt="">
+<br>
 and the waf is blocking us again ,<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162422.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162422.png" alt="">
+</p>
 <p>lets maybe try to encode the character &ldquo;/&rdquo;</p>
 <p>i encoded <code>/</code> with the character ..%2F which is URL encoding</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260117162541.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117162541.png" alt="">
+<br>
 this is something interesting</p>
 <p>lets try to read the config file with this vulnerability<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117163601.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117163601.png" alt="">
+<br>
 note: dont forget to encode &lsquo;.&rsquo; to  %2E or else will not work<br>
 cool very cool we get it<br>
 we may see some information in the app.conf about the admin info<br>
 <code>admin_info = &quot;bL}8,S9W1o44&quot;</code><br>
 lets try to log in with this</p>
 <p>and with the username ; admin and the password from above we succed to log in<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260117163937.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260117163937.png" alt="">
+<br>
 <strong>Flag:</strong> THM{Logged_1n_Adm1n001}<br>
 very cool chalange thank u THM</p>
 

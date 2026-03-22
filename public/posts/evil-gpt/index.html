@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/evil-gpt/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/evil-gpt/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-02T13:20:57Z />
     <meta property="article:published_time" content=2026-03-02T13:20:57Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/evil-gpt/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/evil-gpt/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/evil-gpt/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/evil-gpt/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="Evil-GPT">
   <meta property="og:description" content="so this is the first ctf i goona post ,
@@ -99,7 +99,7 @@ in the listing is a interesting py script name evilai.py , i gonna try to execut
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/evil-gpt/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/evil-gpt/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -113,7 +113,7 @@ in the listing is a interesting py script name evilai.py , i gonna try to execut
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -125,7 +125,6 @@ in the listing is a interesting py script name evilai.py , i gonna try to execut
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -134,9 +133,9 @@ in the listing is a interesting py script name evilai.py , i gonna try to execut
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -145,19 +144,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -185,7 +199,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -209,37 +223,49 @@ stroke-linejoin="round" class="feather feather-home">
             <div class="page-content">
                 <p>so this is the first ctf i goona post ,</p>
 <p>Desc :<br>
-<img src="https://share.note.sx/files/gc/gcrqcw7n0vgbzkj1aik7.png" alt=""></p>
-<p>when we connect with netcat we got the small following promt <img src="https://share.note.sx/files/68/68qnlx0susg9b3d52r2b.png" alt=""><br>
+<img src="https://share.note.sx/files/gc/gcrqcw7n0vgbzkj1aik7.png" alt="">
+</p>
+<p>when we connect with netcat we got the small following promt <img src="https://share.note.sx/files/68/68qnlx0susg9b3d52r2b.png" alt="">
+<br>
 i tried to put some command in but it dosent respond to anything except exit , for the moment</p>
 <p>i input &ldquo;flag &quot; and got the following output<br>
-<img src="https://share.note.sx/files/15/15va3qtq0gobxfir3w83.png" alt=""></p>
+<img src="https://share.note.sx/files/15/15va3qtq0gobxfir3w83.png" alt="">
+</p>
 <p>ok idk why but when i typed again ls i got the following<br>
-<img src="https://share.note.sx/files/6q/6qwgjkjmlm6infuek9vr.png" alt=""></p>
+<img src="https://share.note.sx/files/6q/6qwgjkjmlm6infuek9vr.png" alt="">
+</p>
 <p>in the listing is a interesting py script name evilai.py , i gonna try to execute it</p>
-<p><img src="https://share.note.sx/files/97/97p5eb4h2p4iosf2xjde.png" alt=""><br>
+<p><img src="https://share.note.sx/files/97/97p5eb4h2p4iosf2xjde.png" alt="">
+<br>
 when i runt this script , we got the following error message , which look kinda weird , lets look inside</p>
-<p><img src="https://share.note.sx/files/j6/j6p76vfhbqhxqwy4pw4e.png" alt=""><br>
+<p><img src="https://share.note.sx/files/j6/j6p76vfhbqhxqwy4pw4e.png" alt="">
+<br>
 as we can see , they wont let us cat it , also it transalte our command into something else , lets check if it is a alias</p>
 <p>we got he following when we try to find an alias<br>
-<img src="https://share.note.sx/files/3s/3s1f0z9pktmpdavcoiem.png" alt=""><br>
+<img src="https://share.note.sx/files/3s/3s1f0z9pktmpdavcoiem.png" alt="">
+<br>
 i runned the commnad , nothing good happend .</p>
 <p>ok ok ok soooo , afeter some time of experimenting and google other types of cat i succesded with a double tac ,<br>
-<img src="https://share.note.sx/files/x3/x31dxnp9p95l79dbhxkx.png" alt=""><br>
+<img src="https://share.note.sx/files/x3/x31dxnp9p95l79dbhxkx.png" alt="">
+<br>
 in .bashrc we got reference to a bash_aliases file , which i think its the root of the problems</p>
 <p>we got the following</p>
-<p><img src="https://share.note.sx/files/q9/q9nf3da7k64tch6yy8xn.png" alt=""></p>
+<p><img src="https://share.note.sx/files/q9/q9nf3da7k64tch6yy8xn.png" alt="">
+</p>
 <p>i dont think i will run the command , lets try something else</p>
-<p><img src="https://share.note.sx/files/s5/s5qzt617qpnfwdf0w1ds.png" alt=""><br>
+<p><img src="https://share.note.sx/files/s5/s5qzt617qpnfwdf0w1ds.png" alt="">
+<br>
 this look better dosent it</p>
 <p>yeeee. &hellip; i didnet write right the file name</p>
-<p><img src="https://share.note.sx/files/hw/hwkw9o6cxobnh18gc8nq.png" alt=""><br>
+<p><img src="https://share.note.sx/files/hw/hwkw9o6cxobnh18gc8nq.png" alt="">
+<br>
 i used the double tac on the evil py and got this , i dont know what name it refers to</p>
 <p>we can see that it strat a telnet with an ai , so maybe if we close the telnet it will work</p>
 <p>yeah i think i overcomplicated this</p>
 <p>lets try a simpler way</p>
 <p>so i find a root flder in the / and cat the flag from there with the double tac , finnaly</p>
-<p><img src="https://share.note.sx/files/qq/qqof0gt146x6bk4i6sqq.png" alt=""></p>
+<p><img src="https://share.note.sx/files/qq/qqof0gt146x6bk4i6sqq.png" alt="">
+</p>
 
             </div>
         </article></main>

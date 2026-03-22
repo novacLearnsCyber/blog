@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/red/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/red/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-02T13:34:06Z />
     <meta property="article:published_time" content=2026-03-02T13:34:06Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/red/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/red/" />
 
     
 
@@ -67,13 +67,12 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/red/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/red/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="red">
   <meta property="og:description" content="link : https://tryhackme.com/room/redisl33t
 note for the end: on the final script used for the privillege escalation , the script has to be modified as shown below , right at the end of the script :
-environ_p = (c_char_p * len(environ))() environ_p[:] = environ print(&#39;[&#43;] Calling execve()&#39;) libc.execve(b&#39;/home/red/.git/pkexec&#39;, c_char_p(None), environ_p) desc :
-scanned the ip with the following command
+environ_p = (c_char_p * len(environ))() environ_p[:] = environ print(&#39;[&#43;] Calling execve()&#39;) libc.execve(b&#39;/home/red/.git/pkexec&#39;, c_char_p(None), environ_p) desc : scanned the ip with the following command
 `sudo nmap -v –min-rate 10000 $IP -p-
 just cause it short , and it guves us ssh and http open , cool">
   <meta property="og:locale" content="ro_ro">
@@ -91,15 +90,14 @@ just cause it short , and it guves us ssh and http open , cool">
   <meta name="twitter:title" content="red">
   <meta name="twitter:description" content="link : https://tryhackme.com/room/redisl33t
 note for the end: on the final script used for the privillege escalation , the script has to be modified as shown below , right at the end of the script :
-environ_p = (c_char_p * len(environ))() environ_p[:] = environ print(&#39;[&#43;] Calling execve()&#39;) libc.execve(b&#39;/home/red/.git/pkexec&#39;, c_char_p(None), environ_p) desc :
-scanned the ip with the following command
+environ_p = (c_char_p * len(environ))() environ_p[:] = environ print(&#39;[&#43;] Calling execve()&#39;) libc.execve(b&#39;/home/red/.git/pkexec&#39;, c_char_p(None), environ_p) desc : scanned the ip with the following command
 `sudo nmap -v –min-rate 10000 $IP -p-
 just cause it short , and it guves us ssh and http open , cool">
 
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/red/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/red/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -113,7 +111,7 @@ just cause it short , and it guves us ssh and http open , cool">
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -125,7 +123,6 @@ just cause it short , and it guves us ssh and http open , cool">
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -134,9 +131,9 @@ just cause it short , and it guves us ssh and http open , cool">
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -145,19 +142,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -185,7 +197,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -215,27 +227,33 @@ environ_p[:] = environ
 print(&#39;[+] Calling execve()&#39;)
 
 libc.execve(b&#39;/home/red/.git/pkexec&#39;, c_char_p(None), environ_p)
-</code></pre><p>desc :<img src="https://share.note.sx/files/h5/h5x35x2i9crzu2i43h39.png" alt=""><br>
-<img src="https://share.note.sx/files/u8/u8e1pbubq8duwanykz4u.png" alt=""><br>
+</code></pre><p>desc :<img src="https://share.note.sx/files/h5/h5x35x2i9crzu2i43h39.png" alt="">
+<br>
+<img src="https://share.note.sx/files/u8/u8e1pbubq8duwanykz4u.png" alt="">
+<br>
 scanned the ip with the following command<br>
 `sudo nmap -v &ndash;min-rate 10000 $IP -p-</p>
 <p>just cause it short , and it guves us ssh and http open , cool</p>
 <p>lets run a version scan now<br>
 `sudo nmap -v -sVC -oN nmap.txt $IP -p 22,80</p>
-<p><img src="https://share.note.sx/files/nn/nnjcwrartpfdqv7v2kii.png" alt=""><br>
+<p><img src="https://share.note.sx/files/nn/nnjcwrartpfdqv7v2kii.png" alt="">
+<br>
 cool open ssh , so we have an ubuntu machine<br>
 `<br>
 lets check the site</p>
-<p><img src="https://share.note.sx/files/7l/7lv6qf74n33d4tdznrzn.jpg" alt=""><br>
+<p><img src="https://share.note.sx/files/7l/7lv6qf74n33d4tdznrzn.jpg" alt="">
+<br>
 mhmm <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion">https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion</a></p>
 <p>lets use some burp<br>
-<img src="https://share.note.sx/files/zz/zz1duq434w4y360sftsc.png" alt=""><br>
+<img src="https://share.note.sx/files/zz/zz1duq434w4y360sftsc.png" alt="">
+<br>
 i used burp to try to see etc/passwd butit didnt worked</p>
 <p>i took a payload from the following link:<a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion">https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion</a></p>
 <p>php://filter/convert.base64-encode/resource=index.php</p>
 <p>and i found something</p>
 <p>and is some source code in base64</p>
-<p><img src="https://share.note.sx/files/fo/fonwiyjgx18rpx95gkh0.png" alt=""><br>
+<p><img src="https://share.note.sx/files/fo/fonwiyjgx18rpx95gkh0.png" alt="">
+<br>
 i edited the payload a lil bit to read file and i manged to acess the passwd file</p>
 <p>passwd file :<br>
 root:x:0:0:root:/root:/bin/bash<br>
@@ -275,18 +293,24 @@ lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false<br>
 red:x:1001:1001::/home/red:/bin/bash</p>
 <p>then i used the following lfi hunter script :<br>
 <a href="https://github.com/hadrian3689/lfi_hunter.git">https://github.com/hadrian3689/lfi_hunter.git</a></p>
-<p>then i did <img src="https://share.note.sx/files/hx/hxufpxriolnx8jhvblyk.png" alt=""></p>
+<p>then i did <img src="https://share.note.sx/files/hx/hxufpxriolnx8jhvblyk.png" alt="">
+</p>
 <p>and if we cat unix it look like this<br>
-<img src="https://share.note.sx/files/uv/uv7cvk81fq7o9oak5y20.png" alt=""></p>
+<img src="https://share.note.sx/files/uv/uv7cvk81fq7o9oak5y20.png" alt="">
+</p>
 <p>note : first time it didnt<br>
-<img src="https://share.note.sx/files/r2/r2kt7p3wcm9ngvbhbwx3.png" alt=""><br>
+<img src="https://share.note.sx/files/r2/r2kt7p3wcm9ngvbhbwx3.png" alt="">
+<br>
 and we do find an history file for blue</p>
 <p>lets try to read the file from burp</p>
-<p><img src="https://share.note.sx/files/qq/qq62942i17ho6jx8ac91.png" alt=""><br>
+<p><img src="https://share.note.sx/files/qq/qq62942i17ho6jx8ac91.png" alt="">
+<br>
 also it is shown that there is a reminder file , lets try to look into it<br>
-<img src="https://share.note.sx/files/gw/gwca2e1ik72sy7l5rh52.png" alt=""></p>
+<img src="https://share.note.sx/files/gw/gwca2e1ik72sy7l5rh52.png" alt="">
+</p>
 <p>when we run it we find the following<br>
-<img src="https://share.note.sx/files/35/355laeh95i5i940hnkl2.png" alt=""><br>
+<img src="https://share.note.sx/files/35/355laeh95i5i940hnkl2.png" alt="">
+<br>
 cool</p>
 <p>sup3r_p@s$w0rd!</p>
 <p>i runned the following command to create a list of password to bruteforce</p>
@@ -294,28 +318,38 @@ cool</p>
 <p>then i used hydra to bruteforce</p>
 <p>hydra -l blue -P passlist.txt $IP ssh</p>
 <p>then we found that the password is :<br>
-<img src="https://share.note.sx/files/b2/b29brme4316i097k01eb.png" alt=""></p>
+<img src="https://share.note.sx/files/b2/b29brme4316i097k01eb.png" alt="">
+</p>
 <p>the password if <code>sup3r_p@s$w0sup3r_p@s$w0</code><br>
 then we can ssh to it<br>
-<img src="https://share.note.sx/files/vq/vq7qgzmny907bvmc4bk7.png" alt=""><br>
+<img src="https://share.note.sx/files/vq/vq7qgzmny907bvmc4bk7.png" alt="">
+<br>
 and we are in as a blue team member</p>
-<p><img src="https://share.note.sx/files/6l/6lvfz53fta1n3kfr3p69.png" alt=""></p>
+<p><img src="https://share.note.sx/files/6l/6lvfz53fta1n3kfr3p69.png" alt="">
+</p>
 <p>oooo interesting , i think its a cronjob runnning to show those messages<br>
-<img src="https://share.note.sx/files/ee/eev898c9jikt41gwrqeb.png" alt=""><br>
+<img src="https://share.note.sx/files/ee/eev898c9jikt41gwrqeb.png" alt="">
+<br>
 interesting<br>
-<img src="https://share.note.sx/files/d6/d6vb0luilddgezqpm9ey.png" alt=""><br>
+<img src="https://share.note.sx/files/d6/d6vb0luilddgezqpm9ey.png" alt="">
+<br>
 and it disconeted us , niceee</p>
 <p>i runned again hydra nad i found its the same password<br>
-<img src="https://share.note.sx/files/z8/z8ckynd1w1vd6m2jfm2t.png" alt=""></p>
+<img src="https://share.note.sx/files/z8/z8ckynd1w1vd6m2jfm2t.png" alt="">
+</p>
 <p>a simple way to bypass the kicking is by adding the -T at the finnaly of the ssh<br>
-<img src="https://share.note.sx/files/b0/b08ktej0j66g8bser4u8.png" alt=""><br>
+<img src="https://share.note.sx/files/b0/b08ktej0j66g8bser4u8.png" alt="">
+<br>
 like here , this is a common king of the hill tip</p>
 <p>after i checked the cronjobs i saw that the machine connect to a server named redrules.thm<br>
 so i modified /etc/hosts ,added my ip address and rev shell to the machine , as shown<br>
-<img src="https://share.note.sx/files/2m/2my1cq6evi6qvuyjixco.png" alt=""><br>
-<img src="https://share.note.sx/files/8i/8ivl6pjstfh3m4gli515.png" alt=""></p>
+<img src="https://share.note.sx/files/2m/2my1cq6evi6qvuyjixco.png" alt="">
+<br>
+<img src="https://share.note.sx/files/8i/8ivl6pjstfh3m4gli515.png" alt="">
+</p>
 <p>also if we ls we can find the second flag<br>
-<img src="https://share.note.sx/files/g0/g0ku1572n4kiomaayigh.png" alt=""></p>
+<img src="https://share.note.sx/files/g0/g0ku1572n4kiomaayigh.png" alt="">
+</p>
 <p>then u just have to copy paste the following script using vim and run it with python to priv esc</p>
 <p>i sugerate to create an http server on your machine then take the script with wget , cause it gived me a very big headache to copy paste with vim<br>
 <a href="https://github.com/joeammond/CVE-2021-4034?tab=readme-ov-file">https://github.com/joeammond/CVE-2021-4034?tab=readme-ov-file</a></p>

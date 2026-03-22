@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/net-sec-challenge/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-01-24T16:22:18Z />
     <meta property="article:published_time" content=2026-01-24T16:22:18Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/net-sec-challenge/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/net-sec-challenge/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="Net Sec Challenge">
   <meta property="og:description" content="Introduction “Use this challenge to test your mastery of the skills you have acquired in the Network Security module. All the questions in this challenge can be solved using only nmap, telnet, and hydra.”
@@ -97,7 +97,7 @@ nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/net-sec-challenge/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/net-sec-challenge/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -111,7 +111,7 @@ nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -123,7 +123,6 @@ nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -132,9 +131,9 @@ nmap -p 0-10000 $IP -p mean betwen the port 0 and 10000">
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -143,19 +142,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -183,7 +197,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -220,30 +234,39 @@ i estimated that the port woul be under 20000</p>
 <p>Q3:How many TCP ports are open?<br>
 just add the ports from the last 2 question</p>
 <p>Q4:What is the flag hidden in the HTTP server header?<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260124094724.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124094724.png" alt="">
+<br>
 for this one go into the dev tools in firefox into the network tab and into the response header</p>
 <p>Q5 :What is the flag hidden in the SSH server header?<br>
 let try to ssh connect first<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260124095701.png" alt="">ok intereting message about , &ldquo;store now , decrypt later attacks &quot;</p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124095701.png" alt="">
+ok intereting message about , &ldquo;store now , decrypt later attacks &quot;</p>
 <p>lets use <code>nmap -sV </code><br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260124101156.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124101156.png" alt="">
+<br>
 and we get the flag ,<br>
 the flag -sV , acording to the help page is for identifying the version and header of every serice</p>
 <p>Q6 : We have an FTP server listening on a nonstandard port. What is the version of the FTP server?</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260124103218.png" alt=""><br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260124103258.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124103218.png" alt="">
+<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124103258.png" alt="">
+<br>
 i just scanned for verions o fthe ports for ports over 10000 and found the version of the ftp server</p>
 <p>Q7: for this one we need to run a hydra scan over those username , and i chose rockyou.txt<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260124111326.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124111326.png" alt="">
+<br>
 after some time of waithig i got the passwords being being nadrea for quinn and jordan for eddie</p>
 <p>now lets login on the ftp server</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260124111816.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124111816.png" alt="">
+<br>
 i loged in as quinn and get the flag</p>
 <p>Last question :<br>
 when we get to the site we get the following</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260124110330.png" alt=""></p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124110330.png" alt="">
+</p>
 <p>so i thought lets run a silent screen , and is that simple<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260124111919.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260124111919.png" alt="">
+<br>
 and that was all</p>
 
             </div>

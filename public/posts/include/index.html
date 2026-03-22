@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/include/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/include/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-06T13:20:13Z />
     <meta property="article:published_time" content=2026-03-06T13:20:13Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/include/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/include/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/include/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/include/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="Include">
   <meta property="og:description" content="basic scanning in the begining
@@ -105,7 +105,7 @@ when we decode those using cyber chef we get the following (for getAllAdmins):">
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/include/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/include/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -119,7 +119,7 @@ when we decode those using cyber chef we get the following (for getAllAdmins):">
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -131,7 +131,6 @@ when we decode those using cyber chef we get the following (for getAllAdmins):">
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -140,9 +139,9 @@ when we decode those using cyber chef we get the following (for getAllAdmins):">
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -151,19 +150,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -191,7 +205,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -214,52 +228,71 @@ stroke-linejoin="round" class="feather feather-home">
             
             <div class="page-content">
                 <p>basic scanning in the begining<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png" alt="">
+<br>
 a lot of ports opened , after trying to connect to each of them i found this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304091917.png" alt="">
+<br>
 logging in as guest we get the following dashboard<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092419.png" alt="">
+</p>
 <hr>
 <h3 id="first-flag">First flag</h3>
 <p>in the profile section i tried to modify some parameters and it works , and just like that we can modify the isAdmin parameter to be true<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092431.png" alt="">
+<br>
 as admin we can view the api dashboard which gives us some interesting information about the structure of the site and how it manages requests<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304092642.png" alt="">
+<br>
 in the admin settings tab we can modify the banner image<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306062732.png" alt="">
+<br>
 this may look like a Local File Intrusion vulnerabily<br>
 if we input the two addresses from the api dashboard into admin settings we get two base64 encoded responses<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png" alt=""> <img src="/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063151.png" alt="">
+ <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png" alt="">
+<br>
 when we decode those using cyber chef we get the following (for getAllAdmins):</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260306082011.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306082011.png" alt="">
+<br>
 the other addres is not that interesting , using the credential we got we can log in intro SysMon</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260304094655.png" alt=""><br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304094806.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304094655.png" alt="">
+<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304094806.png" alt="">
+<br>
 i tried both of them and just administrator one worked whatever<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260304165548.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260304165548.png" alt="">
+<br>
 and we got the first flag cool</p>
 <hr>
 <h3 id="second-flag">Second Flag</h3>
 <p>viewing the site shouce code we see the following , what profile image may look again like a good vulnerabilty to exploit<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306052826.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306052826.png" alt="">
+<br>
 i did a directory traversal inside the url for /etc/passwd and i got the following<br>
 payload</p>
 <pre tabindex="0"><code>profile.php?img=....//....//....//....//....//....//....//....//....//....//....//....//....//....//....//etc/passwd
-</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053007.png" alt=""><br>
+</code></pre><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053007.png" alt="">
+<br>
 we see 2 users<br>
 charles and joshua<br>
 lets put them into a .txt file<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053233.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053233.png" alt="">
+<br>
 now lets just bruteforce using hydra for the ssh<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053512.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053512.png" alt="">
+<br>
 command:</p>
 <pre tabindex="0"><code>hydra -L user.txt -P &lt;pathOfWordlist&gt; ssh://&lt;IPofMachine&gt;
-</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260306053951.png" alt=""><br>
+</code></pre><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306053951.png" alt="">
+<br>
 thanks devs for hydra -R cause i abandoned the process first time trying to copy the screenshot</p>
 <p>and after a long bruteforce we get the passwords<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306061403.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306061403.png" alt="">
+<br>
 and boom we are in , just cat the flag from the path given to us<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260306061535.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260306061535.png" alt="">
+</p>
 
             </div>
         </article></main>

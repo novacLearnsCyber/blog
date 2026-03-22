@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/new-hire-old-artifact/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-02T13:26:40Z />
     <meta property="article:published_time" content=2026-03-02T13:26:40Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/new-hire-old-artifact/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/new-hire-old-artifact/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="new hire old artifact">
   <meta property="og:description" content="link : https://tryhackme.com/room/newhireoldartifacts
@@ -107,7 +107,7 @@ C:\Users\FINANC~1\AppData\Local\Temp\\ here , note that i har to seearch with ot
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/new-hire-old-artifact/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/new-hire-old-artifact/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -121,7 +121,7 @@ C:\Users\FINANC~1\AppData\Local\Temp\\ here , note that i har to seearch with ot
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -133,7 +133,6 @@ C:\Users\FINANC~1\AppData\Local\Temp\\ here , note that i har to seearch with ot
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -142,9 +141,9 @@ C:\Users\FINANC~1\AppData\Local\Temp\\ here , note that i har to seearch with ot
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -153,19 +152,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -193,7 +207,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -216,32 +230,42 @@ stroke-linejoin="round" class="feather feather-home">
             
             <div class="page-content">
                 <p>link : <a href="https://tryhackme.com/room/newhireoldartifacts">https://tryhackme.com/room/newhireoldartifacts</a><br>
-<img src="https://share.note.sx/files/xi/xih320ga97wkl1qv6ogl.png" alt=""><br>
+<img src="https://share.note.sx/files/xi/xih320ga97wkl1qv6ogl.png" alt="">
+<br>
 this time we have an splunk interface and we have to work to find the thread</p>
-<p><img src="https://share.note.sx/files/mm/mmxcsx07nwrqiu4ogj4c.png" alt=""></p>
-<p><img src="https://share.note.sx/files/cj/cjvjulv54sg5zc9t82pu.png" alt=""><br>
+<p><img src="https://share.note.sx/files/mm/mmxcsx07nwrqiu4ogj4c.png" alt="">
+</p>
+<p><img src="https://share.note.sx/files/cj/cjvjulv54sg5zc9t82pu.png" alt="">
+<br>
 lets look a lil bit at the data summary<br>
 good , single host<br>
 i changed the data a lil bit in the filter section , cause in the desc it says december 2021<br>
-<img src="https://share.note.sx/files/1q/1qaz6z7eg5g5eob73uil.png" alt=""></p>
+<img src="https://share.note.sx/files/1q/1qaz6z7eg5g5eob73uil.png" alt="">
+</p>
 <p>for the fist task i search with the following string<br>
-<img src="https://share.note.sx/files/lj/ljpdmpood16m84xt88d0.png" alt=""><br>
+<img src="https://share.note.sx/files/lj/ljpdmpood16m84xt88d0.png" alt="">
+<br>
 and here we have the binary name<br>
-<img src="https://share.note.sx/files/fk/fk4rvk9kr8vyg0kczmli.png" alt=""><br>
+<img src="https://share.note.sx/files/fk/fk4rvk9kr8vyg0kczmli.png" alt="">
+<br>
 also the company<br>
-<img src="https://share.note.sx/files/cs/cs2ss1qabpgdv4qqo2kp.png" alt=""><br>
+<img src="https://share.note.sx/files/cs/cs2ss1qabpgdv4qqo2kp.png" alt="">
+<br>
 the nest task speficy that is the same folder as the first binary , so lets search using that<br>
 C:\Users\FINANC~1\AppData\Local\Temp\\
-<img src="https://share.note.sx/files/c7/c7pvuhkktqgrfiqtkyzd.png" alt=""><br>
+<img src="https://share.note.sx/files/c7/c7pvuhkktqgrfiqtkyzd.png" alt="">
+<br>
 here , note that i har to seearch with other location cause the location previosly added was a hoax</p>
 <p>i found that ironicLarge.exe file in the tmp directory then i search after it<br>
-<img src="https://share.note.sx/files/8s/8s6okr6tdf64wrurbuxc.png" alt=""><br>
+<img src="https://share.note.sx/files/8s/8s6okr6tdf64wrurbuxc.png" alt="">
+<br>
 i decided to use the last 10 items so i used tail 10 and found the original name being</p>
 <p>index=main | search &ldquo;C:\Users\Finance01\AppData\Local\Temp*&rdquo; Image=&ldquo;C:\Users\Finance01\AppData\Local\Temp\IonicLarge.exe&rdquo;<br>
 | tail 10</p>
 <p>PalitExplorer.exe</p>
 <p>and we do found it<br>
-<img src="https://share.note.sx/files/oq/oqjmb1hbnm6pwy7plm96.png" alt=""><br>
+<img src="https://share.note.sx/files/oq/oqjmb1hbnm6pwy7plm96.png" alt="">
+<br>
 being 2.56.59.42<br>
 be carefull to the format , the correct format is 2[.]56[.]59[.]42</p>
 <p>for the next task , i had to search for the two binaries killed ,</p>
@@ -253,7 +277,8 @@ be carefull to the format , the correct format is 2[.]56[.]59[.]42</p>
 just search for some long binaries names</p>
 <p>for the next task<br>
 i seacrh with the following string for the last command execute in the series of simmilar commands<br>
-<img src="https://share.note.sx/files/zj/zjcdd7qjnpgtfbwln8fl.png" alt=""></p>
+<img src="https://share.note.sx/files/zj/zjcdd7qjnpgtfbwln8fl.png" alt="">
+</p>
 <p>then this long text attracted my atetention :</p>
 <p><code>&quot;C:\Windows\System32\cmd.exe&quot; /C forfiles /p c:\windows\system32 /m waitfor.exe /c &quot;cmd /C powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147735503 ThreatIDDefaultAction_Actions=6 Force=True&quot; &amp; forfiles /p c:\windows\system32 /m where.exe /c &quot;cmd /C powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737010 ThreatIDDefaultAction_Actions=6 Force=True&quot; &amp; forfiles /p c:\windows\system32 /m calc.exe /c &quot;cmd /C powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737007 ThreatIDDefaultAction_Actions=6 Force=True&quot; &amp; forfiles /p c:\windows\system32 /m notepad.exe /c &quot;cmd /C powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737394 ThreatIDDefaultAction_Actions=6 Force=True&quot; &amp;</code></p>
 <p>so i decided to make it a lil bit more clear:</p>
@@ -265,7 +290,8 @@ i seacrh with the following string for the last command execute in the series of
 <p><strong>powershell WMIC /NAMESPACE:\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737394 ThreatIDDefaultAction_Actions=6 Force=True&quot; &amp;</strong></p>
 <p>and based of those we can get the ids<br>
 note :<br>
-<img src="https://share.note.sx/files/oh/ohqr0eaww79xz79cky9y.png" alt=""></p>
+<img src="https://share.note.sx/files/oh/ohqr0eaww79xz79cky9y.png" alt="">
+</p>
 <p>for the next task just search in the<br>
 index=main | search &ldquo;C:\Users\Finance01\AppData*&rdquo;</p>
 <p>in the image section , the secod image name on and exe is the answer:<br>

@@ -1,0 +1,6 @@
+{{- $destination := .Destination -}}
+{{- /* If path starts with /, strip it and apply relURL to get /blog/images/... etc */ -}}
+{{- if hasPrefix $destination "/" -}}
+    {{- $destination = $destination | strings.TrimPrefix "/" | relURL -}}
+{{- end -}}
+<img src="{{ $destination }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}>

