@@ -299,21 +299,26 @@
 <div class="home-section">
     <p class="home-section-title">📂 Browse by Category</p>
     <div class="cats-grid-home">
-        {{ $allowed := slice "writeups" "other things" "other-things" }}
-        {{ range .Site.Taxonomies.categories.ByCount }}
-        {{ $term := . }}
-        {{ $termPage := $term.Page }}
-        {{ if in $allowed ($termPage.Title | lower) }}
-        <a href="{{ $termPage.Permalink }}" class="cat-card-home">
+        {{ $writeupsCount := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff")) }}
+        {{ $otherCount    := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "other")) }}
+
+        <a href="{{ "categories/writeups/" | relURL }}" class="cat-card-home">
             <div class="cat-card-top-home">
-                <span class="cat-card-icon-home">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
-                <span class="cat-card-count-home">{{ $term.Count }} posts</span>
+                <span class="cat-card-icon-home">🔐</span>
+                <span class="cat-card-count-home">{{ $writeupsCount }} posts</span>
             </div>
-            <div class="cat-card-name-home">{{ $termPage.Title | title }}</div>
-            <div class="cat-card-sub-home">{{ with $termPage.Description }}{{ . }}{{ else }}{{ $termPage.Title | title }}{{ end }}</div>
+            <div class="cat-card-name-home">Writeups</div>
+            <div class="cat-card-sub-home">CTF and security challenge writeups</div>
         </a>
-        {{ end }}
-        {{ end }}
+
+        <a href="{{ "categories/other-things/" | relURL }}" class="cat-card-home">
+            <div class="cat-card-top-home">
+                <span class="cat-card-icon-home">📝</span>
+                <span class="cat-card-count-home">{{ $otherCount }} posts</span>
+            </div>
+            <div class="cat-card-name-home">Other Things</div>
+            <div class="cat-card-sub-home">Notes, thoughts and other things</div>
+        </a>
     </div>
 
     {{/* ===== RECENT WRITEUPS ===== */}}

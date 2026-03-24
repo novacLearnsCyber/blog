@@ -126,22 +126,29 @@
     </div>
 
     <div class="cats-grid">
-        {{ $allowed := slice "writeups" "other things" "other-things" }}
-        {{ range .Data.Terms.Alphabetical }}
-        {{ $term := . }}
-        {{ $termPage := $term.Page }}
-        {{ if in $allowed ($termPage.Title | lower) }}
-        <a href="{{ $termPage.Permalink }}" class="cat-card">
+        {{ $writeupsCount := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff")) }}
+        {{ $otherCount    := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "other")) }}
+
+        <a href="{{ "categories/writeups/" | relURL }}" class="cat-card">
             <div class="cat-card-top">
-                <span class="cat-card-icon">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
-                <span class="cat-card-count">{{ $term.Count }} posts</span>
+                <span class="cat-card-icon">🔐</span>
+                <span class="cat-card-count">{{ $writeupsCount }} posts</span>
             </div>
-            <div class="cat-card-name">{{ $termPage.Title | title }}</div>
-            <div class="cat-card-desc">{{ with $termPage.Description }}{{ . }}{{ else }}{{ $termPage.Title | title }}{{ end }}</div>
+            <div class="cat-card-name">Writeups</div>
+            <div class="cat-card-desc">CTF and security challenge writeups</div>
             <div class="cat-card-arrow">→ Browse all</div>
         </a>
-        {{ end }}
-        {{ end }}
+
+        <a href="{{ "categories/other-things/" | relURL }}" class="cat-card">
+            <div class="cat-card-top">
+                <span class="cat-card-icon">📝</span>
+                <span class="cat-card-count">{{ $otherCount }} posts</span>
+            </div>
+            <div class="cat-card-name">Other Things</div>
+            <div class="cat-card-desc">Notes, thoughts and other things</div>
+            <div class="cat-card-arrow">→ Browse all</div>
+        </a>
     </div>
 </div>
 {{ end }}
+
