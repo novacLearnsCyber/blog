@@ -11,8 +11,7 @@ subiect:
 dificultate: 1
 amuca: false
 link:
-lastmod: 2026-03-22T14:49:42.869Z
-categories: ["writeups"]
+lastmod: 2026-03-24T13:03:17.050Z
 ---
 ### Reconnaissance
 
@@ -29,7 +28,7 @@ it will give you all the answers needed
 this is where it became interesting, in the last step we get a secret folder called `panel` where we can upload different files, cool, we know that this is how we gonna get a reverse shell.
 
 But when i try to when i try to upload a .php reverse shell an error message is triggered saying that php is not allowed , so we gonna have to bypass this file filter somehow\
-![](/images/blog-ul-meu/static/Pasted%20image%2020260322085809.png)\
+![647](/images/blog-ul-meu/static/Pasted%20image%2020260322085809.png)\
 researching about ways to bypass this i found out about polyglot files, that are basically files that can be executed in multiple file formats , like a png that is also a pdf . So with that in mind we can create a png that is also a php file .\
 important to mention that u can bypass this also somehow by intercepting the request using burpsuite , then changing the file format , but i will not go into that
 

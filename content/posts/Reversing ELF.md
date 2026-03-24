@@ -14,7 +14,6 @@ amuca: false
 link:
   - https://tryhackme.com/room/reverselfiles
 lastmod: 2026-02-01T13:13:09.038Z
-categories: ["writeups"]
 ---
 This will be my first indo binary exploatation\
 lets begin

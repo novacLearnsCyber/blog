@@ -13,7 +13,6 @@ amuca: false
 link:
   - https://tryhackme.com/room/anonymous
 lastmod: 2026-02-25T19:44:45.735Z
-categories: ["writeups"]
 ---
 To answer the first two questions just basic nmap scan\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260225133840.png)

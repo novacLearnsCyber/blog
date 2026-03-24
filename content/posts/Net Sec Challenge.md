@@ -14,7 +14,6 @@ amuca: true
 link:
   - https://tryhackme.com/room/netsecchallenge
 lastmod: 2026-01-24T16:22:18.560Z
-categories: ["writeups"]
 ---
 # Introduction
 

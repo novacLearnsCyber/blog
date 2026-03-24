@@ -14,7 +14,6 @@ amuca: true
 link:
   - https://tryhackme.com/room/padelify
 lastmod: 2026-02-15T18:21:45.916Z
-categories: ["writeups"]
 ---
 ### reconing
 

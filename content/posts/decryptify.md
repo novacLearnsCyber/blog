@@ -13,7 +13,6 @@ amuca: false
 link:
   - https://tryhackme.com/room/decryptify
 lastmod: 2026-03-02T13:14:04.891Z
-categories: ["writeups"]
 ---
 scaning\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260301051138.png)\

@@ -14,7 +14,6 @@ amuca: false
 link:
   - https://tryhackme.com/room/prioritise
 lastmod: 2026-01-27T12:12:53.628Z
-categories: ["writeups"]
 ---
 Description:\
 "We have this new to-do list application, where we order our tasking based on priority! Is it really all that secure, though...?"

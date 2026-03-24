@@ -12,7 +12,6 @@ dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-06T13:20:13.169Z
-categories: ["writeups"]
 ---
 basic scanning in the begining\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260304085816.png)\

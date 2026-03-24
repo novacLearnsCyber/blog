@@ -12,7 +12,6 @@ dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-02T13:26:40.268Z
-categories: ["writeups"]
 ---
 link : <https://tryhackme.com/room/newhireoldartifacts>\
 ![](https://share.note.sx/files/xi/xih320ga97wkl1qv6ogl.png)\

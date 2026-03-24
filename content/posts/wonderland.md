@@ -14,7 +14,6 @@ dificultate: 3
 amuca: true
 link:
 lastmod: 2026-02-01T22:35:10.663Z
-categories: ["writeups"]
 ---
 basic nmap scan :\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260201121152.png)\

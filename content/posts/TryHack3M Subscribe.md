@@ -13,7 +13,6 @@ amuca: false
 link:
   - https://tryhackme.com/room/subscribe
 lastmod: 2026-03-11T16:31:04.364Z
-categories: ["writeups"]
 ---
 ### Part 1 - Exploitation
 

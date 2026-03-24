@@ -13,7 +13,6 @@ amuca: false
 link:
   - https://tryhackme.com/room/blog
 lastmod: 2026-02-26T09:00:43.194Z
-categories: ["writeups"]
 ---
 ok soo recon\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260226022933.png)\
