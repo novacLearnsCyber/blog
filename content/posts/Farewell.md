@@ -6,8 +6,6 @@ tags:
   - cyberStuff
 title: Farewell
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
   - waf 
@@ -18,6 +16,7 @@ amuca: true
 link:
   - https://tryhackme.com/room/farewell
 lastmod: 2026-01-18T20:42:31.907Z
+categories: ["writeups"]
 ---
 # Reconing
 

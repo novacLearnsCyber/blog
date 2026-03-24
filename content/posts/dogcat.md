@@ -1,8 +1,6 @@
 ---
 title: dogcat
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 4
@@ -12,6 +10,7 @@ link:
 tags:
   - cyberStuff
 lastmod: 2026-02-24T13:21:05.995Z
+categories: ["writeups"]
 ---
 scaning :\
 nothing interesting just ssh and http

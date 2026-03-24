@@ -1,8 +1,6 @@
 ---
 title: ultratech
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 3
@@ -11,6 +9,7 @@ link:
 tags:
   - cyberStuff
 lastmod: 2026-03-03T19:56:51.253Z
+categories: ["writeups"]
 ---
 scaning:\
 this nmap scan gives us all we need for the first page ![](/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png)\

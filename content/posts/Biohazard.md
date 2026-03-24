@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: Biohazard
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-15T08:16:04.147Z
+categories: ["writeups"]
 ---
 For the first part just run nmap and accces the http server\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260313092553.png)\

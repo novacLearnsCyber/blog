@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: olympus
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-17T08:45:13.858Z
+categories: ["writeups"]
 ---
 1 minute room they say
 

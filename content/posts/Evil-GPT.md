@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: Evil-GPT
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-02T13:20:57.725Z
+categories: ["writeups"]
 ---
 so this is the first ctf i goona post ,
 

@@ -6,8 +6,6 @@ tags:
   - cyberStuff
 title: ContainMe
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
@@ -15,6 +13,7 @@ amuca: true
 link:
   - https://tryhackme.com/room/containme1
 lastmod: 2026-02-24T07:58:13.461Z
+categories: ["writeups"]
 ---
 first scan , the host seemed down i hard to use `-Pn` flag for ignoring the host scaning , and we have some pretty interesting ports opened\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260215132824.png)\

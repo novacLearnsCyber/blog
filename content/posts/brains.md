@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: brains
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-02T13:24:00.250Z
+categories: ["writeups"]
 ---
 link :<https://tryhackme.com/room/brains>\
 desc:\

@@ -6,8 +6,6 @@ tags:
   - cyberStuff
 title: Attacktive Directory
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
   - windows
@@ -17,6 +15,7 @@ amuca: false
 link:
   - https://tryhackme.com/room/attacktivedirectory
 lastmod: 2026-01-21T20:25:42.686Z
+categories: ["writeups"]
 ---
 ### Setup
 

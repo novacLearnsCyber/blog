@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: Evil-GPT v2
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-02T13:23:16.983Z
+categories: ["writeups"]
 ---
 yeah so this is the continuation of evil gpt\
 DESC:\

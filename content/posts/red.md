@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: red
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-02T13:34:06.110Z
+categories: ["writeups"]
 ---
 link : <https://tryhackme.com/room/redisl33t>
 

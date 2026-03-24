@@ -294,31 +294,25 @@
     {{ partial "intro-text.html" . }}
 </div>
 
-<div class="ascii-container">
-    <pre class="ascii-art">
-   _____                          .__  __                              
-  /     \___.__. __  _  _________|__|/  |_  ____  __ ________  ______ 
- /  \ /  <   |  | \ \/ \/ /\_  __ \  \   __\/ __ \|  |  \____ \/  ___/ 
-/    Y    \___  |  \     /  |  | \/  ||  | \  ___/|  |  /  |_> >___ \  
-\____|__  / ____|   \/\_/   |__|  |__||__|  \___  >____/|   __/____  > 
-        \/\/                                    \/      |__|       \/  </pre>
-</div>
 
 {{/* ===== CATEGORIES GRID ===== */}}
 <div class="home-section">
     <p class="home-section-title">📂 Browse by Category</p>
     <div class="cats-grid-home">
+        {{ $allowed := slice "writeups" "other things" "other-things" }}
         {{ range .Site.Taxonomies.categories.ByCount }}
         {{ $term := . }}
         {{ $termPage := $term.Page }}
+        {{ if in $allowed ($termPage.Title | lower) }}
         <a href="{{ $termPage.Permalink }}" class="cat-card-home">
             <div class="cat-card-top-home">
                 <span class="cat-card-icon-home">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
-                <span class="cat-card-count-home">{{ $term.Count }} writeups</span>
+                <span class="cat-card-count-home">{{ $term.Count }} posts</span>
             </div>
             <div class="cat-card-name-home">{{ $termPage.Title | title }}</div>
-            <div class="cat-card-sub-home">{{ with $termPage.Description }}{{ . }}{{ else }}Writeups for {{ $termPage.Title | title }}{{ end }}</div>
+            <div class="cat-card-sub-home">{{ with $termPage.Description }}{{ . }}{{ else }}{{ $termPage.Title | title }}{{ end }}</div>
         </a>
+        {{ end }}
         {{ end }}
     </div>
 
@@ -329,21 +323,12 @@
         <a href="{{ .Permalink }}" class="recent-card">
             <span class="recent-card-title">{{ .Title }}</span>
             <span class="recent-card-right">
-                {{ with .Params.dificultate }}
-                <span class="diff-badge-sm diff-{{ . }}">
-                    {{ if eq . 1 }}Easy
-                    {{ else if eq . 2 }}Med
-                    {{ else if eq . 3 }}Hard
-                    {{ else if eq . 4 }}Insane
-                    {{ end }}
-                </span>
-                {{ end }}
                 <span class="recent-card-arrow">→</span>
             </span>
         </a>
         {{ end }}
     </div>
-    <a href="{{ "categories/tryhackme/" | relURL }}" class="view-all-link">→ View all writeups</a>
+    <a href="{{ "categories/writeups/" | relURL }}" class="view-all-link">→ View all writeups</a>
 </div>
 
 {{ end }}

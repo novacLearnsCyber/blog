@@ -6,14 +6,13 @@ tags:
   - cyberStuff
 title: infinity shell
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 1
 amuca: false
 link:
 lastmod: 2026-03-02T13:25:26.725Z
+categories: ["writeups"]
 ---
 Desc:\
 ![](https://share.note.sx/files/ta/ta792pnk6xnx58ymbjk6.png)\

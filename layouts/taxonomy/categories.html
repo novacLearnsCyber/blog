@@ -126,18 +126,21 @@
     </div>
 
     <div class="cats-grid">
+        {{ $allowed := slice "writeups" "other things" "other-things" }}
         {{ range .Data.Terms.Alphabetical }}
         {{ $term := . }}
         {{ $termPage := $term.Page }}
+        {{ if in $allowed ($termPage.Title | lower) }}
         <a href="{{ $termPage.Permalink }}" class="cat-card">
             <div class="cat-card-top">
                 <span class="cat-card-icon">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
-                <span class="cat-card-count">{{ $term.Count }} writeups</span>
+                <span class="cat-card-count">{{ $term.Count }} posts</span>
             </div>
             <div class="cat-card-name">{{ $termPage.Title | title }}</div>
-            <div class="cat-card-desc">{{ with $termPage.Description }}{{ . }}{{ else }}Writeups for {{ $termPage.Title | title }}{{ end }}</div>
+            <div class="cat-card-desc">{{ with $termPage.Description }}{{ . }}{{ else }}{{ $termPage.Title | title }}{{ end }}</div>
             <div class="cat-card-arrow">→ Browse all</div>
         </a>
+        {{ end }}
         {{ end }}
     </div>
 </div>

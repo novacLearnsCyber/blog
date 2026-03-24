@@ -6,8 +6,6 @@ tags:
   - cyberStuff
 title: MrRobot
 draft: false
-categories:
-  - tryhackme
 date:
 subiect:
 dificultate: 3
@@ -15,6 +13,7 @@ amuca: true
 link:
   - https://tryhackme.com/room/mrrobot
 lastmod: 2026-02-05T13:13:14.400Z
+categories: ["writeups"]
 ---
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260205055009.png)\
 the first nmap scan shows that all 1000 ports on the host are in ignored status\
