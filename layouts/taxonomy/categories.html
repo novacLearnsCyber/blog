@@ -126,8 +126,10 @@
     </div>
 
     <div class="cats-grid">
-        {{ $writeupsCount := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff")) }}
-        {{ $otherCount    := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "other")) }}
+        {{ $otherPages    := where .Site.RegularPages ".Params.tags" "intersect" (slice "other") }}
+        {{ $allCyber      := where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff") }}
+        {{ $writeupsCount := len (complement $otherPages $allCyber) }}
+        {{ $otherCount    := len $otherPages }}
 
         <a href="{{ "categories/writeups/" | relURL }}" class="cat-card">
             <div class="cat-card-top">

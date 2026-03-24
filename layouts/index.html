@@ -299,8 +299,10 @@
 <div class="home-section">
     <p class="home-section-title">📂 Browse by Category</p>
     <div class="cats-grid-home">
-        {{ $writeupsCount := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff")) }}
-        {{ $otherCount    := len (where .Site.RegularPages ".Params.tags" "intersect" (slice "other")) }}
+        {{ $otherPages    := where .Site.RegularPages ".Params.tags" "intersect" (slice "other") }}
+        {{ $allCyber      := where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff") }}
+        {{ $writeupsCount := len (complement $otherPages $allCyber) }}
+        {{ $otherCount    := len $otherPages }}
 
         <a href="{{ "categories/writeups/" | relURL }}" class="cat-card-home">
             <div class="cat-card-top-home">

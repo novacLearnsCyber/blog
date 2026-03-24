@@ -121,10 +121,12 @@
 
     {{ $catName := .Title | lower }}
     {{ $pages := slice }}
+    {{ $otherPages := where .Site.RegularPages ".Params.tags" "intersect" (slice "other") }}
     {{ if eq $catName "writeups" }}
-        {{ $pages = where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff") }}
+        {{ $allCyber := where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff") }}
+        {{ $pages = complement $otherPages $allCyber }}
     {{ else if or (eq $catName "other things") (eq $catName "other-things") }}
-        {{ $pages = where .Site.RegularPages ".Params.tags" "intersect" (slice "other") }}
+        {{ $pages = $otherPages }}
     {{ else }}
         {{ $pages = .Pages }}
     {{ end }}
