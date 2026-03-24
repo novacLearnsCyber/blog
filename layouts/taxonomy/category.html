@@ -119,10 +119,19 @@
         <h1>{{ .Title }}</h1>
     </div>
 
-    {{ $pages := .Pages }}
+    {{ $catName := .Title | lower }}
+    {{ $pages := slice }}
+    {{ if eq $catName "writeups" }}
+        {{ $pages = where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff") }}
+    {{ else if or (eq $catName "other things") (eq $catName "other-things") }}
+        {{ $pages = where .Site.RegularPages ".Params.tags" "intersect" (slice "other") }}
+    {{ else }}
+        {{ $pages = .Pages }}
+    {{ end }}
+
     {{ if $pages }}
-        <p class="post-count">{{ len $pages }} writeups</p>
-        {{ range $pages.ByTitle }}
+        <p class="post-count">{{ len $pages }} posts</p>
+        {{ range sort $pages "Title" }}
         <a href="{{ .Permalink }}" class="post-row">
             <span class="post-row-title">{{ .Title }}</span>
             <span class="post-row-meta">
@@ -132,7 +141,7 @@
         {{ end }}
     {{ else }}
         <div class="cat-empty">
-            <p>[ no writeups yet ]</p>
+            <p>[ no posts yet ]</p>
         </div>
     {{ end }}
 </div>

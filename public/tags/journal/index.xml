@@ -6,11 +6,11 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 22 Mar 2026 14:49:42 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2026 13:03:17 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RootMe</title>
       <link>https://novaclearnscyber.github.io/blog/posts/rootme/</link>
-      <pubDate>Sun, 22 Mar 2026 14:49:42 +0000</pubDate>
+      <pubDate>Tue, 24 Mar 2026 13:03:17 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/posts/rootme/</guid>
       
       <description>&lt;h3 id=&#34;reconnaissance&#34;&gt;Reconnaissance&lt;/h3&gt;
@@ -20,7 +20,7 @@
 &lt;h3 id=&#34;getting-a-shell&#34;&gt;Getting a Shell&lt;/h3&gt;
 &lt;p&gt;this is where it became interesting, in the last step we get a secret folder called &lt;code&gt;panel&lt;/code&gt; where we can upload different files, cool, we know that this is how we gonna get a reverse shell.&lt;/p&gt;
 &lt;p&gt;But when i try to when i try to upload a .php reverse shell an error message is triggered saying that php is not allowed , so we gonna have to bypass this file filter somehow&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260322085809.png&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260322085809.png&#34; alt=&#34;647&#34;&gt;
 &lt;br&gt;
 researching about ways to bypass this i found out about polyglot files, that are basically files that can be executed in multiple file formats , like a png that is also a pdf . So with that in mind we can create a png that is also a php file .&lt;br&gt;
 important to mention that u can bypass this also somehow by intercepting the request using burpsuite , then changing the file format , but i will not go into that&lt;/p&gt;</description>
