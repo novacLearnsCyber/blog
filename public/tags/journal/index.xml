@@ -6,7 +6,21 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 24 Mar 2026 13:03:17 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 11:29:50 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>portswigger Lab - Remote code execution via web shell upload writeup</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/portswigger-lab---remote-code-execution-via-web-shell-upload-writeup/</link>
+      <pubDate>Thu, 26 Mar 2026 11:29:50 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/portswigger-lab---remote-code-execution-via-web-shell-upload-writeup/</guid>
+      
+      <description>&lt;p&gt;Long title , i wanted to share this with you because is other solution then the one pressented in by portswigger and i found it myself , i am quite proud of this right now.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cool ,so the description is :&lt;br&gt;
+This lab contains a vulnerable image upload function. It doesn&amp;rsquo;t perform any validation on the files users upload before storing them on the server&amp;rsquo;s filesystem.&lt;/p&gt;
+&lt;p&gt;To solve the lab, upload a basic PHP web shell and use it to exfiltrate the contents of the file &lt;code&gt;/home/carlos/secret&lt;/code&gt;. Submit this secret using the button provided in the lab banner.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>RootMe</title>
       <link>https://novaclearnscyber.github.io/blog/posts/rootme/</link>
