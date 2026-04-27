@@ -6,18 +6,53 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Thu, 26 Mar 2026 11:29:50 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Apr 2026 09:48:55 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>portswigger Lab - Remote code execution via web shell upload writeup</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/portswigger-lab---remote-code-execution-via-web-shell-upload-writeup/</link>
-      <pubDate>Thu, 26 Mar 2026 11:29:50 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/portswigger-lab---remote-code-execution-via-web-shell-upload-writeup/</guid>
+      <title>2026-04-22 ǀ 07꞉54</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</link>
+      <pubDate>Fri, 24 Apr 2026 09:48:55 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</guid>
       
-      <description>&lt;p&gt;Long title , i wanted to share this with you because is other solution then the one pressented in by portswigger and i found it myself , i am quite proud of this right now.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Cool ,so the description is :&lt;br&gt;
-This lab contains a vulnerable image upload function. It doesn&amp;rsquo;t perform any validation on the files users upload before storing them on the server&amp;rsquo;s filesystem.&lt;/p&gt;
-&lt;p&gt;To solve the lab, upload a basic PHP web shell and use it to exfiltrate the contents of the file &lt;code&gt;/home/carlos/secret&lt;/code&gt;. Submit this secret using the button provided in the lab banner.&lt;/p&gt;</description>
+      <description>&lt;p&gt;basic recon found just ports 22 and 80 opened:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080416.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+subdomain enumeration:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080444.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+only /content for now , the scan is still running&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080521.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+After accessing /content we found that the site is running SweetRice , searching for an exploit on this i found this : &lt;a href=&#34;https://www.exploit-db.com/exploits/40718&#34;&gt;https://www.exploit-db.com/exploits/40718&lt;/a&gt;&lt;br&gt;
+which basically says that we can access some mysql backups by going to /inc/mysql_backup&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080742.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+downloading the files we get a list of credentials , after searching a lil bit inside it we find this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260424050351.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+a username and a password to log in , but where.&lt;br&gt;
+i google it and found that on sweetRice we can log in at  /ac as a admin of the page&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422082433.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+and we get this dashboard&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422091226.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+some random passwords&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422092629.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+looking aroung the site we found a page for ads , where we can inject diferent scripts , cool , so lets try to make a reverse shell with this.&lt;br&gt;
+&lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell&lt;/a&gt; , used this shell from monkey pentest, modify your port and ip inside the script.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/team/</link>
+      <pubDate>Fri, 24 Apr 2026 08:55:50 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/team/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260424045506.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+basic recon basic ports opened nothing interesting , we get the Apache version which could be useful&lt;/p&gt;</description>
       
     </item>
     
