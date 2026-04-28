@@ -6,7 +6,42 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Fri, 24 Apr 2026 09:48:55 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2026 12:14:48 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>takerover</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/takerover/</link>
+      <pubDate>Mon, 27 Apr 2026 12:14:48 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/takerover/</guid>
+      
+      <description>&lt;p&gt;I am gonna start with the conclusion : always note your ips and domains inside /etc/hosts.&lt;/p&gt;
+&lt;p&gt;Desc:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hello there,&lt;br&gt;
+I am the CEO and one of the co-founders of futurevera.&lt;br&gt;
+. In Futurevera, we believe that the future is in space. We do a lot of space research and write blogs about it. We used to help students with space questions, but we are rebuilding our support.&lt;br&gt;
+Recently blackhat hackers approached us saying they could takeover and are asking us for a big ransom. Please help us to find what they can takeover.&lt;br&gt;
+Our website is located at https://futurevera.&lt;br&gt;
+(opens in new tab)&lt;br&gt;
+Hint: Don&amp;rsquo;t forget to add the 10.128.148.201 in /etc/hosts for futurevera.&lt;br&gt;
+; )&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Recruit</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/recruit/</link>
+      <pubDate>Sat, 25 Apr 2026 08:02:30 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/recruit/</guid>
+      
+      <description>&lt;p&gt;Ports opened:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260425035958.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+Accesing the web page and investigating the the api we see that we need a .cv file to read its contents , i tried to access different files via a path traversal but it didnt worked&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260425040229.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>2026-04-22 ǀ 07꞉54</title>
       <link>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</link>
