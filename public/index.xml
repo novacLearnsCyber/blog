@@ -6,7 +6,22 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Mon, 27 Apr 2026 12:14:48 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2026 10:56:47 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bounty Hacker</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/bounty-hacker/</link>
+      <pubDate>Tue, 28 Apr 2026 10:56:47 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/bounty-hacker/</guid>
+      
+      <description>&lt;p&gt;very easy room&lt;br&gt;
+run nmap for the first recon :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo nmap $IP -sCV -p-   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;we can see that ftp is open on port 21 , and we can log in as anonymous , cool lets do that&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ftp $IP 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and we found 2 files inside , one is a password file and the other a task list , writen be someone called lin.intereting , we may try to brute force ssh with the username lin and the password file we just got using hydra.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>takerover</title>
       <link>https://novaclearnscyber.github.io/blog/posts/takerover/</link>
