@@ -1,6 +1,6 @@
+password = 1234321
 
-
-//"generic_password":  'password: "SuperSecret123"',
+//  "generic_password":  'password: "SuperSecret123"',
 ##    "generic_secret":    'api_key = "abcdef1234567890"',
 //    "aws_access_key":    "AKIAABCDEFGHIJKLMNOP",
 //    "aws_secret":        'aws_secret_access_key: "wJalrXUtnFEMIfakeKEYfakeKEYfakeKEYfake1"',
