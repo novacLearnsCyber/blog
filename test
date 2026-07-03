@@ -1,2 +1,13 @@
 test pentru scrapper
-password = 123421
+### password = 123421
+/// password = 1234213
+
+//"generic_password":  'password: "SuperSecret123"',
+##    "generic_secret":    'api_key = "abcdef1234567890"',
+//    "aws_access_key":    "AKIAABCDEFGHIJKLMNOP",
+//    "aws_secret":        'aws_secret_access_key: "wJalrXUtnFEMIfakeKEYfakeKEYfakeKEYfake1"',
+//    "private_key":       "-----BEGIN RSA PRIVATE KEY-----",
+//    "slack_token":       "xoxb-1234567890-abcdefghijklmnop",
+//    "openai_key":        "sk-abcdefghijklmnopqrstuvwx1234567890",
+//    "jwt":               "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dGVzdHNpZ25hdHVyZWZha2U",
+##    "db_connection_url": "postgres://myuser:mypass123@db.example.com:5432/mydb",
