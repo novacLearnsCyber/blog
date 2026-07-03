@@ -1,4 +1,4 @@
-password = 1234321
+password = "1234321"
 
 //  "generic_password":  'password: "SuperSecret123"',
 ##    "generic_secret":    'api_key = "abcdef1234567890"',
