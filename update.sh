@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Navigăm către folderul blogului
-# Notă: Asigură-te că calea este corectă pentru sistemul tău Linux
+
 cd "$HOME/Desktop/blogFolder" || { echo "Eroare: Folderul nu a fost găsit!"; exit 1; }
 
 echo "============================================"
@@ -18,7 +17,6 @@ git add .
 
 echo ""
 echo "[3/5] Verificăm build-ul Hugo local..."
-# Executăm hugo și verificăm dacă a reușit
 if ! hugo; then
     echo ""
     echo "[EROARE] Build-ul Hugo a eșuat! Verifică erorile de mai sus."
@@ -28,7 +26,6 @@ fi
 
 echo ""
 echo "[4/5] Trimitem modificările pe GitHub..."
-# Generăm un mesaj de commit cu data și ora curentă
 current_date=$(date "+%Y-%m-%d %H:%M:%S")
 git commit -m "Update blog: $current_date"
 
