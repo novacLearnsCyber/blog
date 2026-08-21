@@ -297,7 +297,7 @@
 
 {{/* ===== CATEGORIES GRID ===== */}}
 <div class="home-section">
-    <p class="home-section-title">📂 Browse by Category</p>
+    <p class="home-section-title">* Browse by Category</p>
     <div class="cats-grid-home">
         {{ $otherPages    := where .Site.RegularPages ".Params.tags" "intersect" (slice "other") }}
         {{ $allCyber      := where .Site.RegularPages ".Params.tags" "intersect" (slice "cyberStuff") }}
@@ -306,7 +306,7 @@
 
         <a href="{{ "categories/writeups/" | relURL }}" class="cat-card-home">
             <div class="cat-card-top-home">
-                <span class="cat-card-icon-home">🔐</span>
+                <span class="cat-card-icon-home">*</span>
                 <span class="cat-card-count-home">{{ $writeupsCount }} posts</span>
             </div>
             <div class="cat-card-name-home">Writeups</div>
@@ -315,7 +315,7 @@
 
         <a href="{{ "categories/other-things/" | relURL }}" class="cat-card-home">
             <div class="cat-card-top-home">
-                <span class="cat-card-icon-home">📝</span>
+                <span class="cat-card-icon-home">*</span>
                 <span class="cat-card-count-home">{{ $otherCount }} posts</span>
             </div>
             <div class="cat-card-name-home">Other Things</div>
@@ -324,7 +324,7 @@
     </div>
 
     {{/* ===== RECENT WRITEUPS ===== */}}
-    <p class="home-section-title">🕐 Recent Writeups</p>
+    <p class="home-section-title">* Recent Writeups</p>
     <div class="recent-grid">
         {{ range first 9 (where .Site.RegularPages "Section" "posts") }}
         <a href="{{ .Permalink }}" class="recent-card">
