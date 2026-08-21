@@ -35,7 +35,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+<<<<<<< HEAD
           path: ./public
+=======
+          path: ./public 
+>>>>>>> 111834f477c758852b8d1208d65e168441f2d466
   deploy:
     needs: build
     runs-on: ubuntu-latest
