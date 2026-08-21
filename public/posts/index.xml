@@ -6,7 +6,44 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Mon, 20 Jul 2026 09:20:03 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Aug 2026 08:14:11 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LazyAdmin</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</link>
+      <pubDate>Fri, 21 Aug 2026 08:14:11 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</guid>
+      
+      <description>&lt;p&gt;basic recon found just ports 22 and 80 opened:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080416.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+subdomain enumeration:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080444.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+only /content for now , the scan is still running&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080521.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+After accessing /content we found that the site is running SweetRice , searching for an exploit on this i found this : &lt;a href=&#34;https://www.exploit-db.com/exploits/40718&#34;&gt;https://www.exploit-db.com/exploits/40718&lt;/a&gt;&lt;br&gt;
+which basically says that we can access some mysql backups by going to /inc/mysql_backup&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080742.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+downloading the files we get a list of credentials , after searching a lil bit inside it we find this&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260424050351.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+a username and a password to log in , but where.&lt;br&gt;
+i google it and found that on sweetRice we can log in at  /ac as a admin of the page&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422082433.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+and we get this dashboard&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422091226.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+some random passwords&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422092629.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+looking aroung the site we found a page for ads , where we can inject diferent scripts , cool , so lets try to make a reverse shell with this.&lt;br&gt;
+&lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell&lt;/a&gt; , used this shell from monkey pentest, modify your port and ip inside the script.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>ReversingElf</title>
       <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
@@ -227,49 +264,12 @@ Accesing the web page and investigating the the api we see that we need a .cv fi
     </item>
     
     <item>
-      <title>2026-04-22 ǀ 07꞉54</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</link>
-      <pubDate>Fri, 24 Apr 2026 09:48:55 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/lazyadmin/</guid>
-      
-      <description>&lt;p&gt;basic recon found just ports 22 and 80 opened:&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080416.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-subdomain enumeration:&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080444.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-only /content for now , the scan is still running&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080521.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-After accessing /content we found that the site is running SweetRice , searching for an exploit on this i found this : &lt;a href=&#34;https://www.exploit-db.com/exploits/40718&#34;&gt;https://www.exploit-db.com/exploits/40718&lt;/a&gt;&lt;br&gt;
-which basically says that we can access some mysql backups by going to /inc/mysql_backup&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422080742.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-downloading the files we get a list of credentials , after searching a lil bit inside it we find this&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260424050351.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-a username and a password to log in , but where.&lt;br&gt;
-i google it and found that on sweetRice we can log in at  /ac as a admin of the page&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422082433.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-and we get this dashboard&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422091226.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-some random passwords&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260422092629.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-looking aroung the site we found a page for ads , where we can inject diferent scripts , cool , so lets try to make a reverse shell with this.&lt;br&gt;
-&lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell&lt;/a&gt; , used this shell from monkey pentest, modify your port and ip inside the script.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>test other</title>
       <link>https://novaclearnscyber.github.io/blog/posts/test-other/</link>
       <pubDate>Tue, 24 Mar 2026 13:03:22 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/posts/test-other/</guid>
       
-      <description>&lt;p&gt;test test test&lt;/p&gt;</description>
+      <description>&lt;p&gt;test test test asta o fi  ?&lt;/p&gt;</description>
       
     </item>
     
@@ -599,54 +599,6 @@ and sure we did&lt;br&gt;
 &lt;img src=&#34;https://share.note.sx/files/z4/z4h7jidr0d0fayvgri4i.png&#34; alt=&#34;&#34;&gt;
 &lt;br&gt;
 there is something interesting&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Evil-GPT v2</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/</link>
-      <pubDate>Mon, 02 Mar 2026 13:23:16 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/evil-gpt-v2/</guid>
-      
-      <description>&lt;p&gt;yeah so this is the continuation of evil gpt&lt;br&gt;
-DESC:&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/8f/8f8962doo5lxz37vfv46.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-this time we can acces the AI trough http in browser , so we know for sure a htttp port in open&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/5i/5i5lm0iu441i0qghclig.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-know we can talk to the model like to the real chat gpt&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/z2/z23yv7xtc4i1choh94aa.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-here i tried some trick , liltle to no result as we can see&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/fe/fe2hbkmjwoodlr47boqs.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-yeak so i find the trick . I told the ai to say random stuff and dont stop , and eventually it droped the flag pretty easy , this was actually how the real chat gpt was hacked some time before revealing some non public information&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/8i/8ircwhzwz87ndibh1gvg.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Evil-GPT</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/evil-gpt/</link>
-      <pubDate>Mon, 02 Mar 2026 13:20:57 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/evil-gpt/</guid>
-      
-      <description>&lt;p&gt;so this is the first ctf i goona post ,&lt;/p&gt;
-&lt;p&gt;Desc :&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/gc/gcrqcw7n0vgbzkj1aik7.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;when we connect with netcat we got the small following promt &lt;img src=&#34;https://share.note.sx/files/68/68qnlx0susg9b3d52r2b.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-i tried to put some command in but it dosent respond to anything except exit , for the moment&lt;/p&gt;
-&lt;p&gt;i input &amp;ldquo;flag &amp;quot; and got the following output&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/15/15va3qtq0gobxfir3w83.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;ok idk why but when i typed again ls i got the following&lt;br&gt;
-&lt;img src=&#34;https://share.note.sx/files/6q/6qwgjkjmlm6infuek9vr.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;in the listing is a interesting py script name evilai.py , i gonna try to execute it&lt;/p&gt;</description>
       
     </item>
     
