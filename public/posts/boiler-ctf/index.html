@@ -4,11 +4,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">ultratech | Cyber Blog-ul lui Novac</title>
-<meta property="og:title" content="ultratech | Cyber Blog-ul lui Novac" />
-<meta name="twitter:title" content="ultratech | Cyber Blog-ul lui Novac" />
-<meta itemprop="name" content="ultratech | Cyber Blog-ul lui Novac" />
-<meta name="application-name" content="ultratech | Cyber Blog-ul lui Novac" />
+<title itemprop="name">boiler ctf | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="boiler ctf | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="boiler ctf | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="boiler ctf | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="boiler ctf | Cyber Blog-ul lui Novac" />
 <meta property="og:site_name" content="" />
 
 <meta name="description" content="">
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/ultratech/" title="" />
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/boiler-ctf/" title="" />
 
 
 
@@ -30,9 +30,9 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2026-07-20T09:15:34Z />
-    <meta property="article:published_time" content=2026-07-20T09:15:34Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/ultratech/" />
+    <meta property="og:article:published_time" content=2026-05-04T05:41:58Z />
+    <meta property="article:published_time" content=2026-05-04T05:41:58Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/boiler-ctf/" />
 
     
 
@@ -42,16 +42,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "ultratech",
+        "headline": "boiler ctf",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2026-07-20",
+        "datePublished": "2026-05-04",
         "description": "",
-        "wordCount":  208 ,
+        "wordCount":  71 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2026-07-20",
+        "dateModified": "2026-05-04",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -67,45 +67,49 @@
 <meta name="generator" content="Hugo 0.161.1">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/ultratech/">
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/boiler-ctf/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
-  <meta property="og:title" content="ultratech">
-  <meta property="og:description" content="scaning:
-this nmap scan gives us all we need for the first page so the first page is done .
-i also runned a feq gobuster scans and found a few interesting domains ,
-one of them being /js which quiet interesting , and inside it the api.js file , what grabbed my attention was ping line
-robots.txt gives a map
-trying some parameter checking here
-here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE
-i tried to do some reverse shell script but it didnt worked
-so i just listed the password file
-inside it i found 2 passwords hashes and both of them where on crackstation">
+  <meta property="og:title" content="boiler ctf">
+  <meta property="og:description" content="first enumeration
+ftp server with anonymous login , a single file on it
+excrypted in rot 13
+nothin interesting
+basic ubuntu web-server on
+longer port enum
+joomla , bruteforcce the logni
+$gobuster dir -u$IP/joomla/ -w /usr/share/wordlists/dirb/common.txt
+runned another gobuster on …. , and we find an intersting budomain named _test
+basterd superduper@$$
+$ find / -perm /4000 -type f -exec ls -ld {} ; 2&gt;/dev/null">
   <meta property="og:locale" content="ro_ro">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:modified_time" content="2026-07-20T09:15:34+00:00">
+    <meta property="article:modified_time" content="2026-05-04T05:41:58+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
     <meta property="article:tag" content="CyberStuff">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ultratech">
-  <meta name="twitter:description" content="scaning:
-this nmap scan gives us all we need for the first page so the first page is done .
-i also runned a feq gobuster scans and found a few interesting domains ,
-one of them being /js which quiet interesting , and inside it the api.js file , what grabbed my attention was ping line
-robots.txt gives a map
-trying some parameter checking here
-here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE
-i tried to do some reverse shell script but it didnt worked
-so i just listed the password file
-inside it i found 2 passwords hashes and both of them where on crackstation">
+  <meta name="twitter:title" content="boiler ctf">
+  <meta name="twitter:description" content="first enumeration
+ftp server with anonymous login , a single file on it
+excrypted in rot 13
+nothin interesting
+basic ubuntu web-server on
+longer port enum
+joomla , bruteforcce the logni
+$gobuster dir -u$IP/joomla/ -w /usr/share/wordlists/dirb/common.txt
+runned another gobuster on …. , and we find an intersting budomain named _test
+basterd superduper@$$
+$ find / -perm /4000 -type f -exec ls -ld {} ; 2&gt;/dev/null">
 
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/ultratech/">
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/boiler-ctf/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -217,71 +221,60 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">ultratech</h1>
+                <h1 class="header-title">boiler ctf</h1>
                 
                 
                 
                 <div class="post-meta">
-                    <time datetime="2026-07-20T09:15:34&#43;00:00" itemprop="datePublished"> 20 iul. 2026 </time>
+                    <time datetime="2026-05-04T05:41:58&#43;00:00" itemprop="datePublished"> 4 mai 2026 </time>
                 </div>
                 
             </header>
             
             <div class="page-content">
-                <p>scaning:<br>
-this nmap scan gives us all we need for the first page <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png" alt="">
+                <p>first enumeration<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053704.png" alt="">
 <br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png" alt="">
+ftp server with anonymous login , a single file on it<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053737.png" alt="">
+<br>
+excrypted in rot 13<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053756.png" alt="">
+<br>
+nothin interesting<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053827.png" alt="">
+<br>
+basic ubuntu web-server on</p>
+<p>longer port enum<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430055538.png" alt="">
 </p>
-<p>so the first page is done .<br>
-i also runned a feq gobuster scans and found a few interesting domains ,<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png" alt="">
-<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png" alt="">
-<br>
-one of them being /js which quiet interesting  , and inside it the api.js file , what grabbed my attention was ping line<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png" alt="">
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430054726.png" alt="">
 </p>
-<p>robots.txt gives a map<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png" alt="">
+<p>joomla , bruteforcce the logni</p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260430062830.png" alt="">
 </p>
-<p>trying some parameter checking here<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png" alt="">
+<blockquote>
+<p>$gobuster dir -u$IP/joomla/ -w /usr/share/wordlists/dirb/common.txt</p>
+</blockquote>
+<p>runned another gobuster on &hellip;. , and we find an intersting budomain named _test</p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504010628.png" alt="">
 </p>
-<p>here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png" alt="">
-<br>
-i tried to do some reverse shell script but it didnt worked<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png" alt="">
-<br>
-so i just listed the password file<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png" alt="">
-<br>
-inside it i found 2 passwords hashes and both of them where on crackstation</p>
-<pre tabindex="0"><code>���(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Name or service not known
-</code></pre><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103535.png" alt="">
-<br>
-mrsheafy<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303104008.png" alt="">
-<br>
-n100906<br>
-then i just ssh with the first username and pass<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105519.png" alt="">
-<br>
-inside i tried to list some SUID or sudo but didnt find anything interesting<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105512.png" alt="">
-<br>
-but when i id i saw a have some docker permisions on , ok that cool<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105912.png" alt="">
-<br>
-so i search on GTFO.bins a priv esec using docker and found this<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303110133.png" alt="">
-<br>
-run it and boom root acces , room done<br>
-<img src="blog-ul-meu/static/Pasted%20image%2020260303110124.png" alt="">
-<br>
-just cat the ssh as in the question<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303110159.png" alt="">
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011121.png" alt="">
+</p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011314.png" alt="">
+</p>
+<p><code>basterd superduper@$$</code></p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011507.png" alt="">
+</p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011743.png" alt="">
+</p>
+<blockquote>
+<p>$ find / -perm /4000 -type f -exec ls -ld {} ; 2&gt;/dev/null</p>
+</blockquote>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504013842.png" alt="">
+</p>
+<p>It wasn&rsquo;t that hard, was it?</p>
+<p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260504013942.png" alt="">
 </p>
 
             </div>

