@@ -74,8 +74,11 @@
     }
 
     .cat-card-icon {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1;
+        font-weight: 700;
+        color: #d98ad4;
+        font-family: monospace;
     }
 
     .cat-card-count {
@@ -126,16 +129,29 @@
     </div>
 
     <div class="cats-grid">
-        {{ range .Data.Terms.Alphabetical }}
-        {{ $term := . }}
-        {{ $termPage := $term.Page }}
-        <a href="{{ $termPage.Permalink }}" class="cat-card">
+        {{ $writeupPage := .Site.GetPage "/categories/writeups" }}
+        {{ $otherPage  := .Site.GetPage "/categories/other-things" }}
+
+        {{ with $writeupPage }}
+        <a href="{{ .Permalink }}" class="cat-card">
             <div class="cat-card-top">
-                <span class="cat-card-icon">{{ with $termPage.Params.icon }}{{ . }}{{ else }}📁{{ end }}</span>
-                <span class="cat-card-count">{{ $term.Count }} writeups</span>
+                <span class="cat-card-icon">*</span>
+                <span class="cat-card-count">{{ len .Pages }} writeups</span>
             </div>
-            <div class="cat-card-name">{{ $termPage.Title | title }}</div>
-            <div class="cat-card-desc">{{ with $termPage.Description }}{{ . }}{{ else }}Writeups for {{ $termPage.Title | title }}{{ end }}</div>
+            <div class="cat-card-name">{{ .Title }}</div>
+            <div class="cat-card-desc">{{ with .Description }}{{ . }}{{ else }}CTF and security challenge writeups{{ end }}</div>
+            <div class="cat-card-arrow">→ Browse all</div>
+        </a>
+        {{ end }}
+
+        {{ with $otherPage }}
+        <a href="{{ .Permalink }}" class="cat-card">
+            <div class="cat-card-top">
+                <span class="cat-card-icon">*</span>
+                <span class="cat-card-count">{{ len .Pages }} posts</span>
+            </div>
+            <div class="cat-card-name">{{ .Title }}</div>
+            <div class="cat-card-desc">{{ with .Description }}{{ . }}{{ else }}Notes, thoughts and other things{{ end }}</div>
             <div class="cat-card-arrow">→ Browse all</div>
         </a>
         {{ end }}
