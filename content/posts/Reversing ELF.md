@@ -13,7 +13,7 @@ dificultate: 1
 amuca: false
 link:
   - https://tryhackme.com/room/reverselfiles
-lastmod: 2026-02-01T13:13:09.038Z
+lastmod: 2026-07-20T09:20:03.251Z
 ---
 This will be my first indo binary exploatation\
 lets begin
@@ -47,7 +47,7 @@ and decoding the second liine we get the flag\
 i loaded into ghridra again and founded this interesting function that is performing some kind of xor operation\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260131162814.png)
 
-i cheanged to cutter for a lil bit of diversity\
+i changed to cutter for a lil bit of diversity\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260131165843.png)\
 the aboce image may look intimidating but is more simple tahn u think\
 \- firstly 'ood 'argument ' '\
@@ -100,18 +100,18 @@ password:\
 
 i founded this function called my secure test\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260201064826.png)\
-if we take every condition and examine the character it comapres to we can determine the character being :\
+if we take every condition and examine the character it compares to, we can determine the string being :\
 '1337\_pwd'
 
 ### Crackme7
 
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260201075821.png)\
-for the next one once again i exxamined it in ghidra , look intro the main function and found this else if statement , then i right click on that value and chose to decimal and god the decimal value\
+for the next one once again i examined it in ghidra , look intro the main function and found this else if statement , then i right clicked on that value and chose to decimal and god the decimal value\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260201080008.png)\
 plug it into the program and i got the flag
 
 ### crackme8
 
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260201081212.png)\
-samething as level 7 , just go in ghidra , if statement , right click and chose decimal and u got it is that simple\
+same thing as level 7 , just go in ghidra , if statement , right click and chose decimal and u got it is that simple\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260201081307.png)

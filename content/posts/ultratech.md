@@ -8,7 +8,7 @@ amuca: false
 link:
 tags:
   - cyberStuff
-lastmod: 2026-03-03T19:56:51.253Z
+lastmod: 2026-07-20T09:15:34.500Z
 ---
 scaning:\
 this nmap scan gives us all we need for the first page ![](/images/blog-ul-meu/static/Pasted%20image%2020260303084750.png)\
@@ -31,9 +31,9 @@ here i just tried a few random things like acces that note.js port and using the
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260303095427.png)\
 i tried to do some reverse shell script but it didnt worked\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260303102305.png)\
-so i just lister the password file\
+so i just listed the password file\
 ![](/images/blog-ul-meu/static/Pasted%20image%2020260303103444.png)\
-inside it i found 2 passwords hasheh and both of them where on crackstatio
+inside it i found 2 passwords hashes and both of them where on crackstation
 
 ```
 ���(Mr00tf357a0c52799563c7c7b76c1e7543a32)Madmin0d0ea5111e3c1def594c1684e3b9be84: Name or service not known
