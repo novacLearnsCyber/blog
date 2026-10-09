@@ -6,7 +6,39 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 22 Sep 2026 11:22:47 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Sep 2026 09:47:32 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Guestbook</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/the-guestbook/</link>
+      <pubDate>Wed, 23 Sep 2026 09:47:32 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/the-guestbook/</guid>
+      
+      <description>&lt;p&gt;recon&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923043120.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;website&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923043155.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923043321.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+based on this introduction we can deduce that we have to do some kind of prompt injection on vera&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923043634.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+it seems that it has a basic railguard system&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923044831.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;i tried different approcuhes for a prompt injection , but none of them work , expect for the listing of the concierge commands.&lt;br&gt;
+An AI concierge command is a natural-language instruction given to an AI assistant that triggers a specific action, such as navigating to an application, filling out a form, booking a service, or coordinating a vendor.&lt;br&gt;
+with that we discovered the override parameter we can use to execute commands.&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923045316.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+and now we can list things , and we can see the flag is in the vault folder&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020260923052357.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+but the flag was nowhere to be found , even though i find a flag called manager.flag , i think there is a obfuscation system for the flag so i had to use the curl command in terminal.&lt;br&gt;
+use this to get the flag.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>The Hollow Shell</title>
       <link>https://novaclearnscyber.github.io/blog/posts/the-hollow-shell/</link>
