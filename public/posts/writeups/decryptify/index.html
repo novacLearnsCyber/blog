@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">decryptify | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="decryptify | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="decryptify | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="decryptify | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="decryptify | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/writeups/decryptify/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-10-09T12:43:55Z />
+    <meta property="article:published_time" content=2026-10-09T12:43:55Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/decryptify/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "decryptify",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-10-09",
+        "description": "",
+        "wordCount":  719 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-10-09",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/decryptify/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="decryptify">
+  <meta property="og:description" content="Scanning:
+I did a second scan because it seemed a little bit weird to have a single port open, and I was right. Let’s research this waste service:
+I accessed the website on port 1337.
+Nothing interesting, let’s run gobuster:
+OK, let’s inspect the JavaScript:
+OK, interesting:
+OK, let’s beautify it to understand it better:
+function b(c, d) { const e = a(); return b = function(f, g) { f = f - 0x165; let h = e[f]; return h; }, b(c, d); } const j = b; function a() { const k = [&#39;16OTYqOr&#39;, &#39;861cPVRNJ&#39;, &#39;474AnPRwy&#39;, &#39;H7gY2tJ9wQzD4rS1&#39;, &#39;5228dijopu&#39;, &#39;29131EDUYqd&#39;, &#39;8756315tjjUKB&#39;, &#39;1232020YOKSiQ&#39;, &#39;7042671GTNtXE&#39;, &#39;1593688UqvBWv&#39;, &#39;90209ggCpyY&#39;]; a = function() { return k; }; return a(); }(function(d, e) { const i = b, f = d(); while (!![]) { try { const g = parseInt(i(0x16b)) / 0x1 &#43; -parseInt(i(0x16f)) / 0x2 &#43; parseInt(i(0x167)) / 0x3 * (parseInt(i(0x16a)) / 0x4) &#43; parseInt(i(0x16c)) / 0x5 &#43; parseInt(i(0x168)) / 0x6 * (parseInt(i(0x165)) / 0x7) &#43; -parseInt(i(0x166)) / 0x8 * (parseInt(i(0x16e)) / 0x9) &#43; parseInt(i(0x16d)) / 0xa; if (g === e) break; else f[&#39;push&#39;](f[&#39;shift&#39;]()); } catch (h) { f[&#39;push&#39;](f[&#39;shift&#39;]()); } } }(a, 0xe43f0)); const c = j(0x169); OK interesting, the majority of the code is obfuscated. Let’s evaluate j(0x169) inside the browser console to see if we get something:
+OK cool, this might be the password for the API panel:
+And it is! Cool, now we are logged into the panel at $IP/api.php.">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-10-09T12:43:55+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="decryptify">
+  <meta name="twitter:description" content="Scanning:
+I did a second scan because it seemed a little bit weird to have a single port open, and I was right. Let’s research this waste service:
+I accessed the website on port 1337.
+Nothing interesting, let’s run gobuster:
+OK, let’s inspect the JavaScript:
+OK, interesting:
+OK, let’s beautify it to understand it better:
+function b(c, d) { const e = a(); return b = function(f, g) { f = f - 0x165; let h = e[f]; return h; }, b(c, d); } const j = b; function a() { const k = [&#39;16OTYqOr&#39;, &#39;861cPVRNJ&#39;, &#39;474AnPRwy&#39;, &#39;H7gY2tJ9wQzD4rS1&#39;, &#39;5228dijopu&#39;, &#39;29131EDUYqd&#39;, &#39;8756315tjjUKB&#39;, &#39;1232020YOKSiQ&#39;, &#39;7042671GTNtXE&#39;, &#39;1593688UqvBWv&#39;, &#39;90209ggCpyY&#39;]; a = function() { return k; }; return a(); }(function(d, e) { const i = b, f = d(); while (!![]) { try { const g = parseInt(i(0x16b)) / 0x1 &#43; -parseInt(i(0x16f)) / 0x2 &#43; parseInt(i(0x167)) / 0x3 * (parseInt(i(0x16a)) / 0x4) &#43; parseInt(i(0x16c)) / 0x5 &#43; parseInt(i(0x168)) / 0x6 * (parseInt(i(0x165)) / 0x7) &#43; -parseInt(i(0x166)) / 0x8 * (parseInt(i(0x16e)) / 0x9) &#43; parseInt(i(0x16d)) / 0xa; if (g === e) break; else f[&#39;push&#39;](f[&#39;shift&#39;]()); } catch (h) { f[&#39;push&#39;](f[&#39;shift&#39;]()); } } }(a, 0xe43f0)); const c = j(0x169); OK interesting, the majority of the code is obfuscated. Let’s evaluate j(0x169) inside the browser console to see if we get something:
+OK cool, this might be the password for the API panel:
+And it is! Cool, now we are logged into the panel at $IP/api.php.">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/writeups/decryptify/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">decryptify</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-10-09T12:43:55&#43;00:00" itemprop="datePublished"> 9 oct. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Scanning:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301051138.png" alt="">
+<br>
+I did a second scan because it seemed a little bit weird to have a single port open, and I was right. Let&rsquo;s research this <code>waste</code> service:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301052258.png" alt="">
+<br>
+I accessed the website on port 1337.<br>
+Nothing interesting, let&rsquo;s run gobuster:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301053244.png" alt="">
+<br>
+OK, let&rsquo;s inspect the JavaScript:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301053303.png" alt="">
+<br>
+OK, interesting:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301053315.png" alt="">
+<br>
+OK, let&rsquo;s beautify it to understand it better:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301053352.png" alt="">
+</p>
+<pre tabindex="0"><code>function b(c, d) {
+    const e = a();
+    return b = function(f, g) {
+        f = f - 0x165;
+        let h = e[f];
+        return h;
+    }, b(c, d);
+}
+const j = b;
+
+function a() {
+    const k = [&#39;16OTYqOr&#39;, &#39;861cPVRNJ&#39;, &#39;474AnPRwy&#39;, &#39;H7gY2tJ9wQzD4rS1&#39;, &#39;5228dijopu&#39;, &#39;29131EDUYqd&#39;, &#39;8756315tjjUKB&#39;, &#39;1232020YOKSiQ&#39;, &#39;7042671GTNtXE&#39;, &#39;1593688UqvBWv&#39;, &#39;90209ggCpyY&#39;];
+    a = function() {
+        return k;
+    };
+    return a();
+}(function(d, e) {
+    const i = b,
+        f = d();
+    while (!![]) {
+        try {
+            const g = parseInt(i(0x16b)) / 0x1 + -parseInt(i(0x16f)) / 0x2 + parseInt(i(0x167)) / 0x3 * (parseInt(i(0x16a)) / 0x4) + parseInt(i(0x16c)) / 0x5 + parseInt(i(0x168)) / 0x6 * (parseInt(i(0x165)) / 0x7) + -parseInt(i(0x166)) / 0x8 * (parseInt(i(0x16e)) / 0x9) + parseInt(i(0x16d)) / 0xa;
+            if (g === e) break;
+            else f[&#39;push&#39;](f[&#39;shift&#39;]());
+        } catch (h) {
+            f[&#39;push&#39;](f[&#39;shift&#39;]());
+        }
+    }
+}(a, 0xe43f0));
+const c = j(0x169); 
+</code></pre><p>OK interesting, the majority of the code is obfuscated. Let&rsquo;s evaluate <code>j(0x169)</code> inside the browser console to see if we get something:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301054615.png" alt="">
+<br>
+OK cool, this might be the password for the API panel:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301054648.png" alt="">
+<br>
+And it is! Cool, now we are logged into the panel at <code>$IP/api.php</code>.</p>
+<p>This function attempts to encode and create an invite code using an email and a constant value, but this approach is deterministic, so we can reproduce the invite code.</p>
+<p>Let&rsquo;s access the logs page found from gobuster:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301061042.png" alt="">
+</p>
+<pre tabindex="0"><code>5-01-23 14:32:56 - User POST to /index.php (Login attempt)
+2025-01-23 14:33:01 - User POST to /index.php (Login attempt)
+2025-01-23 14:33:05 - User GET /index.php (Login page access)
+2025-01-23 14:33:15 - User POST to /index.php (Login attempt)
+2025-01-23 14:34:20 - User POST to /index.php (Invite created, code: MTM0ODMzNzEyMg== for alpha@fake.thm)
+2025-01-23 14:35:25 - User GET /index.php (Login page access)
+2025-01-23 14:36:30 - User POST to /dashboard.php (User alpha@fake.thm deactivated)
+2025-01-23 14:37:35 - User GET /login.php (Page not found)
+2025-01-23 14:38:40 - User POST to /dashboard.php (New user created: hello@fake.thm)
+</code></pre><p>OK, we can use the email address <code>hello@fake.thm</code> to log in via the invite code page:<br>
+<img src="/blog/images/static/Pasted%20image%2020260301072032.png" alt="">
+<br>
+And using the function from the panel, we can generate the invite code locally using this script.<br>
+I got this script from this writeup: <a href="https://jaxafed.github.io/posts/tryhackme-decryptify/">https://jaxafed.github.io/posts/tryhackme-decryptify/</a> to speed up the process (I don&rsquo;t write PHP):</p>
+<pre tabindex="0"><code>&lt;?php
+
+function calculate_seed_value($email, $constant_value) {
+    $email_length = strlen($email);
+    $email_hex = hexdec(substr($email, 0, 8));
+    $seed_value = hexdec($email_length + $constant_value + $email_hex);
+
+    return $seed_value;
+}
+
+function generate_token($email, $constant_value) {
+     $seed_value = calculate_seed_value($email, $constant_value);
+     mt_srand($seed_value);
+     $random = mt_rand();
+     $invite_code = base64_encode($random);
+
+    return $invite_code;
+}
+
+
+$email = &#34;hello@fake.thm&#34;;
+$token = generate_token($email, 99999);
+print $token
+
+?&gt;
+</code></pre><p>Using this script we get the code and are able to log in via invite code:<br>
+<img src="/blog/images/static/Pasted%20image%2020260302072403.png" alt="">
+<br>
+And we got a flag, cool:</p>
+<h2 id="thmcryptographypwn007">THM{CryptographyPwn007}</h2>
+<p>Looking at the source code we can see something interesting about the <code>date</code> parameter. Let&rsquo;s try to modify it to see what happens:<br>
+<img src="/blog/images/static/Pasted%20image%2020260302072557.png" alt="">
+<br>
+Padding is a process used in cryptography to ensure that plaintext data fits the fixed block size required by block ciphers like AES. If the plaintext is not a multiple of the block size (e.g., 16 bytes for AES), extra bytes are added to fill the remaining space in the last block. These added bytes, known as <strong>padding</strong>, are removed during decryption to retrieve the original plaintext. Proper padding handling is crucial to avoid security vulnerabilities.</p>
+<p>And we have a padding error, OK cool. Now we can use a padding oracle exploitation tool like padre (<a href="https://github.com/glebarez/padre">https://github.com/glebarez/padre</a>) with the following payload:</p>
+<pre tabindex="0"><code>./padre -u &#39;http://10.112.171.146:1337/dashboard.php?date=$&#39; -cookie &#39;PHPSESSID=p1elka0dcenr9iuu1r8fgicvad&#39; &lt;-- PHPSSID from the browser , how to find it :
+- Hit F12 - This should open the developer console.
+- In the console window, click the Cache menu and select view cookie information.
+- This will open a new page with the cookies listed.
+- Find the item with the name PHPSESSID.
+- Copy the value next to VALUE - this is your session id.
+
+&#39;+3cbo6jT2RANHu+tPAx+1SIUzmehv43y/ABR/m0/SZ0=&#39; &lt;--- value of date
+</code></pre><p><img src="/blog/images/static/Pasted%20image%2020260302073912.png" alt="">
+</p>
+<p>OK cool, now we see the padding format of date:<br>
+<img src="/blog/images/static/Pasted%20image%2020260302074042.png" alt="">
+</p>
+<p>Now let&rsquo;s use the padding oracle to our advantage:<br>
+<img src="/blog/images/static/Pasted%20image%2020260302081050.png" alt="">
+<br>
+Cool, now let&rsquo;s paste that string into the browser:</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260302074554.png" alt="">
+<br>
+And bam:<br>
+<strong>THM{GOT_COMMAND_EXECUTION001}</strong><br>
+Cool CTF.</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

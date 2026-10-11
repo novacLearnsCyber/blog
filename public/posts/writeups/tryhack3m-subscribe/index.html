@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">TryHack3M Subscribe | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="TryHack3M Subscribe | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/writeups/tryhack3m-subscribe/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-10-09T12:39:30Z />
+    <meta property="article:published_time" content=2026-10-09T12:39:30Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/tryhack3m-subscribe/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "TryHack3M Subscribe",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-10-09",
+        "description": "",
+        "wordCount":  520 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-10-09",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/tryhack3m-subscribe/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="TryHack3M Subscribe">
+  <meta property="og:description" content="Part 1 - Exploitation Scanning: some interesting ports open.
+Accessing the HTTP service via Burp Suite and inspecting the site map, we see the following:
+Let’s look a little bit at the js folder; that invite function seems interesting:
+OK, so I copied the function and pasted it into a code beautifier, getting this:
+The original function:
+So the function basically says that if our hostname is not capture3milliobsubcribers.thm we can’t log in, so let’s modify that in /etc/hosts:
+OK cool, now let’s use Inspect Element to modify that field so it redirects us to the domain specified in the function:
+OK cool, so now just input anything into the invite code field and we should get the invite code:
+And boom.">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-10-09T12:39:30+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHack3M Subscribe">
+  <meta name="twitter:description" content="Part 1 - Exploitation Scanning: some interesting ports open.
+Accessing the HTTP service via Burp Suite and inspecting the site map, we see the following:
+Let’s look a little bit at the js folder; that invite function seems interesting:
+OK, so I copied the function and pasted it into a code beautifier, getting this:
+The original function:
+So the function basically says that if our hostname is not capture3milliobsubcribers.thm we can’t log in, so let’s modify that in /etc/hosts:
+OK cool, now let’s use Inspect Element to modify that field so it redirects us to the domain specified in the function:
+OK cool, so now just input anything into the invite code field and we should get the invite code:
+And boom.">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/writeups/tryhack3m-subscribe/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">TryHack3M Subscribe</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-10-09T12:39:30&#43;00:00" itemprop="datePublished"> 9 oct. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h3 id="part-1---exploitation">Part 1 - Exploitation</h3>
+<p>Scanning: some interesting ports open.<br>
+<img src="/blog/images/static/Pasted%20image%2020260310074500.png" alt="">
+</p>
+<p>Accessing the HTTP service via Burp Suite and inspecting the site map, we see the following:<br>
+<img src="/blog/images/static/Pasted%20image%2020260309084231.png" alt="">
+<br>
+Let&rsquo;s look a little bit at the js folder; that invite function seems interesting:<br>
+<img src="/blog/images/static/Pasted%20image%2020260309084344.png" alt="">
+<br>
+OK, so I copied the function and pasted it into a code beautifier, getting this:<br>
+<img src="/blog/images/static/Pasted%20image%2020260309084551.png" alt="">
+<br>
+The original function:<br>
+<img src="/blog/images/static/Pasted%20image%2020260309084610.png" alt="">
+<br>
+So the function basically says that if our hostname is not <code>capture3milliobsubcribers.thm</code> we can&rsquo;t log in, so let&rsquo;s modify that in <code>/etc/hosts</code>:<br>
+<img src="/blog/images/static/Pasted%20image%2020260309085351.png" alt="">
+<br>
+OK cool, now let&rsquo;s use Inspect Element to modify that field so it redirects us to the domain specified in the function:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310075144.png" alt="">
+<br>
+OK cool, so now just input anything into the invite code field and we should get the invite code:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310075617.png" alt="">
+<br>
+And boom.</p>
+<p>Now if we input the invite code into the required field, we get a username and password:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310075703.png" alt="">
+<br>
+When we log in, we get the following dashboard:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310055526.png" alt="">
+<br>
+OK cool. When we inspect this in Burp Suite, we see an interesting field called <code>isVIP</code>, and we can change its value. Cool:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310062337.png" alt="">
+<br>
+Accessing the second challenge with the VIP tag, we see the following:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310062811.png" alt="">
+<br>
+For whatever reason, when trying to access the machine with VIP enabled via Burp Suite, it didn&rsquo;t work, so I modified it using Inspect Element to start the machine:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310063110.png" alt="">
+<br>
+And we got the machine running. Then we can use Burp Suite again and modify the command field to get the config file, also keeping <code>isVIP</code> set to true:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310063805.png" alt="">
+<img src="/blog/images/static/Pasted%20image%2020260310063922.png" alt="">
+<br>
+And boom, we get the token:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310064005.png" alt="">
+<br>
+But what can we do with this token?</p>
+<p>When visiting the URL, I was redirected to <a href="http://admin1337special.hackme.thm:40009/public/html/">http://admin1337special.hackme.thm:40009/public/html/</a> with a status code of 403 (Unauthorized). I attempted to add a cookie SECURE_TOKEN=ACC#SS_TO_ADM1N_*****, but it didn’t work. I started fuzzing directories within /public/html and got these results:</p>
+<p>I also updated <code>/etc/hosts</code> with <code>admin1337special.hackme.thm</code> like this:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310082040.png" alt="">
+<br>
+And fuzzed:<br>
+<img src="blog-ul-meu/static/Pasted%20image%2020260310071002.png" alt="">
+<br>
+And fortunately gobuster saved me and showed me the login page:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310070954.png" alt="">
+<br>
+After we input the token, it asks us for a username and password:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310071020.png" alt="">
+<br>
+Let&rsquo;s run sqlmap on this. To do that, go into Burp Suite, intercept the request, and right-click in the yellow highlighted area to save it:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310072348.png" alt="">
+<br>
+Then run sqlmap like this, where <code>savedSite</code> is the file we saved:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310072501.png" alt="">
+<br>
+And boom, password:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310072653.png" alt="">
+<br>
+Now we are admin:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310072803.png" alt="">
+<br>
+If we change the action to sign up:<br>
+<img src="/blog/images/static/Pasted%20image%2020260310073210.png" alt="">
+<br>
+Then we reconnect to the original site, that being <code>http://hackme.thm/</code>, and we get the final flag, boom:</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260310073343.png" alt="">
+</p>
+<h3 id="part-2---detection">Part 2 - Detection</h3>
+<h4 id="q1">Q1</h4>
+<p>Log in at <code>http://IP:8000</code> and you should see this interface:<br>
+<img src="/blog/images/static/Pasted%20image%2020260311121016.png" alt="">
+<br>
+Click on Search &amp; Reporting in the right menu:<br>
+<img src="/blog/images/static/Pasted%20image%2020260311121231.png" alt="">
+<br>
+If we insert <code>*</code> and select all time, we see the exact number of logs.</p>
+<h4 id="q2">Q2</h4>
+<p>If we inspect the source IPs and select the address with the most visits, we can see the tool asked for:<br>
+<img src="/blog/images/static/Pasted%20image%2020260311121722.png" alt="">
+<br>
+<img src="/blog/images/static/Pasted%20image%2020260311121911.png" alt="">
+</p>
+<h4 id="q3">Q3</h4>
+<p>If we click on the tool, we see the amount of events:<br>
+<img src="/blog/images/static/Pasted%20image%2020260311122055.png" alt="">
+</p>
+<h4 id="q4">Q4</h4>
+<p>The IP address from all the sqlmap events.</p>
+<h4 id="q5">Q5</h4>
+<p>Select the attacker IP and the count will be shown:<br>
+<img src="/blog/images/static/Pasted%20image%2020260311122901.png" alt="">
+</p>
+<h4 id="q6">Q6</h4>
+<p>Expand one of the sqlmap events using the arrow on the left side of the event; inside you will see a long value indicating the table that the attacker queried:<br>
+<img src="/blog/images/static/Pasted%20image%2020260311122639.png" alt="">
+</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

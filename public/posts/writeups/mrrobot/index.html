@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">MrRobot | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="MrRobot | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="MrRobot | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="MrRobot | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="MrRobot | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/writeups/mrrobot/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-10-09T13:02:41Z />
+    <meta property="article:published_time" content=2026-10-09T13:02:41Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/mrrobot/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "MrRobot",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-10-09",
+        "description": "",
+        "wordCount":  703 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-10-09",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/mrrobot/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="MrRobot">
+  <meta property="og:description" content="The first nmap scan shows that all 1000 ports on the host are in an ignored status.
+After a Google search I found out that using -sT can bypass this easily:
+Basic ports open, let’s try to visit the website:
+After a very cool animation, this is what we see.
+I tried prepare and a cool cinematic rolled up; nothing too interesting in there. Let’s try question:
+Just some pictures appeared on the screen; I think this whole site is just some promotional content from the TV series.">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-10-09T13:02:41+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MrRobot">
+  <meta name="twitter:description" content="The first nmap scan shows that all 1000 ports on the host are in an ignored status.
+After a Google search I found out that using -sT can bypass this easily:
+Basic ports open, let’s try to visit the website:
+After a very cool animation, this is what we see.
+I tried prepare and a cool cinematic rolled up; nothing too interesting in there. Let’s try question:
+Just some pictures appeared on the screen; I think this whole site is just some promotional content from the TV series.">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/writeups/mrrobot/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">MrRobot</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-10-09T13:02:41&#43;00:00" itemprop="datePublished"> 9 oct. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p><img src="/blog/images/static/Pasted%20image%2020260205055009.png" alt="">
+<br>
+The first nmap scan shows that all 1000 ports on the host are in an ignored status.<br>
+After a Google search I found out that using <code>-sT</code> can bypass this easily:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205055956.png" alt="">
+<br>
+Basic ports open, let&rsquo;s try to visit the website:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205060021.png" alt="">
+<br>
+After a very cool animation, this is what we see.<br>
+I tried <code>prepare</code> and a cool cinematic rolled up; nothing too interesting in there. Let&rsquo;s try <code>question</code>:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205060331.png" alt="">
+<br>
+Just some pictures appeared on the screen; I think this whole site is just some promotional content from the TV series.</p>
+<p>If I enter <code>/join</code>, I get the following:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205060956.png" alt="">
+<br>
+After I enter an email address, I get nothing in the inbox:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205061136.png" alt="">
+<br>
+I checked the page source and found these HTML comments:</p>
+<!--
+\   //~~\ |   |    /\  |~~\|~~  |\  | /~~\~~|~~    /\  |  /~~\ |\  ||~~
+ \ /|    ||   |   /__\ |__/|--  | \ ||    | |     /__\ | |    || \ ||--
+  |  \__/  \_/   /    \|  \|__  |  \| \__/  |    /    \|__\__/ |  \||__
+-->
+<p>Just an ASCII message.</p>
+<p>Let&rsquo;s check the <code>robots.txt</code> file:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205062914.png" alt="">
+<br>
+This is what we get; interesting files, let&rsquo;s check them:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205062944.png" alt="">
+<br>
+OK cool string, probably something encoded.<br>
+Nah my bad, this is actually the first key, cool.</p>
+<p>If we access the second mentioned file from <code>robots.txt</code> (<code>fsocity.dic</code>), we get this:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205063706.png" alt="">
+<br>
+A very long list of words, which looks like a wordlist. I downloaded it with <code>wget</code> and ran gobuster with it to find something interesting; I think it&rsquo;s going to take some time:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205063804.png" alt="">
+<br>
+This is the readme, by the way:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205063834.png" alt="">
+<br>
+<code>/Image</code> directs us to a blog. Cool, a new path here:</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260205064335.png" alt="">
+</p>
+<p>I noticed that even though the list is long, it starts to repeat itself:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205064434.png" alt="">
+<br>
+I decided to run directory enumeration with a common wordlist:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205065903.png" alt="">
+<br>
+From this list, <code>wp-login</code> seems interesting; let&rsquo;s check it:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205070046.png" alt="">
+<br>
+And it is WordPress. Good, this means it could be vulnerable; we have to look for the version:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205070324.png" alt="">
+<br>
+I opened Burp Suite and intercepted a failed login via the proxy:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205070513.png" alt="">
+<br>
+Cool, &ldquo;Invalid username&rdquo;. I tried the credentials <code>admin:admin</code>, and the error specifically revealed that the username doesn&rsquo;t exist:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205071414.png" alt="">
+<br>
+I ran this hydra command and got this:</p>
+<ul>
+<li><code>-L</code> specifies the dictionary file we downloaded earlier to take usernames from.</li>
+<li><code>-p test</code> specifies a password to test against all the usernames.</li>
+<li>The <code>$IP</code> and HTTP POST form parameters specify the endpoint and failure message.</li>
+<li><code>-t 30</code>: the number of tasks in parallel to run.</li>
+</ul>
+<p>And we get the username <code>elliot</code>. Let&rsquo;s test it:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205071745.png" alt="">
+<br>
+Cool, now we get an invalid password:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205072752.png" alt="">
+<br>
+I ran this command with hydra as well; it&rsquo;s similar to the previous one, just with a few things changed. After some time I got elliot&rsquo;s password: <code>ER28-0652</code>.</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260205072935.png" alt="">
+<br>
+And we are in, cool!<br>
+Next, I did the following:<br>
+Firstly, navigate to the Appearance Theme Editor menu:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205074357.png" alt="">
+<br>
+Then I modified <code>archive.php</code> with this reverse shell from pentestmonkey on GitHub, very cool:<br>
+<a href="https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php">https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php</a><br>
+Just copy the raw format, modify your IP and port, and press Update File.<br>
+Note that we also have to create a listener on our machine with the command:<br>
+<code>rlwrap nc -lvnp 53</code><br>
+(<code>rlwrap</code> is for line-editing support, and 53 is the listening port).</p>
+<p>Now we just have to access <code>http://10.66.189.112/wp-content/themes/twentyfifteen/archive.php</code>; after that the script triggers, and we get a reverse shell:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205074733.png" alt="">
+<br>
+Cool.<br>
+<img src="/blog/images/static/Pasted%20image%2020260205075029.png" alt="">
+<br>
+I looked around the machine a little bit and found a password hash for the user <code>robot</code>. Let&rsquo;s check it on CrackStation:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205075126.png" alt="">
+<br>
+And we have the robot password; let&rsquo;s login as him:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205075215.png" alt="">
+<br>
+And it works:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205075256.png" alt="">
+<br>
+And we have another key, cool.<br>
+Now I think we will have to root this machine completely.<br>
+Let&rsquo;s see what sudo permissions we can get:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205075422.png" alt="">
+<br>
+Yeah, this is not a good sign.<br>
+I also upgraded the shell with the command:</p>
+<pre tabindex="0"><code>python -c &#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;
+</code></pre><p>Cool.<br>
+I think we will have to search for SUID binaries in another way.<br>
+SUID binaries are binaries that have the SUID bit set, which means they execute with the permissions of the file owner (like root).<br>
+We search for them with this command:</p>
+<pre tabindex="0"><code>find / -perm +6000 2&gt;/dev/null | grep &#39;/bin&#39;
+</code></pre><p>Breakdown of the command:</p>
+<ul>
+<li>It uses <code>find</code> to locate binaries with the SUID bit set.</li>
+<li><code>2&gt;/dev/null</code>: redirects error messages to <code>/dev/null</code>.</li>
+<li><code>grep '/bin'</code>: filters for standard binary paths.<br>
+<img src="/blog/images/static/Pasted%20image%2020260205080140.png" alt="">
+</li>
+</ul>
+<p>After running this command, we see that <code>/usr/local/bin/nmap</code> has the SUID bit set. Good, that means we can exploit it.</p>
+<p>After searching on GTFOBins, we see that we can exploit nmap by:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205081153.png" alt="">
+<br>
+Cool, let&rsquo;s do just that:<br>
+<img src="/blog/images/static/Pasted%20image%2020260205081232.png" alt="">
+<br>
+And bam, we are root and we can read the final flag in <code>/root/key-3-of-3.txt</code>. Cool.</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

