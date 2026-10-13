@@ -6,7 +6,90 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sun, 11 Oct 2026 12:15:16 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2026 09:32:23 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Room 404</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/room-404/</link>
+      <pubDate>Mon, 12 Oct 2026 09:32:23 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/room-404/</guid>
+      
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://tryhackme.com/room/hh-room404-804573bf&#34;&gt;https://tryhackme.com/room/hh-room404-804573bf&lt;/a&gt;&lt;br&gt;
+first scan :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;┌──&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;k㉿kali&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;~/Desktop&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─ gobuster dir -u http://&amp;lt;YOUR_IP&amp;gt;:8080 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Gobuster v3.8.2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;by OJ Reeves &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;@TheColonial&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;amp; Christian Mehlmauer &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;@firefart&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Url:                     http://10.112.191.61:8080
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Method:                  GET
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Threads:                 &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Negative Status codes:   &lt;span style=&#34;color:#ae81ff&#34;&gt;404&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; User Agent:              gobuster/3.8.2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Timeout:                 10s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting gobuster in directory enumeration mode
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.git                 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 200&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 437&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.git/HEAD            &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 200&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 21&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.git/config          &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 200&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 92&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.git/index           &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 200&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 289&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.git/logs/           &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 200&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 165&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Progress: &lt;span style=&#34;color:#ae81ff&#34;&gt;4751&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;4751&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;100.00%&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Finished
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;interesting .git exposed , use git-dump to investigate it&lt;br&gt;
+to install git-dump use this &lt;a href=&#34;https://github.com/arthaud/git-dumper&#34;&gt;repo&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</link>
+      <pubDate>Mon, 12 Oct 2026 08:09:49 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-2/</link>
+      <pubDate>Mon, 12 Oct 2026 08:09:49 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-2/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot/</link>
+      <pubDate>Mon, 12 Oct 2026 08:03:16 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Jackpot</title>
       <link>https://novaclearnscyber.github.io/blog/posts/jackpot/</link>
