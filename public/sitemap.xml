@@ -3,24 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://novaclearnscyber.github.io/blog/</loc>
-    <lastmod>2026-10-12T09:51:48+00:00</lastmod>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/tags/cyberstuff/</loc>
-    <lastmod>2026-10-12T09:51:48+00:00</lastmod>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/tags/journal/</loc>
-    <lastmod>2026-10-12T09:51:48+00:00</lastmod>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/tags/note/</loc>
-    <lastmod>2026-10-12T09:51:48+00:00</lastmod>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/posts/</loc>
-    <lastmod>2026-10-12T09:51:48+00:00</lastmod>
-  </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/posts/writeups/room-404/</loc>
-    <lastmod>2026-10-12T09:51:48+00:00</lastmod>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/tags/</loc>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/posts/towel-on-the-sunbed/</loc>
+    <lastmod>2026-10-13T08:15:18+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/cyber/</loc>
+    <lastmod>2026-10-12T10:54:49+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/dreamhack/</loc>
+    <lastmod>2026-10-12T10:54:49+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/webhook/</loc>
+    <lastmod>2026-10-12T10:54:49+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/tags/xss/</loc>
+    <lastmod>2026-10-12T10:54:49+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/posts/xss-2/</loc>
+    <lastmod>2026-10-12T10:54:49+00:00</lastmod>
+  </url><url>
+    <loc>https://novaclearnscyber.github.io/blog/posts/writeups/room-404/</loc>
     <lastmod>2026-10-12T09:51:48+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</loc>
@@ -134,17 +152,11 @@
     <loc>https://novaclearnscyber.github.io/blog/posts/writeups/the-guestbook/</loc>
     <lastmod>2026-10-09T12:28:13+00:00</lastmod>
   </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/tags/cyber/</loc>
-    <lastmod>2026-10-09T12:27:54+00:00</lastmod>
-  </url><url>
     <loc>https://novaclearnscyber.github.io/blog/posts/writeups/evil-gpt/</loc>
     <lastmod>2026-10-09T12:27:54+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/posts/writeups/phantom-fob/</loc>
     <lastmod>2026-10-09T12:26:39+00:00</lastmod>
-  </url><url>
-    <loc>https://novaclearnscyber.github.io/blog/tags/dreamhack/</loc>
-    <lastmod>2026-10-09T12:25:22+00:00</lastmod>
   </url><url>
     <loc>https://novaclearnscyber.github.io/blog/posts/writeups/manager-tomcat/</loc>
     <lastmod>2026-10-09T12:25:22+00:00</lastmod>

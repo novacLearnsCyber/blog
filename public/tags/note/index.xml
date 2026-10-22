@@ -6,7 +6,46 @@
     <description>Recent content in Note on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Mon, 12 Oct 2026 09:32:23 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2026 08:15:18 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Towel on the Sunbed</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/towel-on-the-sunbed/</link>
+      <pubDate>Tue, 13 Oct 2026 08:15:18 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/towel-on-the-sunbed/</guid>
+      
+      <description>&lt;p&gt;link:https://tryhackme.com/room/hh-towelonthesunbed-61271709&lt;br&gt;
+description :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;🛎️ Concierge Briefing
+
+Ponzi found the resort&amp;#39;s wellness portal running a little side project called _Ponzi_ — a crypto rewards app, poolside edition. He set his towel down, claimed his daily reward, and went to reapply sunscreen. He came back to find the sunbed had been &amp;#34;claimed&amp;#34; three times over while he wasn&amp;#39;t looking.
+
+He&amp;#39;s convinced the app owes him a spot in the Whale Vault. The app disagrees, politely, once every 24 hours. Somewhere between his request and the server&amp;#39;s clock, there&amp;#39;s a gap wide enough to walk a whale through.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>xss-2</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/xss-2/</link>
+      <pubDate>Mon, 12 Oct 2026 10:54:49 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/xss-2/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;https://dreamhack.io/wargame/challenges/268&#34;&gt;link&lt;/a&gt;&lt;br&gt;
+desc :&lt;br&gt;
+This is a service where bots that check multiple functions and entered URLs are implemented.&lt;br&gt;
+Use XSS vulnerabilities to obtain flags. The flag is in the flag.txt, FLAG variable.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The flag format is DH{...} Is.
+
+Problem fix history
+2023.07.12 CSS, html provision and part of read_url() code have been changed.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;any basic xss payload we use will generate a &amp;ldquo;good&amp;rdquo; message , the system is trained to receive them&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261012062645.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+we have to try something much more complex like using a &lt;a href=&#34;https://webhook.site&#34;&gt;webhook&lt;/a&gt;&lt;br&gt;
+the payload we will use :&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Room 404</title>
       <link>https://novaclearnscyber.github.io/blog/posts/writeups/room-404/</link>
