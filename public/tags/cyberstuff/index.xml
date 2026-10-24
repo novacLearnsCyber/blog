@@ -6,7 +6,72 @@
     <description>Recent content in CyberStuff on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 13 Oct 2026 08:15:18 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Oct 2026 09:31:27 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/cyberstuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WWBuddy</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/wwbuddy/</link>
+      <pubDate>Thu, 22 Oct 2026 09:31:27 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/wwbuddy/</guid>
+      
+      <description>&lt;p&gt;link:https://tryhackme.com/room/wwbuddy&lt;br&gt;
+Desc:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;World wide buddy is a site for making friends, but it&amp;#39;s still unfinished and it has some security flaws.
+
+Deploy the machine and find the flags hidden in the room!
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;scanning the machine with nmap we see that only basic ports are opened (22 and 80) nothing interesting&lt;/p&gt;
+&lt;p&gt;looking around the site we see that it is a messaging client for different users , where every user has a assigned uid , i tried to break into , trying to decode the structure of the uid but i didn&amp;rsquo;t had any success.&lt;br&gt;
+uid structure :&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>The Blob Blog</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/the-blob-blog/</link>
+      <pubDate>Tue, 20 Oct 2026 12:00:46 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/the-blob-blog/</guid>
+      
+      <description>&lt;p&gt;link:https://tryhackme.com/room/theblobblog&lt;/p&gt;
+&lt;p&gt;basic ubuntu sever running :&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261020080519.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;huge base64 encoding in the source code&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261020081217.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-base64&#34; data-lang=&#34;base64&#34;&gt;&amp;lt;!--
+K1stLS0+Kys8XT4rLisrK1stPisrKys8XT4uLS0tLisrKysrKysrKy4tWy0+KysrKys8XT4tLisrKytbLT4rKzxdPisuLVstPisrKys8XT4uLS1bLT4rKysrPF0+LS4tWy0+KysrPF0+LS4tLVstLS0+KzxdPi0tLitbLS0tLT4rPF0+KysrLlstPisrKzxdPisuLVstPisrKzxdPi4tWy0tLT4rKzxdPisuLS0uLS0tLS0uWy0+KysrPF0+Li0tLS0tLS0tLS0tLS4rWy0tLS0tPis8XT4uLS1bLS0tPis8XT4uLVstLS0tPis8XT4rKy4rK1stPisrKzxdPi4rKysrKysrKysrKysuLS0tLS0tLS0tLi0tLS0uKysrKysrKysrLi0tLS0tLS0tLS0uLS1bLS0tPis8XT4tLS0uK1stLS0tPis8XT4rKysuWy0+KysrPF0+Ky4rKysrKysrKysrKysrLi0tLS0tLS0tLS0uLVstLS0+KzxdPi0uKysrK1stPisrPF0+Ky4tWy0+KysrKzxdPi4tLVstPisrKys8XT4tLi0tLS0tLS0tLisrKysrKy4tLS0tLS0tLS0uLS0tLS0tLS0uLVstLS0+KzxdPi0uWy0+KysrPF0+Ky4rKysrKysrKysrKy4rKysrKysrKysrKy4tWy0+KysrPF0+LS4rWy0tLT4rPF0+KysrLi0tLS0tLS4rWy0tLS0+KzxdPisrKy4tWy0tLT4rKzxdPisuKysrLisuLS0tLS0tLS0tLS0tLisrKysrKysrLi1bKys+LS0tPF0+Ky4rKysrK1stPisrKzxdPi4tLi1bLT4rKysrKzxdPi0uKytbLS0+KysrPF0+LlstLS0+Kys8XT4tLS4rKysrK1stPisrKzxdPi4tLS0tLS0tLS0uWy0tLT4rPF0+LS0uKysrKytbLT4rKys8XT4uKysrKysrLi0tLS5bLS0+KysrKys8XT4rKysuK1stLS0tLT4rPF0+Ky4tLS0tLS0tLS0uKysrKy4tLS4rLi0tLS0tLS4rKysrKysrKysrKysrLisrKy4rLitbLS0tLT4rPF0+KysrLitbLT4rKys8XT4rLisrKysrKysrKysrLi4rKysuKy4rWysrPi0tLTxdPi4rK1stLS0+Kys8XT4uLlstPisrPF0+Ky5bLS0tPis8XT4rLisrKysrKysrKysrLi1bLT4rKys8XT4tLitbLS0tPis8XT4rKysuLS0tLS0tLitbLS0tLT4rPF0+KysrLi1bLS0tPisrPF0+LS0uKysrKysrKy4rKysrKysuLS0uKysrK1stPisrKzxdPi5bLS0tPis8XT4tLS0tLitbLS0tLT4rPF0+KysrLlstLT4rKys8XT4rLi0tLS0tLi0tLS0tLS0tLS0tLS4tLS1bLT4rKysrPF0+Li0tLS0tLS0tLS0tLS4tLS0uKysrKysrKysrLi1bLT4rKysrKzxdPi0uKytbLS0+KysrPF0+Li0tLS0tLS0uLS0tLS0tLS0tLS0tLi0tLVstPisrKys8XT4uLS0tLS0tLS0tLS0tLi0tLS4rKysrKysrKysuLVstPisrKysrPF0+LS4tLS0tLVstPisrPF0+LS4tLVstLS0+Kys8XT4tLg==
+--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;decoded it using cyberchef and it looks like brainfuck , a coding language made for trolling&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+[---&amp;gt;++&amp;lt;]&amp;gt;+.+++[-&amp;gt;++++&amp;lt;]&amp;gt;.---.+++++++++.-[-&amp;gt;+++++&amp;lt;]&amp;gt;-.++++[-&amp;gt;++&amp;lt;]&amp;gt;+.-[-&amp;gt;++++&amp;lt;]&amp;gt;.--[-&amp;gt;++++&amp;lt;]&amp;gt;-.-[-&amp;gt;+++&amp;lt;]&amp;gt;-.--[---&amp;gt;+&amp;lt;]&amp;gt;--.+[----&amp;gt;+&amp;lt;]&amp;gt;+++.[-&amp;gt;+++&amp;lt;]&amp;gt;+.-[-&amp;gt;+++&amp;lt;]&amp;gt;.-[---&amp;gt;++&amp;lt;]&amp;gt;+.--.-----.[-&amp;gt;+++&amp;lt;]&amp;gt;.------------.+[-----&amp;gt;+&amp;lt;]&amp;gt;.--[---&amp;gt;+&amp;lt;]&amp;gt;.-[----&amp;gt;+&amp;lt;]&amp;gt;++.++[-&amp;gt;+++&amp;lt;]&amp;gt;.++++++++++++.---------.----.+++++++++.----------.--[---&amp;gt;+&amp;lt;]&amp;gt;---.+[----&amp;gt;+&amp;lt;]&amp;gt;+++.[-&amp;gt;+++&amp;lt;]&amp;gt;+.+++++++++++++.----------.-[---&amp;gt;+&amp;lt;]&amp;gt;-.++++[-&amp;gt;++&amp;lt;]&amp;gt;+.-[-&amp;gt;++++&amp;lt;]&amp;gt;.--[-&amp;gt;++++&amp;lt;]&amp;gt;-.--------.++++++.---------.--------.-[---&amp;gt;+&amp;lt;]&amp;gt;-.[-&amp;gt;+++&amp;lt;]&amp;gt;+.+++++++++++.+++++++++++.-[-&amp;gt;+++&amp;lt;]&amp;gt;-.+[---&amp;gt;+&amp;lt;]&amp;gt;+++.------.+[----&amp;gt;+&amp;lt;]&amp;gt;+++.-[---&amp;gt;++&amp;lt;]&amp;gt;+.+++.+.------------.++++++++.-[++&amp;gt;---&amp;lt;]&amp;gt;+.+++++[-&amp;gt;+++&amp;lt;]&amp;gt;.-.-[-&amp;gt;+++++&amp;lt;]&amp;gt;-.++[--&amp;gt;+++&amp;lt;]&amp;gt;.[---&amp;gt;++&amp;lt;]&amp;gt;--.+++++[-&amp;gt;+++&amp;lt;]&amp;gt;.---------.[---&amp;gt;+&amp;lt;]&amp;gt;--.+++++[-&amp;gt;+++&amp;lt;]&amp;gt;.++++++.---.[--&amp;gt;+++++&amp;lt;]&amp;gt;+++.+[-----&amp;gt;+&amp;lt;]&amp;gt;+.---------.++++.--.+.------.+++++++++++++.+++.+.+[----&amp;gt;+&amp;lt;]&amp;gt;+++.+[-&amp;gt;+++&amp;lt;]&amp;gt;+.+++++++++++..+++.+.+[++&amp;gt;---&amp;lt;]&amp;gt;.++[---&amp;gt;++&amp;lt;]&amp;gt;..[-&amp;gt;++&amp;lt;]&amp;gt;+.[---&amp;gt;+&amp;lt;]&amp;gt;+.+++++++++++.-[-&amp;gt;+++&amp;lt;]&amp;gt;-.+[---&amp;gt;+&amp;lt;]&amp;gt;+++.------.+[----&amp;gt;+&amp;lt;]&amp;gt;+++.-[---&amp;gt;++&amp;lt;]&amp;gt;--.+++++++.++++++.--.++++[-&amp;gt;+++&amp;lt;]&amp;gt;.[---&amp;gt;+&amp;lt;]&amp;gt;----.+[----&amp;gt;+&amp;lt;]&amp;gt;+++.[--&amp;gt;+++&amp;lt;]&amp;gt;+.-----.------------.---[-&amp;gt;++++&amp;lt;]&amp;gt;.------------.---.+++++++++.-[-&amp;gt;+++++&amp;lt;]&amp;gt;-.++[--&amp;gt;+++&amp;lt;]&amp;gt;.-------.------------.---[-&amp;gt;++++&amp;lt;]&amp;gt;.------------.---.+++++++++.-[-&amp;gt;+++++&amp;lt;]&amp;gt;-.-----[-&amp;gt;++&amp;lt;]&amp;gt;-.--[---&amp;gt;++&amp;lt;]&amp;gt;-.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;decoded it again using a random site and found this :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;When I was a kid, my friends and I would always knock on 3 of our neighbors doors. Always houses 1, then 3, then 5!
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;135 is probably a code for later&lt;br&gt;
+there is also this password in the source code , probably also base64 encoded&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261020081601.png&#34; alt=&#34;&#34;&gt;
+its not base64 encoded&lt;br&gt;
+BOB:HcfP8J54AK4&lt;br&gt;
+we can decode BOB pass using base58&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>shell_basic</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/shell_basic/</link>
+      <pubDate>Fri, 16 Oct 2026 07:53:09 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/shell_basic/</guid>
+      
+      <description>&lt;p&gt;desc:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The program that executes the entered shellcode is registered as a service and is working.
+
+Functions other than the main function prevent the use of execve and execveat system calls, and are functions that are not related to solving.
+
+The location and name of the flag file is /home/shell_basic/flag_name_is_loooooong.
+If you have trouble getting a feel for it, practice with the code below first!
+
+The flag format is DH{...} Is. You must also authenticate by including both DH{ and}.
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Towel on the Sunbed</title>
       <link>https://novaclearnscyber.github.io/blog/posts/towel-on-the-sunbed/</link>
