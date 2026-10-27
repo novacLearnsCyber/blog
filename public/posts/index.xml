@@ -6,7 +6,94 @@
     <description>Recent content in Posts on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Thu, 22 Oct 2026 09:31:27 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Oct 2026 07:06:51 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hammer</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/hammer/</link>
+      <pubDate>Sat, 24 Oct 2026 07:06:51 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/hammer/</guid>
+      
+      <description>&lt;p&gt;first port scan&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;┌──(k㉿kali)-[~]
+└─ nmap -p- 10.112.178.233
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-24 10:07 +0300
+Stats: 0:00:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 23.31% done; ETC: 10:07 (0:00:16 remaining)
+Stats: 0:00:05 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 30.72% done; ETC: 10:07 (0:00:14 remaining)
+Stats: 0:00:06 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 34.25% done; ETC: 10:07 (0:00:12 remaining)
+Nmap scan report for 10.112.178.233 (10.112.178.233)
+Host is up (0.034s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+1337/tcp open  waste
+
+Nmap done: 1 IP address (1 host up) scanned in 14.61 seconds
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;waster service :&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>lofi</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/lofi/</link>
+      <pubDate>Thu, 22 Oct 2026 12:52:50 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/lofi/</guid>
+      
+      <description>&lt;p&gt;desc:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Want to hear some lo-fi beats, to relax or study to? We&amp;#39;ve got you covered! 
+
+  
+
+**Access this challenge** by deploying both the vulnerable machine by pressing the green &amp;#34;Start Lab Machine&amp;#34; button located within this task, and the TryHackMe AttackBox by pressing the  &amp;#34;Start AttackBox&amp;#34; button located at the top-right of the page.
+
+Navigate to the following URL using the AttackBox: [http://MACHINE_IP](http://machine_ip/) and find the flag in the **root of the filesystem.**
+
+  
+
+Check out similar content on TryHackMe:
+
+- [LFI Path Traversal](https://tryhackme.com/r/room/filepathtraversal)
+- [File Inclusion](https://tryhackme.com/room/fileinc)
+
+**Note:** The web page does load some elements from external sources. However, they do not interfere with the completion of the room.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;link:https://tryhackme.com/room/lofi&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Corridor</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/corridor/</link>
+      <pubDate>Thu, 22 Oct 2026 11:15:56 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/corridor/</guid>
+      
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://tryhackme.com/room/corridor&#34;&gt;https://tryhackme.com/room/corridor&lt;/a&gt;&lt;br&gt;
+desc :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;You have found yourself in a strange corridor. Can you find your way back to where you came?  
+
+In this challenge, you will explore potential IDOR vulnerabilities. Examine the URL endpoints you access as you navigate the website and note the hexadecimal values you find (they look an awful lot like a _hash_, don&amp;#39;t they?). This could help you uncover website locations you were not expected to access.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;accessing the site we see a long corridor with different doors , every door is a link , to a hashed url ,&lt;br&gt;
+this is the list&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Neighbour</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/neighbour/</link>
+      <pubDate>Thu, 22 Oct 2026 11:11:39 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/neighbour/</guid>
+      
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://tryhackme.com/room/neighbour&#34;&gt;https://tryhackme.com/room/neighbour&lt;/a&gt;&lt;br&gt;
+desc :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Check out our new cloud service, Authentication Anywhere -- log in from anywhere you would like! Users can enter their username and password, for a totally secure login process! You definitely wouldn&amp;#39;t be able to find any secrets that other people have in their profile, right?
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the shortest challenge i ever seen&lt;/p&gt;
+&lt;p&gt;log in as guest using username guest and password guest&lt;br&gt;
+observe the url , .php file with &lt;code&gt;user = guest&lt;/code&gt;&lt;br&gt;
+change guest do admin in url&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>WWBuddy</title>
       <link>https://novaclearnscyber.github.io/blog/posts/wwbuddy/</link>
