@@ -6,7 +6,29 @@
     <description>Recent content on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Sat, 24 Oct 2026 07:06:51 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Oct 2026 09:05:30 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>agentT</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/agentt/</link>
+      <pubDate>Tue, 27 Oct 2026 09:05:30 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/agentt/</guid>
+      
+      <description>&lt;p&gt;very lazy room , on thm the time estimated in 10 minutes , i think it takes only tree&lt;br&gt;
+run nmap to enumerate&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nmap 10.10.197.199 -sV -sC`
+
+Starting Nmap 7.93 ( https://nmap.org )
+
+PORT STATE SERVICE VERSION`
+
+80/tcp open http PHP cli server 5.5 or later (PHP 8.1.0-dev)`
+
+|_http-title: Admin Dashboard
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the only port opened in 80 , and we see the php version as being 8.1.0&lt;br&gt;
+we dont even need to access the site for this one&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Hammer</title>
       <link>https://novaclearnscyber.github.io/blog/posts/hammer/</link>
