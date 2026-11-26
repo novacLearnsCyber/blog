@@ -30,6 +30,8 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Build with Hugo
         run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
