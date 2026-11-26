@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Dreamhack &gt; phpreg | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="Dreamhack &gt; phpreg | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="Dreamhack &gt; phpreg | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="Dreamhack &gt; phpreg | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="Dreamhack &gt; phpreg | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/dreamhack--phpreg/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-11-12T10:38:07Z />
+    <meta property="article:published_time" content=2026-11-12T10:38:07Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/dreamhack--phpreg/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Dreamhack \u003e phpreg",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-11-12",
+        "description": "",
+        "wordCount":  166 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-11-12",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/dreamhack--phpreg/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="Dreamhack &gt; phpreg">
+  <meta property="og:description" content="link:https://dreamhack.io/wargame/challenges/873
+access the page, u will be prompted to input a pass and username.
+inspecting the step2.php we see the following :
+if ($_SERVER[&#34;REQUEST_METHOD&#34;] == &#34;POST&#34;) { $input_name = $_POST[&#34;input1&#34;] ? $_POST[&#34;input1&#34;] : &#34;&#34;; $input_pw = $_POST[&#34;input2&#34;] ? $_POST[&#34;input2&#34;] : &#34;&#34;; // pw filtering if (preg_match(&#34;/[a-zA-Z]/&#34;, $input_pw)) { echo &#34;alphabet in the pw :(&#34;; } else{ $name = preg_replace(&#34;/nyang/i&#34;, &#34;&#34;, $input_name); $pw = preg_replace(&#34;/\d*\@\d{2,3}(31)&#43;[^0-8\&#34;]\!/&#34;, &#34;d4y0r50ng&#34;, $input_pw); if ($name === &#34;dnyang0310&#34; &amp;&amp; $pw === &#34;d4y0r50ng&#43;1&#43;13&#34;) { echo &#39;&lt;h4&gt;Step 2 : Almost done...&lt;/h4&gt;&lt;div class=&#34;door_box&#34;&gt;&lt;div class=&#34;door_black&#34;&gt;&lt;/div&gt;&lt;div class=&#34;door&#34;&gt;&lt;div class=&#34;door_cir&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;; basically what happens here is that our input in modifyed using regex so we have to bypass this.
+our username has to be dnnyangyang0310 because the first nyang will be removed, and the password has to be @12319!&#43;1&#43;13 because the @12319! will be replaced with d4y0r50ng">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-11-12T10:38:07+00:00">
+    <meta property="article:modified_time" content="2026-11-12T10:45:56+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="Dreamhack">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dreamhack &gt; phpreg">
+  <meta name="twitter:description" content="link:https://dreamhack.io/wargame/challenges/873
+access the page, u will be prompted to input a pass and username.
+inspecting the step2.php we see the following :
+if ($_SERVER[&#34;REQUEST_METHOD&#34;] == &#34;POST&#34;) { $input_name = $_POST[&#34;input1&#34;] ? $_POST[&#34;input1&#34;] : &#34;&#34;; $input_pw = $_POST[&#34;input2&#34;] ? $_POST[&#34;input2&#34;] : &#34;&#34;; // pw filtering if (preg_match(&#34;/[a-zA-Z]/&#34;, $input_pw)) { echo &#34;alphabet in the pw :(&#34;; } else{ $name = preg_replace(&#34;/nyang/i&#34;, &#34;&#34;, $input_name); $pw = preg_replace(&#34;/\d*\@\d{2,3}(31)&#43;[^0-8\&#34;]\!/&#34;, &#34;d4y0r50ng&#34;, $input_pw); if ($name === &#34;dnyang0310&#34; &amp;&amp; $pw === &#34;d4y0r50ng&#43;1&#43;13&#34;) { echo &#39;&lt;h4&gt;Step 2 : Almost done...&lt;/h4&gt;&lt;div class=&#34;door_box&#34;&gt;&lt;div class=&#34;door_black&#34;&gt;&lt;/div&gt;&lt;div class=&#34;door&#34;&gt;&lt;div class=&#34;door_cir&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;; basically what happens here is that our input in modifyed using regex so we have to bypass this.
+our username has to be dnnyangyang0310 because the first nyang will be removed, and the password has to be @12319!&#43;1&#43;13 because the @12319! will be replaced with d4y0r50ng">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/dreamhack--phpreg/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Dreamhack &gt; phpreg</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-11-12T10:38:07&#43;00:00" itemprop="datePublished"> 12 nov. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>link:https://dreamhack.io/wargame/challenges/873</p>
+<p>access the page, u will be prompted to input a pass and username.<br>
+inspecting the step2.php we see the following :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span> ($_SERVER[<span style="color:#e6db74">&#34;REQUEST_METHOD&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;POST&#34;</span>) {
+</span></span><span style="display:flex;"><span>            $input_name <span style="color:#f92672">=</span> $_POST[<span style="color:#e6db74">&#34;input1&#34;</span>] <span style="color:#f92672">?</span> $_POST[<span style="color:#e6db74">&#34;input1&#34;</span>] <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>            $input_pw <span style="color:#f92672">=</span> $_POST[<span style="color:#e6db74">&#34;input2&#34;</span>] <span style="color:#f92672">?</span> $_POST[<span style="color:#e6db74">&#34;input2&#34;</span>] <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// pw filtering
+</span></span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#34;/[a-zA-Z]/&#34;</span>, $input_pw)) {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;alphabet in the pw :(&#34;</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>              $name <span style="color:#f92672">=</span> <span style="color:#a6e22e">preg_replace</span>(<span style="color:#e6db74">&#34;/nyang/i&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, $input_name);
+</span></span><span style="display:flex;"><span>              $pw <span style="color:#f92672">=</span> <span style="color:#a6e22e">preg_replace</span>(<span style="color:#e6db74">&#34;/\d*\@\d{2,3}(31)+[^0-8</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]\!/&#34;</span>, <span style="color:#e6db74">&#34;d4y0r50ng&#34;</span>, $input_pw);
+</span></span><span style="display:flex;"><span>              
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">if</span> ($name <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;dnyang0310&#34;</span> <span style="color:#f92672">&amp;&amp;</span> $pw <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;d4y0r50ng+1+13&#34;</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;h4&gt;Step 2 : Almost done...&lt;/h4&gt;&lt;div class=&#34;door_box&#34;&gt;&lt;div class=&#34;door_black&#34;&gt;&lt;/div&gt;&lt;div class=&#34;door&#34;&gt;&lt;div class=&#34;door_cir&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;</span>;
+</span></span></code></pre></div><p>basically what happens here is that our input in modifyed using regex so we have to bypass this.<br>
+our username has to be <code>dnnyangyang0310</code> because the first <code>nyang</code> will be removed, and the password has to be <code>@12319!+1+13</code> because the <code>@12319!</code> will be replaced with <code>d4y0r50ng</code></p>
+<p>after using those creds we get to step 2 where we can input a command :<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261112124413.png" alt="">
+<br>
+is we try <code>cat ../dream/flag.txt</code> we get a error<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261112124456.png" alt="">
+<br>
+so we use <code>cat ../dream/*.txt</code> to get the flag<br>
+<img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261112124553.png" alt="">
+<br>
+ez</p>
+
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>

