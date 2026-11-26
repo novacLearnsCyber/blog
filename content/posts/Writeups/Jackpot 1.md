@@ -11,7 +11,7 @@ subiect:
 dificultate: 1
 amuca: false
 link:
-lastmod: 2026-10-12T08:09:49.562Z
+lastmod: 2026-11-12T10:47:54.183Z
 ---
 link:<https://tryhackme.com/room/jackpot>\
 Description:

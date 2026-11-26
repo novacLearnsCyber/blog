@@ -30,8 +30,8 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2026-10-12T10:54:49Z />
-    <meta property="article:published_time" content=2026-10-12T10:54:49Z />
+    <meta property="og:article:published_time" content=2026-11-10T08:20:43Z />
+    <meta property="article:published_time" content=2026-11-10T08:20:43Z />
     <meta property="og:url" content="https://novaclearnscyber.github.io/blog/posts/xss-2/" />
 
     
@@ -47,11 +47,11 @@
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2026-10-12",
+        "datePublished": "2026-11-10",
         "description": "",
-        "wordCount":  139 ,
+        "wordCount":  2396 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2026-10-12",
+        "dateModified": "2026-11-10",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -80,7 +80,7 @@ the payload we will use :">
   <meta property="og:locale" content="ro_ro">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:modified_time" content="2026-10-12T10:54:49+00:00">
+    <meta property="article:modified_time" content="2026-11-10T08:20:43+00:00">
     <meta property="article:tag" content="Note">
     <meta property="article:tag" content="Journal">
     <meta property="article:tag" content="Dreamhack">
@@ -221,7 +221,7 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <div class="post-meta">
-                    <time datetime="2026-10-12T10:54:49&#43;00:00" itemprop="datePublished"> 12 oct. 2026 </time>
+                    <time datetime="2026-11-10T08:20:43&#43;00:00" itemprop="datePublished"> 10 nov. 2026 </time>
                 </div>
                 
             </header>
@@ -247,6 +247,295 @@ the payload we will use :</p>
 <br>
 and checking the webhook we find the flag<br>
 <img src="/blog/images/blog-ul-meu/static/Pasted%20image%2020261012064803.png" alt="">
+</p>
+<h2 id="exemplu-reflected-xss">exemplu reflected xss</h2>
+<p>Start the attached VM by clicking on the <code>Start Lab Machine</code> button to finish this task.</p>
+<p>The attached VM runs a vulnerable version of <a href="https://github.com/9001/copyparty">copyparty</a>. The discovered reflected XSS vulnerability has the ID <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38501">CVE-2023-38501</a>, and its exploit is published <a href="https://www.exploit-db.com/exploits/51635">here</a>.</p>
+<p>The exploit code is <code>?k304=y%0D%0A%0D%0A%3Cimg+src%3Dcopyparty+onerror%3Dalert(1)%3E</code> which is the URL encoding of:</p>
+<pre tabindex="0"><code>?k304=y
+
+&lt;img src=copyparty onerror=alert(1)&gt;
+</code></pre><p>The attached VM has the vulnerable server running at port 3923. You can reach the vulnerable server at <code>http://10.114.155.165:3923</code> via your AttackBox’s browser.</p>
+<h3 id="stored-xss-blocat-in-comments-etc">stored xss blocat in comments etc</h3>
+<p>Stored XSS, or Persistent XSS, is a web application security vulnerability that occurs when the application stores user-supplied input and later embeds it in web pages served to other users without proper sanitization or escaping. Examples include web forum posts, product reviews, user comments, and other data stores. In other words, stored XSS takes place when user input is saved in a data store and later included in the web pages served to other users without adequate escaping.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/ef358fef49e6a39c8314f2490ac3c93b.svg" alt="The attacker posts a malicious script as part of their comment. A user views the comment. Consequently, something malicious takes place on their laptop.">
+</p>
+<p>Stored XSS begins with an attacker injecting a malicious script in an input field of a vulnerable web application. The vulnerability might lie in how the web application processes the data in the comment box, forum post, or profile information section. When other users access this stored content, the injected malicious script executes within their browsers. The script can perform a wide range of actions, from stealing session cookies to performing actions on behalf of the user without their consent.</p>
+<h2 id="vulnerable-web-application">Vulnerable Web Application</h2>
+<p>There are many reasons for a web application to be vulnerable to stored XSS. Some of the best practices to prevent stored XSS vulnerabilities are:</p>
+<ul>
+<li><strong>Validate and sanitize input</strong>: Define clear rules and enforce strict validation on all user-supplied data. For instance, only alphanumeric characters can be used in a username, and only integers can be allowed in age fields.</li>
+<li><strong>Use output escaping</strong>: When displaying user-supplied input within an HTML context, encode all HTML-specific characters, such as <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code>.</li>
+<li><strong>Apply context-specific encoding</strong>: For instance, within a JavaScript context, we must use JavaScript encoding whenever we insert data within a JavaScript code. On the other hand, data placed in URLs must use relevant URL-encoding techniques, like percent-encoding. The purpose is to ensure that URLs remain valid while preventing script injection.</li>
+<li><strong>Practice defence in depth</strong>: Don’t rely on a single layer of defence; use server-side validation instead of solely relying on client-side validation.</li>
+</ul>
+<p>In the following examples, we list vulnerable code snippets in various languages. This exercise should be easy this time as the solutions resemble the solutions implemented earlier.</p>
+<h3 id="php">PHP</h3>
+<p><strong>Vulnerable Code</strong></p>
+<p>The code below has multiple vulnerabilities. It does two things:</p>
+<ul>
+<li>Read a comment from the user and save it in the <code>$comment</code> variable.</li>
+<li>Adds the <code>$comment</code> to the column <code>comment</code> in the table <code>comments</code> in a database.</li>
+<li>Later, it iterates over all the rows in the column <code>comment</code> and displays them on screen.</li>
+</ul>
+<p>Please take a look at it and think of what might go wrong.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Storing user comment
+</span></span></span><span style="display:flex;"><span>$comment <span style="color:#f92672">=</span> $_POST[<span style="color:#e6db74">&#39;comment&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mysqli_query</span>($conn, <span style="color:#e6db74">&#34;INSERT INTO comments (comment) VALUES (&#39;</span><span style="color:#e6db74">$comment</span><span style="color:#e6db74">&#39;)&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Displaying user comment
+</span></span></span><span style="display:flex;"><span>$result <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysqli_query</span>($conn, <span style="color:#e6db74">&#34;SELECT comment FROM comments&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> ($row <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysqli_fetch_assoc</span>($result)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> $row[<span style="color:#e6db74">&#39;comment&#39;</span>];
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We are concerned with stored XSS, as SQL injection is outside the scope of this room. The main issue is that the comment is saved and later displayed, among the other comments, without sanitization.</p>
+<p><strong>Fixed Code</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Storing user comment
+</span></span></span><span style="display:flex;"><span>$comment <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysqli_real_escape_string</span>($conn, $_POST[<span style="color:#e6db74">&#39;comment&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mysqli_query</span>($conn, <span style="color:#e6db74">&#34;INSERT INTO comments (comment) VALUES (&#39;</span><span style="color:#e6db74">$comment</span><span style="color:#e6db74">&#39;)&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Displaying user comment
+</span></span></span><span style="display:flex;"><span>$result <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysqli_query</span>($conn, <span style="color:#e6db74">&#34;SELECT comment FROM comments&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> ($row <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysqli_fetch_assoc</span>($result)) {
+</span></span><span style="display:flex;"><span>    $sanitizedComment <span style="color:#f92672">=</span> <span style="color:#a6e22e">htmlspecialchars</span>($row[<span style="color:#e6db74">&#39;comment&#39;</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> $sanitizedComment;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Before displaying every comment on the screen, we pass it through the <code>htmlspecialchars()</code> function to ensure all special characters are converted to HTML entities. Consequently, any attempts for stored XSS won’t make it to the end user’s browser.</p>
+<p>This is outside the scope of this room; however, if you are curious about the SQL injection vulnerability, this is alleviated using the <code>mysqli_real_escape_string()</code>. This function escapes special characters in the input string so it can safely be used in an SQL statement.</p>
+<h3 id="javascript-nodejs">JavaScript (Node.js)</h3>
+<p><strong>Vulnerable Code</strong></p>
+<p>The following JavaScript code reads a comment received from a user that was saved in a database table. We assume the <code>comments</code> array has been populated from the database. Discover what makes it vulnerable to stored XSS and how to solve it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/comments&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">html</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">comment</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">comments</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">html</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">comment</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">html</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;&lt;/ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">html</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>The main issue in the code above is that it reads the user’s input saved in <code>comment</code> (from the <code>comments</code> array) and is displayed as part of the HTML code. Consequently, when another user views this user’s comment as HTML, the browser will execute any scripts injected into it.</p>
+<p><strong>Fixed Code</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sanitizeHtml</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;sanitize-html&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/comments&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">html</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">comment</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">comments</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sanitizedComment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sanitizeHtml</span>(<span style="color:#a6e22e">comment</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">html</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">sanitizedComment</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">html</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;&lt;/ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">html</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>Part of the solution is sanitizing the HTML before displaying it to the user. We can remove HTML elements outside the allowlist using the <code>sanitizeHTML()</code> function. In general, we expect to allow basic text formatting such as bold and italic (<code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>), but we would remove potentially dangerous or unsafe elements such as <code>&lt;script&gt;</code> and <code>&lt;onload&gt;</code>. More information can be found on its <a href="https://www.npmjs.com/package/sanitize-html">official page</a>.</p>
+<h3 id="python-flask">Python (Flask)</h3>
+<p><strong>Vulnerable Code</strong></p>
+<p>Similar to the code snippets we have displayed, the following code uses the Flask framework. By now, you can expect the mistakes plaguing this code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask, request, render_template_string
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flask_sqlalchemy <span style="color:#f92672">import</span> SQLAlchemy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Flask(__name__)
+</span></span><span style="display:flex;"><span>app<span style="color:#f92672">.</span>config[<span style="color:#e6db74">&#39;SQLALCHEMY_DATABASE_URI&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;sqlite:///site.db&#39;</span>
+</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> SQLAlchemy(app)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Comment</span>(db<span style="color:#f92672">.</span>Model):
+</span></span><span style="display:flex;"><span>    id <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>Column(db<span style="color:#f92672">.</span>Integer, primary_key<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    content <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>Column(db<span style="color:#f92672">.</span>String, nullable<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/comment&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_comment</span>():
+</span></span><span style="display:flex;"><span>    comment_content <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;comment&#39;</span>]
+</span></span><span style="display:flex;"><span>    comment <span style="color:#f92672">=</span> Comment(content<span style="color:#f92672">=</span>comment_content)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>session<span style="color:#f92672">.</span>add(comment)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>session<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Comment added!&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/comments&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_comments</span>():
+</span></span><span style="display:flex;"><span>    comments <span style="color:#f92672">=</span> Comment<span style="color:#f92672">.</span>query<span style="color:#f92672">.</span>all()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> render_template_string(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;&lt;div&gt;&#39;</span> <span style="color:#f92672">+</span> c<span style="color:#f92672">.</span>content <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&lt;/div&gt;&#39;</span> <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> comments]))
+</span></span></code></pre></div><p>The first issue is that the <code>comment_content</code> is set to the user’s form submission retrieved from <code>request.form['comment']</code> without sanitization. This in itself lays the ground for stored XSS and SQL injection. Furthermore, when a user wants to view the comments, they are displayed without escaping, another perfect recipe for stored XSS.</p>
+<p><strong>Fixed Code</strong></p>
+<p>We are concerned with fixing stored XSS vulnerabilities. We need to ensure that no malicious scripts are saved in the database; furthermore, we will escape any content before displaying it as HTML.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask, request, render_template_string, escape
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flask_sqlalchemy <span style="color:#f92672">import</span> SQLAlchemy
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> markupsafe <span style="color:#f92672">import</span> escape
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Flask(__name__)
+</span></span><span style="display:flex;"><span>app<span style="color:#f92672">.</span>config[<span style="color:#e6db74">&#39;SQLALCHEMY_DATABASE_URI&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;sqlite:///site.db&#39;</span>
+</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> SQLAlchemy(app)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Comment</span>(db<span style="color:#f92672">.</span>Model):
+</span></span><span style="display:flex;"><span>    id <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>Column(db<span style="color:#f92672">.</span>Integer, primary_key<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    content <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>Column(db<span style="color:#f92672">.</span>String, nullable<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/comment&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_comment</span>():
+</span></span><span style="display:flex;"><span>    comment_content <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;comment&#39;</span>]
+</span></span><span style="display:flex;"><span>    comment <span style="color:#f92672">=</span> Comment(content<span style="color:#f92672">=</span>comment_content)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>session<span style="color:#f92672">.</span>add(comment)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>session<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Comment added!&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/comments&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_comments</span>():
+</span></span><span style="display:flex;"><span>    comments <span style="color:#f92672">=</span> Comment<span style="color:#f92672">.</span>query<span style="color:#f92672">.</span>all()
+</span></span><span style="display:flex;"><span>    sanitized_comments <span style="color:#f92672">=</span> [escape(c<span style="color:#f92672">.</span>content) <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> comments]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> render_template_string(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;&lt;div&gt;&#39;</span> <span style="color:#f92672">+</span> comment <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&lt;/div&gt;&#39;</span> <span style="color:#66d9ef">for</span> comment <span style="color:#f92672">in</span> sanitized_comments]))
+</span></span></code></pre></div><p>We used the <code>escape()</code> function to ensure that any special characters in the user-submitted comment are replaced with HTML entities. As you would expect, the characters <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>, <code>'</code>, and <code>&quot;</code> are converted to HTML entities (<code>&amp;amp;</code>, <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;#39;</code>, and <code>&amp;quot;</code>). We made two changes:</p>
+<p>Although the user-submitted input <code>request.form['comment']</code> is saved verbatim, the content of each saved comment <code>c</code> goes through the escape() function before it is sent to the user’s browser to be displayed as HTML.</p>
+<h3 id="c-aspnet">C# (ASP.NET)</h3>
+<p><strong>Vulnerable Code</strong></p>
+<p>The following C# code has multiple vulnerabilities. Take a quick look at the code below and think about what needs to be changed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> SaveComment(<span style="color:#66d9ef">string</span> userComment)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> command = <span style="color:#66d9ef">new</span> SqlCommand(<span style="color:#e6db74">&#34;INSERT INTO Comments (Comment) VALUES (&#39;&#34;</span> + userComment + <span style="color:#e6db74">&#34;&#39;)&#34;</span>, connection);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Execute the command</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DisplayComments()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> reader = <span style="color:#66d9ef">new</span> SqlCommand(<span style="color:#e6db74">&#34;SELECT Comment FROM Comments&#34;</span>, connection).ExecuteReader();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (reader.Read())
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        Response.Write(reader[<span style="color:#e6db74">&#34;Comment&#34;</span>].ToString());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Execute the command</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>One of the vulnerabilities we observe in the code above is stored XSS. The system stores whatever comment the user inputs without any changes and later displays it to other users. Another vulnerability outside the scope of this room is SQL injection.</p>
+<p><strong>Fixed Code</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Web;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> SaveComment(<span style="color:#66d9ef">string</span> userComment)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> command = <span style="color:#66d9ef">new</span> SqlCommand(<span style="color:#e6db74">&#34;INSERT INTO Comments (Comment) VALUES (@comment)&#34;</span>, connection);
+</span></span><span style="display:flex;"><span>    command.Parameters.AddWithValue(<span style="color:#e6db74">&#34;@comment&#34;</span>, userComment);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DisplayComments()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> reader = <span style="color:#66d9ef">new</span> SqlCommand(<span style="color:#e6db74">&#34;SELECT Comment FROM Comments&#34;</span>, connection).ExecuteReader();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (reader.Read())
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> comment = reader[<span style="color:#e6db74">&#34;Comment&#34;</span>].ToString();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> sanitizedComment = HttpUtility.HtmlEncode(comment);
+</span></span><span style="display:flex;"><span>        Response.Write(sanitizedComment);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    reader.Close();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>With a few changes, the code’s security has improved. Stored-XSS is fixed by using the <code>HttpUtility.HtmlEncode()</code> method before displaying the <code>userComment</code> as part of a web page. (If you are curious, the SQL injection vulnerability is fixed by using parametrized SQL queries with values passed separately instead of building the SQL query via string concatenation. This can be achieved using the <code>Parameters.AddWithValue()</code> method in the <code>SqlCommand</code> objects.</p>
+<h3 id="dom-based-xss">DOM-Based XSS</h3>
+<p>If you check any updated Security Advisories, it is easy to find new reflected and stored XSS vulnerabilities discovered monthly. However, the same is not true for DOM-based XSS, which is getting scarce nowadays. The reason is that DOM-based XSS is completely browser-based and does not need to go to the server and back to the client. At one point, a proof of concept <a href="http://www.webappsec.org/projects/articles/071105.shtml">example of DOM-based XSS</a> could be created using a static HTML page; however, with the improved inherent security of web browsers, DOM-based XSS has become extremely difficult.</p>
+<p>Before we dive into DOM-based XSS, let’s review what Document Object Model (DOM) is. The DOM is a programming interface representing a web document as a tree. The DOM makes it possible to programmatically access and manipulate the different parts of a website using JavaScript. Let’s consider a practical example.</p>
+<p>Consider the HTML code of <a href="http://www.example.com/">example.com</a> in the screenshot below (as fetched on the first of February 2024). We opened the Web Developer Tools using the Firefox web browser and checked the Inspector tab.</p>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/efe6900be6b1e1f6d205ebc32544eb6e.png" alt="A web browser with the Inspector tab displaying an example website.">
+</p>
+<p>The DOM tree shown above is like the following list with sublists.</p>
+<ul>
+<li><code>document</code>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code></li>
+<li><code>html</code>
+<ul>
+<li><code>head</code>
+<ul>
+<li><code>title</code></li>
+<li><code>meta</code></li>
+<li><code>meta</code></li>
+<li><code>meta</code></li>
+<li><code>style</code></li>
+</ul>
+</li>
+<li><code>body</code>
+<ul>
+<li><code>div</code>
+<ul>
+<li><code>h1</code></li>
+<li><code>p</code></li>
+<li><code>p</code>
+<ul>
+<li><code>a</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The tree starts with the <code>document</code> node and branches into <code>DOCTYPE</code> and <code>html</code>. The <code>html</code> node branches into <code>head</code> and <code>body</code>. The <code>head</code> has the <code>title</code>, a few <code>meta</code> tags, and a <code>style</code>. In this simple example, the <code>body</code> has a single <code>div</code> that branches into one <code>h1</code> and two <code>p</code>. This is a concise page. More practical pages would have tens or hundreds of branches.</p>
+<p>We can view the DOM tree using the web browser’s built-in Web Developer’s Tools. For example, press Ctrl + Shift + I on Firefox and check the Inspector tab.</p>
+<p>Alternatively, we can access the JavaScript console, as mentioned in Task 2. Using JavaScript, you can manipulate the DOM tree. For example, you can create a new element using <code>document.createElement()</code> and add a child to any element using <code>element.append()</code>. Here is an example from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document">MDN documentation</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">div</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;div&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">div</span>.<span style="color:#a6e22e">append</span>(<span style="color:#a6e22e">p</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">div</span>.<span style="color:#a6e22e">childNodes</span>); <span style="color:#75715e">// NodeList [ &lt;p&gt; ]
+</span></span></span></code></pre></div><p>In the example code above, we created two elements, <code>div</code> and <code>p</code>. Then, we appended the latter element to the <code>div</code> element.</p>
+<h2 id="vulnerable-web-applications">Vulnerable Web Applications</h2>
+<p>DOM-based XSS vulnerabilities take place within the browser. They don’t need to go to the server and return to the client’s web browser. In other words, the attacker will try to exploit this situation by injecting a malicious script, for example, into the URL, and it will be executed on the client’s side without any role for the server in this. We will present an elementary and minimal static site without relying on the back-end code to demonstrate this concept.</p>
+<h3 id="vulnerable-static-site">Vulnerable “Static” Site</h3>
+<p>Let’s consider the following basic example. It is too simple that it is unrealistic; however, it is enough to demonstrate the DOM-based XSS.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Vulnerable Page&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;greeting&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>).<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;name&#39;</span>);
+</span></span><span style="display:flex;"><span>        document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>The page above expects the user to provide their name after <code>?name=</code>. In the screenshot below:</p>
+<ol>
+<li>The user has entered Web Tester after <code>?name</code> in the URL.</li>
+<li>The greeting worked as expected and displayed “Hello, Web Tester”.</li>
+<li>Finally, the DOM structure on the right is left intact; the <code>&lt;body&gt;</code> has three direct children.</li>
+</ol>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/861e32e88c58c05c0ab84a4b5ffe3f8f.png" alt="A web browser with the Inspector tab displaying the original DOM structure of an example static site.">
+</p>
+<p>The user might try to inject a malicious script. In the screenshot below, we see the following:</p>
+<ol>
+<li>The user added <code>&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;</code> instead of only <code>Web Tester</code> as their name.</li>
+<li>The script was executed, and an alert dialogue box was displayed.</li>
+<li>Most importantly, we can see how the DOM tree got a new element. <code>&lt;body&gt;</code> has four children now.</li>
+</ol>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/4d52f01782bfe2e2faf1f24d4522c35e.png" alt="A web browser with the Inspector tab displaying the manipulated DOM structure of an example static site.">
+</p>
+<p>This basic example illustrates a couple of things:</p>
+<ul>
+<li>The server has no direct role in DOM-based vulnerabilities. In this demonstration, everything took place on the client’s browser without using a back end.</li>
+<li>The DOM was insecurely modified using <code>document.write()</code>.</li>
+</ul>
+<h3 id="fixed-static-site">Fixed “Static” Site</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Secure Page&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;greeting&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>).<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;name&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Escape the user input to prevent XSS attacks
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">escapedName</span> <span style="color:#f92672">=</span> encodeURIComponent(<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>        document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;greeting&#34;</span>).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">escapedName</span>;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>One way to fix this page is by avoiding adding user input directly with <code>document.write()</code>. Instead, we first escaped the user input using <code>encodeURIComponent()</code> and then added it to <code>textContent</code>.</p>
+<p>The previous attempt does not work now. We can see that:</p>
+<ol>
+<li>The user has added JavaScript as part of their input.</li>
+<li>The JavaScript code is displayed as encoded characters and presents no threat in the current context.</li>
+<li>The DOM structure is no longer affected when the user attempts to add code as part of their submitted name.</li>
+</ol>
+<p><img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/d934f51f984af5d8cee9f557f7fdcdd5.png" alt="A web browser with the Inspector tab displaying the DOM structure of a patched static site.">
 </p>
 
             </div>

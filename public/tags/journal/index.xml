@@ -6,7 +6,51 @@
     <description>Recent content in Journal on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 27 Oct 2026 09:05:30 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2026 10:01:40 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dreamhack - file-download-1</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/dreamhack---file-download-1/</link>
+      <pubDate>Tue, 10 Nov 2026 10:01:40 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/dreamhack---file-download-1/</guid>
+      
+      <description>&lt;p&gt;link :https://dreamhack.io/wargame/challenges/37&lt;br&gt;
+access the website&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261110120255.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+click on &lt;code&gt;Upload My Memo&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261110120331.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+in the &lt;code&gt;Filename&lt;/code&gt; field input &lt;code&gt;%2E%2E%2Fflag%2Epy&lt;/code&gt; , content put whatever you want, go back , and access the new memo created&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261110120445.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+the flag is displayed here :&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261110120514.png&#34; alt=&#34;&#34;&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>xss-2</title>
+      <link>https://novaclearnscyber.github.io/blog/posts/xss-2/</link>
+      <pubDate>Tue, 10 Nov 2026 08:20:43 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/posts/xss-2/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;https://dreamhack.io/wargame/challenges/268&#34;&gt;link&lt;/a&gt;&lt;br&gt;
+desc :&lt;br&gt;
+This is a service where bots that check multiple functions and entered URLs are implemented.&lt;br&gt;
+Use XSS vulnerabilities to obtain flags. The flag is in the flag.txt, FLAG variable.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The flag format is DH{...} Is.
+
+Problem fix history
+2023.07.12 CSS, html provision and part of read_url() code have been changed.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;any basic xss payload we use will generate a &amp;ldquo;good&amp;rdquo; message , the system is trained to receive them&lt;br&gt;
+&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261012062645.png&#34; alt=&#34;&#34;&gt;
+&lt;br&gt;
+we have to try something much more complex like using a &lt;a href=&#34;https://webhook.site&#34;&gt;webhook&lt;/a&gt;&lt;br&gt;
+the payload we will use :&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>agentT</title>
       <link>https://novaclearnscyber.github.io/blog/posts/agentt/</link>
@@ -195,28 +239,6 @@ Ponzi found the resort&amp;#39;s wellness portal running a little side project c
 
 He&amp;#39;s convinced the app owes him a spot in the Whale Vault. The app disagrees, politely, once every 24 hours. Somewhere between his request and the server&amp;#39;s clock, there&amp;#39;s a gap wide enough to walk a whale through.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;first scan&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>xss-2</title>
-      <link>https://novaclearnscyber.github.io/blog/posts/xss-2/</link>
-      <pubDate>Mon, 12 Oct 2026 10:54:49 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/posts/xss-2/</guid>
-      
-      <description>&lt;p&gt;&lt;a href=&#34;https://dreamhack.io/wargame/challenges/268&#34;&gt;link&lt;/a&gt;&lt;br&gt;
-desc :&lt;br&gt;
-This is a service where bots that check multiple functions and entered URLs are implemented.&lt;br&gt;
-Use XSS vulnerabilities to obtain flags. The flag is in the flag.txt, FLAG variable.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The flag format is DH{...} Is.
-
-Problem fix history
-2023.07.12 CSS, html provision and part of read_url() code have been changed.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;any basic xss payload we use will generate a &amp;ldquo;good&amp;rdquo; message , the system is trained to receive them&lt;br&gt;
-&lt;img src=&#34;https://novaclearnscyber.github.io/blog/images/blog-ul-meu/static/Pasted%20image%2020261012062645.png&#34; alt=&#34;&#34;&gt;
-&lt;br&gt;
-we have to try something much more complex like using a &lt;a href=&#34;https://webhook.site&#34;&gt;webhook&lt;/a&gt;&lt;br&gt;
-the payload we will use :&lt;/p&gt;</description>
       
     </item>
     

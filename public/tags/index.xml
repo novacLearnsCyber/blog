@@ -6,21 +6,11 @@
     <description>Recent content in Tags on Cyber Blog-ul lui Novac</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ro-ro</language>
-    <lastBuildDate>Tue, 27 Oct 2026 09:05:30 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cyber</title>
-      <link>https://novaclearnscyber.github.io/blog/tags/cyber/</link>
-      <pubDate>Tue, 27 Oct 2026 09:05:30 +0000</pubDate>
-      <guid>https://novaclearnscyber.github.io/blog/tags/cyber/</guid>
-      
-      <description></description>
-      
-    </item>
-    
+    <lastBuildDate>Tue, 10 Nov 2026 10:01:40 +0000</lastBuildDate><atom:link href="https://novaclearnscyber.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberStuff</title>
       <link>https://novaclearnscyber.github.io/blog/tags/cyberstuff/</link>
-      <pubDate>Tue, 27 Oct 2026 09:05:30 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2026 10:01:40 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/tags/cyberstuff/</guid>
       
       <description></description>
@@ -30,7 +20,7 @@
     <item>
       <title>Journal</title>
       <link>https://novaclearnscyber.github.io/blog/tags/journal/</link>
-      <pubDate>Tue, 27 Oct 2026 09:05:30 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2026 10:01:40 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/tags/journal/</guid>
       
       <description></description>
@@ -40,8 +30,18 @@
     <item>
       <title>Note</title>
       <link>https://novaclearnscyber.github.io/blog/tags/note/</link>
-      <pubDate>Tue, 27 Oct 2026 09:05:30 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2026 10:01:40 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/tags/note/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cyber</title>
+      <link>https://novaclearnscyber.github.io/blog/tags/cyber/</link>
+      <pubDate>Tue, 10 Nov 2026 08:20:43 +0000</pubDate>
+      <guid>https://novaclearnscyber.github.io/blog/tags/cyber/</guid>
       
       <description></description>
       
@@ -50,7 +50,7 @@
     <item>
       <title>Dreamhack</title>
       <link>https://novaclearnscyber.github.io/blog/tags/dreamhack/</link>
-      <pubDate>Mon, 12 Oct 2026 10:54:49 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2026 08:20:43 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/tags/dreamhack/</guid>
       
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>Webhook</title>
       <link>https://novaclearnscyber.github.io/blog/tags/webhook/</link>
-      <pubDate>Mon, 12 Oct 2026 10:54:49 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2026 08:20:43 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/tags/webhook/</guid>
       
       <description></description>
@@ -70,7 +70,7 @@
     <item>
       <title>Xss</title>
       <link>https://novaclearnscyber.github.io/blog/tags/xss/</link>
-      <pubDate>Mon, 12 Oct 2026 10:54:49 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2026 08:20:43 +0000</pubDate>
       <guid>https://novaclearnscyber.github.io/blog/tags/xss/</guid>
       
       <description></description>
